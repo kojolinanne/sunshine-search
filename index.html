@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>廉政專刊搜尋 - 陽光法令主題網</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>🔍 廉政專刊搜尋</h1>
+      <p class="subtitle">陽光法令主題網 ｜ 第300期 ～ 第319期</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- 搜尋框 -->
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="輸入關鍵字，例如：姓名、機關、財產項目..." autocomplete="off">
+      <button id="searchBtn">搜尋</button>
+    </div>
+
+    <!-- 選項列 -->
+    <div class="filter-bar">
+      <label>篩選期數：</label>
+      <select id="issueFilter">
+        <option value="all">全部期數</option>
+      </select>
+      <span id="resultCount" class="result-count"></span>
+    </div>
+
+    <!-- 結果 -->
+    <div id="results"></div>
+    <div id="noResults" class="no-results" style="display:none">
+      沒有找到符合的結果
+    </div>
+
+    <!-- 全期刊列表（無搜尋時顯示） -->
+    <div id="issueList" class="issue-grid"></div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>資料來源：<a href="https://sunshine.cy.gov.tw" target="_blank">監察院陽光法令主題網</a></p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

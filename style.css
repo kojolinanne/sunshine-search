@@ -1,0 +1,167 @@
+:root {
+  --primary: #1a73e8;
+  --primary-dark: #1557b0;
+  --bg: #f8f9fa;
+  --card-bg: #ffffff;
+  --text: #202124;
+  --text-secondary: #5f6368;
+  --border: #dadce0;
+  --shadow: 0 1px 3px rgba(0,0,0,0.12);
+  --radius: 8px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Microsoft JhengHei", "PingFang TC", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.container { max-width: 1000px; margin: 0 auto; padding: 0 16px; }
+
+/* Header */
+header {
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+  padding: 24px 0;
+}
+header h1 { font-size: 1.6rem; color: var(--text); }
+header .subtitle { color: var(--text-secondary); font-size: 0.9rem; margin-top: 4px; }
+
+/* Main */
+main { padding: 32px 16px; max-width: 1000px; margin: 0 auto; }
+
+/* Search Box */
+.search-box {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.search-box input {
+  flex: 1;
+  padding: 12px 16px;
+  font-size: 1rem;
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  outline: none;
+  transition: border-color 0.2s;
+}
+.search-box input:focus { border-color: var(--primary); }
+.search-box button {
+  padding: 12px 24px;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.search-box button:hover { background: var(--primary-dark); }
+
+/* Filter Bar */
+.filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+.filter-bar select {
+  padding: 6px 12px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+.result-count { margin-left: auto; color: var(--text-secondary); }
+
+/* Results */
+.result-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow);
+}
+.result-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+.result-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.result-issue {
+  background: var(--primary);
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.result-title { font-size: 1rem; color: var(--text); margin-bottom: 8px; }
+.result-snippet {
+  background: #f1f3f4;
+  border-left: 3px solid var(--primary);
+  padding: 10px 14px;
+  font-size: 0.9rem;
+  color: #333;
+  border-radius: 0 4px 4px 0;
+  margin-top: 8px;
+  white-space: pre-wrap;
+  word-break: break-word;
+  max-height: 150px;
+  overflow: hidden;
+}
+.result-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--primary);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.result-link:hover { text-decoration: underline; }
+
+/* Issue Grid */
+.issue-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+.issue-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: var(--shadow);
+  transition: box-shadow 0.2s;
+}
+.issue-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+.issue-card h3 { color: var(--primary); margin-bottom: 6px; }
+.issue-card p { color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 4px; }
+.issue-card .chars { font-size: 0.8rem; color: #9aa0a6; }
+
+/* No Results */
+.no-results { text-align: center; padding: 48px; color: var(--text-secondary); }
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 24px;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  border-top: 1px solid var(--border);
+  margin-top: 48px;
+}
+footer a { color: var(--primary); text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+
+/* Responsive */
+@media (max-width: 600px) {
+  .search-box { flex-direction: column; }
+  .filter-bar { flex-wrap: wrap; }
+  .issue-grid { grid-template-columns: 1fr; }
+}
