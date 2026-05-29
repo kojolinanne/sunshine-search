@@ -1,14 +1,15 @@
-# 🔍 廉政專刊搜尋
+# 公職人員財產申報統計
 
-陽光法令主題網（第300期～第319期）靜態搜尋網站。
+陽光法令主題網（第300期～第319期）公職人員財產申報資料統計網站。
 
 ![demo](https://img.shields.io/badge/GitHub%20Pages-部署完成-brightgreen)
 
 ## 功能
 
-- 全文關鍵字搜尋（懶載入，速快）
-- 期數篩選
-- 點期數卡可查該期內容
+- 依期數、政黨、職務、資產種類篩選
+- 統計申報筆數、申報人數、可讀金額與債務
+- 以圖表呈現職務分布、政黨分布、持有資產種類與可讀金額合計
+- 明細表可搜尋姓名、機關、職稱或政黨
 - 響應式設計（手機可用）
 
 ## 部署方式
@@ -46,18 +47,39 @@ python3 -m http.server 8080
 
 ```bash
 # 把新 PDF 放到 ~/Downloads/廉政專刊第XXX期.pdf
-python3 extract_all.py        # 重新產生 data/
+python3 extract_all.py        # 更新 data/issue_XXX.json、data/index.json、data/declarations.json
 git add data/
 git commit -m "新增第XXX期"
 git push
 ```
 
+`extract_all.py` 會處理 `~/Downloads` 內所有符合 `廉政專刊第XXX期.pdf` 的檔案，既有的分期 JSON 會保留，最後依 `data/issue_*.json` 重建索引與統計資料。執行前需先安裝 `pdftotext`。
+
+也可以只更新單一 PDF：
+
+```bash
+python3 extract_text.py ~/Downloads/廉政專刊第XXX期.pdf
+```
+
+只重建統計資料：
+
+```bash
+python3 build_statistics.py
+```
+
+## 資料口徑
+
+- `data/declarations.json` 是前端圖表與明細表使用的結構化資料。
+- 金額合計只加總申報表已有「總金額」或「總價額」欄位的項目。
+- 不動產、汽車、保險等常沒有總價欄位，因此只統計是否持有，不納入可讀金額合計。
+- 政黨不是財產申報表欄位；目前只用 `data/party_map.json` 中可追溯來源標註，其餘顯示「未標註」。
+
 ## 技術棧
 
 - 純前端（HTML + CSS + JS，無後端）
-- Fuse.js 模糊搜尋（但目前用關鍵字匹配）
+- Python 產生靜態 JSON 統計資料
 - GitHub Pages 托管
-- 20 期、約 10M 字，Lazy-load 確保速度
+- 20 期、約 10M 字，前端只載入統計 JSON
 
 ## 授權
 
