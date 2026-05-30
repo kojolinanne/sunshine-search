@@ -1,74 +1,46 @@
 #!/usr/bin/env python3
-"""從廉政專刊 PDF 萃取文字並輸出 JSON"""
-import subprocess, json, re, sys
+"""從單一廉政專刊 PDF 萃取文字並更新 data/。"""
+import argparse
+import re
+import sys
 from pathlib import Path
 
-def extract_text(pdf_path):
-    """用 pdftotext 萃文字"""
-    result = subprocess.run(
-        ['pdftotext', '-enc', 'UTF-8', pdf_path, '-'],
-        capture_output=True, text=True
-    )
-    return result.stdout
+from extract_all import process_pdf, rebuild_index, write_issue
 
-def clean_text(text):
-    """簡單清理：移除行首/行尾多餘空白"""
-    lines = text.split('\n')
-    cleaned = []
-    for line in lines:
-        line = line.strip()
-        if line:
-            cleaned.append(line)
-    return '\n'.join(cleaned)
+PDF_RE = re.compile(r'廉政專刊第(\d+)期\.pdf$')
 
-def chunk_by_pages(raw_text, pages_info, page_size=50):
-    """將文字依頁數分塊"""
-    # 簡單分塊：每 N 行為一塊
-    lines = raw_text.split('\n')
-    chunks = []
-    for i in range(0, len(lines), page_size):
-        chunk_text = '\n'.join(lines[i:i+page_size])
-        chunks.append({
-            "chunk_id": i // page_size + 1,
-            "text": chunk_text,
-            "start_line": i
-        })
-    return chunks
+def parse_args():
+    parser = argparse.ArgumentParser(description='更新單一期別的廉政專刊搜尋資料')
+    parser.add_argument('pdf', type=Path, help='PDF 路徑，例如 ~/Downloads/廉政專刊第320期.pdf')
+    parser.add_argument('--issue', type=int, help='手動指定期數，預設由檔名解析')
+    return parser.parse_args()
 
-def process_pdf(pdf_path, issue_num):
-    text = extract_text(pdf_path)
-    cleaned = clean_text(text)
-    
-    # 簡單取前 50 行作為摘要預覽
-    preview = '\n'.join(cleaned.split('\n')[:30])
-    
-    return {
-        "issue": issue_num,
-        "total_chars": len(cleaned),
-        "preview": preview,
-        "full_text": cleaned  # 全文（搜尋用）
-    }
+def infer_issue(pdf_path, issue):
+    if issue is not None:
+        return issue
+
+    match = PDF_RE.search(pdf_path.name)
+    if not match:
+        raise ValueError('無法從檔名解析期數，請使用 --issue 指定')
+    return int(match.group(1))
+
+def main():
+    args = parse_args()
+    pdf_path = args.pdf.expanduser()
+    if not pdf_path.exists():
+        raise FileNotFoundError(pdf_path)
+
+    issue = infer_issue(pdf_path, args.issue)
+    data = process_pdf(pdf_path, issue)
+    output_path = write_issue(data)
+    issues, index_path = rebuild_index()
+
+    from build_statistics import main as build_statistics
+    build_statistics()
+
+    print(f"輸出：{output_path}", file=sys.stderr)
+    print(f"索引：{index_path}", file=sys.stderr)
+    print(f"共 {len(issues)} 期，總 {sum(d['total_chars'] for d in issues):,} 字", file=sys.stderr)
 
 if __name__ == '__main__':
-    import os
-    
-    download_dir = Path.home() / 'Downloads'
-    results = []
-    
-    # 處理第300-319期（先處理3期測試）
-    for issue in [319, 318, 317]:
-        pdf = download_dir / f'廉政專刊第{issue}期.pdf'
-        if pdf.exists():
-            print(f"處理中：第{issue}期...", file=sys.stderr)
-            data = process_pdf(str(pdf), issue)
-            results.append(data)
-            print(f"  完成，字符數：{data['total_chars']:,}", file=sys.stderr)
-        else:
-            print(f"  找不到：{pdf}", file=sys.stderr)
-    
-    # 輸出 JSON
-    output_path = Path(__file__).parent / 'data' / 'issues_sample.json'
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-    with open(output_path, 'w', encoding='utf-8') as f:
-        json.dump(results, f, ensure_ascii=False, indent=2)
-    print(f"輸出：{output_path}", file=sys.stderr)
+    main()

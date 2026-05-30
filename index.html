@@ -3,50 +3,145 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>廉政專刊搜尋 - 陽光法令主題網</title>
+  <title>公職人員財產申報統計 - 陽光法令主題網</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>🔍 廉政專刊搜尋</h1>
-      <p class="subtitle">陽光法令主題網 ｜ 第300期 ～ 第319期</p>
+  <header class="site-header">
+    <div class="container header-grid">
+      <div>
+        <p class="eyebrow">公職人員財產申報資料</p>
+        <h1>財產申報統計</h1>
+      </div>
+      <div class="source-card">
+        <span>資料狀態</span>
+        <strong id="sourceRecordCount">載入中</strong>
+        <small>資料來自監察院公報全文解析</small>
+      </div>
     </div>
   </header>
 
-  <main class="container">
-    <!-- 搜尋框 -->
-    <div class="search-box">
-      <input type="text" id="searchInput" placeholder="輸入關鍵字，例如：姓名、機關、財產項目..." autocomplete="off">
-      <button id="searchBtn">搜尋</button>
-    </div>
+  <main>
+    <section class="container dashboard-shell">
+      <aside class="filter-panel" aria-label="資料篩選">
+        <div class="panel-heading">
+          <h2>篩選資料</h2>
+          <p>選擇範圍後，右側圖表與分群會同步更新。</p>
+        </div>
 
-    <!-- 選項列 -->
-    <div class="filter-bar">
-      <label>篩選期數：</label>
-      <select id="issueFilter">
-        <option value="all">全部期數</option>
-      </select>
-      <span id="resultCount" class="result-count"></span>
-    </div>
+        <label class="field">
+          <span>關鍵字</span>
+          <input type="search" id="searchInput" placeholder="例：立法院、議員、王仙蓮">
+        </label>
 
-    <!-- 結果 -->
-    <div id="results"></div>
-    <div id="noResults" class="no-results" style="display:none">
-      沒有找到符合的結果
-    </div>
+        <label class="field">
+          <span>期數</span>
+          <select id="issueFilter" aria-label="期數"></select>
+        </label>
 
-    <!-- 全期刊列表（無搜尋時顯示） -->
-    <div id="issueList" class="issue-grid"></div>
+        <label class="field">
+          <span>政黨</span>
+          <select id="partyFilter" aria-label="政黨"></select>
+        </label>
+
+        <label class="field">
+          <span>職務</span>
+          <select id="positionFilter" aria-label="職務"></select>
+        </label>
+
+        <label class="field">
+          <span>資產種類</span>
+          <select id="assetFilter" aria-label="資產種類"></select>
+        </label>
+
+        <button id="resetBtn" type="button">清除篩選</button>
+      </aside>
+
+      <div class="dashboard-main">
+        <section class="result-summary" aria-live="polite">
+          <div>
+            <span>目前篩選</span>
+            <strong id="filterSummary">全部資料</strong>
+          </div>
+          <p>政黨沒有來源就標示為「未標註」，不從姓名或職務猜測。</p>
+        </section>
+
+        <section class="metric-strip" id="metrics"></section>
+
+        <section class="chart-grid" aria-label="統計圖表">
+          <article class="chart-panel wide-panel">
+            <div class="section-heading">
+              <div>
+                <h2>職務分布</h2>
+                <p>目前資料中各職務類型的申報筆數</p>
+              </div>
+              <span id="positionTotal"></span>
+            </div>
+            <div id="positionChart" class="bar-chart"></div>
+          </article>
+
+          <article class="chart-panel">
+            <div class="section-heading">
+              <div>
+                <h2>政黨標註</h2>
+                <p>只列可追溯來源</p>
+              </div>
+              <span id="partyTotal"></span>
+            </div>
+            <div id="partyChart" class="bar-chart compact-chart"></div>
+          </article>
+
+          <article class="chart-panel">
+            <div class="section-heading">
+              <div>
+                <h2>資產種類</h2>
+                <p>有填列該類資產的人次</p>
+              </div>
+              <span id="assetTotal"></span>
+            </div>
+            <div id="assetChart" class="bar-chart compact-chart"></div>
+          </article>
+
+          <article class="chart-panel wide-panel">
+            <div class="section-heading">
+              <div>
+                <h2 id="moneyChartTitle">已解析金額</h2>
+                <p>只看表上有總金額或總價額的欄位</p>
+              </div>
+              <span>不等於總財產</span>
+            </div>
+            <div id="moneyChart" class="bar-chart"></div>
+          </article>
+        </section>
+
+        <section class="table-section">
+          <div class="section-heading">
+            <div>
+              <h2>分群瀏覽</h2>
+              <p>每個群組先看摘要，再看金額較高的申報卡。</p>
+            </div>
+            <span id="recordCount"></span>
+          </div>
+
+          <div class="group-tabs" aria-label="分群方式">
+            <button type="button" class="group-tab is-active" data-group="party">政黨</button>
+            <button type="button" class="group-tab" data-group="position">職務</button>
+            <button type="button" class="group-tab" data-group="issue">期數</button>
+            <button type="button" class="group-tab" data-group="asset">資產種類</button>
+          </div>
+
+          <div id="groupList" class="grouped-list"></div>
+        </section>
+      </div>
+    </section>
   </main>
 
   <footer>
     <div class="container">
-      <p>資料來源：<a href="https://sunshine.cy.gov.tw" target="_blank">監察院陽光法令主題網</a></p>
+      <p>資料來源：監察院公報全文解析；立法委員政黨對照來源標示於 <code>data/party_map.json</code>。本站非官方網站。</p>
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
