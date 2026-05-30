@@ -1,6 +1,11 @@
 let dataset = null;
 let filteredRecords = [];
 let activeGroup = 'party';
+const groupPages = {};   // { [groupLabel]: currentPage }
+const PAGE_SIZE = 100;
+const MAIN_ASSET_ORDER = [
+  'land', 'building', 'vehicle', 'deposit', 'securities', 'insurance',
+];
 
 const els = {
   searchInput: document.getElementById('searchInput'),
@@ -25,11 +30,116 @@ const els = {
   groupTabs: [...document.querySelectorAll('[data-group]')],
 };
 
-const GROUP_RECORD_LIMIT = 5;
-const MAIN_ASSET_ORDER = [
-  'land', 'building', 'vehicle', 'deposit', 'securities', 'insurance',
-  'cash', 'valuable', 'claim', 'business', 'ship', 'aircraft', 'virtual_asset',
-];
+function renderGroupedList() {
+  const groups = buildGroups(activeGroup);
+  const totalItems = groups.reduce((total, group) => total + group.records.length, 0);
+  const maxCount = Math.max(...groups.map(group => group.records.length), 1);
+  els.groupList.innerHTML = '';
+  els.recordCount.textContent = groups.length
+    ? `${formatNumber(groups.length)} 個群組，${formatNumber(totalItems)} 筆`
+    : '沒有符合條件的資料';
+
+  if (!groups.length) {
+    appendText(els.groupList, 'p', 'empty-group', '沒有符合條件的申報資料');
+    return;
+  }
+
+  groups.forEach(group => {
+    // 初始化或重置每組的頁碼（篩選條件改變時重置）
+    if (groupPages[group.label] === undefined) groupPages[group.label] = 1;
+    const totalPages = Math.ceil(group.records.length / PAGE_SIZE);
+    const curPage = Math.min(groupPages[group.label], totalPages);
+    const startIdx = (curPage - 1) * PAGE_SIZE;
+    const endIdx = startIdx + PAGE_SIZE;
+    const pageRecords = group.records.slice(startIdx, endIdx);
+
+    const card = document.createElement('article');
+    card.className = 'group-card';
+
+    const header = document.createElement('div');
+    header.className = 'group-header';
+
+    const titleWrap = document.createElement('div');
+    titleWrap.className = 'group-title-wrap';
+    if (activeGroup === 'party') {
+      appendPartyBadge(titleWrap, group.label, 'group-party-badge');
+    } else {
+      appendText(titleWrap, 'strong', 'group-title', group.label);
+    }
+    appendText(titleWrap, 'span', 'group-subtitle', `${formatNumber(group.records.length)} 筆申報 · ${formatNumber(group.uniquePeople)} 人`);
+
+    const amountWrap = document.createElement('div');
+    amountWrap.className = 'group-amounts';
+    appendText(amountWrap, 'span', 'amount-label', getAmountLabel());
+    appendText(amountWrap, 'strong', 'amount-value', formatMoney(group.amount));
+    appendText(amountWrap, 'span', 'debt-value', `債務 ${formatMoney(group.debt)}`);
+
+    header.append(titleWrap, amountWrap);
+
+    const track = document.createElement('div');
+    track.className = 'group-track';
+    const fill = document.createElement('div');
+    fill.className = 'group-fill';
+    fill.style.width = `${Math.max(4, (group.records.length / maxCount) * 100)}%`;
+    if (activeGroup === 'party') fill.style.background = getPartyStyle(group.label).color;
+    track.appendChild(fill);
+
+    // 本頁記錄卡片
+    const records = document.createElement('div');
+    records.className = 'record-card-grid';
+    pageRecords.forEach(record => records.appendChild(createRecordCard(record)));
+
+    // 分頁導航
+    if (totalPages > 1) {
+      const pager = document.createElement('div');
+      pager.className = 'pagination';
+
+      const prev = document.createElement('button');
+      prev.textContent = '◀ 上一頁';
+      prev.disabled = curPage <= 1;
+      prev.className = 'page-btn';
+      prev.addEventListener('click', () => {
+        groupPages[group.label] = curPage - 1;
+        renderGroupedList();
+        scrollToCard(card);
+      });
+
+      // 頁碼按鈕（最多顯示 5 個）
+      const pageNums = getPageNumbers(curPage, totalPages);
+      pageNums.forEach(p => {
+        const btn = document.createElement('button');
+        btn.textContent = p === curPage ? `● ${p}` : p === '...' ? '…' : p;
+        btn.className = `page-btn${p === curPage ? ' active' : ''}${p === '...' ? ' ellipsis' : ''}`;
+        btn.disabled = p === '...' || p === curPage;
+        if (p !== '...' && p !== curPage) {
+          btn.addEventListener('click', () => {
+            groupPages[group.label] = Number(p);
+            renderGroupedList();
+            scrollToCard(card);
+          });
+        }
+        pager.appendChild(btn);
+      });
+
+      const next = document.createElement('button');
+      next.textContent = '下一頁 ▶';
+      next.disabled = curPage >= totalPages;
+      next.className = 'page-btn';
+      next.addEventListener('click', () => {
+        groupPages[group.label] = curPage + 1;
+        renderGroupedList();
+        scrollToCard(card);
+      });
+
+      pager.appendChild(prev);
+      pager.appendChild(next);
+      records.appendChild(pager);
+    }
+
+    card.append(header, track, records);
+    els.groupList.appendChild(card);
+  });
+}
 const MONEY_ORDER = ['deposit', 'securities', 'business', 'claim', 'cash', 'valuable', 'virtual_asset'];
 const PARTY_STYLES = {
   '中國國民黨': { className: 'party-kmt', color: '#1d4ed8' },
@@ -41,6 +151,21 @@ const PARTY_STYLES = {
   '無黨籍': { className: 'party-independent', color: '#64748b' },
   '未標註': { className: 'party-unknown', color: '#94a3b8' },
 };
+
+function getPageNumbers(cur, total) {
+  if (total <= 7) return Array.from({length: total}, (_, i) => i + 1);
+  const pages = [];
+  pages.push(1);
+  if (cur > 4) pages.push('...');
+  for (let i = Math.max(2, cur - 2); i <= Math.min(total - 1, cur + 2); i++) pages.push(i);
+  if (cur < total - 3) pages.push('...');
+  pages.push(total);
+  return pages;
+}
+
+function scrollToCard(card) {
+  card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
 
 async function init() {
   try {
@@ -280,69 +405,6 @@ function collapseEntries(entries, limit) {
   return visible;
 }
 
-function renderGroupedList() {
-  const groups = buildGroups(activeGroup);
-  const totalItems = groups.reduce((total, group) => total + group.records.length, 0);
-  const maxCount = Math.max(...groups.map(group => group.records.length), 1);
-  els.groupList.innerHTML = '';
-  els.recordCount.textContent = groups.length
-    ? `${formatNumber(groups.length)} 個群組，${formatNumber(totalItems)} 筆`
-    : '沒有符合條件的資料';
-
-  if (!groups.length) {
-    appendText(els.groupList, 'p', 'empty-group', '沒有符合條件的申報資料');
-    return;
-  }
-
-  groups.forEach(group => {
-    const card = document.createElement('article');
-    card.className = 'group-card';
-
-    const header = document.createElement('div');
-    header.className = 'group-header';
-
-    const titleWrap = document.createElement('div');
-    titleWrap.className = 'group-title-wrap';
-    if (activeGroup === 'party') {
-      appendPartyBadge(titleWrap, group.label, 'group-party-badge');
-    } else {
-      appendText(titleWrap, 'strong', 'group-title', group.label);
-    }
-    appendText(titleWrap, 'span', 'group-subtitle', `${formatNumber(group.records.length)} 筆申報 · ${formatNumber(group.uniquePeople)} 人`);
-
-    const amountWrap = document.createElement('div');
-    amountWrap.className = 'group-amounts';
-    appendText(amountWrap, 'span', 'amount-label', getAmountLabel());
-    appendText(amountWrap, 'strong', 'amount-value', formatMoney(group.amount));
-    appendText(amountWrap, 'span', 'debt-value', `債務 ${formatMoney(group.debt)}`);
-
-    header.append(titleWrap, amountWrap);
-
-    const track = document.createElement('div');
-    track.className = 'group-track';
-    const fill = document.createElement('div');
-    fill.className = 'group-fill';
-    fill.style.width = `${Math.max(4, (group.records.length / maxCount) * 100)}%`;
-    if (activeGroup === 'party') fill.style.background = getPartyStyle(group.label).color;
-    track.appendChild(fill);
-
-    const records = document.createElement('div');
-    records.className = 'record-card-grid';
-    group.records
-      .slice(0, GROUP_RECORD_LIMIT)
-      .forEach(record => records.appendChild(createRecordCard(record)));
-
-    if (group.records.length > GROUP_RECORD_LIMIT) {
-      const more = document.createElement('div');
-      more.className = 'more-records';
-      more.textContent = `另有 ${formatNumber(group.records.length - GROUP_RECORD_LIMIT)} 筆`;
-      records.appendChild(more);
-    }
-
-    card.append(header, track, records);
-    els.groupList.appendChild(card);
-  });
-}
 
 function buildGroups(mode) {
   const map = new Map();
