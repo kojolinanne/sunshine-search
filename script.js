@@ -241,6 +241,7 @@ function applyFilters() {
   filteredRecords = dataset.records.filter(record => {
     const queryText = normalize([
       record.name, record.agency, record.title, record.party, record.declaration_type,
+      record.full_text || '',
     ].join(' '));
 
     return (!query || queryText.includes(query))
