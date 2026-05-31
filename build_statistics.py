@@ -12,10 +12,12 @@ ROOT_DIR = Path(__file__).parent
 DATA_DIR = ROOT_DIR / 'data'
 
 DECLARATION_MARKER = '公\n職\n人\n員\n財\n產\n申\n報\n表'
+DECLARATION_MARKER_ALT = '公\n\n職\n\n人\n\n員\n\n財\n\n產\n\n申\n\n報\n\n表'
 TRUST_MARKER = '公\n職\n人\n員\n信\n託\n財\n產\n申\n報\n表'
 CHANGE_MARKER = '公\n職\n人\n員\n變\n動\n財\n產\n申\n報\n表'
 MARKERS = [
     ('declaration', DECLARATION_MARKER),
+    ('declaration', DECLARATION_MARKER_ALT),
     ('trust', TRUST_MARKER),
     ('change', CHANGE_MARKER),
 ]
