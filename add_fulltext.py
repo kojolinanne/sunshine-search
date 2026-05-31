@@ -3,12 +3,14 @@
 Regenerate declarations.json with full_text included for full-text search (including stock names).
 """
 import json
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).parent
 DATA = ROOT / 'data'
 DECL_FILE = DATA / 'declarations.json'
 MARKER = '公\n職\n人\n員\n財\n產\n申\n報\n表'
+MARKER_ALT = '公\n\n職\n\n人\n\n員\n\n財\n\n產\n\n申\n\n報\n\n表'
 
 def main():
     # Load existing declarations
@@ -36,7 +38,10 @@ def main():
             continue
 
         full_text = issue_texts[src_file]
-        sections = full_text.split(MARKER)
+        # Normalize double-newline-separated characters to single-newline
+        # (some issues use 雙行距 markers like '公\n\n職\n\n人\n\n員...')
+        normalized = re.sub(r'\n+', '\n', full_text)
+        sections = normalized.split(MARKER)
         # sections[0] is empty (before first marker), sections[1..] are actual declarations
 
         for rec in records:
