@@ -28,8 +28,9 @@
     318,
     319
   ],
-  "next_to_try": 298,
+  "next_to_try": 297,
   "total_downloaded": 6,
   "total_failed": 7,
-  "last_run": "2026-05-31T22:27:12.725942"
+  "last_run": "2026-05-31T22:27:12.725942",
+  "direction": "desc"
 }

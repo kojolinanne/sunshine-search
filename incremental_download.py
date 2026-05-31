@@ -24,10 +24,11 @@ def load_state():
     processed = set(r['issue'] for r in decl['records'])
     return {
         'processed': sorted(processed),
-        'next_to_try': 108,   # 網站上最舊的是第108期
+        'next_to_try': 108,
         'total_downloaded': 0,
         'total_failed': 0,
         'last_run': None,
+        'direction': 'asc',  # 'asc'=由小到大, 'desc'=由大到小
     }
 
 def save_state(state):
@@ -231,16 +232,25 @@ def main():
     # 找下一個要處理的期別
     processed = set(state['processed'])
     next_issue = state['next_to_try']
+    direction = state.get('direction', 'asc')
 
-    # 從 108 往上找第一個還沒處理的
-    while next_issue in processed:
-        next_issue += 1
-
-    if next_issue > 319:
-        print(f'全部期別已處理完畢（最高319期）', flush=True)
-        state['last_run'] = datetime.now().isoformat()
-        save_state(state)
-        return
+    # 跳過已處理
+    if direction == 'desc':
+        while next_issue in processed and next_issue >= 108:
+            next_issue -= 1
+        if next_issue < 108:
+            print(f'全部期別已處理完畢（最低至108期）', flush=True)
+            state['last_run'] = datetime.now().isoformat()
+            save_state(state)
+            return
+    else:
+        while next_issue in processed:
+            next_issue += 1
+        if next_issue > 319:
+            print(f'全部期別已處理完畢（最高319期）', flush=True)
+            state['last_run'] = datetime.now().isoformat()
+            save_state(state)
+            return
 
     print(f'嘗試下載第 {next_issue} 期...', flush=True)
     path, msg = download_issue(next_issue)
@@ -259,8 +269,8 @@ def main():
         # 檢查大小並拆分
         check_and_split()
 
-        # 更新 next_to_try
-        state['next_to_try'] = next_issue + 1
+        # 更新 next_to_try（依據方向增減）
+        state['next_to_try'] = next_issue - 1 if direction == 'desc' else next_issue + 1
 
     else:
         print(f'  失敗：{msg}', flush=True)
@@ -268,7 +278,7 @@ def main():
         # 如果是"找不到 URL"，說明這期不在網站上，跳過它
         if '找不到 URL' in msg:
             print(f'  第{next_issue}期不在網站上，跳過', flush=True)
-            state['next_to_try'] = next_issue + 1
+            state['next_to_try'] = next_issue - 1 if direction == 'desc' else next_issue + 1
 
     state['last_run'] = datetime.now().isoformat()
     save_state(state)
