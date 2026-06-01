@@ -675,3 +675,138 @@ code {
   background: transparent;
   cursor: default;
 }
+
+/* ── 資產詳情彈出視窗 ── */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 16px;
+}
+.modal-overlay[hidden] { display: none; }
+
+.modal-panel {
+  background: var(--paper);
+  border-radius: 14px;
+  width: min(700px, 100%);
+  max-height: 88vh;
+  overflow-y: auto;
+  box-shadow: 0 24px 64px rgba(15, 23, 42, 0.22);
+}
+
+.modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 22px 22px 0;
+}
+.modal-header h2 {
+  margin-bottom: 4px;
+  font-size: 1.3rem;
+}
+.modal-subtitle {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.modal-close {
+  width: 36px;
+  min-height: 36px;
+  flex: none;
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--muted);
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-close:hover {
+  background: #e2e8f0;
+  color: var(--ink);
+}
+
+.modal-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  padding: 18px 22px;
+  border-bottom: 1px solid var(--line);
+}
+.modal-stat {
+  display: grid;
+  gap: 3px;
+  text-align: center;
+}
+.modal-stat-label {
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+.modal-stat-value {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+.modal-stat-note {
+  font-size: 0.75rem;
+  color: var(--faint);
+}
+
+.modal-section {
+  padding: 18px 22px 22px;
+}
+.modal-section h3 {
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.modal-record-list {
+  display: grid;
+  gap: 8px;
+  max-height: 380px;
+  overflow-y: auto;
+}
+.modal-record-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  align-items: baseline;
+  padding: 10px 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background: var(--surface);
+}
+.modal-record-row:hover {
+  border-color: #93c5fd;
+  background: #eff6ff;
+}
+.modal-record-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.modal-record-meta {
+  color: var(--muted);
+  font-size: 0.78rem;
+  margin-top: 2px;
+}
+.modal-record-amount {
+  font-weight: 700;
+  color: var(--accent);
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+/* 圖表列可點擊 */
+.bar-row {
+  cursor: default;
+  position: relative;
+}
+.bar-row:hover .bar-fill {
+  opacity: 0.8;
+}

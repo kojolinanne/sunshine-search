@@ -142,6 +142,24 @@
     </div>
   </footer>
 
+  <!-- 資產類別詳情彈出視窗 -->
+  <div id="assetModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal-panel">
+      <div class="modal-header">
+        <div>
+          <h2 id="modalTitle"></h2>
+          <p id="modalSubtitle" class="modal-subtitle"></p>
+        </div>
+        <button id="modalClose" class="modal-close" aria-label="關閉">✕</button>
+      </div>
+      <div class="modal-stats" id="modalStats"></div>
+      <div class="modal-section">
+        <h3 id="modalSectionTitle"></h3>
+        <div id="modalRecords"></div>
+      </div>
+    </div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>

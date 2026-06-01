@@ -259,6 +259,7 @@ function render() {
   renderMetrics();
   renderCharts();
   renderGroupedList();
+  setTimeout(bindChartClicks, 0);
 }
 
 function renderFilterSummary() {
@@ -556,4 +557,94 @@ function formatDate(value) {
   return value || '未解析日期';
 }
 
+
+// ── 資產類別詳情彈出視窗 ──
+const modal = document.getElementById('assetModal');
+const modalTitle = document.getElementById('modalTitle');
+const modalSubtitle = document.getElementById('modalSubtitle');
+const modalStats = document.getElementById('modalStats');
+const modalSectionTitle = document.getElementById('modalSectionTitle');
+const modalRecords = document.getElementById('modalRecords');
+
+function openAssetModal(assetKey) {
+  const records = filteredRecords.filter(r => r.asset_flags[assetKey]);
+  const label = dataset.asset_labels[assetKey] || assetKey;
+  const isMoney = MONEY_ORDER.includes(assetKey);
+  const totalAmount = sum(records, r => r.asset_totals[assetKey] || 0);
+  const uniquePeople = new Set(records.map(r => r.name)).size;
+
+  modalTitle.textContent = label;
+  modalSubtitle.textContent = `${records.length} 人次持有`;
+
+  // 統計數字
+  modalStats.innerHTML = '';
+  const statData = [
+    { label: '持有人次', value: formatNumber(records.length), note: '申報時有填寫此類資產' },
+    { label: '人數', value: formatNumber(uniquePeople), note: '去重後人數' },
+    { label: isMoney ? '總金額' : '涵蓋期別', value: isMoney ? formatMoney(totalAmount) : [...new Set(records.map(r => r.issue))].length + ' 期', note: isMoney ? '加總該欄位總額' : '有記錄的最早至最新' },
+  ];
+  statData.forEach(s => {
+    const el = document.createElement('div');
+    el.className = 'modal-stat';
+    el.innerHTML = `<span class="modal-stat-label">${s.label}</span><strong class="modal-stat-value">${s.value}</strong><span class="modal-stat-note">${s.note}</span>`;
+    modalStats.appendChild(el);
+  });
+
+  // 排行榜
+  const sorted = [...records].sort((a, b) => {
+    const va = isMoney ? (a.asset_totals[assetKey] || 0) : (a.disclosed_amount_total || 0);
+    const vb = isMoney ? (b.asset_totals[assetKey] || 0) : (b.disclosed_amount_total || 0);
+    return vb - va;
+  }).slice(0, 20);
+
+  modalSectionTitle.textContent = isMoney ? `持有金額排行榜（Top 20）` : `持有者名單（Top 20）`;
+  modalRecords.innerHTML = '';
+  const list = document.createElement('div');
+  list.className = 'modal-record-list';
+  sorted.forEach(r => {
+    const row = document.createElement('div');
+    row.className = 'modal-record-row';
+    const amt = isMoney ? r.asset_totals[assetKey] : r.disclosed_amount_total;
+    const amtStr = amt ? formatMoney(amt) : '未列總額';
+    const issues = [...new Set(records.filter(x => x.name === r.name).map(x => x.issue))].sort((a,b)=>b-a);
+    row.innerHTML = `<div><div class="modal-record-name">${r.name}</div><div class="modal-record-meta">${r.title} · ${r.position_group} · 第 ${issues.slice(0,3).join('/')} 期</div></div><div class="modal-record-amount">${amtStr}</div>`;
+    list.appendChild(row);
+  });
+  modalRecords.appendChild(list);
+
+  modal.hidden = false;
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  modal.hidden = true;
+  document.body.style.overflow = '';
+}
+
+document.getElementById('modalClose').addEventListener('click', closeModal);
+modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape' && !modal.hidden) closeModal(); });
+
+// ── 圖表點擊綁定（資產種類 + 金額圖） ──
+function bindChartClicks() {
+  document.querySelectorAll('#assetChart .bar-row, #moneyChart .bar-row').forEach(row => {
+    const label = row.querySelector('.bar-label')?.textContent?.trim();
+    if (!label) return;
+    const btn = document.createElement('button');
+    btn.className = 'chart-detail-btn';
+    btn.textContent = '詳情';
+    btn.style.cssText = 'font-size:0.75rem;padding:2px 8px;min-height:24px;width:auto;background:var(--accent);border-radius:999px;margin-left:8px;';
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      // 找出對應的 assetKey
+      const key = MAIN_ASSET_ORDER.find(k => dataset.asset_labels[k] === label)
+        || MONEY_ORDER.find(k => (dataset.money_asset_labels?.[k] || dataset.asset_labels[k]) === label);
+      if (key) openAssetModal(key);
+    });
+    const header = row.querySelector('.bar-header');
+    if (header) header.appendChild(btn);
+  });
+}
+
 init();
+
