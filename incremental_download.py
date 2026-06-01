@@ -156,11 +156,14 @@ def rebuild_decls():
 
 # ── 拆分 declarations.json ──
 def check_and_split():
+    """拆分 declarations.json（超過閾值時）
+    重要：拆分備份不影響 declarations.json，保留完整 records 供前端讀取。
+    """
     size_mb = os.path.getsize(DECL_FILE) / 1024 / 1024
     print(f'  declarations.json: {size_mb:.1f} MB', flush=True)
     if size_mb <= MAX_SIZE_MB:
         return
-    print(f'  超過 {MAX_SIZE_MB}MB，開始拆分...', flush=True)
+    print(f'  超過 {MAX_SIZE_MB}MB，建立拆分備份（declarations.json 保留完整 records）...', flush=True)
     with open(DECL_FILE, encoding='utf-8') as f:
         decl = json.load(f)
     records_by_issue = {}
@@ -175,18 +178,20 @@ def check_and_split():
         chunk_issues = issues[i:i+50]
         chunk_records = [rec for issue in chunk_issues for rec in records_by_issue[issue]]
         chunks.append((chunk_issues[0], chunk_issues[-1], chunk_records))
-    base_payload = {
-        'metadata': decl['metadata'],
-        'asset_labels': decl['asset_labels'],
-        'money_asset_labels': decl['money_asset_labels'],
-        'security_labels': decl['security_labels'],
-        'index': [{'from': c[0], 'to': c[1], 'count': len(c[2])} for c in chunks],
-    }
+    # declarations.json 本身保留完整 records（前端正是在吃這個）
+    # chunks 只是額外備份檔
     for chunk in chunks:
         chunk_name = f'declarations_{chunk[0]}-{chunk[1]}.json'
+        chunk_data = {
+            'metadata': decl['metadata'],
+            'asset_labels': decl['asset_labels'],
+            'money_asset_labels': decl['money_asset_labels'],
+            'security_labels': decl['security_labels'],
+            'records': chunk[2],
+        }
         with open(DATA / chunk_name, 'w', encoding='utf-8') as f:
-            json.dump({**base_payload, 'records': chunk[2]}, f, ensure_ascii=False, indent=2)
-        print(f'  寫入 {chunk_name}: {len(chunk[2])} 筆', flush=True)
+            json.dump(chunk_data, f, ensure_ascii=False, indent=2)
+        print(f'  備份 {chunk_name}: {len(chunk[2])} 筆', flush=True)
     index = {
         'chunks': [{'file': f'declarations_{c[0]}-{c[1]}.json',
                     'from': c[0], 'to': c[1], 'count': len(c[2])} for c in chunks],
@@ -195,9 +200,8 @@ def check_and_split():
     }
     with open(DATA / 'index.json', 'w', encoding='utf-8') as f:
         json.dump(index, f, ensure_ascii=False, indent=2)
-    print(f'  拆分完成：共 {len(chunks)} 個檔案', flush=True)
+    print(f'  拆分備份完成（declarations.json 完整保留給前端）', flush=True)
 
-# ── 主程式 ──
 def main():
     state = load_state()
     processed = set(state['processed'])
