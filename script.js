@@ -474,15 +474,23 @@ function createRecordCard(record) {
 }
 
 function appendAssetTags(parent, record, limit = 6) {
-  const names = MAIN_ASSET_ORDER
-    .filter(key => record.asset_flags[key])
-    .map(key => dataset.asset_labels[key]);
+  const keys = MAIN_ASSET_ORDER.filter(key => record.asset_flags[key]);
+  const items = keys.map(key => ({ key, name: dataset.asset_labels[key] }));
 
-  if (!names.length) {
+  if (!items.length) {
     parent.textContent = '未解析';
   } else {
-    names.slice(0, limit).forEach(name => appendText(parent, 'span', 'tag', name));
-    if (names.length > limit) appendText(parent, 'span', 'tag more-tag', `+${names.length - limit}`);
+    items.slice(0, limit).forEach(({ key, name }) => {
+      const el = appendText(parent, 'span', 'tag', name);
+      el.dataset.key = key;
+      el.style.cursor = 'pointer';
+      el.title = `點擊查看「${name}」詳細資料`;
+      el.addEventListener('click', () => openAssetModal(key));
+    });
+    if (items.length > limit) {
+      const more = appendText(parent, 'span', 'tag more-tag', `+${items.length - limit}`);
+      more.title = `還有 ${items.length - limit} 種類型`;
+    }
   }
 }
 
