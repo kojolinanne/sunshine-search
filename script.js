@@ -490,7 +490,7 @@ function appendAssetTags(parent, record, limit = 6) {
       el.dataset.key = key;
       el.style.cursor = 'pointer';
       el.title = `點擊查看「${name}」詳細資料`;
-      el.addEventListener('click', () => openAssetModal(key));
+      el.addEventListener('click', (e) => { e.stopPropagation(); openAssetModal(key, record); });
     });
     if (items.length > limit) {
       const more = appendText(parent, 'span', 'tag more-tag', `+${items.length - limit}`);
@@ -579,22 +579,34 @@ const modalStats = document.getElementById('modalStats');
 const modalSectionTitle = document.getElementById('modalSectionTitle');
 const modalRecords = document.getElementById('modalRecords');
 
-function openAssetModal(assetKey) {
+function openAssetModal(assetKey, personRecord) {
   const records = filteredRecords.filter(r => r.asset_flags[assetKey]);
   const label = dataset.asset_labels[assetKey] || assetKey;
   const isMoney = MONEY_ORDER.includes(assetKey);
-  const totalAmount = sum(records, r => r.asset_totals[assetKey] || 0);
-  const uniquePeople = new Set(records.map(r => r.name)).size;
+  const isSecurities = (assetKey === 'securities');
 
-  modalTitle.textContent = label;
-  modalSubtitle.textContent = `${records.length} 人次持有`;
+  // 如果是從個人卡片點擊有價證券，只顯示這個人
+  const isPersonMode = (isSecurities && personRecord);
+
+  const totalAmount = isPersonMode
+    ? sum(filteredRecords.filter(r => r.name === personRecord.name), r => r.asset_totals[assetKey] || 0)
+    : sum(records, r => r.asset_totals[assetKey] || 0);
+  const uniquePeople = isPersonMode ? 1 : new Set(records.map(r => r.name)).size;
+
+  modalTitle.textContent = isPersonMode ? `${personRecord.name} 的有價證券` : label;
+  modalSubtitle.textContent = isPersonMode
+    ? `${personRecord.title} · ${personRecord.position_group}`
+    : `${records.length} 人次持有`;
 
   // 統計數字
   modalStats.innerHTML = '';
   const statData = [
-    { label: '持有人次', value: formatNumber(records.length), note: '申報時有填寫此類資產' },
-    { label: '人數', value: formatNumber(uniquePeople), note: '去重後人數' },
-    { label: isMoney ? '總金額' : '涵蓋期別', value: isMoney ? formatMoney(totalAmount) : [...new Set(records.map(r => r.issue))].length + ' 期', note: isMoney ? '加總該欄位總額' : '有記錄的最早至最新' },
+    { label: '持有人次', value: formatNumber(isPersonMode ? 1 : records.length), note: isPersonMode ? '此人的所有記錄' : '申報時有填寫此類資產' },
+    { label: '人數', value: formatNumber(uniquePeople), note: isPersonMode ? personRecord.name : '去重後人數' },
+    { label: '涵蓋期別', value: isPersonMode
+      ? [...new Set(filteredRecords.filter(r => r.name === personRecord.name).map(r => r.issue))].length + ' 期'
+      : (isMoney ? formatMoney(totalAmount) : [...new Set(records.map(r => r.issue))].length + ' 期'),
+      note: isMoney && !isPersonMode ? '加總該欄位總額' : '有記錄的最早至最新' },
   ];
   statData.forEach(s => {
     const el = document.createElement('div');
@@ -603,71 +615,95 @@ function openAssetModal(assetKey) {
     modalStats.appendChild(el);
   });
 
-  // 排行榜
-  const sorted = [...records].sort((a, b) => {
-    const va = isMoney ? (a.asset_totals[assetKey] || 0) : (a.disclosed_amount_total || 0);
-    const vb = isMoney ? (b.asset_totals[assetKey] || 0) : (b.disclosed_amount_total || 0);
-    return vb - va;
-  }).slice(0, 20);
-
-  const isSecurities = (assetKey === 'securities');
-
-  modalSectionTitle.textContent = isSecurities
-    ? '持有人有價證券明細'
-    : isMoney
-    ? `持有金額排行榜（Top 20）`
-    : `持有者名單（Top 20）`;
-
   modalRecords.innerHTML = '';
   const list = document.createElement('div');
   list.className = 'modal-record-list';
 
   if (isSecurities && securitiesData) {
-    // 顯示每個人的股票/基金明細
-    sorted.forEach(r => {
-      // 收集此人在所有期別的有價證券資料
+    // ── 有價證券模式 ──
+    if (isPersonMode) {
+      // 個人模式：收集此人在所有期別的明細
       const personSecs = [];
       for (const issueKey in securitiesData) {
-        const personData = securitiesData[issueKey][r.name];
+        const personData = securitiesData[issueKey][personRecord.name];
         if (personData) {
-          personSecs.push(...(personData.stock || []).map(s => ({ ...s, _type: '股票', _issue: issueKey })));
-          personSecs.push(...(personData.fund || []).map(f => ({ ...f, _type: '基金', _issue: issueKey })));
+          personSecs.push(...(personData.stock || []).map(s => ({ ...s, _type: '股票', _issue: parseInt(issueKey) })));
+          personSecs.push(...(personData.fund || []).map(f => ({ ...f, _type: '基金', _issue: parseInt(issueKey) })));
         }
       }
-      if (!personSecs.length) return;
 
-      const container = document.createElement('div');
-      container.className = 'modal-record-row';
+      if (!personSecs.length) {
+        list.innerHTML = '<div style="padding:16px;color:var(--muted)">無有價證券明細記錄</div>';
+      } else {
+        const stocks = personSecs.filter(s => s._type === '股票');
+        const funds = personSecs.filter(s => s._type === '基金');
+        const container = document.createElement('div');
+        let html = '';
 
-      // 股票/基金分類顯示
-      const stocks = personSecs.filter(s => s._type === '股票');
-      const funds = personSecs.filter(s => s._type === '基金');
-
-      let detailHTML = `<div><div class="modal-record-name">${r.name}</div>`;
-      if (stocks.length) {
-        detailHTML += `<div class="modal-record-meta">💹 股票（${stocks.length}檔）</div>`;
-        stocks.slice(0, 5).forEach(s => {
-          const amtStr = s.amount ? formatMoney(s.amount) : '-';
-          const sharesStr = s.shares ? s.shares.toLocaleString() + ' 股' : '';
-          detailHTML += `<div class="modal-record-detail">◦ ${s.name} ${sharesStr} ${amtStr}</div>`;
-        });
-        if (stocks.length > 5) detailHTML += `<div class="modal-record-detail" style="color:var(--muted)">◦ ...還有 ${stocks.length-5} 檔</div>`;
+        if (stocks.length) {
+          html += `<div class="modal-record-row" style="display:block"><div class="modal-record-name">💹 股票（${stocks.length} 檔）</div>`;
+          stocks.forEach(s => {
+            const amtStr = s.amount ? formatMoney(s.amount) : '-';
+            const sharesStr = s.shares ? s.shares.toLocaleString() + ' 股' : '';
+            const issueStr = s._issue ? ` 第${s._issue}期` : '';
+            html += `<div class="modal-record-detail">◦ ${s.name}${sharesStr ? ' · ' + sharesStr : ''} → ${amtStr}${issueStr}</div>`;
+          });
+          html += '</div>';
+        }
+        if (funds.length) {
+          html += `<div class="modal-record-row" style="display:block"><div class="modal-record-name">📊 基金（${funds.length} 檔）</div>`;
+          funds.forEach(f => {
+            const amtStr = f.amount ? formatMoney(f.amount) : '-';
+            const unitsStr = f.units ? f.units.toLocaleString() + ' 單位' : '';
+            const issueStr = f._issue ? ` 第${f._issue}期` : '';
+            html += `<div class="modal-record-detail">◦ ${f.name}${unitsStr ? ' · ' + unitsStr : ''} → ${amtStr}${issueStr}</div>`;
+          });
+          html += '</div>';
+        }
+        container.innerHTML = html;
+        list.appendChild(container);
       }
-      if (funds.length) {
-        detailHTML += `<div class="modal-record-meta">📊 基金（${funds.length}檔）</div>`;
-        funds.slice(0, 5).forEach(f => {
-          const amtStr = f.amount ? formatMoney(f.amount) : '-';
-          detailHTML += `<div class="modal-record-detail">◦ ${f.name} ${amtStr}</div>`;
-        });
-        if (funds.length > 5) detailHTML += `<div class="modal-record-detail" style="color:var(--muted)">◦ ...還有 ${funds.length-5} 檔</div>`;
-      }
-      detailHTML += '</div>';
+    } else {
+      // 全域模式：顯示所有有價證券持有人的排名
+      const sorted = [...records].sort((a, b) => {
+        const va = a.asset_totals[assetKey] || 0;
+        const vb = b.asset_totals[assetKey] || 0;
+        return vb - va;
+      }).slice(0, 20);
 
-      const totalAmt = sum(personSecs, s => s.amount || 0);
-      container.innerHTML = detailHTML + `<div class="modal-record-amount">${formatMoney(totalAmt)}</div>`;
-      list.appendChild(container);
-    });
+      sorted.forEach(r => {
+        const personSecs = [];
+        for (const issueKey in securitiesData) {
+          const personData = securitiesData[issueKey][r.name];
+          if (personData) {
+            personSecs.push(...(personData.stock || []).map(s => ({ ...s, _type: '股票', _issue: parseInt(issueKey) })));
+            personSecs.push(...(personData.fund || []).map(f => ({ ...f, _type: '基金', _issue: parseInt(issueKey) })));
+          }
+        }
+        if (!personSecs.length) return;
+
+        const container = document.createElement('div');
+        container.className = 'modal-record-row';
+        const totalAmt = sum(personSecs, s => s.amount || 0);
+        const stocks = personSecs.filter(s => s._type === '股票');
+        const funds = personSecs.filter(s => s._type === '基金');
+        let html = `<div><div class="modal-record-name">${r.name}</div>`;
+        html += `<div class="modal-record-meta">`;
+        if (stocks.length) html += `股票 ${stocks.length} 檔`;
+        if (stocks.length && funds.length) html += ` · `;
+        if (funds.length) html += `基金 ${funds.length} 檔`;
+        html += `</div></div>`;
+        container.innerHTML = html + `<div class="modal-record-amount">${formatMoney(totalAmt)}</div>`;
+        list.appendChild(container);
+      });
+    }
   } else {
+    // 非有價證券：通用排行榜
+    const sorted = [...records].sort((a, b) => {
+      const va = isMoney ? (a.asset_totals[assetKey] || 0) : (a.disclosed_amount_total || 0);
+      const vb = isMoney ? (b.asset_totals[assetKey] || 0) : (b.disclosed_amount_total || 0);
+      return vb - va;
+    }).slice(0, 20);
     sorted.forEach(r => {
       const row = document.createElement('div');
       row.className = 'modal-record-row';
