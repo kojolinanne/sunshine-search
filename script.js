@@ -1,4 +1,5 @@
 let dataset = null;
+let securitiesData = null;
 let filteredRecords = [];
 let activeGroup = 'party';
 const groupPages = {};   // { [groupLabel]: currentPage }
@@ -170,6 +171,10 @@ function scrollToCard(card) {
 async function init() {
   try {
     const resp = await fetch('data/declarations.json');
+    const secResp = await fetch('data/securities_detail.json');
+    if (secResp.ok) {
+      securitiesData = await secResp.json();
+    }
     if (!resp.ok) throw new Error(`資料載入失敗：${resp.status}`);
     dataset = await resp.json();
     els.sourceRecordCount.textContent = `${formatNumber(dataset.metadata.record_count)} 筆申報表`;
@@ -605,21 +610,76 @@ function openAssetModal(assetKey) {
     return vb - va;
   }).slice(0, 20);
 
-  modalSectionTitle.textContent = isMoney ? `持有金額排行榜（Top 20）` : `持有者名單（Top 20）`;
+  const isSecurities = (assetKey === 'securities');
+
+  modalSectionTitle.textContent = isSecurities
+    ? '持有人有價證券明細'
+    : isMoney
+    ? `持有金額排行榜（Top 20）`
+    : `持有者名單（Top 20）`;
+
   modalRecords.innerHTML = '';
   const list = document.createElement('div');
   list.className = 'modal-record-list';
-  sorted.forEach(r => {
-    const row = document.createElement('div');
-    row.className = 'modal-record-row';
-    const amt = isMoney ? r.asset_totals[assetKey] : r.disclosed_amount_total;
-    const amtStr = amt ? formatMoney(amt) : '未列總額';
-    const issues = [...new Set(records.filter(x => x.name === r.name).map(x => x.issue))].sort((a,b)=>b-a);
-    row.innerHTML = `<div><div class="modal-record-name">${r.name}</div><div class="modal-record-meta">${r.title} · ${r.position_group} · 第 ${issues.slice(0,3).join('/')} 期</div></div><div class="modal-record-amount">${amtStr}</div>`;
-    list.appendChild(row);
-  });
-  modalRecords.appendChild(list);
 
+  if (isSecurities && securitiesData) {
+    // 顯示每個人的股票/基金明細
+    sorted.forEach(r => {
+      // 收集此人在所有期別的有價證券資料
+      const personSecs = [];
+      for (const issueKey in securitiesData) {
+        const personData = securitiesData[issueKey][r.name];
+        if (personData) {
+          personSecs.push(...(personData.stock || []).map(s => ({ ...s, _type: '股票', _issue: issueKey })));
+          personSecs.push(...(personData.fund || []).map(f => ({ ...f, _type: '基金', _issue: issueKey })));
+        }
+      }
+      if (!personSecs.length) return;
+
+      const container = document.createElement('div');
+      container.className = 'modal-record-row';
+
+      // 股票/基金分類顯示
+      const stocks = personSecs.filter(s => s._type === '股票');
+      const funds = personSecs.filter(s => s._type === '基金');
+
+      let detailHTML = `<div><div class="modal-record-name">${r.name}</div>`;
+      if (stocks.length) {
+        detailHTML += `<div class="modal-record-meta">💹 股票（${stocks.length}檔）</div>`;
+        stocks.slice(0, 5).forEach(s => {
+          const amtStr = s.amount ? formatMoney(s.amount) : '-';
+          const sharesStr = s.shares ? s.shares.toLocaleString() + ' 股' : '';
+          detailHTML += `<div class="modal-record-detail">◦ ${s.name} ${sharesStr} ${amtStr}</div>`;
+        });
+        if (stocks.length > 5) detailHTML += `<div class="modal-record-detail" style="color:var(--muted)">◦ ...還有 ${stocks.length-5} 檔</div>`;
+      }
+      if (funds.length) {
+        detailHTML += `<div class="modal-record-meta">📊 基金（${funds.length}檔）</div>`;
+        funds.slice(0, 5).forEach(f => {
+          const amtStr = f.amount ? formatMoney(f.amount) : '-';
+          detailHTML += `<div class="modal-record-detail">◦ ${f.name} ${amtStr}</div>`;
+        });
+        if (funds.length > 5) detailHTML += `<div class="modal-record-detail" style="color:var(--muted)">◦ ...還有 ${funds.length-5} 檔</div>`;
+      }
+      detailHTML += '</div>';
+
+      const totalAmt = sum(personSecs, s => s.amount || 0);
+      container.innerHTML = detailHTML + `<div class="modal-record-amount">${formatMoney(totalAmt)}</div>`;
+      list.appendChild(container);
+    });
+  } else {
+    sorted.forEach(r => {
+      const row = document.createElement('div');
+      row.className = 'modal-record-row';
+      const amt = isMoney ? r.asset_totals[assetKey] : r.disclosed_amount_total;
+      const amtStr = amt ? formatMoney(amt) : '未列總額';
+      const issues = [...new Set(records.filter(x => x.name === r.name).map(x => x.issue))].sort((a,b)=>b-a);
+      row.innerHTML = `<div><div class="modal-record-name">${r.name}</div><div class="modal-record-meta">${r.title} · ${r.position_group} · 第 ${issues.slice(0,3).join('/')} 期</div></div><div class="modal-record-amount">${amtStr}</div>`;
+      list.appendChild(row);
+    });
+  }
+
+  modalRecords.appendChild(list);
   modal.hidden = false;
   document.body.style.overflow = 'hidden';
 }

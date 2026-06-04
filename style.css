@@ -810,3 +810,14 @@ code {
 .bar-row:hover .bar-fill {
   opacity: 0.8;
 }
+
+/* 詳情列內的股票/基金子項目 */
+.modal-record-detail {
+  font-size: 0.78rem;
+  color: var(--ink);
+  padding: 1px 0 1px 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 320px;
+}
