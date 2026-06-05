@@ -1,5 +1,6 @@
 let dataset = null;
 let securitiesData = null;
+let debtData = null;
 let filteredRecords = [];
 let activeGroup = 'party';
 const groupPages = {};   // { [groupLabel]: currentPage }
@@ -174,6 +175,10 @@ async function init() {
     const secResp = await fetch('data/securities_detail.json');
     if (secResp.ok) {
       securitiesData = await secResp.json();
+    }
+    const debtResp = await fetch('data/debt_detail.json');
+    if (debtResp.ok) {
+      debtData = await debtResp.json();
     }
     if (!resp.ok) throw new Error(`資料載入失敗：${resp.status}`);
     dataset = await resp.json();
@@ -490,7 +495,10 @@ function appendAssetTags(parent, record, limit = 6) {
       el.dataset.key = key;
       el.style.cursor = 'pointer';
       el.title = `點擊查看「${name}」詳細資料`;
-      el.addEventListener('click', (e) => { e.stopPropagation(); openAssetModal(key, record); });
+      el.addEventListener('click', (e) => {
+        e.stopPropagation();
+        openAssetModal(key, record);
+      });
     });
     if (items.length > limit) {
       const more = appendText(parent, 'span', 'tag more-tag', `+${items.length - limit}`);
@@ -584,6 +592,7 @@ function openAssetModal(assetKey, personRecord) {
   const label = dataset.asset_labels[assetKey] || assetKey;
   const isMoney = MONEY_ORDER.includes(assetKey);
   const isSecurities = (assetKey === 'securities');
+  const isDebt = (assetKey === 'debt');
 
   // 如果是從個人卡片點擊有價證券，只顯示這個人
   const isPersonMode = (isSecurities && personRecord);
@@ -619,7 +628,51 @@ function openAssetModal(assetKey, personRecord) {
   const list = document.createElement('div');
   list.className = 'modal-record-list';
 
-  if (isSecurities && securitiesData) {
+  if (isDebt && debtData && personRecord) {
+    // ── 債務模式：只顯示該人的債務明細 ──
+    const personDebts = [];
+    for (const issueKey in debtData) {
+      const pdata = debtData[issueKey][personRecord.name];
+      if (pdata) personDebts.push({ ...pdata, _issue: parseInt(issueKey) });
+    }
+    const isPersonDebtMode = !!personRecord;
+
+    if (!personDebts.length) {
+      modalSectionTitle.textContent = `${personRecord.name} 的債務`;
+      modalRecords.innerHTML = '<div style="padding:16px;color:var(--muted)">無債務記錄</div>';
+    } else {
+      modalSectionTitle.textContent = `${personRecord.name} 的債務（${personDebts.length} 期）`;
+      modalRecords.innerHTML = '';
+      const list = document.createElement('div');
+      list.className = 'modal-record-list';
+
+      const totalAmt = sum(personDebts, p => p.total || 0);
+      modalStats.innerHTML = '';
+      [
+        { label: '總金額', value: formatMoney(totalAmt), note: '所有期別加總' },
+        { label: '期別數', value: personDebts.length + ' 期', note: '有記錄的期別' },
+        { label: '筆數', value: sum(p.count for p in personDebts) + ' 筆', note: '總筆數' },
+      ].forEach(s => {
+        const el = document.createElement('div');
+        el.className = 'modal-stat';
+        el.innerHTML = `<span class="modal-stat-label">${s.label}</span><strong class="modal-stat-value">${s.value}</strong><span class="modal-stat-note">${s.note}</span>`;
+        modalStats.appendChild(el);
+      });
+
+      personDebts.sort((a, b) => (b.total || 0) - (a.total || 0));
+      personDebts.forEach(pd => {
+        pd.items.forEach(item => {
+          const row = document.createElement('div');
+          row.className = 'modal-record-row';
+          const creditor_clean = item.creditor.replace(/\s+/g, ' ').trim();
+          row.innerHTML = `<div><div class="modal-record-name">${creditor_clean.slice(0, 30)}</div><div class="modal-record-meta">第${pd._issue}期</div></div><div class="modal-record-amount">${formatMoney(item.amount)}</div>`;
+          list.appendChild(row);
+        });
+      });
+      modalRecords.appendChild(list);
+    }
+
+  } else if (isSecurities && securitiesData) {
     // ── 有價證券模式 ──
     if (isPersonMode) {
       // 個人模式：收集此人在所有期別的明細
