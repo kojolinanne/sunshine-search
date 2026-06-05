@@ -651,7 +651,7 @@ function openAssetModal(assetKey, personRecord) {
       [
         { label: '總金額', value: formatMoney(totalAmt), note: '所有期別加總' },
         { label: '期別數', value: personDebts.length + ' 期', note: '有記錄的期別' },
-        { label: '筆數', value: sum(p.count for p in personDebts) + ' 筆', note: '總筆數' },
+        { label: '筆數', value: personDebts.reduce((s, p) => s + (p.count || 0), 0) + ' 筆', note: '總筆數' },
       ].forEach(s => {
         const el = document.createElement('div');
         el.className = 'modal-stat';
