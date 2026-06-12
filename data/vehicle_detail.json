@@ -1,0 +1,9101 @@
+{
+  "292": {
+    "程瑞芳": {
+      "count": 1,
+      "total": 1248000,
+      "items": [
+        {
+          "brand": "VOLKSWAGEN",
+          "owner": "程瑞芳",
+          "amount": 1248000,
+          "acquisition_date": "",
+          "cc": 1498
+        }
+      ]
+    },
+    "劉鏡清": {
+      "count": 1,
+      "total": 3270000,
+      "items": [
+        {
+          "brand": "Mercedes-Benz",
+          "owner": "劉鏡清",
+          "amount": 3270000,
+          "acquisition_date": "",
+          "cc": 1991
+        }
+      ]
+    },
+    "張瑞明": {
+      "count": 1,
+      "total": 1070000,
+      "items": [
+        {
+          "brand": "Mercedes-Benz",
+          "owner": "張瑞明",
+          "amount": 1070000,
+          "acquisition_date": "",
+          "cc": 1595
+        }
+      ]
+    },
+    "張玉璇": {
+      "count": 1,
+      "total": 1190000,
+      "items": [
+        {
+          "brand": "1★Honda",
+          "owner": "張玉璇",
+          "amount": 1190000,
+          "acquisition_date": "",
+          "cc": 1498
+        }
+      ]
+    }
+  },
+  "293": {
+    "周美吟": {
+      "count": 1,
+      "total": 817920,
+      "items": [
+        {
+          "brand": "本田",
+          "owner": "周美吟",
+          "amount": 817920,
+          "acquisition_date": "",
+          "cc": 1498
+        }
+      ]
+    },
+    "高美智": {
+      "count": 1,
+      "total": 500000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "高美智",
+          "amount": 500000,
+          "acquisition_date": "",
+          "cc": 1998
+        }
+      ]
+    },
+    "孫琬玲": {
+      "count": 1,
+      "total": 1600000,
+      "items": [
+        {
+          "brand": "INFINITI",
+          "owner": "孫琬玲",
+          "amount": 1600000,
+          "acquisition_date": "",
+          "cc": 1991
+        }
+      ]
+    },
+    "楊語安": {
+      "count": 1,
+      "total": 910000,
+      "items": [
+        {
+          "brand": "LAND",
+          "owner": "楊語安",
+          "amount": 910000,
+          "acquisition_date": "",
+          "cc": 1997
+        }
+      ]
+    },
+    "羅美珍": {
+      "count": 1,
+      "total": 1680000,
+      "items": [
+        {
+          "brand": "VOLKSWAGEN",
+          "owner": "羅美珍",
+          "amount": 1680000,
+          "acquisition_date": "",
+          "cc": 1984
+        }
+      ]
+    },
+    "馬士元": {
+      "count": 1,
+      "total": 1300000,
+      "items": [
+        {
+          "brand": "MITSUBISHI",
+          "owner": "馬士元",
+          "amount": 1300000,
+          "acquisition_date": "",
+          "cc": 2998
+        }
+      ]
+    },
+    "井延淵": {
+      "count": 1,
+      "total": 218000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "井延淵",
+          "amount": 218000,
+          "acquisition_date": "",
+          "cc": 1998
+        }
+      ]
+    },
+    "郭芙蓉": {
+      "count": 1,
+      "total": 150000,
+      "items": [
+        {
+          "brand": "本田",
+          "owner": "郭芙蓉",
+          "amount": 150000,
+          "acquisition_date": "",
+          "cc": 2354
+        }
+      ]
+    },
+    "徐青": {
+      "count": 1,
+      "total": 1330000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "徐青",
+          "amount": 1330000,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    },
+    "黃聲遠": {
+      "count": 1,
+      "total": 890000,
+      "items": [
+        {
+          "brand": "鈴木",
+          "owner": "黃聲遠",
+          "amount": 890000,
+          "acquisition_date": "",
+          "cc": 1373
+        }
+      ]
+    }
+  },
+  "294": {
+    "王孝維": {
+      "count": 2,
+      "total": 4050000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "王孝維",
+          "amount": 2650000,
+          "acquisition_date": "",
+          "cc": 2494
+        },
+        {
+          "brand": "SKODA",
+          "owner": "王孝維",
+          "amount": 1400000,
+          "acquisition_date": "",
+          "cc": 1498
+        }
+      ]
+    },
+    "陳郁美": {
+      "count": 1,
+      "total": 3190000,
+      "items": [
+        {
+          "brand": "BMW",
+          "owner": "陳郁美",
+          "amount": 3190000,
+          "acquisition_date": "",
+          "cc": 3260
+        }
+      ]
+    },
+    "林亮君": {
+      "count": 1,
+      "total": 540000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "林亮君",
+          "amount": 540000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "柳采葳": {
+      "count": 1,
+      "total": 100000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "柳采葳",
+          "amount": 100000,
+          "acquisition_date": "",
+          "cc": 1497
+        }
+      ]
+    },
+    "洪健益": {
+      "count": 1,
+      "total": 80000,
+      "items": [
+        {
+          "brand": "中華",
+          "owner": "洪健益",
+          "amount": 80000,
+          "acquisition_date": "",
+          "cc": 1488
+        }
+      ]
+    },
+    "劉素君": {
+      "count": 1,
+      "total": 680000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "劉素君",
+          "amount": 680000,
+          "acquisition_date": "",
+          "cc": 1496
+        }
+      ]
+    },
+    "于絡維": {
+      "count": 1,
+      "total": 1170000,
+      "items": [
+        {
+          "brand": "豐田",
+          "owner": "于絡維",
+          "amount": 1170000,
+          "acquisition_date": "",
+          "cc": 1987
+        }
+      ]
+    },
+    "郭昭巖": {
+      "count": 2,
+      "total": 950000,
+      "items": [
+        {
+          "brand": "福特六和",
+          "owner": "郭昭巖",
+          "amount": 100000,
+          "acquisition_date": "",
+          "cc": 993
+        },
+        {
+          "brand": "國瑞",
+          "owner": "郭昭巖",
+          "amount": 850000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "陳怡君": {
+      "count": 1,
+      "total": 200000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "陳怡君",
+          "amount": 200000,
+          "acquisition_date": "",
+          "cc": 2494
+        }
+      ]
+    },
+    "陳宥丞": {
+      "count": 1,
+      "total": 1012636,
+      "items": [
+        {
+          "brand": "本田",
+          "owner": "陳宥丞",
+          "amount": 1012636,
+          "acquisition_date": "",
+          "cc": 1498
+        }
+      ]
+    },
+    "陳慈慧": {
+      "count": 1,
+      "total": 1060000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "陳慈慧",
+          "amount": 1060000,
+          "acquisition_date": "",
+          "cc": 1987
+        }
+      ]
+    },
+    "陳賢蔚": {
+      "count": 2,
+      "total": 1052000,
+      "items": [
+        {
+          "brand": "中華",
+          "owner": "陳賢蔚",
+          "amount": 100000,
+          "acquisition_date": "",
+          "cc": 1198
+        },
+        {
+          "brand": "國瑞",
+          "owner": "陳賢蔚",
+          "amount": 952000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "楊政熹": {
+      "count": 1,
+      "total": 1100000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "楊政熹",
+          "amount": 1100000,
+          "acquisition_date": "",
+          "cc": 1987
+        }
+      ]
+    },
+    "張斯綱": {
+      "count": 2,
+      "total": 2830000,
+      "items": [
+        {
+          "brand": "BMW",
+          "owner": "張斯綱",
+          "amount": 2000000,
+          "acquisition_date": "",
+          "cc": 2720
+        },
+        {
+          "brand": "VOLKSWAGEN",
+          "owner": "張斯綱",
+          "amount": 830000,
+          "acquisition_date": "",
+          "cc": 1498
+        }
+      ]
+    },
+    "曹羽婷": {
+      "count": 1,
+      "total": 980000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "曹羽婷",
+          "amount": 980000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "鍾沛君": {
+      "count": 1,
+      "total": 2200000,
+      "items": [
+        {
+          "brand": "VOLVO",
+          "owner": "鍾沛君",
+          "amount": 2200000,
+          "acquisition_date": "",
+          "cc": 4080
+        }
+      ]
+    },
+    "陳志偉": {
+      "count": 1,
+      "total": 280000,
+      "items": [
+        {
+          "brand": "宏佳騰",
+          "owner": "陳志偉",
+          "amount": 280000,
+          "acquisition_date": "",
+          "cc": 346
+        }
+      ]
+    },
+    "簡舒培": {
+      "count": 1,
+      "total": 985000,
+      "items": [
+        {
+          "brand": "福特六和",
+          "owner": "簡舒培",
+          "amount": 985000,
+          "acquisition_date": "",
+          "cc": 1497
+        }
+      ]
+    },
+    "黃倩儀": {
+      "count": 1,
+      "total": 2430000,
+      "items": [
+        {
+          "brand": "1★賓士",
+          "owner": "黃倩儀",
+          "amount": 2430000,
+          "acquisition_date": "",
+          "cc": 1496
+        }
+      ]
+    }
+  },
+  "295": {
+    "何利偉": {
+      "count": 2,
+      "total": 11070000,
+      "items": [
+        {
+          "brand": "MERCEDES-BENZ",
+          "owner": "何利偉",
+          "amount": 2070000,
+          "acquisition_date": "",
+          "cc": 1950
+        },
+        {
+          "brand": "Lamborghini",
+          "owner": "何利偉",
+          "amount": 9000000,
+          "acquisition_date": "",
+          "cc": 5204
+        }
+      ]
+    },
+    "顏若芳": {
+      "count": 1,
+      "total": 1980000,
+      "items": [
+        {
+          "brand": "VOLVO",
+          "owner": "顏若芳",
+          "amount": 1980000,
+          "acquisition_date": ""
+        }
+      ]
+    },
+    "呂家愷": {
+      "count": 1,
+      "total": 800000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "呂家愷",
+          "amount": 800000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "馬自達": {
+      "count": 1,
+      "total": 280000,
+      "items": [
+        {
+          "brand": "馬自達",
+          "owner": "馬自達",
+          "amount": 280000,
+          "acquisition_date": "",
+          "cc": 2488
+        }
+      ]
+    },
+    "李倩萍": {
+      "count": 1,
+      "total": 1850000,
+      "items": [
+        {
+          "brand": "BMW",
+          "owner": "李倩萍",
+          "amount": 1850000,
+          "acquisition_date": "",
+          "cc": 1998
+        }
+      ]
+    },
+    "邱婷蔚": {
+      "count": 1,
+      "total": 600000,
+      "items": [
+        {
+          "brand": "中華",
+          "owner": "邱婷蔚",
+          "amount": 600000,
+          "acquisition_date": "",
+          "cc": 2378
+        }
+      ]
+    },
+    "周雅玲": {
+      "count": 1,
+      "total": 840000,
+      "items": [
+        {
+          "brand": "本田",
+          "owner": "周雅玲",
+          "amount": 840000,
+          "acquisition_date": "",
+          "cc": 1498
+        }
+      ]
+    },
+    "林國春": {
+      "count": 1,
+      "total": 1790000,
+      "items": [
+        {
+          "brand": "VOLKSWAGEN",
+          "owner": "林國春",
+          "amount": 1790000,
+          "acquisition_date": "",
+          "cc": 1984
+        }
+      ]
+    },
+    "林裔綺": {
+      "count": 1,
+      "total": 1500000,
+      "items": [
+        {
+          "brand": "MINI",
+          "owner": "林裔綺",
+          "amount": 1500000,
+          "acquisition_date": "",
+          "cc": 1499
+        }
+      ]
+    },
+    "林銘仁": {
+      "count": 1,
+      "total": 1900000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "林銘仁",
+          "amount": 1900000,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    },
+    "洪佳君": {
+      "count": 1,
+      "total": 850000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "洪佳君",
+          "amount": 850000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "陳明義": {
+      "count": 3,
+      "total": 1543000,
+      "items": [
+        {
+          "brand": "JEEP",
+          "owner": "陳明義",
+          "amount": 1160000,
+          "acquisition_date": "",
+          "cc": 1995
+        },
+        {
+          "brand": "HARLEY-DAVIDSON",
+          "owner": "陳明義",
+          "amount": 125000,
+          "acquisition_date": "",
+          "cc": 1690
+        },
+        {
+          "brand": "TRIUMPH",
+          "owner": "陳明義",
+          "amount": 258000,
+          "acquisition_date": "",
+          "cc": 865
+        }
+      ]
+    },
+    "徐美惠": {
+      "count": 1,
+      "total": 1200000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "徐美惠",
+          "amount": 1200000,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    },
+    "陳啟能": {
+      "count": 1,
+      "total": 1580000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "陳啟能",
+          "amount": 1580000,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    },
+    "陳儀君": {
+      "count": 1,
+      "total": 980000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "陳儀君",
+          "amount": 980000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "黃心華": {
+      "count": 2,
+      "total": 1890000,
+      "items": [
+        {
+          "brand": "LEXUS-NX200",
+          "owner": "黃心華",
+          "amount": 1420000,
+          "acquisition_date": "",
+          "cc": 1987
+        },
+        {
+          "brand": "中華",
+          "owner": "黃心華",
+          "amount": 470000,
+          "acquisition_date": "",
+          "cc": 2359
+        }
+      ]
+    },
+    "受贈": {
+      "count": 1,
+      "total": 358000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "受贈",
+          "amount": 358000,
+          "acquisition_date": "",
+          "cc": 2362
+        }
+      ]
+    },
+    "鍾心怡": {
+      "count": 1,
+      "total": 2600000,
+      "items": [
+        {
+          "brand": "BMW",
+          "owner": "鍾心怡",
+          "amount": 2600000,
+          "acquisition_date": "97年10月",
+          "cc": 1995
+        }
+      ]
+    },
+    "李昆鴻": {
+      "count": 1,
+      "total": 1350000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "李昆鴻",
+          "amount": 1350000,
+          "acquisition_date": "",
+          "cc": 3456
+        }
+      ]
+    },
+    "游輝宂": {
+      "count": 1,
+      "total": 860000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "游輝宂",
+          "amount": 860000,
+          "acquisition_date": "",
+          "cc": 1998
+        }
+      ]
+    },
+    "許雅涵": {
+      "count": 1,
+      "total": 530000,
+      "items": [
+        {
+          "brand": "中華",
+          "owner": "許雅涵",
+          "amount": 530000,
+          "acquisition_date": "",
+          "cc": 2378
+        }
+      ]
+    },
+    "鄭玉惠": {
+      "count": 1,
+      "total": 300000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "鄭玉惠",
+          "amount": 300000,
+          "acquisition_date": "",
+          "cc": 1987
+        }
+      ]
+    },
+    "劉美芳": {
+      "count": 1,
+      "total": 1420000,
+      "items": [
+        {
+          "brand": "三陽",
+          "owner": "劉美芳",
+          "amount": 1420000,
+          "acquisition_date": "",
+          "cc": 1497
+        }
+      ]
+    }
+  },
+  "296": {
+    "鄭麗君": {
+      "count": 1,
+      "total": 780000,
+      "items": [
+        {
+          "brand": "日產",
+          "owner": "鄭麗君",
+          "amount": 780000,
+          "acquisition_date": "97年09月",
+          "cc": 2349
+        }
+      ]
+    },
+    "沈學榮": {
+      "count": 1,
+      "total": 2100000,
+      "items": [
+        {
+          "brand": "豐田",
+          "owner": "沈學榮",
+          "amount": 2100000,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    },
+    "李佳玲": {
+      "count": 1,
+      "total": 590000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "李佳玲",
+          "amount": 590000,
+          "acquisition_date": "",
+          "cc": 1496
+        }
+      ]
+    },
+    "張秋元": {
+      "count": 1,
+      "total": 1835000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "張秋元",
+          "amount": 1835000,
+          "acquisition_date": "",
+          "cc": 2494
+        }
+      ]
+    },
+    "陳淑姿": {
+      "count": 1,
+      "total": 100000,
+      "items": [
+        {
+          "brand": "日產",
+          "owner": "陳淑姿",
+          "amount": 100000,
+          "acquisition_date": "",
+          "cc": 1797
+        }
+      ]
+    },
+    "購置": {
+      "count": 1,
+      "total": 957700,
+      "items": [
+        {
+          "brand": "本田（CR-V",
+          "owner": "購置",
+          "amount": 957700,
+          "acquisition_date": "",
+          "cc": 2354
+        }
+      ]
+    },
+    "龔明鑫": {
+      "count": 1,
+      "total": 128000,
+      "items": [
+        {
+          "brand": "LANDROVER",
+          "owner": "龔明鑫",
+          "amount": 128000,
+          "acquisition_date": "",
+          "cc": 2497
+        }
+      ]
+    },
+    "陳玉珊": {
+      "count": 1,
+      "total": 1190000,
+      "items": [
+        {
+          "brand": "VOLKSWAGEN",
+          "owner": "陳玉珊",
+          "amount": 1190000,
+          "acquisition_date": "",
+          "cc": 1498
+        }
+      ]
+    },
+    "陳世凱": {
+      "count": 1,
+      "total": 2650000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "陳世凱",
+          "amount": 2650000,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    },
+    "邱垂正": {
+      "count": 2,
+      "total": 1810000,
+      "items": [
+        {
+          "brand": "日產",
+          "owner": "邱垂正",
+          "amount": 1010000,
+          "acquisition_date": "",
+          "cc": 1997
+        },
+        {
+          "brand": "日產",
+          "owner": "邱垂正",
+          "amount": 800000,
+          "acquisition_date": "",
+          "cc": 1598
+        }
+      ]
+    },
+    "梁文傑": {
+      "count": 1,
+      "total": 990000,
+      "items": [
+        {
+          "brand": "納智捷(鴻華先進)",
+          "owner": "梁文傑",
+          "amount": 990000,
+          "acquisition_date": "",
+          "cc": 2300
+        }
+      ]
+    },
+    "林楚茵": {
+      "count": 1,
+      "total": 790000,
+      "items": [
+        {
+          "brand": "本田",
+          "owner": "林楚茵",
+          "amount": 790000,
+          "acquisition_date": "",
+          "cc": 1498
+        }
+      ]
+    },
+    "陳文彬": {
+      "count": 2,
+      "total": 350000,
+      "items": [
+        {
+          "brand": "本田",
+          "owner": "陳文彬",
+          "amount": 150000,
+          "acquisition_date": "",
+          "cc": 2354
+        },
+        {
+          "brand": "日產",
+          "owner": "陳文彬",
+          "amount": 200000,
+          "acquisition_date": "",
+          "cc": 1797
+        }
+      ]
+    },
+    "方芳蘭": {
+      "count": 1,
+      "total": 1270000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "方芳蘭",
+          "amount": 1270000,
+          "acquisition_date": "",
+          "cc": 1987
+        }
+      ]
+    },
+    "陳函儀": {
+      "count": 1,
+      "total": 2000000,
+      "items": [
+        {
+          "brand": "MERCEDES-BENZ",
+          "owner": "陳函儀",
+          "amount": 2000000,
+          "acquisition_date": "",
+          "cc": 1991
+        }
+      ]
+    },
+    "陳朝建": {
+      "count": 1,
+      "total": 1008000,
+      "items": [
+        {
+          "brand": "三陽",
+          "owner": "陳朝建",
+          "amount": 1008000,
+          "acquisition_date": "",
+          "cc": 1598
+        }
+      ]
+    },
+    "張欣": {
+      "count": 1,
+      "total": 1175000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "張欣",
+          "amount": 1175000,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    },
+    "簡惠珠": {
+      "count": 1,
+      "total": 1500000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "簡惠珠",
+          "amount": 1500000,
+          "acquisition_date": "",
+          "cc": 1987
+        }
+      ]
+    }
+  },
+  "297": {
+    "李宇翔": {
+      "count": 1,
+      "total": 600000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "李宇翔",
+          "amount": 600000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "劉哲彰": {
+      "count": 1,
+      "total": 2500000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "劉哲彰",
+          "amount": 2500000,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    },
+    "戴湘儀": {
+      "count": 1,
+      "total": 815000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "戴湘儀",
+          "amount": 815000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "蕭韻玲": {
+      "count": 1,
+      "total": 700000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "蕭韻玲",
+          "amount": 700000,
+          "acquisition_date": "94年07月30日",
+          "cc": 1798
+        }
+      ]
+    },
+    "蘇錦雄": {
+      "count": 1,
+      "total": 650000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "蘇錦雄",
+          "amount": 650000,
+          "acquisition_date": "",
+          "cc": 2494
+        }
+      ]
+    },
+    "朱珍瑤": {
+      "count": 1,
+      "total": 100000,
+      "items": [
+        {
+          "brand": "納智捷",
+          "owner": "朱珍瑤",
+          "amount": 100000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "陳尚余": {
+      "count": 1,
+      "total": 2630000,
+      "items": [
+        {
+          "brand": "PORSCHE",
+          "owner": "陳尚余",
+          "amount": 2630000,
+          "acquisition_date": "",
+          "cc": 2995
+        }
+      ]
+    },
+    "林志強": {
+      "count": 1,
+      "total": 2300000,
+      "items": [
+        {
+          "brand": "BMW",
+          "owner": "林志強",
+          "amount": 2300000,
+          "acquisition_date": "",
+          "cc": 2998
+        }
+      ]
+    },
+    "張碩芳": {
+      "count": 1,
+      "total": 1250000,
+      "items": [
+        {
+          "brand": "三陽",
+          "owner": "張碩芳",
+          "amount": 1250000,
+          "acquisition_date": "",
+          "cc": 1497
+        }
+      ]
+    }
+  },
+  "298": {
+    "呂景楓": {
+      "count": 2,
+      "total": 3740000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "呂景楓",
+          "amount": 740000,
+          "acquisition_date": "99年04月22日",
+          "cc": 1798
+        },
+        {
+          "brand": "LEXUS",
+          "owner": "呂景楓",
+          "amount": 3000000,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    },
+    "受贈": {
+      "count": 1,
+      "total": 633000,
+      "items": [
+        {
+          "brand": "SUZUKI",
+          "owner": "受贈",
+          "amount": 633000,
+          "acquisition_date": "",
+          "cc": 998
+        }
+      ]
+    },
+    "陳秀鳳": {
+      "count": 1,
+      "total": 1000000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "陳秀鳳",
+          "amount": 1000000,
+          "acquisition_date": "",
+          "cc": 1987
+        }
+      ]
+    },
+    "李家興": {
+      "count": 1,
+      "total": 1270000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "李家興",
+          "amount": 1270000,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    },
+    "梁春梅": {
+      "count": 1,
+      "total": 1090000,
+      "items": [
+        {
+          "brand": "本田",
+          "owner": "梁春梅",
+          "amount": 1090000,
+          "acquisition_date": "",
+          "cc": 1498
+        }
+      ]
+    },
+    "林淑婷": {
+      "count": 1,
+      "total": 2210000,
+      "items": [
+        {
+          "brand": "LAND",
+          "owner": "林淑婷",
+          "amount": 2210000,
+          "acquisition_date": "",
+          "cc": 1997
+        }
+      ]
+    },
+    "徐景文": {
+      "count": 1,
+      "total": 2770000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "徐景文",
+          "amount": 2770000,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    },
+    "陳韋曄": {
+      "count": 1,
+      "total": 1400000,
+      "items": [
+        {
+          "brand": "三陽",
+          "owner": "陳韋曄",
+          "amount": 1400000,
+          "acquisition_date": "",
+          "cc": 1497
+        }
+      ]
+    },
+    "陳瑛": {
+      "count": 1,
+      "total": 1300000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "陳瑛",
+          "amount": 1300000,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    },
+    "陳睿生": {
+      "count": 3,
+      "total": 2990000,
+      "items": [
+        {
+          "brand": "Toyota",
+          "owner": "陳睿生",
+          "amount": 1100000,
+          "acquisition_date": "",
+          "cc": 2487
+        },
+        {
+          "brand": "Tesla",
+          "owner": "陳睿生",
+          "amount": 1700000,
+          "acquisition_date": "",
+          "cc": 4960
+        },
+        {
+          "brand": "JAGUAR",
+          "owner": "陳睿生",
+          "amount": 190000,
+          "acquisition_date": "",
+          "cc": 3239
+        }
+      ]
+    },
+    "張曉昀": {
+      "count": 1,
+      "total": 900000,
+      "items": [
+        {
+          "brand": "Mercedes-Benz",
+          "owner": "張曉昀",
+          "amount": 900000,
+          "acquisition_date": "",
+          "cc": 1796
+        }
+      ]
+    },
+    "許清順": {
+      "count": 1,
+      "total": 210000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "許清順",
+          "amount": 210000,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    },
+    "李淑惠": {
+      "count": 1,
+      "total": 2020000,
+      "items": [
+        {
+          "brand": "BMW",
+          "owner": "李淑惠",
+          "amount": 2020000,
+          "acquisition_date": "",
+          "cc": 1499
+        }
+      ]
+    },
+    "施珏安": {
+      "count": 2,
+      "total": 2184000,
+      "items": [
+        {
+          "brand": "日產",
+          "owner": "施珏安",
+          "amount": 715000,
+          "acquisition_date": "",
+          "cc": 1598
+        },
+        {
+          "brand": "三陽",
+          "owner": "施珏安",
+          "amount": 1469000,
+          "acquisition_date": "",
+          "cc": 1497
+        }
+      ]
+    },
+    "黃婉如": {
+      "count": 1,
+      "total": 1750000,
+      "items": [
+        {
+          "brand": "MERCEDES-BENZ",
+          "owner": "黃婉如",
+          "amount": 1750000,
+          "acquisition_date": "",
+          "cc": 1332
+        }
+      ]
+    },
+    "黃敬平": {
+      "count": 2,
+      "total": 1060000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "黃敬平",
+          "amount": 1000000,
+          "acquisition_date": "",
+          "cc": 2362
+        },
+        {
+          "brand": "中華",
+          "owner": "黃敬平",
+          "amount": 60000,
+          "acquisition_date": "",
+          "cc": 1997
+        }
+      ]
+    },
+    "張曉帆": {
+      "count": 1,
+      "total": 950000,
+      "items": [
+        {
+          "brand": "本田",
+          "owner": "張曉帆",
+          "amount": 950000,
+          "acquisition_date": "",
+          "cc": 1498
+        }
+      ]
+    },
+    "楊家俍": {
+      "count": 1,
+      "total": 750000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "楊家俍",
+          "amount": 750000,
+          "acquisition_date": "",
+          "cc": 1800
+        }
+      ]
+    },
+    "陳惠香": {
+      "count": 3,
+      "total": 2147292,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "陳惠香",
+          "amount": 1160000,
+          "acquisition_date": "",
+          "cc": 1987
+        },
+        {
+          "brand": "Mercedes-Benz",
+          "owner": "陳惠香",
+          "amount": 357292,
+          "acquisition_date": "",
+          "cc": 2996
+        },
+        {
+          "brand": "2,362",
+          "owner": "陳惠香",
+          "amount": 630000,
+          "acquisition_date": "",
+          "cc": 2362
+        }
+      ]
+    },
+    "蘇葳": {
+      "count": 1,
+      "total": 550000,
+      "items": [
+        {
+          "brand": "中華",
+          "owner": "蘇葳",
+          "amount": 550000,
+          "acquisition_date": "",
+          "cc": 1499
+        }
+      ]
+    },
+    "魏筠": {
+      "count": 1,
+      "total": 1000000,
+      "items": [
+        {
+          "brand": "本田",
+          "owner": "魏筠",
+          "amount": 1000000,
+          "acquisition_date": "",
+          "cc": 1498
+        }
+      ]
+    },
+    "蘇偉恩": {
+      "count": 1,
+      "total": 130000,
+      "items": [
+        {
+          "brand": "中華",
+          "owner": "蘇偉恩",
+          "amount": 130000,
+          "acquisition_date": "",
+          "cc": 1299
+        }
+      ]
+    },
+    "黃瑄雅": {
+      "count": 1,
+      "total": 1030000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "黃瑄雅",
+          "amount": 1030000,
+          "acquisition_date": "",
+          "cc": 1987
+        }
+      ]
+    }
+  },
+  "299": {
+    "劉姿伶": {
+      "count": 2,
+      "total": 2900000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "劉姿伶",
+          "amount": 1400000,
+          "acquisition_date": "",
+          "cc": 2487
+        },
+        {
+          "brand": "TOYOTA",
+          "owner": "劉姿伶",
+          "amount": 1500000,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    },
+    "王定宇": {
+      "count": 2,
+      "total": 5098000,
+      "items": [
+        {
+          "brand": "SUBARU",
+          "owner": "王定宇",
+          "amount": 1798000,
+          "acquisition_date": "",
+          "cc": 2150
+        },
+        {
+          "brand": "TOYOTA",
+          "owner": "王定宇",
+          "amount": 3300000,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    },
+    "楊明哲": {
+      "count": 1,
+      "total": 1810000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "楊明哲",
+          "amount": 1810000,
+          "acquisition_date": "",
+          "cc": 1987
+        }
+      ]
+    },
+    "王義川": {
+      "count": 1,
+      "total": 650000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "王義川",
+          "amount": 650000,
+          "acquisition_date": "",
+          "cc": 1998
+        }
+      ]
+    },
+    "王鴻薇": {
+      "count": 1,
+      "total": 1570000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "王鴻薇",
+          "amount": 1570000,
+          "acquisition_date": "",
+          "cc": 1987
+        }
+      ]
+    },
+    "陳萬得": {
+      "count": 1,
+      "total": 100000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "陳萬得",
+          "amount": 100000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "曾心慧": {
+      "count": 1,
+      "total": 2012400,
+      "items": [
+        {
+          "brand": "Tesla",
+          "owner": "曾心慧",
+          "amount": 2012400,
+          "acquisition_date": "",
+          "cc": 2790
+        }
+      ]
+    },
+    "黃蓁蓁": {
+      "count": 2,
+      "total": 2258000,
+      "items": [
+        {
+          "brand": "三陽",
+          "owner": "黃蓁蓁",
+          "amount": 1469000,
+          "acquisition_date": "",
+          "cc": 1497
+        },
+        {
+          "brand": "三陽",
+          "owner": "黃蓁蓁",
+          "amount": 789000,
+          "acquisition_date": "",
+          "cc": 1598
+        }
+      ]
+    },
+    "林宜瑾": {
+      "count": 1,
+      "total": 260000,
+      "items": [
+        {
+          "brand": "中華",
+          "owner": "林宜瑾",
+          "amount": 260000,
+          "acquisition_date": "",
+          "cc": 2378
+        }
+      ]
+    },
+    "林淑芬": {
+      "count": 1,
+      "total": 950000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "林淑芬",
+          "amount": 950000,
+          "acquisition_date": "",
+          "cc": 1987
+        }
+      ]
+    },
+    "曾月桂": {
+      "count": 1,
+      "total": 780000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "曾月桂",
+          "amount": 780000,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    },
+    "郭國文": {
+      "count": 1,
+      "total": 1930000,
+      "items": [
+        {
+          "brand": "volvo",
+          "owner": "郭國文",
+          "amount": 1930000,
+          "acquisition_date": "",
+          "cc": 2380
+        }
+      ]
+    },
+    "高金素梅": {
+      "count": 1,
+      "total": 545000,
+      "items": [
+        {
+          "brand": "KIA",
+          "owner": "高金素梅",
+          "amount": 545000,
+          "acquisition_date": "",
+          "cc": 1197
+        }
+      ]
+    },
+    "周柏吟": {
+      "count": 1,
+      "total": 2380000,
+      "items": [
+        {
+          "brand": "Mercedes-Benz",
+          "owner": "周柏吟",
+          "amount": 2380000,
+          "acquisition_date": "",
+          "cc": 1991
+        }
+      ]
+    },
+    "周桂香": {
+      "count": 1,
+      "total": 2760000,
+      "items": [
+        {
+          "brand": "VOLVO",
+          "owner": "周桂香",
+          "amount": 2760000,
+          "acquisition_date": "",
+          "cc": 1969
+        }
+      ]
+    },
+    "麥玉珍": {
+      "count": 1,
+      "total": 1500000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "麥玉珍",
+          "amount": 1500000,
+          "acquisition_date": "",
+          "cc": 1987
+        }
+      ]
+    },
+    "王春梅": {
+      "count": 1,
+      "total": 100000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "王春梅",
+          "amount": 100000,
+          "acquisition_date": "",
+          "cc": 1781
+        }
+      ]
+    },
+    "黃秀芳": {
+      "count": 1,
+      "total": 1180000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "黃秀芳",
+          "amount": 1180000,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    },
+    "黃健豪": {
+      "count": 1,
+      "total": 2430000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "黃健豪",
+          "amount": 2430000,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    },
+    "廖先翔": {
+      "count": 1,
+      "total": 2013400,
+      "items": [
+        {
+          "brand": "Tesla",
+          "owner": "廖先翔",
+          "amount": 2013400,
+          "acquisition_date": "",
+          "cc": 3460
+        }
+      ]
+    },
+    "廖偉翔": {
+      "count": 2,
+      "total": 2650000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "廖偉翔",
+          "amount": 2320000,
+          "acquisition_date": "",
+          "cc": 2487
+        },
+        {
+          "brand": "中華",
+          "owner": "廖偉翔",
+          "amount": 330000,
+          "acquisition_date": "",
+          "cc": 2378
+        }
+      ]
+    },
+    "黃雪玲": {
+      "count": 1,
+      "total": 695000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "黃雪玲",
+          "amount": 695000,
+          "acquisition_date": "",
+          "cc": 1496
+        }
+      ]
+    }
+  },
+  "300": {
+    "張玉璇": {
+      "count": 1,
+      "total": 1190000,
+      "items": [
+        {
+          "brand": "Honda",
+          "owner": "張玉璇",
+          "amount": 1190000,
+          "acquisition_date": "",
+          "cc": 1498
+        }
+      ]
+    },
+    "張秀菊": {
+      "count": 1,
+      "total": 180000,
+      "items": [
+        {
+          "brand": "LANDROVER",
+          "owner": "張秀菊",
+          "amount": 180000,
+          "acquisition_date": "",
+          "cc": 2993
+        }
+      ]
+    },
+    "楊進福": {
+      "count": 1,
+      "total": 1270000,
+      "items": [
+        {
+          "brand": "本田",
+          "owner": "楊進福",
+          "amount": 1270000,
+          "acquisition_date": "",
+          "cc": 1498
+        }
+      ]
+    },
+    "張清照": {
+      "count": 1,
+      "total": 6250000,
+      "items": [
+        {
+          "brand": "BMW",
+          "owner": "張清照",
+          "amount": 6250000,
+          "acquisition_date": "",
+          "cc": 4395
+        }
+      ]
+    },
+    "王立任": {
+      "count": 1,
+      "total": 60000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "王立任",
+          "amount": 60000,
+          "acquisition_date": "",
+          "cc": 1497
+        }
+      ]
+    },
+    "王雅蕙": {
+      "count": 1,
+      "total": 500000,
+      "items": [
+        {
+          "brand": "本田",
+          "owner": "王雅蕙",
+          "amount": 500000,
+          "acquisition_date": "",
+          "cc": 1497
+        }
+      ]
+    },
+    "朱暖英": {
+      "count": 2,
+      "total": 1000000,
+      "items": [
+        {
+          "brand": "日產",
+          "owner": "朱暖英",
+          "amount": 850000,
+          "acquisition_date": "",
+          "cc": 1598
+        },
+        {
+          "brand": "日產",
+          "owner": "朱暖英",
+          "amount": 150000,
+          "acquisition_date": "",
+          "cc": 1498
+        }
+      ]
+    },
+    "王秋冬": {
+      "count": 1,
+      "total": 1189000,
+      "items": [
+        {
+          "brand": "NISSAN",
+          "owner": "王秋冬",
+          "amount": 1189000,
+          "acquisition_date": "",
+          "cc": 1997
+        }
+      ]
+    },
+    "吳佩芸": {
+      "count": 1,
+      "total": 889855,
+      "items": [
+        {
+          "brand": "本田",
+          "owner": "吳佩芸",
+          "amount": 889855,
+          "acquisition_date": "",
+          "cc": 1498
+        }
+      ]
+    },
+    "吳建德": {
+      "count": 1,
+      "total": 440000,
+      "items": [
+        {
+          "brand": "BMW",
+          "owner": "吳建德",
+          "amount": 440000,
+          "acquisition_date": "",
+          "cc": 2000
+        }
+      ]
+    },
+    "吳振嘉": {
+      "count": 1,
+      "total": 810000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "吳振嘉",
+          "amount": 810000,
+          "acquisition_date": "",
+          "cc": 1496
+        }
+      ]
+    },
+    "陳麗娜": {
+      "count": 1,
+      "total": 1030000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "陳麗娜",
+          "amount": 1030000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "何如婷": {
+      "count": 1,
+      "total": 1050000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "何如婷",
+          "amount": 1050000,
+          "acquisition_date": "",
+          "cc": 1998
+        }
+      ]
+    },
+    "羅莉雯": {
+      "count": 1,
+      "total": 1680000,
+      "items": [
+        {
+          "brand": "LAND",
+          "owner": "羅莉雯",
+          "amount": 1680000,
+          "acquisition_date": "",
+          "cc": 1997
+        }
+      ]
+    },
+    "何怡瑩": {
+      "count": 1,
+      "total": 1990000,
+      "items": [
+        {
+          "brand": "VOLVO",
+          "owner": "何怡瑩",
+          "amount": 1990000,
+          "acquisition_date": "",
+          "cc": 1969
+        }
+      ]
+    },
+    "林霈涵": {
+      "count": 2,
+      "total": 1716000,
+      "items": [
+        {
+          "brand": "Nissan",
+          "owner": "林霈涵",
+          "amount": 931000,
+          "acquisition_date": "",
+          "cc": 2488
+        },
+        {
+          "brand": "Nissan",
+          "owner": "林霈涵",
+          "amount": 785000,
+          "acquisition_date": "",
+          "cc": 1498
+        }
+      ]
+    },
+    "陳本添": {
+      "count": 1,
+      "total": 836000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "陳本添",
+          "amount": 836000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "陳廷秀": {
+      "count": 1,
+      "total": 2500000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "陳廷秀",
+          "amount": 2500000,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    },
+    "廖慧鳳": {
+      "count": 1,
+      "total": 1800000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "廖慧鳳",
+          "amount": 1800000,
+          "acquisition_date": "",
+          "cc": 1987
+        }
+      ]
+    },
+    "陳俞融": {
+      "count": 1,
+      "total": 1399000,
+      "items": [
+        {
+          "brand": "凌志",
+          "owner": "陳俞融",
+          "amount": 1399000,
+          "acquisition_date": "",
+          "cc": 1987
+        }
+      ]
+    },
+    "張瀞分": {
+      "count": 1,
+      "total": 600000,
+      "items": [
+        {
+          "brand": "日產",
+          "owner": "張瀞分",
+          "amount": 600000,
+          "acquisition_date": "",
+          "cc": 1598
+        }
+      ]
+    },
+    "曾威": {
+      "count": 2,
+      "total": 2220000,
+      "items": [
+        {
+          "brand": "日產",
+          "owner": "曾威",
+          "amount": 120000,
+          "acquisition_date": "",
+          "cc": 1797
+        },
+        {
+          "brand": "TOYOTA",
+          "owner": "曾威",
+          "amount": 2100000,
+          "acquisition_date": "",
+          "cc": 2393
+        }
+      ]
+    },
+    "喻梅芝": {
+      "count": 1,
+      "total": 975000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "喻梅芝",
+          "amount": 975000,
+          "acquisition_date": "",
+          "cc": 1197
+        }
+      ]
+    },
+    "廖采蘋": {
+      "count": 2,
+      "total": 1042360,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "廖采蘋",
+          "amount": 872360,
+          "acquisition_date": "",
+          "cc": 1798
+        },
+        {
+          "brand": "國瑞",
+          "owner": "廖采蘋",
+          "amount": 170000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "鄭功進": {
+      "count": 1,
+      "total": 1300000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "鄭功進",
+          "amount": 1300000,
+          "acquisition_date": "",
+          "cc": 1987
+        }
+      ]
+    }
+  },
+  "301": {
+    "古秀英": {
+      "count": 1,
+      "total": 1460000,
+      "items": [
+        {
+          "brand": "PEUGEOT",
+          "owner": "古秀英",
+          "amount": 1460000,
+          "acquisition_date": "",
+          "cc": 3008
+        }
+      ]
+    },
+    "陳政顯": {
+      "count": 1,
+      "total": 839000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "陳政顯",
+          "amount": 839000,
+          "acquisition_date": "",
+          "cc": 1496
+        }
+      ]
+    },
+    "林淑君": {
+      "count": 1,
+      "total": 1020000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "林淑君",
+          "amount": 1020000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "黃佳恬": {
+      "count": 1,
+      "total": 990000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "黃佳恬",
+          "amount": 990000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "李國輝": {
+      "count": 1,
+      "total": 1400000,
+      "items": [
+        {
+          "brand": "三陽",
+          "owner": "李國輝",
+          "amount": 1400000,
+          "acquisition_date": "",
+          "cc": 1497
+        }
+      ]
+    },
+    "劉欣怡": {
+      "count": 1,
+      "total": 1310000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "劉欣怡",
+          "amount": 1310000,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    },
+    "吳淑芳": {
+      "count": 1,
+      "total": 1180000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "吳淑芳",
+          "amount": 1180000,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    },
+    "羅永珍": {
+      "count": 1,
+      "total": 2500000,
+      "items": [
+        {
+          "brand": "MERCEDES-BENZ",
+          "owner": "羅永珍",
+          "amount": 2500000,
+          "acquisition_date": "",
+          "cc": 1991
+        }
+      ]
+    },
+    "林志展": {
+      "count": 1,
+      "total": 3350000,
+      "items": [
+        {
+          "brand": "LAND",
+          "owner": "林志展",
+          "amount": 3350000,
+          "acquisition_date": "",
+          "cc": 1997
+        }
+      ]
+    },
+    "李昱赬": {
+      "count": 1,
+      "total": 2100000,
+      "items": [
+        {
+          "brand": "LAND",
+          "owner": "李昱赬",
+          "amount": 2100000,
+          "acquisition_date": "",
+          "cc": 1997
+        }
+      ]
+    },
+    "尤榮智": {
+      "count": 1,
+      "total": 450000,
+      "items": [
+        {
+          "brand": "BMW",
+          "owner": "尤榮智",
+          "amount": 450000,
+          "acquisition_date": "",
+          "cc": 1995
+        }
+      ]
+    },
+    "景鴻鑫": {
+      "count": 1,
+      "total": 920000,
+      "items": [
+        {
+          "brand": "福特六和",
+          "owner": "景鴻鑫",
+          "amount": 920000,
+          "acquisition_date": "",
+          "cc": 1496
+        }
+      ]
+    },
+    "吳通龍": {
+      "count": 1,
+      "total": 733000,
+      "items": [
+        {
+          "brand": "三陽",
+          "owner": "吳通龍",
+          "amount": 733000,
+          "acquisition_date": "",
+          "cc": 2497
+        }
+      ]
+    },
+    "吳美玲": {
+      "count": 1,
+      "total": 800000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "吳美玲",
+          "amount": 800000,
+          "acquisition_date": "",
+          "cc": 1496
+        }
+      ]
+    },
+    "陳娉蓉": {
+      "count": 1,
+      "total": 1979000,
+      "items": [
+        {
+          "brand": "KIA",
+          "owner": "陳娉蓉",
+          "amount": 1979000,
+          "acquisition_date": "",
+          "cc": 226
+        }
+      ]
+    },
+    "杜素吟": {
+      "count": 1,
+      "total": 3000000,
+      "items": [
+        {
+          "brand": "MERCEDES-BENZ",
+          "owner": "杜素吟",
+          "amount": 3000000,
+          "acquisition_date": "",
+          "cc": 1999
+        }
+      ]
+    },
+    "林依婷": {
+      "count": 1,
+      "total": 2100000,
+      "items": [
+        {
+          "brand": "Tesla",
+          "owner": "林依婷",
+          "amount": 2100000,
+          "acquisition_date": "",
+          "cc": 3710
+        }
+      ]
+    },
+    "林美燕": {
+      "count": 1,
+      "total": 600000,
+      "items": [
+        {
+          "brand": "MINI",
+          "owner": "林美燕",
+          "amount": 600000,
+          "acquisition_date": "",
+          "cc": 1499
+        }
+      ]
+    },
+    "施余興望": {
+      "count": 2,
+      "total": 3890000,
+      "items": [
+        {
+          "brand": "MERCEDES-BENZ",
+          "owner": "施余興望",
+          "amount": 1640000,
+          "acquisition_date": "",
+          "cc": 1991
+        },
+        {
+          "brand": "BMW",
+          "owner": "施余興望",
+          "amount": 2250000,
+          "acquisition_date": "",
+          "cc": 2998
+        }
+      ]
+    },
+    "彭淑虹": {
+      "count": 1,
+      "total": 400000,
+      "items": [
+        {
+          "brand": "LAND",
+          "owner": "彭淑虹",
+          "amount": 400000,
+          "acquisition_date": "",
+          "cc": 1997
+        }
+      ]
+    },
+    "陳昆和": {
+      "count": 1,
+      "total": 9680000,
+      "items": [
+        {
+          "brand": "MERCEDES-BENZ",
+          "owner": "陳昆和",
+          "amount": 9680000,
+          "acquisition_date": "",
+          "cc": 5980
+        }
+      ]
+    },
+    "受贈": {
+      "count": 1,
+      "total": 1380000,
+      "items": [
+        {
+          "brand": "Tesla",
+          "owner": "受贈",
+          "amount": 1380000,
+          "acquisition_date": "",
+          "cc": 4830
+        }
+      ]
+    },
+    "吳玉蓮": {
+      "count": 1,
+      "total": 150000,
+      "items": [
+        {
+          "brand": "中華",
+          "owner": "吳玉蓮",
+          "amount": 150000,
+          "acquisition_date": "",
+          "cc": 1198
+        }
+      ]
+    },
+    "許至椿": {
+      "count": 2,
+      "total": 970000,
+      "items": [
+        {
+          "brand": "中華",
+          "owner": "許至椿",
+          "amount": 170000,
+          "acquisition_date": "98年09月20日",
+          "cc": 1198
+        },
+        {
+          "brand": "LEXUS",
+          "owner": "許至椿",
+          "amount": 800000,
+          "acquisition_date": "",
+          "cc": 1998
+        }
+      ]
+    },
+    "林杏霞": {
+      "count": 1,
+      "total": 780000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "林杏霞",
+          "amount": 780000,
+          "acquisition_date": "",
+          "cc": 1987
+        }
+      ]
+    },
+    "黃肇輝": {
+      "count": 1,
+      "total": 460000,
+      "items": [
+        {
+          "brand": "MAZDA",
+          "owner": "黃肇輝",
+          "amount": 460000,
+          "acquisition_date": "",
+          "cc": 1998
+        }
+      ]
+    },
+    "曾之婕": {
+      "count": 2,
+      "total": 990000,
+      "items": [
+        {
+          "brand": "SUZUKI",
+          "owner": "曾之婕",
+          "amount": 790000,
+          "acquisition_date": "",
+          "cc": 1462
+        },
+        {
+          "brand": "BENZ",
+          "owner": "曾之婕",
+          "amount": 200000,
+          "acquisition_date": "",
+          "cc": 2199
+        }
+      ]
+    },
+    "曾培雅": {
+      "count": 1,
+      "total": 1520000,
+      "items": [
+        {
+          "brand": "Mercedes-Benz",
+          "owner": "曾培雅",
+          "amount": 1520000,
+          "acquisition_date": "",
+          "cc": 1332
+        }
+      ]
+    },
+    "楊中成": {
+      "count": 1,
+      "total": 870000,
+      "items": [
+        {
+          "brand": "日產",
+          "owner": "楊中成",
+          "amount": 870000,
+          "acquisition_date": "",
+          "cc": 1598
+        }
+      ]
+    },
+    "蔡宗豪": {
+      "count": 1,
+      "total": 1200000,
+      "items": [
+        {
+          "brand": "中華名爵",
+          "owner": "蔡宗豪",
+          "amount": 1200000,
+          "acquisition_date": "",
+          "cc": 1490
+        }
+      ]
+    },
+    "吳采霖": {
+      "count": 1,
+      "total": 570000,
+      "items": [
+        {
+          "brand": "MAZDA",
+          "owner": "吳采霖",
+          "amount": 570000,
+          "acquisition_date": "",
+          "cc": 1998
+        }
+      ]
+    }
+  },
+  "302": {
+    "丁學忠": {
+      "count": 1,
+      "total": 2430000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "丁學忠",
+          "amount": 2430000,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    },
+    "高保羅": {
+      "count": 2,
+      "total": 980000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "高保羅",
+          "amount": 520000,
+          "acquisition_date": "",
+          "cc": 2494
+        },
+        {
+          "brand": "國瑞",
+          "owner": "高保羅",
+          "amount": 460000,
+          "acquisition_date": "",
+          "cc": 1998
+        }
+      ]
+    },
+    "何欣純": {
+      "count": 1,
+      "total": 1117000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "何欣純",
+          "amount": 1117000,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    },
+    "葉瑋玲": {
+      "count": 1,
+      "total": 2000000,
+      "items": [
+        {
+          "brand": "AUDI",
+          "owner": "葉瑋玲",
+          "amount": 2000000,
+          "acquisition_date": "",
+          "cc": 3350
+        }
+      ]
+    },
+    "邱若華": {
+      "count": 1,
+      "total": 1239000,
+      "items": [
+        {
+          "brand": "三陽",
+          "owner": "邱若華",
+          "amount": 1239000,
+          "acquisition_date": "",
+          "cc": 1598
+        }
+      ]
+    },
+    "邱鎮軍": {
+      "count": 2,
+      "total": 6030000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "邱鎮軍",
+          "amount": 2880000,
+          "acquisition_date": "",
+          "cc": 2487
+        },
+        {
+          "brand": "TOYOTA",
+          "owner": "邱鎮軍",
+          "amount": 3150000,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    },
+    "林月琴": {
+      "count": 1,
+      "total": 1560000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "林月琴",
+          "amount": 1560000,
+          "acquisition_date": "",
+          "cc": 1987
+        }
+      ]
+    },
+    "林國成": {
+      "count": 1,
+      "total": 300000,
+      "items": [
+        {
+          "brand": "Mercedes-Benz",
+          "owner": "林國成",
+          "amount": 300000,
+          "acquisition_date": "",
+          "cc": 3498
+        }
+      ]
+    },
+    "林憶君": {
+      "count": 1,
+      "total": 1880000,
+      "items": [
+        {
+          "brand": "BMW",
+          "owner": "林憶君",
+          "amount": 1880000,
+          "acquisition_date": "",
+          "cc": 1499
+        }
+      ]
+    },
+    "江躍辰": {
+      "count": 1,
+      "total": 700000,
+      "items": [
+        {
+          "brand": "日產",
+          "owner": "江躍辰",
+          "amount": 700000,
+          "acquisition_date": "",
+          "cc": 1498
+        }
+      ]
+    },
+    "洪孟楷": {
+      "count": 1,
+      "total": 537354,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "洪孟楷",
+          "amount": 537354,
+          "acquisition_date": "112年4月",
+          "cc": 2362
+        }
+      ]
+    },
+    "張靜玲": {
+      "count": 1,
+      "total": 80000,
+      "items": [
+        {
+          "brand": "本田",
+          "owner": "張靜玲",
+          "amount": 80000,
+          "acquisition_date": "112年06月29日",
+          "cc": 1497
+        }
+      ]
+    },
+    "陳俊宇": {
+      "count": 2,
+      "total": 1010000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "陳俊宇",
+          "amount": 150000,
+          "acquisition_date": "",
+          "cc": 1497
+        },
+        {
+          "brand": "MAZDA",
+          "owner": "陳俊宇",
+          "amount": 860000,
+          "acquisition_date": "",
+          "cc": 2488
+        }
+      ]
+    },
+    "受贈": {
+      "count": 1,
+      "total": 340000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "受贈",
+          "amount": 340000,
+          "acquisition_date": "113年07月17日",
+          "cc": 1496
+        }
+      ]
+    },
+    "陳培瑜": {
+      "count": 1,
+      "total": 746000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "陳培瑜",
+          "amount": 746000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "黃建賓": {
+      "count": 2,
+      "total": 1878000,
+      "items": [
+        {
+          "brand": "HONDA",
+          "owner": "黃建賓",
+          "amount": 528000,
+          "acquisition_date": "",
+          "cc": 1140
+        },
+        {
+          "brand": "三陽",
+          "owner": "黃建賓",
+          "amount": 1350000,
+          "acquisition_date": "",
+          "cc": 2199
+        }
+      ]
+    },
+    "黃姿倩": {
+      "count": 1,
+      "total": 1110000,
+      "items": [
+        {
+          "brand": "MAZDA",
+          "owner": "黃姿倩",
+          "amount": 1110000,
+          "acquisition_date": "",
+          "cc": 1998
+        }
+      ]
+    },
+    "李婷婷": {
+      "count": 1,
+      "total": 1609900,
+      "items": [
+        {
+          "brand": "Tesla",
+          "owner": "李婷婷",
+          "amount": 1609900,
+          "acquisition_date": "",
+          "cc": 2610
+        }
+      ]
+    },
+    "楊瓊瓔": {
+      "count": 1,
+      "total": 3166100,
+      "items": [
+        {
+          "brand": "MERCEDES-BENZ",
+          "owner": "楊瓊瓔",
+          "amount": 3166100,
+          "acquisition_date": "",
+          "cc": 1991
+        }
+      ]
+    },
+    "魯明哲": {
+      "count": 1,
+      "total": 1839000,
+      "items": [
+        {
+          "brand": "起亞汽車",
+          "owner": "魯明哲",
+          "amount": 1839000,
+          "acquisition_date": "",
+          "cc": 2151
+        }
+      ]
+    },
+    "汪玉仙": {
+      "count": 1,
+      "total": 300000,
+      "items": [
+        {
+          "brand": "馬自達",
+          "owner": "汪玉仙",
+          "amount": 300000,
+          "acquisition_date": "",
+          "cc": 1998
+        }
+      ]
+    },
+    "蘇美琅": {
+      "count": 2,
+      "total": 1549000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "蘇美琅",
+          "amount": 1379000,
+          "acquisition_date": "112年06月26日",
+          "cc": 2487
+        },
+        {
+          "brand": "中華",
+          "owner": "蘇美琅",
+          "amount": 170000,
+          "acquisition_date": "112年10月18日",
+          "cc": 1198
+        }
+      ]
+    },
+    "林良娥": {
+      "count": 1,
+      "total": 1470000,
+      "items": [
+        {
+          "brand": "三陽",
+          "owner": "林良娥",
+          "amount": 1470000,
+          "acquisition_date": "",
+          "cc": 1497
+        }
+      ]
+    }
+  },
+  "303": {
+    "蔡秋蘭": {
+      "count": 1,
+      "total": 100000,
+      "items": [
+        {
+          "brand": "Mercedes-Benz",
+          "owner": "蔡秋蘭",
+          "amount": 100000,
+          "acquisition_date": "",
+          "cc": 2597
+        }
+      ]
+    },
+    "蔡筱薇": {
+      "count": 2,
+      "total": 1220000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "蔡筱薇",
+          "amount": 900000,
+          "acquisition_date": "",
+          "cc": 2487
+        },
+        {
+          "brand": "中華",
+          "owner": "蔡筱薇",
+          "amount": 320000,
+          "acquisition_date": "",
+          "cc": 1488
+        }
+      ]
+    },
+    "蔡寶財": {
+      "count": 1,
+      "total": 300000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "蔡寶財",
+          "amount": 300000,
+          "acquisition_date": "",
+          "cc": 1794
+        }
+      ]
+    },
+    "蔡麗青": {
+      "count": 1,
+      "total": 874000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "蔡麗青",
+          "amount": 874000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "趙昆原": {
+      "count": 1,
+      "total": 870000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "趙昆原",
+          "amount": 870000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "李小清": {
+      "count": 1,
+      "total": 360000,
+      "items": [
+        {
+          "brand": "本田",
+          "owner": "李小清",
+          "amount": 360000,
+          "acquisition_date": "",
+          "cc": 1497
+        }
+      ]
+    },
+    "曾俊傑": {
+      "count": 1,
+      "total": 990000,
+      "items": [
+        {
+          "brand": "NIssan",
+          "owner": "曾俊傑",
+          "amount": 990000,
+          "acquisition_date": "",
+          "cc": 999
+        }
+      ]
+    },
+    "吳慧芬": {
+      "count": 1,
+      "total": 1200000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "吳慧芬",
+          "amount": 1200000,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    },
+    "白喬茵": {
+      "count": 1,
+      "total": 420000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "白喬茵",
+          "amount": 420000,
+          "acquisition_date": "",
+          "cc": 1496
+        }
+      ]
+    },
+    "林育銘": {
+      "count": 1,
+      "total": 1480000,
+      "items": [
+        {
+          "brand": "PORSCHE",
+          "owner": "林育銘",
+          "amount": 1480000,
+          "acquisition_date": "",
+          "cc": 2894
+        }
+      ]
+    },
+    "陳瑞琴": {
+      "count": 2,
+      "total": 2120000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "陳瑞琴",
+          "amount": 1600000,
+          "acquisition_date": "",
+          "cc": 1998
+        },
+        {
+          "brand": "三陽",
+          "owner": "陳瑞琴",
+          "amount": 520000,
+          "acquisition_date": "",
+          "cc": 1598
+        }
+      ]
+    },
+    "江瑞鴻": {
+      "count": 1,
+      "total": 2980000,
+      "items": [
+        {
+          "brand": "MERCEDES-BENZ",
+          "owner": "江瑞鴻",
+          "amount": 2980000,
+          "acquisition_date": "",
+          "cc": 1991
+        }
+      ]
+    },
+    "黃綉貞": {
+      "count": 1,
+      "total": 1919000,
+      "items": [
+        {
+          "brand": "KIA",
+          "owner": "黃綉貞",
+          "amount": 1919000,
+          "acquisition_date": "",
+          "cc": 2151
+        }
+      ]
+    },
+    "陳貴慈": {
+      "count": 2,
+      "total": 1839000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "陳貴慈",
+          "amount": 849000,
+          "acquisition_date": "",
+          "cc": 1798
+        },
+        {
+          "brand": "日產",
+          "owner": "陳貴慈",
+          "amount": 990000,
+          "acquisition_date": "",
+          "cc": 1497
+        }
+      ]
+    },
+    "吳銘賜": {
+      "count": 3,
+      "total": 1190000,
+      "items": [
+        {
+          "brand": "中華",
+          "owner": "吳銘賜",
+          "amount": 80000,
+          "acquisition_date": "",
+          "cc": 2835
+        },
+        {
+          "brand": "中華",
+          "owner": "吳銘賜",
+          "amount": 260000,
+          "acquisition_date": "",
+          "cc": 1299
+        },
+        {
+          "brand": "國瑞",
+          "owner": "吳銘賜",
+          "amount": 850000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "李雨庭": {
+      "count": 3,
+      "total": 6640000,
+      "items": [
+        {
+          "brand": "BMW",
+          "owner": "李雨庭",
+          "amount": 2830000,
+          "acquisition_date": "",
+          "cc": 1998
+        },
+        {
+          "brand": "福特六和",
+          "owner": "李雨庭",
+          "amount": 910000,
+          "acquisition_date": "",
+          "cc": 1497
+        },
+        {
+          "brand": "TOYOTA",
+          "owner": "李雨庭",
+          "amount": 2900000,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    },
+    "楊紘宇": {
+      "count": 2,
+      "total": 3325100,
+      "items": [
+        {
+          "brand": "LAND",
+          "owner": "楊紘宇",
+          "amount": 2000000,
+          "acquisition_date": "",
+          "cc": 2993
+        },
+        {
+          "brand": "Tesla",
+          "owner": "楊紘宇",
+          "amount": 1325100,
+          "acquisition_date": "",
+          "cc": 5230
+        }
+      ]
+    },
+    "李喬如": {
+      "count": 1,
+      "total": 920000,
+      "items": [
+        {
+          "brand": "ZSG10L-EHXGKR",
+          "owner": "李喬如",
+          "amount": 920000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "李雅芬": {
+      "count": 1,
+      "total": 1300000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "李雅芬",
+          "amount": 1300000,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    },
+    "林智鴻": {
+      "count": 1,
+      "total": 2920000,
+      "items": [
+        {
+          "brand": "VOLVO",
+          "owner": "林智鴻",
+          "amount": 2920000,
+          "acquisition_date": "",
+          "cc": 1969
+        }
+      ]
+    },
+    "范林慈惠": {
+      "count": 1,
+      "total": 1059000,
+      "items": [
+        {
+          "brand": "本田",
+          "owner": "范林慈惠",
+          "amount": 1059000,
+          "acquisition_date": "",
+          "cc": 1498
+        }
+      ]
+    },
+    "鄭朝鴻": {
+      "count": 2,
+      "total": 1890000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "鄭朝鴻",
+          "amount": 970000,
+          "acquisition_date": "",
+          "cc": 1798
+        },
+        {
+          "brand": "TOYOTA",
+          "owner": "鄭朝鴻",
+          "amount": 920000,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    },
+    "陳善慧": {
+      "count": 1,
+      "total": 1770000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "陳善慧",
+          "amount": 1770000,
+          "acquisition_date": "",
+          "cc": 1987
+        }
+      ]
+    },
+    "黃智能": {
+      "count": 1,
+      "total": 325000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "黃智能",
+          "amount": 325000,
+          "acquisition_date": "",
+          "cc": 3456
+        }
+      ]
+    },
+    "陳麗珍": {
+      "count": 1,
+      "total": 950000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "陳麗珍",
+          "amount": 950000,
+          "acquisition_date": "",
+          "cc": 1987
+        }
+      ]
+    },
+    "陳郁儒": {
+      "count": 2,
+      "total": 1860000,
+      "items": [
+        {
+          "brand": "YAMAHA",
+          "owner": "陳郁儒",
+          "amount": 250000,
+          "acquisition_date": "",
+          "cc": 292
+        },
+        {
+          "brand": "LEXUS",
+          "owner": "陳郁儒",
+          "amount": 1610000,
+          "acquisition_date": "",
+          "cc": 1987
+        }
+      ]
+    },
+    "黃婉華": {
+      "count": 1,
+      "total": 1350000,
+      "items": [
+        {
+          "brand": "SKODA",
+          "owner": "黃婉華",
+          "amount": 1350000,
+          "acquisition_date": "",
+          "cc": 1498
+        }
+      ]
+    },
+    "黃明太": {
+      "count": 1,
+      "total": 430000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "黃明太",
+          "amount": 430000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "李淑慧": {
+      "count": 1,
+      "total": 551630,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "李淑慧",
+          "amount": 551630,
+          "acquisition_date": "",
+          "cc": 1497
+        }
+      ]
+    },
+    "湯詠瑜": {
+      "count": 1,
+      "total": 410000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "湯詠瑜",
+          "amount": 410000,
+          "acquisition_date": "",
+          "cc": 1497
+        }
+      ]
+    },
+    "蔡金晏": {
+      "count": 1,
+      "total": 2280000,
+      "items": [
+        {
+          "brand": "BMW",
+          "owner": "蔡金晏",
+          "amount": 2280000,
+          "acquisition_date": "",
+          "cc": 2720
+        }
+      ]
+    },
+    "李宜錦": {
+      "count": 1,
+      "total": 1290000,
+      "items": [
+        {
+          "brand": "納智捷(鴻華先進)",
+          "owner": "李宜錦",
+          "amount": 1290000,
+          "acquisition_date": "",
+          "cc": 2300
+        }
+      ]
+    },
+    "鄭孟洳": {
+      "count": 1,
+      "total": 750000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "鄭孟洳",
+          "amount": 750000,
+          "acquisition_date": "",
+          "cc": 1197
+        }
+      ]
+    },
+    "郭美慧": {
+      "count": 1,
+      "total": 500000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "郭美慧",
+          "amount": 500000,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    },
+    "張玉佳": {
+      "count": 1,
+      "total": 690000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "張玉佳",
+          "amount": 690000,
+          "acquisition_date": "",
+          "cc": 1496
+        }
+      ]
+    },
+    "張許金鐶": {
+      "count": 4,
+      "total": 10050000,
+      "items": [
+        {
+          "brand": "MERCEDES-BENZ",
+          "owner": "張許金鐶",
+          "amount": 2800000,
+          "acquisition_date": "",
+          "cc": 1991
+        },
+        {
+          "brand": "MERCEDES-BENZ",
+          "owner": "張許金鐶",
+          "amount": 3200000,
+          "acquisition_date": "",
+          "cc": 3498
+        },
+        {
+          "brand": "BMWW",
+          "owner": "張許金鐶",
+          "amount": 3750000,
+          "acquisition_date": "",
+          "cc": 2998
+        },
+        {
+          "brand": "MERCEDES-BENZ",
+          "owner": "張許金鐶",
+          "amount": 300000,
+          "acquisition_date": "",
+          "cc": 2996
+        }
+      ]
+    },
+    "張鎮榮": {
+      "count": 2,
+      "total": 6250000,
+      "items": [
+        {
+          "brand": "VOLVO",
+          "owner": "張鎮榮",
+          "amount": 2950000,
+          "acquisition_date": "",
+          "cc": 3498
+        },
+        {
+          "brand": "MERCEDES-BENZ",
+          "owner": "張鎮榮",
+          "amount": 3300000,
+          "acquisition_date": "",
+          "cc": 3498
+        }
+      ]
+    },
+    "新購入": {
+      "count": 2,
+      "total": 12018000,
+      "items": [
+        {
+          "brand": "PORSCHE",
+          "owner": "新購入",
+          "amount": 5300000,
+          "acquisition_date": "",
+          "cc": 2995
+        },
+        {
+          "brand": "MERCEDES-BENZ",
+          "owner": "新購入",
+          "amount": 6718000,
+          "acquisition_date": "",
+          "cc": 1991
+        }
+      ]
+    },
+    "上官秋燕": {
+      "count": 1,
+      "total": 1500000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "上官秋燕",
+          "amount": 1500000,
+          "acquisition_date": "",
+          "cc": 1490
+        }
+      ]
+    },
+    "吳傳地": {
+      "count": 1,
+      "total": 1950000,
+      "items": [
+        {
+          "brand": "KIA",
+          "owner": "吳傳地",
+          "amount": 1950000,
+          "acquisition_date": "",
+          "cc": 2151
+        }
+      ]
+    },
+    "林禹佑": {
+      "count": 1,
+      "total": 740000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "林禹佑",
+          "amount": 740000,
+          "acquisition_date": "",
+          "cc": 1496
+        }
+      ]
+    },
+    "張良印": {
+      "count": 1,
+      "total": 1500000,
+      "items": [
+        {
+          "brand": "三陽",
+          "owner": "張良印",
+          "amount": 1500000,
+          "acquisition_date": "",
+          "cc": 1497
+        }
+      ]
+    },
+    "李小菁": {
+      "count": 1,
+      "total": 2000000,
+      "items": [
+        {
+          "brand": "MERCEDES-BENZ",
+          "owner": "李小菁",
+          "amount": 2000000,
+          "acquisition_date": "",
+          "cc": 1332
+        }
+      ]
+    }
+  },
+  "304": {
+    "王辰翔": {
+      "count": 1,
+      "total": 915000,
+      "items": [
+        {
+          "brand": "中華名爵",
+          "owner": "王辰翔",
+          "amount": 915000,
+          "acquisition_date": "",
+          "cc": 1490
+        }
+      ]
+    },
+    "甘金娥": {
+      "count": 2,
+      "total": 770000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "甘金娥",
+          "amount": 600000,
+          "acquisition_date": "95年06月",
+          "cc": 2494
+        },
+        {
+          "brand": "福特六和",
+          "owner": "甘金娥",
+          "amount": 170000,
+          "acquisition_date": "",
+          "cc": 993
+        }
+      ]
+    },
+    "林秉君": {
+      "count": 1,
+      "total": 1290000,
+      "items": [
+        {
+          "brand": "SKODA",
+          "owner": "林秉君",
+          "amount": 1290000,
+          "acquisition_date": "",
+          "cc": 1498
+        }
+      ]
+    },
+    "林碩彥": {
+      "count": 1,
+      "total": 750000,
+      "items": [
+        {
+          "brand": "NISSAN",
+          "owner": "林碩彥",
+          "amount": 750000,
+          "acquisition_date": "",
+          "cc": 1470
+        }
+      ]
+    },
+    "周盈盈": {
+      "count": 1,
+      "total": 1450000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "周盈盈",
+          "amount": 1450000,
+          "acquisition_date": "",
+          "cc": 1987
+        }
+      ]
+    },
+    "范曰富": {
+      "count": 1,
+      "total": 800000,
+      "items": [
+        {
+          "brand": "PORSCHE",
+          "owner": "范曰富",
+          "amount": 800000,
+          "acquisition_date": "",
+          "cc": 1984
+        }
+      ]
+    },
+    "陳星宏": {
+      "count": 1,
+      "total": 1215000,
+      "items": [
+        {
+          "brand": "納智捷(鴻華先進)",
+          "owner": "陳星宏",
+          "amount": 1215000,
+          "acquisition_date": "",
+          "cc": 2300
+        }
+      ]
+    },
+    "陳栢誠": {
+      "count": 1,
+      "total": 2930000,
+      "items": [
+        {
+          "brand": "LEXUS-RX350H",
+          "owner": "陳栢誠",
+          "amount": 2930000,
+          "acquisition_date": "",
+          "cc": 2500
+        }
+      ]
+    },
+    "張秀莉": {
+      "count": 1,
+      "total": 1000000,
+      "items": [
+        {
+          "brand": "福特六和",
+          "owner": "張秀莉",
+          "amount": 1000000,
+          "acquisition_date": "",
+          "cc": 1999
+        }
+      ]
+    },
+    "張珈源": {
+      "count": 3,
+      "total": 4010000,
+      "items": [
+        {
+          "brand": "Tesla",
+          "owner": "張珈源",
+          "amount": 2300000,
+          "acquisition_date": "",
+          "cc": 3710
+        },
+        {
+          "brand": "MAZDA",
+          "owner": "張珈源",
+          "amount": 1560000,
+          "acquisition_date": "",
+          "cc": 1998
+        },
+        {
+          "brand": "DAIHATSU",
+          "owner": "張珈源",
+          "amount": 150000,
+          "acquisition_date": "",
+          "cc": 1495
+        }
+      ]
+    },
+    "張益生": {
+      "count": 1,
+      "total": 1430000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "張益生",
+          "amount": 1430000,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    },
+    "彭余美玲": {
+      "count": 1,
+      "total": 1000000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "彭余美玲",
+          "amount": 1000000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "楊昌德": {
+      "count": 1,
+      "total": 579000,
+      "items": [
+        {
+          "brand": "三菱汽車",
+          "owner": "楊昌德",
+          "amount": 579000,
+          "acquisition_date": "",
+          "cc": 1499
+        }
+      ]
+    },
+    "李幸娥": {
+      "count": 1,
+      "total": 1008000,
+      "items": [
+        {
+          "brand": "MAZDA",
+          "owner": "李幸娥",
+          "amount": 1008000,
+          "acquisition_date": "",
+          "cc": 1998
+        }
+      ]
+    },
+    "徐曉慧": {
+      "count": 1,
+      "total": 1700000,
+      "items": [
+        {
+          "brand": "MINI",
+          "owner": "徐曉慧",
+          "amount": 1700000,
+          "acquisition_date": "",
+          "cc": 1499
+        }
+      ]
+    },
+    "鄧毅中": {
+      "count": 1,
+      "total": 600000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "鄧毅中",
+          "amount": 600000,
+          "acquisition_date": "94年02月",
+          "cc": 1496
+        }
+      ]
+    },
+    "鄭美琴": {
+      "count": 1,
+      "total": 950000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "鄭美琴",
+          "amount": 950000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "賴秀霏": {
+      "count": 1,
+      "total": 1439000,
+      "items": [
+        {
+          "brand": "三陽",
+          "owner": "賴秀霏",
+          "amount": 1439000,
+          "acquisition_date": "",
+          "cc": 1497
+        }
+      ]
+    },
+    "湯美雲": {
+      "count": 1,
+      "total": 1800000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "湯美雲",
+          "amount": 1800000,
+          "acquisition_date": "",
+          "cc": 1987
+        }
+      ]
+    },
+    "邱毓興": {
+      "count": 1,
+      "total": 975000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "邱毓興",
+          "amount": 975000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "劉雅文": {
+      "count": 1,
+      "total": 945000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "劉雅文",
+          "amount": 945000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "陳秋吉": {
+      "count": 2,
+      "total": 3088000,
+      "items": [
+        {
+          "brand": "賓士(汽車)",
+          "owner": "陳秋吉",
+          "amount": 2800000,
+          "acquisition_date": "98年01月",
+          "cc": 3000
+        },
+        {
+          "brand": "大型重型機車",
+          "owner": "陳秋吉",
+          "amount": 288000,
+          "acquisition_date": "",
+          "cc": 350
+        }
+      ]
+    },
+    "林寶珠": {
+      "count": 2,
+      "total": 4450000,
+      "items": [
+        {
+          "brand": "福斯(汽車)",
+          "owner": "林寶珠",
+          "amount": 1250000,
+          "acquisition_date": "",
+          "cc": 2000
+        },
+        {
+          "brand": "賓士(汽車)",
+          "owner": "林寶珠",
+          "amount": 3200000,
+          "acquisition_date": "",
+          "cc": 2000
+        }
+      ]
+    },
+    "陳睬靜": {
+      "count": 1,
+      "total": 749000,
+      "items": [
+        {
+          "brand": "本田",
+          "owner": "陳睬靜",
+          "amount": 749000,
+          "acquisition_date": "",
+          "cc": 1498
+        }
+      ]
+    },
+    "徐筱菁": {
+      "count": 1,
+      "total": 700000,
+      "items": [
+        {
+          "brand": "VENUE(現代)",
+          "owner": "徐筱菁",
+          "amount": 700000,
+          "acquisition_date": "",
+          "cc": 1600
+        }
+      ]
+    },
+    "陳光軒": {
+      "count": 1,
+      "total": 569000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "陳光軒",
+          "amount": 569000,
+          "acquisition_date": "",
+          "cc": 1496
+        }
+      ]
+    },
+    "陳品安": {
+      "count": 1,
+      "total": 1680000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "陳品安",
+          "amount": 1680000,
+          "acquisition_date": "",
+          "cc": 1987
+        }
+      ]
+    },
+    "周宜君": {
+      "count": 1,
+      "total": 1800000,
+      "items": [
+        {
+          "brand": "VOLKSWAGEN",
+          "owner": "周宜君",
+          "amount": 1800000,
+          "acquisition_date": "",
+          "cc": 1984
+        }
+      ]
+    },
+    "張佳玲": {
+      "count": 1,
+      "total": 1500000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "張佳玲",
+          "amount": 1500000,
+          "acquisition_date": "",
+          "cc": 1987
+        }
+      ]
+    },
+    "蔡德光": {
+      "count": 1,
+      "total": 1600000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "蔡德光",
+          "amount": 1600000,
+          "acquisition_date": "",
+          "cc": 1987
+        }
+      ]
+    },
+    "温俊勇": {
+      "count": 1,
+      "total": 2500000,
+      "items": [
+        {
+          "brand": "JEEP",
+          "owner": "温俊勇",
+          "amount": 2500000,
+          "acquisition_date": "",
+          "cc": 2987
+        }
+      ]
+    },
+    "余美鈺": {
+      "count": 1,
+      "total": 950000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "余美鈺",
+          "amount": 950000,
+          "acquisition_date": "",
+          "cc": 1987
+        }
+      ]
+    },
+    "周郁萍": {
+      "count": 1,
+      "total": 2380000,
+      "items": [
+        {
+          "brand": "BMW",
+          "owner": "周郁萍",
+          "amount": 2380000,
+          "acquisition_date": "",
+          "cc": 2720
+        }
+      ]
+    },
+    "楊文昌": {
+      "count": 2,
+      "total": 550000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "楊文昌",
+          "amount": 200000,
+          "acquisition_date": "",
+          "cc": 1987
+        },
+        {
+          "brand": "國瑞",
+          "owner": "楊文昌",
+          "amount": 350000,
+          "acquisition_date": "",
+          "cc": 1496
+        }
+      ]
+    },
+    "徐儷育": {
+      "count": 1,
+      "total": 1099000,
+      "items": [
+        {
+          "brand": "三陽",
+          "owner": "徐儷育",
+          "amount": 1099000,
+          "acquisition_date": "93年11月",
+          "cc": 1598
+        }
+      ]
+    },
+    "鄭秋風": {
+      "count": 1,
+      "total": 4930000,
+      "items": [
+        {
+          "brand": "BMW",
+          "owner": "鄭秋風",
+          "amount": 4930000,
+          "acquisition_date": "",
+          "cc": 2998
+        }
+      ]
+    },
+    "林千惠": {
+      "count": 1,
+      "total": 100000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "林千惠",
+          "amount": 100000,
+          "acquisition_date": "",
+          "cc": 1794
+        }
+      ]
+    },
+    "鄭碧玉": {
+      "count": 1,
+      "total": 2000000,
+      "items": [
+        {
+          "brand": "MERCEDES-BENZ",
+          "owner": "鄭碧玉",
+          "amount": 2000000,
+          "acquisition_date": "",
+          "cc": 1999
+        }
+      ]
+    },
+    "張進水": {
+      "count": 1,
+      "total": 600000,
+      "items": [
+        {
+          "brand": "中華",
+          "owner": "張進水",
+          "amount": 600000,
+          "acquisition_date": "",
+          "cc": 1488
+        }
+      ]
+    }
+  },
+  "305": {
+    "吳志中": {
+      "count": 1,
+      "total": 1630000,
+      "items": [
+        {
+          "brand": "VOLKSWAGEN",
+          "owner": "吳志中",
+          "amount": 1630000,
+          "acquisition_date": "",
+          "cc": 1968
+        }
+      ]
+    },
+    "李洋": {
+      "count": 1,
+      "total": 1988000,
+      "items": [
+        {
+          "brand": "VOLKSWAGEN",
+          "owner": "李洋",
+          "amount": 1988000,
+          "acquisition_date": "",
+          "cc": 1984
+        }
+      ]
+    },
+    "許素珍": {
+      "count": 1,
+      "total": 1970000,
+      "items": [
+        {
+          "brand": "BMW",
+          "owner": "許素珍",
+          "amount": 1970000,
+          "acquisition_date": "",
+          "cc": 2016
+        }
+      ]
+    },
+    "黃珊珊": {
+      "count": 2,
+      "total": 2685400,
+      "items": [
+        {
+          "brand": "日產",
+          "owner": "黃珊珊",
+          "amount": 700000,
+          "acquisition_date": "",
+          "cc": 2488
+        },
+        {
+          "brand": "Tesla",
+          "owner": "黃珊珊",
+          "amount": 1985400,
+          "acquisition_date": "",
+          "cc": 2790
+        }
+      ]
+    },
+    "范玉燕": {
+      "count": 1,
+      "total": 789000,
+      "items": [
+        {
+          "brand": "豐田",
+          "owner": "范玉燕",
+          "amount": 789000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "曾孝賢": {
+      "count": 1,
+      "total": 3250000,
+      "items": [
+        {
+          "brand": "Lexus",
+          "owner": "曾孝賢",
+          "amount": 3250000,
+          "acquisition_date": "95年03月",
+          "cc": 430
+        }
+      ]
+    },
+    "高孟焄": {
+      "count": 1,
+      "total": 1740000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "高孟焄",
+          "amount": 1740000,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    }
+  },
+  "306": {
+    "吳錦潭": {
+      "count": 1,
+      "total": 300000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "吳錦潭",
+          "amount": 300000,
+          "acquisition_date": "",
+          "cc": 2494
+        }
+      ]
+    },
+    "林美吟": {
+      "count": 1,
+      "total": 920000,
+      "items": [
+        {
+          "brand": "本田",
+          "owner": "林美吟",
+          "amount": 920000,
+          "acquisition_date": "",
+          "cc": 1498
+        }
+      ]
+    },
+    "何素員": {
+      "count": 1,
+      "total": 120000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "何素員",
+          "amount": 120000,
+          "acquisition_date": "96年05月",
+          "cc": 1794
+        }
+      ]
+    },
+    "林小琪": {
+      "count": 2,
+      "total": 2600000,
+      "items": [
+        {
+          "brand": "MERCEDES-BENZ",
+          "owner": "林小琪",
+          "amount": 2000000,
+          "acquisition_date": "",
+          "cc": 1991
+        },
+        {
+          "brand": "國瑞",
+          "owner": "林小琪",
+          "amount": 600000,
+          "acquisition_date": "",
+          "cc": 1496
+        }
+      ]
+    },
+    "阮升立": {
+      "count": 1,
+      "total": 765000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "阮升立",
+          "amount": 765000,
+          "acquisition_date": "",
+          "cc": 1496
+        }
+      ]
+    },
+    "林宗翰": {
+      "count": 1,
+      "total": 897000,
+      "items": [
+        {
+          "brand": "本田",
+          "owner": "林宗翰",
+          "amount": 897000,
+          "acquisition_date": "",
+          "cc": 1498
+        }
+      ]
+    },
+    "辜宇仙": {
+      "count": 1,
+      "total": 3128000,
+      "items": [
+        {
+          "brand": "MERCEDES-BENZ",
+          "owner": "辜宇仙",
+          "amount": 3128000,
+          "acquisition_date": "",
+          "cc": 1999
+        }
+      ]
+    },
+    "凃俊任": {
+      "count": 1,
+      "total": 2300000,
+      "items": [
+        {
+          "brand": "Mercedes-Benz",
+          "owner": "凃俊任",
+          "amount": 2300000,
+          "acquisition_date": "",
+          "cc": 1991
+        }
+      ]
+    },
+    "陳伊芬": {
+      "count": 1,
+      "total": 850000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "陳伊芬",
+          "amount": 850000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "凃淑媚": {
+      "count": 1,
+      "total": 1610000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "凃淑媚",
+          "amount": 1610000,
+          "acquisition_date": "",
+          "cc": 1987
+        }
+      ]
+    },
+    "洪子超": {
+      "count": 1,
+      "total": 1830000,
+      "items": [
+        {
+          "brand": "VOLVO",
+          "owner": "洪子超",
+          "amount": 1830000,
+          "acquisition_date": "",
+          "cc": 2380
+        }
+      ]
+    },
+    "許芳瑜": {
+      "count": 2,
+      "total": 1200760,
+      "items": [
+        {
+          "brand": "AUDI",
+          "owner": "許芳瑜",
+          "amount": 400000,
+          "acquisition_date": "",
+          "cc": 999
+        },
+        {
+          "brand": "國瑞",
+          "owner": "許芳瑜",
+          "amount": 800760,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "莊陞漢": {
+      "count": 2,
+      "total": 1900000,
+      "items": [
+        {
+          "brand": "Mercedes-Benz",
+          "owner": "莊陞漢",
+          "amount": 1200000,
+          "acquisition_date": "",
+          "cc": 3498
+        },
+        {
+          "brand": "LEXUS",
+          "owner": "莊陞漢",
+          "amount": 700000,
+          "acquisition_date": "",
+          "cc": 2672
+        }
+      ]
+    },
+    "郭燕陵": {
+      "count": 1,
+      "total": 1600000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "郭燕陵",
+          "amount": 1600000,
+          "acquisition_date": "",
+          "cc": 1987
+        }
+      ]
+    },
+    "陳一惇": {
+      "count": 1,
+      "total": 2700000,
+      "items": [
+        {
+          "brand": "BMW",
+          "owner": "陳一惇",
+          "amount": 2700000,
+          "acquisition_date": "",
+          "cc": 1998
+        }
+      ]
+    },
+    "陳文漢": {
+      "count": 2,
+      "total": 5950000,
+      "items": [
+        {
+          "brand": "Mercedes-Benz",
+          "owner": "陳文漢",
+          "amount": 5500000,
+          "acquisition_date": "",
+          "cc": 3280
+        },
+        {
+          "brand": "國瑞",
+          "owner": "陳文漢",
+          "amount": 450000,
+          "acquisition_date": "",
+          "cc": 1496
+        }
+      ]
+    },
+    "陳榮妹": {
+      "count": 1,
+      "total": 1700000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "陳榮妹",
+          "amount": 1700000,
+          "acquisition_date": "",
+          "cc": 2672
+        }
+      ]
+    },
+    "陳銌銌": {
+      "count": 1,
+      "total": 698000,
+      "items": [
+        {
+          "brand": "日產",
+          "owner": "陳銌銌",
+          "amount": 698000,
+          "acquisition_date": "",
+          "cc": 1498
+        }
+      ]
+    },
+    "張欣倩": {
+      "count": 1,
+      "total": 2180000,
+      "items": [
+        {
+          "brand": "MERCEDES-BENZ",
+          "owner": "張欣倩",
+          "amount": 2180000,
+          "acquisition_date": "",
+          "cc": 1991
+        }
+      ]
+    },
+    "章秀紫": {
+      "count": 1,
+      "total": 1200000,
+      "items": [
+        {
+          "brand": "BMW",
+          "owner": "章秀紫",
+          "amount": 1200000,
+          "acquisition_date": "99年09月",
+          "cc": 1998
+        }
+      ]
+    },
+    "張雪如": {
+      "count": 1,
+      "total": 200000,
+      "items": [
+        {
+          "brand": "日產",
+          "owner": "張雪如",
+          "amount": 200000,
+          "acquisition_date": "",
+          "cc": 1598
+        }
+      ]
+    },
+    "江志隆": {
+      "count": 1,
+      "total": 200000,
+      "items": [
+        {
+          "brand": "中華",
+          "owner": "江志隆",
+          "amount": 200000,
+          "acquisition_date": "",
+          "cc": 2378
+        }
+      ]
+    },
+    "曾品儒": {
+      "count": 1,
+      "total": 870000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "曾品儒",
+          "amount": 870000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "黃正盛": {
+      "count": 3,
+      "total": 3900000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "黃正盛",
+          "amount": 1300000,
+          "acquisition_date": "",
+          "cc": 2362
+        },
+        {
+          "brand": "MINI",
+          "owner": "黃正盛",
+          "amount": 600000,
+          "acquisition_date": "",
+          "cc": 1998
+        },
+        {
+          "brand": "PORSCHE",
+          "owner": "黃正盛",
+          "amount": 2000000,
+          "acquisition_date": "",
+          "cc": 3596
+        }
+      ]
+    },
+    "黃淑美": {
+      "count": 1,
+      "total": 1700000,
+      "items": [
+        {
+          "brand": "Merceces-Benz",
+          "owner": "黃淑美",
+          "amount": 1700000,
+          "acquisition_date": "",
+          "cc": 1991
+        }
+      ]
+    },
+    "黃倩儀": {
+      "count": 1,
+      "total": 2430000,
+      "items": [
+        {
+          "brand": "MERCEDES-BENZ",
+          "owner": "黃倩儀",
+          "amount": 2430000,
+          "acquisition_date": "",
+          "cc": 1496
+        }
+      ]
+    },
+    "葉永清": {
+      "count": 1,
+      "total": 1000000,
+      "items": [
+        {
+          "brand": "三陽",
+          "owner": "葉永清",
+          "amount": 1000000,
+          "acquisition_date": "",
+          "cc": 1497
+        }
+      ]
+    },
+    "蔡秋蜜": {
+      "count": 1,
+      "total": 2700000,
+      "items": [
+        {
+          "brand": "賓士",
+          "owner": "蔡秋蜜",
+          "amount": 2700000,
+          "acquisition_date": ""
+        }
+      ]
+    },
+    "彭淑英": {
+      "count": 1,
+      "total": 1300000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "彭淑英",
+          "amount": 1300000,
+          "acquisition_date": "",
+          "cc": 1987
+        }
+      ]
+    },
+    "劉珊伶": {
+      "count": 1,
+      "total": 200000,
+      "items": [
+        {
+          "brand": "日產",
+          "owner": "劉珊伶",
+          "amount": 200000,
+          "acquisition_date": "",
+          "cc": 1598
+        }
+      ]
+    },
+    "張宇廷": {
+      "count": 1,
+      "total": 1680000,
+      "items": [
+        {
+          "brand": "VOLKSWAGEN",
+          "owner": "張宇廷",
+          "amount": 1680000,
+          "acquisition_date": "",
+          "cc": 2810
+        }
+      ]
+    },
+    "劉淑芳": {
+      "count": 1,
+      "total": 900000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "劉淑芳",
+          "amount": 900000,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    },
+    "蕭妤": {
+      "count": 1,
+      "total": 775000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "蕭妤",
+          "amount": 775000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "賴清美": {
+      "count": 1,
+      "total": 800000,
+      "items": [
+        {
+          "brand": "本田",
+          "owner": "賴清美",
+          "amount": 800000,
+          "acquisition_date": "",
+          "cc": 1799
+        }
+      ]
+    },
+    "王秋淑": {
+      "count": 2,
+      "total": 1830000,
+      "items": [
+        {
+          "brand": "福特六和",
+          "owner": "王秋淑",
+          "amount": 850000,
+          "acquisition_date": "",
+          "cc": 1497
+        },
+        {
+          "brand": "國瑞",
+          "owner": "王秋淑",
+          "amount": 980000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "全文才": {
+      "count": 1,
+      "total": 900000,
+      "items": [
+        {
+          "brand": "中華",
+          "owner": "全文才",
+          "amount": 900000,
+          "acquisition_date": "",
+          "cc": 2359
+        }
+      ]
+    },
+    "游閏羽": {
+      "count": 1,
+      "total": 450000,
+      "items": [
+        {
+          "brand": "PORSCHE",
+          "owner": "游閏羽",
+          "amount": 450000,
+          "acquisition_date": "",
+          "cc": 4806
+        }
+      ]
+    }
+  },
+  "307": {
+    "洪明科": {
+      "count": 1,
+      "total": 1860000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "洪明科",
+          "amount": 1860000,
+          "acquisition_date": "",
+          "cc": 1987
+        }
+      ]
+    },
+    "李翠凰": {
+      "count": 1,
+      "total": 1000000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "李翠凰",
+          "amount": 1000000,
+          "acquisition_date": "98年02月",
+          "cc": 1987
+        }
+      ]
+    },
+    "許淑雯": {
+      "count": 1,
+      "total": 1130000,
+      "items": [
+        {
+          "brand": "Mercedes-Benz",
+          "owner": "許淑雯",
+          "amount": 1130000,
+          "acquisition_date": "",
+          "cc": 1991
+        }
+      ]
+    },
+    "陳玉鈴": {
+      "count": 1,
+      "total": 610000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "陳玉鈴",
+          "amount": 610000,
+          "acquisition_date": "99年06月15日",
+          "cc": 1496
+        }
+      ]
+    },
+    "張婉慈": {
+      "count": 1,
+      "total": 980000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "張婉慈",
+          "amount": 980000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "黃春麟": {
+      "count": 1,
+      "total": 1500000,
+      "items": [
+        {
+          "brand": "三陽",
+          "owner": "黃春麟",
+          "amount": 1500000,
+          "acquisition_date": "",
+          "cc": 1497
+        }
+      ]
+    },
+    "廖梓佑": {
+      "count": 1,
+      "total": 150000,
+      "items": [
+        {
+          "brand": "SUZUKI",
+          "owner": "廖梓佑",
+          "amount": 150000,
+          "acquisition_date": "",
+          "cc": 2393
+        }
+      ]
+    },
+    "洪敦仁": {
+      "count": 1,
+      "total": 350000,
+      "items": [
+        {
+          "brand": "三陽",
+          "owner": "洪敦仁",
+          "amount": 350000,
+          "acquisition_date": "",
+          "cc": 1995
+        }
+      ]
+    },
+    "許然珍": {
+      "count": 1,
+      "total": 2300000,
+      "items": [
+        {
+          "brand": "BMW",
+          "owner": "許然珍",
+          "amount": 2300000,
+          "acquisition_date": "",
+          "cc": 1998
+        }
+      ]
+    },
+    "蔡銘軒": {
+      "count": 2,
+      "total": 250000,
+      "items": [
+        {
+          "brand": "中華",
+          "owner": "蔡銘軒",
+          "amount": 150000,
+          "acquisition_date": "",
+          "cc": 1198
+        },
+        {
+          "brand": "日產",
+          "owner": "蔡銘軒",
+          "amount": 100000,
+          "acquisition_date": "",
+          "cc": 2488
+        }
+      ]
+    },
+    "蘇昱誠": {
+      "count": 1,
+      "total": 2560900,
+      "items": [
+        {
+          "brand": "Tesla",
+          "owner": "蘇昱誠",
+          "amount": 2560900,
+          "acquisition_date": "",
+          "cc": 3750
+        }
+      ]
+    },
+    "黃凱": {
+      "count": 1,
+      "total": 2500000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "黃凱",
+          "amount": 2500000,
+          "acquisition_date": "",
+          "cc": 2494
+        }
+      ]
+    },
+    "蘇筠凱": {
+      "count": 1,
+      "total": 1500000,
+      "items": [
+        {
+          "brand": "BMW",
+          "owner": "蘇筠凱",
+          "amount": 1500000,
+          "acquisition_date": "",
+          "cc": 2998
+        }
+      ]
+    },
+    "李明哲": {
+      "count": 1,
+      "total": 600000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "李明哲",
+          "amount": 600000,
+          "acquisition_date": "",
+          "cc": 1998
+        }
+      ]
+    },
+    "李安倩": {
+      "count": 3,
+      "total": 13280000,
+      "items": [
+        {
+          "brand": "MERCEDES-BENZ",
+          "owner": "李安倩",
+          "amount": 8020000,
+          "acquisition_date": "",
+          "cc": 3982
+        },
+        {
+          "brand": "MINI",
+          "owner": "李安倩",
+          "amount": 1860000,
+          "acquisition_date": "",
+          "cc": 1998
+        },
+        {
+          "brand": "LEXUS",
+          "owner": "李安倩",
+          "amount": 3400000,
+          "acquisition_date": "",
+          "cc": 2494
+        }
+      ]
+    },
+    "王美惠": {
+      "count": 1,
+      "total": 3090000,
+      "items": [
+        {
+          "brand": "MERCEDES-BENZ",
+          "owner": "王美惠",
+          "amount": 3090000,
+          "acquisition_date": "96年09月",
+          "cc": 1999
+        }
+      ]
+    },
+    "洪如萍": {
+      "count": 2,
+      "total": 370000,
+      "items": [
+        {
+          "brand": "KIA",
+          "owner": "洪如萍",
+          "amount": 160000,
+          "acquisition_date": "",
+          "cc": 2476
+        },
+        {
+          "brand": "國瑞",
+          "owner": "洪如萍",
+          "amount": 210000,
+          "acquisition_date": "",
+          "cc": 1497
+        }
+      ]
+    },
+    "陳乙辰": {
+      "count": 1,
+      "total": 3160000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "陳乙辰",
+          "amount": 3160000,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    },
+    "柯嘉君": {
+      "count": 1,
+      "total": 1500000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "柯嘉君",
+          "amount": 1500000,
+          "acquisition_date": "",
+          "cc": 1998
+        }
+      ]
+    },
+    "陳芳盈": {
+      "count": 1,
+      "total": 1110000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "陳芳盈",
+          "amount": 1110000,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    },
+    "受贈": {
+      "count": 1,
+      "total": 850000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "受贈",
+          "amount": 850000,
+          "acquisition_date": "",
+          "cc": 1987
+        }
+      ]
+    },
+    "曾秀霞": {
+      "count": 1,
+      "total": 1300000,
+      "items": [
+        {
+          "brand": "本田",
+          "owner": "曾秀霞",
+          "amount": 1300000,
+          "acquisition_date": "",
+          "cc": 1498
+        }
+      ]
+    },
+    "黃文祥": {
+      "count": 1,
+      "total": 400000,
+      "items": [
+        {
+          "brand": "Mercedes-Benz",
+          "owner": "黃文祥",
+          "amount": 400000,
+          "acquisition_date": "",
+          "cc": 3498
+        }
+      ]
+    },
+    "黃勝志": {
+      "count": 1,
+      "total": 880000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "黃勝志",
+          "amount": 880000,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    },
+    "李新棣": {
+      "count": 1,
+      "total": 785000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "李新棣",
+          "amount": 785000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "購買": {
+      "count": 1,
+      "total": 1500000,
+      "items": [
+        {
+          "brand": "MERCEDES-BENZ",
+          "owner": "購買",
+          "amount": 1500000,
+          "acquisition_date": "",
+          "cc": 1991
+        }
+      ]
+    },
+    "廖偉晴": {
+      "count": 1,
+      "total": 2800000,
+      "items": [
+        {
+          "brand": "BMW",
+          "owner": "廖偉晴",
+          "amount": 2800000,
+          "acquisition_date": "",
+          "cc": 2998
+        }
+      ]
+    },
+    "蔡孟真": {
+      "count": 1,
+      "total": 1480000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "蔡孟真",
+          "amount": 1480000,
+          "acquisition_date": "",
+          "cc": 1987
+        }
+      ]
+    },
+    "洪惠玲": {
+      "count": 1,
+      "total": 900000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "洪惠玲",
+          "amount": 900000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "王英吉": {
+      "count": 1,
+      "total": 300000,
+      "items": [
+        {
+          "brand": "納智捷",
+          "owner": "王英吉",
+          "amount": 300000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "鍾明馨": {
+      "count": 1,
+      "total": 2100000,
+      "items": [
+        {
+          "brand": "Mercedes-Benz",
+          "owner": "鍾明馨",
+          "amount": 2100000,
+          "acquisition_date": "",
+          "cc": 1991
+        }
+      ]
+    },
+    "董淑英": {
+      "count": 1,
+      "total": 1400000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "董淑英",
+          "amount": 1400000,
+          "acquisition_date": "",
+          "cc": 1490
+        }
+      ]
+    }
+  },
+  "308": {
+    "顏嘉葦": {
+      "count": 1,
+      "total": 475354,
+      "items": [
+        {
+          "brand": "本田",
+          "owner": "顏嘉葦",
+          "amount": 475354,
+          "acquisition_date": "",
+          "cc": 1498
+        }
+      ]
+    },
+    "蘇俊豪": {
+      "count": 1,
+      "total": 1750000,
+      "items": [
+        {
+          "brand": "AUDI",
+          "owner": "蘇俊豪",
+          "amount": 1750000,
+          "acquisition_date": "",
+          "cc": 2967
+        }
+      ]
+    },
+    "黃婉蘭": {
+      "count": 1,
+      "total": 2860000,
+      "items": [
+        {
+          "brand": "Mercedes-Benz",
+          "owner": "黃婉蘭",
+          "amount": 2860000,
+          "acquisition_date": "",
+          "cc": 1991
+        }
+      ]
+    },
+    "陳怡岳": {
+      "count": 1,
+      "total": 960000,
+      "items": [
+        {
+          "brand": "VOLVO",
+          "owner": "陳怡岳",
+          "amount": 960000,
+          "acquisition_date": "",
+          "cc": 1969
+        }
+      ]
+    },
+    "張梅雪": {
+      "count": 2,
+      "total": 4280000,
+      "items": [
+        {
+          "brand": "JAGUAR",
+          "owner": "張梅雪",
+          "amount": 1900000,
+          "acquisition_date": "",
+          "cc": 1997
+        },
+        {
+          "brand": "LAND",
+          "owner": "張梅雪",
+          "amount": 2380000,
+          "acquisition_date": "",
+          "cc": 2997
+        }
+      ]
+    },
+    "張淑姿": {
+      "count": 1,
+      "total": 2100000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "張淑姿",
+          "amount": 2100000,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    },
+    "蘇瀨德": {
+      "count": 1,
+      "total": 678000,
+      "items": [
+        {
+          "brand": "SUZUKI",
+          "owner": "蘇瀨德",
+          "amount": 678000,
+          "acquisition_date": "",
+          "cc": 1197
+        }
+      ]
+    },
+    "王香文": {
+      "count": 2,
+      "total": 2110000,
+      "items": [
+        {
+          "brand": "MAZDA",
+          "owner": "王香文",
+          "amount": 1080000,
+          "acquisition_date": "",
+          "cc": 1998
+        },
+        {
+          "brand": "國瑞",
+          "owner": "王香文",
+          "amount": 1030000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "林森陽": {
+      "count": 1,
+      "total": 220000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "林森陽",
+          "amount": 220000,
+          "acquisition_date": "",
+          "cc": 3456
+        }
+      ]
+    },
+    "林岱杰": {
+      "count": 1,
+      "total": 300000,
+      "items": [
+        {
+          "brand": "Mercedes-Benz",
+          "owner": "林岱杰",
+          "amount": 300000,
+          "acquisition_date": "",
+          "cc": 2143
+        }
+      ]
+    },
+    "吳美姬": {
+      "count": 1,
+      "total": 490000,
+      "items": [
+        {
+          "brand": "中華",
+          "owner": "吳美姬",
+          "amount": 490000,
+          "acquisition_date": "",
+          "cc": 1488
+        }
+      ]
+    },
+    "莊竣傑": {
+      "count": 2,
+      "total": 300000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "莊竣傑",
+          "amount": 200000,
+          "acquisition_date": "",
+          "cc": 1987
+        },
+        {
+          "brand": "BENZ",
+          "owner": "莊竣傑",
+          "amount": 100000,
+          "acquisition_date": "",
+          "cc": 1998
+        }
+      ]
+    },
+    "陳信文": {
+      "count": 2,
+      "total": 1490000,
+      "items": [
+        {
+          "brand": "Mercedes-Benz",
+          "owner": "陳信文",
+          "amount": 1400000,
+          "acquisition_date": "",
+          "cc": 2987
+        },
+        {
+          "brand": "SUZUKI",
+          "owner": "陳信文",
+          "amount": 90000,
+          "acquisition_date": "",
+          "cc": 1328
+        }
+      ]
+    },
+    "陳福成": {
+      "count": 1,
+      "total": 500000,
+      "items": [
+        {
+          "brand": "AUDI",
+          "owner": "陳福成",
+          "amount": 500000,
+          "acquisition_date": "",
+          "cc": 4163
+        }
+      ]
+    },
+    "黃啟豪": {
+      "count": 1,
+      "total": 100000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "黃啟豪",
+          "amount": 100000,
+          "acquisition_date": "",
+          "cc": 1794
+        }
+      ]
+    },
+    "楊秀琴": {
+      "count": 1,
+      "total": 650000,
+      "items": [
+        {
+          "brand": "賓士",
+          "owner": "楊秀琴",
+          "amount": 650000,
+          "acquisition_date": "",
+          "cc": 1991
+        }
+      ]
+    },
+    "潘麗惠": {
+      "count": 2,
+      "total": 3400000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "潘麗惠",
+          "amount": 400000,
+          "acquisition_date": "",
+          "cc": 1798
+        },
+        {
+          "brand": "Benz",
+          "owner": "潘麗惠",
+          "amount": 3000000,
+          "acquisition_date": "",
+          "cc": 2000
+        }
+      ]
+    },
+    "蔡奇璋": {
+      "count": 1,
+      "total": 2500000,
+      "items": [
+        {
+          "brand": "VOLVO60",
+          "owner": "蔡奇璋",
+          "amount": 2500000,
+          "acquisition_date": "",
+          "cc": 2000
+        }
+      ]
+    },
+    "唐斯蓉": {
+      "count": 1,
+      "total": 5739000,
+      "items": [
+        {
+          "brand": "PORSCHE",
+          "owner": "唐斯蓉",
+          "amount": 5739000,
+          "acquisition_date": "",
+          "cc": 2894
+        }
+      ]
+    },
+    "方一祥": {
+      "count": 2,
+      "total": 303000,
+      "items": [
+        {
+          "brand": "VOLKSWAGEN",
+          "owner": "方一祥",
+          "amount": 160000,
+          "acquisition_date": "",
+          "cc": 2461
+        },
+        {
+          "brand": "本田",
+          "owner": "方一祥",
+          "amount": 143000,
+          "acquisition_date": "",
+          "cc": 1998
+        }
+      ]
+    },
+    "蔡俊祥": {
+      "count": 3,
+      "total": 3400000,
+      "items": [
+        {
+          "brand": "PIAGGIO",
+          "owner": "蔡俊祥",
+          "amount": 200000,
+          "acquisition_date": "",
+          "cc": 278
+        },
+        {
+          "brand": "BMW",
+          "owner": "蔡俊祥",
+          "amount": 1700000,
+          "acquisition_date": "",
+          "cc": 1998
+        },
+        {
+          "brand": "Mercedes-Benz",
+          "owner": "蔡俊祥",
+          "amount": 1500000,
+          "acquisition_date": "",
+          "cc": 2996
+        }
+      ]
+    },
+    "利八魁": {
+      "count": 3,
+      "total": 2420000,
+      "items": [
+        {
+          "brand": "中華",
+          "owner": "利八魁",
+          "amount": 420000,
+          "acquisition_date": "",
+          "cc": 1299
+        },
+        {
+          "brand": "LEXUS",
+          "owner": "利八魁",
+          "amount": 1730000,
+          "acquisition_date": "",
+          "cc": 1987
+        },
+        {
+          "brand": "日產",
+          "owner": "利八魁",
+          "amount": 270000,
+          "acquisition_date": "",
+          "cc": 1598
+        }
+      ]
+    },
+    "宋華禎": {
+      "count": 1,
+      "total": 800000,
+      "items": [
+        {
+          "brand": "本田",
+          "owner": "宋華禎",
+          "amount": 800000,
+          "acquisition_date": "",
+          "cc": 1498
+        }
+      ]
+    },
+    "杜仁勇": {
+      "count": 1,
+      "total": 350000,
+      "items": [
+        {
+          "brand": "日產",
+          "owner": "杜仁勇",
+          "amount": 350000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "林柏妹": {
+      "count": 1,
+      "total": 750000,
+      "items": [
+        {
+          "brand": "三陽",
+          "owner": "林柏妹",
+          "amount": 750000,
+          "acquisition_date": "99年12月09日",
+          "cc": 1598
+        }
+      ]
+    },
+    "周陳曉玟": {
+      "count": 1,
+      "total": 780000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "周陳曉玟",
+          "amount": 780000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "林郁虹": {
+      "count": 1,
+      "total": 750000,
+      "items": [
+        {
+          "brand": "HARLEY-DAVIDSON",
+          "owner": "林郁虹",
+          "amount": 750000,
+          "acquisition_date": "",
+          "cc": 1250
+        }
+      ]
+    },
+    "林采穎": {
+      "count": 1,
+      "total": 600000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "林采穎",
+          "amount": 600000,
+          "acquisition_date": "",
+          "cc": 1496
+        }
+      ]
+    },
+    "林蔡鳳梅": {
+      "count": 1,
+      "total": 874200,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "林蔡鳳梅",
+          "amount": 874200,
+          "acquisition_date": "",
+          "cc": 1496
+        }
+      ]
+    },
+    "林清都": {
+      "count": 1,
+      "total": 874200,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "林清都",
+          "amount": 874200,
+          "acquisition_date": "",
+          "cc": 1496
+        }
+      ]
+    },
+    "洪明江": {
+      "count": 1,
+      "total": 900000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "洪明江",
+          "amount": 900000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    }
+  },
+  "309": {
+    "劉守成": {
+      "count": 1,
+      "total": 200000,
+      "items": [
+        {
+          "brand": "SKODA",
+          "owner": "劉守成",
+          "amount": 200000,
+          "acquisition_date": "114年01月23日",
+          "cc": 1197
+        }
+      ]
+    },
+    "王昱心": {
+      "count": 2,
+      "total": 2290000,
+      "items": [
+        {
+          "brand": "KIA",
+          "owner": "王昱心",
+          "amount": 890000,
+          "acquisition_date": "98年06月",
+          "cc": 998
+        },
+        {
+          "brand": "VOLVO",
+          "owner": "王昱心",
+          "amount": 1400000,
+          "acquisition_date": "",
+          "cc": 2720
+        }
+      ]
+    },
+    "林桂香": {
+      "count": 1,
+      "total": 200000,
+      "items": [
+        {
+          "brand": "FORD",
+          "owner": "林桂香",
+          "amount": 200000,
+          "acquisition_date": "",
+          "cc": 1498
+        }
+      ]
+    },
+    "鴻義章": {
+      "count": 1,
+      "total": 1100000,
+      "items": [
+        {
+          "brand": "中華",
+          "owner": "鴻義章",
+          "amount": 1100000,
+          "acquisition_date": "",
+          "cc": 2359
+        }
+      ]
+    },
+    "林奕華": {
+      "count": 1,
+      "total": 1069000,
+      "items": [
+        {
+          "brand": "本田",
+          "owner": "林奕華",
+          "amount": 1069000,
+          "acquisition_date": "",
+          "cc": 1498
+        }
+      ]
+    },
+    "薛惠如": {
+      "count": 1,
+      "total": 700000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "薛惠如",
+          "amount": 700000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "湯志民": {
+      "count": 1,
+      "total": 2000000,
+      "items": [
+        {
+          "brand": "MERCEDES-BENZ",
+          "owner": "湯志民",
+          "amount": 2000000,
+          "acquisition_date": "",
+          "cc": 1332
+        }
+      ]
+    },
+    "張郁玟": {
+      "count": 1,
+      "total": 980000,
+      "items": [
+        {
+          "brand": "Mercedes-Benz",
+          "owner": "張郁玟",
+          "amount": 980000,
+          "acquisition_date": "",
+          "cc": 1332
+        }
+      ]
+    },
+    "王秋冬": {
+      "count": 1,
+      "total": 1189000,
+      "items": [
+        {
+          "brand": "NISSAN",
+          "owner": "王秋冬",
+          "amount": 1189000,
+          "acquisition_date": "110年03月31日",
+          "cc": 1997
+        }
+      ]
+    },
+    "朱暖英": {
+      "count": 2,
+      "total": 1000000,
+      "items": [
+        {
+          "brand": "日產",
+          "owner": "朱暖英",
+          "amount": 850000,
+          "acquisition_date": "111年12月26日",
+          "cc": 1598
+        },
+        {
+          "brand": "日產",
+          "owner": "朱暖英",
+          "amount": 150000,
+          "acquisition_date": "112年07月14日",
+          "cc": 1498
+        }
+      ]
+    },
+    "林裕益": {
+      "count": 1,
+      "total": 1250000,
+      "items": [
+        {
+          "brand": "VOLKSWAGEN",
+          "owner": "林裕益",
+          "amount": 1250000,
+          "acquisition_date": "110年07月28日",
+          "cc": 1498
+        }
+      ]
+    },
+    "莊國賢": {
+      "count": 1,
+      "total": 1075000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "莊國賢",
+          "amount": 1075000,
+          "acquisition_date": "",
+          "cc": 1987
+        }
+      ]
+    }
+  },
+  "310": {
+    "陳志成": {
+      "count": 1,
+      "total": 1608000,
+      "items": [
+        {
+          "brand": "MERCEDES-BENZ",
+          "owner": "陳志成",
+          "amount": 1608000,
+          "acquisition_date": "",
+          "cc": 1332
+        }
+      ]
+    },
+    "顏喬姿": {
+      "count": 1,
+      "total": 889000,
+      "items": [
+        {
+          "brand": "福特六和",
+          "owner": "顏喬姿",
+          "amount": 889000,
+          "acquisition_date": "",
+          "cc": 1496
+        }
+      ]
+    },
+    "黃建溢": {
+      "count": 1,
+      "total": 2410000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "黃建溢",
+          "amount": 2410000,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    },
+    "高嘉華": {
+      "count": 1,
+      "total": 100000,
+      "items": [
+        {
+          "brand": "MAZDA",
+          "owner": "高嘉華",
+          "amount": 100000,
+          "acquisition_date": "",
+          "cc": 1998
+        }
+      ]
+    },
+    "黃雪霞": {
+      "count": 2,
+      "total": 1404000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "黃雪霞",
+          "amount": 1204000,
+          "acquisition_date": "",
+          "cc": 1987
+        },
+        {
+          "brand": "MAHINDRA",
+          "owner": "黃雪霞",
+          "amount": 200000,
+          "acquisition_date": "",
+          "cc": 2179
+        }
+      ]
+    },
+    "洪進謀": {
+      "count": 1,
+      "total": 1200000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "洪進謀",
+          "amount": 1200000,
+          "acquisition_date": "",
+          "cc": 2000
+        }
+      ]
+    },
+    "羅平道": {
+      "count": 1,
+      "total": 700000,
+      "items": [
+        {
+          "brand": "MITSUBISHI",
+          "owner": "羅平道",
+          "amount": 700000,
+          "acquisition_date": "",
+          "cc": 1499
+        }
+      ]
+    },
+    "蘇資婷": {
+      "count": 1,
+      "total": 600000,
+      "items": [
+        {
+          "brand": "HARLEY-DAVIDSON",
+          "owner": "蘇資婷",
+          "amount": 600000,
+          "acquisition_date": "",
+          "cc": 1690
+        }
+      ]
+    },
+    "吳麗玉": {
+      "count": 1,
+      "total": 674000,
+      "items": [
+        {
+          "brand": "本田",
+          "owner": "吳麗玉",
+          "amount": 674000,
+          "acquisition_date": "",
+          "cc": 1498
+        }
+      ]
+    },
+    "呂惠卿": {
+      "count": 1,
+      "total": 1750824,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "呂惠卿",
+          "amount": 1750824,
+          "acquisition_date": "",
+          "cc": 1987
+        }
+      ]
+    },
+    "陳素貞": {
+      "count": 1,
+      "total": 621000,
+      "items": [
+        {
+          "brand": "KIA",
+          "owner": "陳素貞",
+          "amount": 621000,
+          "acquisition_date": "",
+          "cc": 1197
+        }
+      ]
+    },
+    "林佩螢": {
+      "count": 1,
+      "total": 550000,
+      "items": [
+        {
+          "brand": "Suzuki",
+          "owner": "林佩螢",
+          "amount": 550000,
+          "acquisition_date": "",
+          "cc": 1200
+        }
+      ]
+    },
+    "林詩穎": {
+      "count": 1,
+      "total": 930000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "林詩穎",
+          "amount": 930000,
+          "acquisition_date": "",
+          "cc": 1987
+        }
+      ]
+    },
+    "劉慧雯": {
+      "count": 1,
+      "total": 3800000,
+      "items": [
+        {
+          "brand": "JAGUAR",
+          "owner": "劉慧雯",
+          "amount": 3800000,
+          "acquisition_date": "",
+          "cc": 2995
+        }
+      ]
+    },
+    "林麗": {
+      "count": 1,
+      "total": 530000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "林麗",
+          "amount": 530000,
+          "acquisition_date": "",
+          "cc": 1496
+        }
+      ]
+    },
+    "陳慶保": {
+      "count": 1,
+      "total": 530000,
+      "items": [
+        {
+          "brand": "本田",
+          "owner": "陳慶保",
+          "amount": 530000,
+          "acquisition_date": "",
+          "cc": 1799
+        }
+      ]
+    },
+    "李文奇": {
+      "count": 3,
+      "total": 440000,
+      "items": [
+        {
+          "brand": "VOLKSWAGEN",
+          "owner": "李文奇",
+          "amount": 220000,
+          "acquisition_date": "",
+          "cc": 1984
+        },
+        {
+          "brand": "鈴木",
+          "owner": "李文奇",
+          "amount": 100000,
+          "acquisition_date": "",
+          "cc": 1298
+        },
+        {
+          "brand": "HONDA",
+          "owner": "李文奇",
+          "amount": 120000,
+          "acquisition_date": "",
+          "cc": 348
+        }
+      ]
+    },
+    "陳鴻禧": {
+      "count": 1,
+      "total": 1360000,
+      "items": [
+        {
+          "brand": "MG",
+          "owner": "陳鴻禧",
+          "amount": 1360000,
+          "acquisition_date": "",
+          "cc": 1490
+        }
+      ]
+    },
+    "黃浴沂": {
+      "count": 1,
+      "total": 4590000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "黃浴沂",
+          "amount": 4590000,
+          "acquisition_date": "",
+          "cc": 2393
+        }
+      ]
+    },
+    "黃惠慈": {
+      "count": 1,
+      "total": 1420000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "黃惠慈",
+          "amount": 1420000,
+          "acquisition_date": "",
+          "cc": 1987
+        }
+      ]
+    },
+    "黃琤婷": {
+      "count": 1,
+      "total": 380000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "黃琤婷",
+          "amount": 380000,
+          "acquisition_date": "",
+          "cc": 2362
+        }
+      ]
+    },
+    "黃雯如": {
+      "count": 2,
+      "total": 2290000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "黃雯如",
+          "amount": 1600000,
+          "acquisition_date": "",
+          "cc": 1987
+        },
+        {
+          "brand": "本田",
+          "owner": "黃雯如",
+          "amount": 690000,
+          "acquisition_date": "",
+          "cc": 1498
+        }
+      ]
+    },
+    "吳佩琳": {
+      "count": 1,
+      "total": 1332355,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "吳佩琳",
+          "amount": 1332355,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    },
+    "賴良洲": {
+      "count": 2,
+      "total": 3150000,
+      "items": [
+        {
+          "brand": "NISSAN",
+          "owner": "賴良洲",
+          "amount": 150000,
+          "acquisition_date": "",
+          "cc": 2488
+        },
+        {
+          "brand": "LEXUS",
+          "owner": "賴良洲",
+          "amount": 3000000,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    },
+    "吳秀娥": {
+      "count": 1,
+      "total": 100000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "吳秀娥",
+          "amount": 100000,
+          "acquisition_date": "",
+          "cc": 1781
+        }
+      ]
+    },
+    "廖家妤": {
+      "count": 1,
+      "total": 3500000,
+      "items": [
+        {
+          "brand": "BMW",
+          "owner": "廖家妤",
+          "amount": 3500000,
+          "acquisition_date": "",
+          "cc": 2998
+        }
+      ]
+    },
+    "黃達芸": {
+      "count": 1,
+      "total": 600000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "黃達芸",
+          "amount": 600000,
+          "acquisition_date": "",
+          "cc": 1496
+        }
+      ]
+    },
+    "李正文": {
+      "count": 1,
+      "total": 1000000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "李正文",
+          "amount": 1000000,
+          "acquisition_date": "",
+          "cc": 1987
+        }
+      ]
+    },
+    "曾愉庭": {
+      "count": 1,
+      "total": 400000,
+      "items": [
+        {
+          "brand": "中華",
+          "owner": "曾愉庭",
+          "amount": 400000,
+          "acquisition_date": "",
+          "cc": 1499
+        }
+      ]
+    },
+    "林玉芬": {
+      "count": 1,
+      "total": 100000,
+      "items": [
+        {
+          "brand": "福特六和",
+          "owner": "林玉芬",
+          "amount": 100000,
+          "acquisition_date": "",
+          "cc": 1998
+        }
+      ]
+    },
+    "林則葹": {
+      "count": 1,
+      "total": 804520,
+      "items": [
+        {
+          "brand": "本田",
+          "owner": "林則葹",
+          "amount": 804520,
+          "acquisition_date": "",
+          "cc": 1498
+        }
+      ]
+    },
+    "陳羿縈": {
+      "count": 1,
+      "total": 3280000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "陳羿縈",
+          "amount": 3280000,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    },
+    "金淑敏": {
+      "count": 2,
+      "total": 1350000,
+      "items": [
+        {
+          "brand": "中華",
+          "owner": "金淑敏",
+          "amount": 600000,
+          "acquisition_date": "",
+          "cc": 1488
+        },
+        {
+          "brand": "國瑞",
+          "owner": "金淑敏",
+          "amount": 750000,
+          "acquisition_date": "",
+          "cc": 1496
+        }
+      ]
+    },
+    "中華": {
+      "count": 1,
+      "total": 180000,
+      "items": [
+        {
+          "brand": "中華",
+          "owner": "中華",
+          "amount": 180000,
+          "acquisition_date": "",
+          "cc": 1198
+        }
+      ]
+    }
+  },
+  "311": {
+    "陳榮貴": {
+      "count": 1,
+      "total": 736000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "陳榮貴",
+          "amount": 736000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "陳怡婷": {
+      "count": 1,
+      "total": 1200000,
+      "items": [
+        {
+          "brand": "納智捷",
+          "owner": "陳怡婷",
+          "amount": 1200000,
+          "acquisition_date": "113年12月11日",
+          "cc": 2198
+        }
+      ]
+    },
+    "蔡靜宜": {
+      "count": 1,
+      "total": 1600000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "蔡靜宜",
+          "amount": 1600000,
+          "acquisition_date": "",
+          "cc": 1987
+        }
+      ]
+    },
+    "郭佩珠": {
+      "count": 1,
+      "total": 1190000,
+      "items": [
+        {
+          "brand": "本田",
+          "owner": "郭佩珠",
+          "amount": 1190000,
+          "acquisition_date": "",
+          "cc": 1498
+        }
+      ]
+    },
+    "林瑋茜": {
+      "count": 1,
+      "total": 1500000,
+      "items": [
+        {
+          "brand": "AUDI",
+          "owner": "林瑋茜",
+          "amount": 1500000,
+          "acquisition_date": "",
+          "cc": 1498
+        }
+      ]
+    },
+    "蘇俊賓": {
+      "count": 1,
+      "total": 3459000,
+      "items": [
+        {
+          "brand": "Tesla",
+          "owner": "蘇俊賓",
+          "amount": 3459000,
+          "acquisition_date": "",
+          "cc": 4960
+        }
+      ]
+    },
+    "羅翠萍": {
+      "count": 1,
+      "total": 800000,
+      "items": [
+        {
+          "brand": "日產",
+          "owner": "羅翠萍",
+          "amount": 800000,
+          "acquisition_date": "",
+          "cc": 1598
+        }
+      ]
+    },
+    "劉素琴": {
+      "count": 1,
+      "total": 2500000,
+      "items": [
+        {
+          "brand": "BMW",
+          "owner": "劉素琴",
+          "amount": 2500000,
+          "acquisition_date": "112年07月19日",
+          "cc": 5440
+        }
+      ]
+    },
+    "林素如": {
+      "count": 1,
+      "total": 80000,
+      "items": [
+        {
+          "brand": "鈴木",
+          "owner": "林素如",
+          "amount": 80000,
+          "acquisition_date": "",
+          "cc": 1328
+        }
+      ]
+    }
+  },
+  "312": {
+    "徐子芳": {
+      "count": 1,
+      "total": 1200000,
+      "items": [
+        {
+          "brand": "MITSUBISHI",
+          "owner": "徐子芳",
+          "amount": 1200000,
+          "acquisition_date": "",
+          "cc": 1499
+        }
+      ]
+    },
+    "張美慧": {
+      "count": 1,
+      "total": 860000,
+      "items": [
+        {
+          "brand": "日產",
+          "owner": "張美慧",
+          "amount": 860000,
+          "acquisition_date": "",
+          "cc": 1598
+        }
+      ]
+    },
+    "本田": {
+      "count": 1,
+      "total": 1000000,
+      "items": [
+        {
+          "brand": "本田",
+          "owner": "本田",
+          "amount": 1000000,
+          "acquisition_date": "",
+          "cc": 1498
+        }
+      ]
+    },
+    "陳克": {
+      "count": 1,
+      "total": 140200,
+      "items": [
+        {
+          "brand": "鈴木",
+          "owner": "陳克",
+          "amount": 140200,
+          "acquisition_date": "",
+          "cc": 1995
+        }
+      ]
+    },
+    "黃馨": {
+      "count": 1,
+      "total": 1500000,
+      "items": [
+        {
+          "brand": "FORD",
+          "owner": "黃馨",
+          "amount": 1500000,
+          "acquisition_date": "92年06月",
+          "cc": 1996
+        }
+      ]
+    },
+    "韓林梅": {
+      "count": 1,
+      "total": 1680000,
+      "items": [
+        {
+          "brand": "Lexus",
+          "owner": "韓林梅",
+          "amount": 1680000,
+          "acquisition_date": "",
+          "cc": 1924
+        }
+      ]
+    },
+    "中華": {
+      "count": 1,
+      "total": 700000,
+      "items": [
+        {
+          "brand": "中華",
+          "owner": "中華",
+          "amount": 700000,
+          "acquisition_date": "",
+          "cc": 1498
+        }
+      ]
+    },
+    "高王修勇": {
+      "count": 2,
+      "total": 490000,
+      "items": [
+        {
+          "brand": "YAMAHA",
+          "owner": "高王修勇",
+          "amount": 340000,
+          "acquisition_date": "",
+          "cc": 292
+        },
+        {
+          "brand": "LEXUS",
+          "owner": "高王修勇",
+          "amount": 150000,
+          "acquisition_date": "",
+          "cc": 4293
+        }
+      ]
+    },
+    "林琮翰": {
+      "count": 2,
+      "total": 3800000,
+      "items": [
+        {
+          "brand": "Mercedes-Benz",
+          "owner": "林琮翰",
+          "amount": 2000000,
+          "acquisition_date": "",
+          "cc": 3498
+        },
+        {
+          "brand": "BMW",
+          "owner": "林琮翰",
+          "amount": 1800000,
+          "acquisition_date": "",
+          "cc": 2979
+        }
+      ]
+    },
+    "購買": {
+      "count": 3,
+      "total": 850000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "購買",
+          "amount": 450000,
+          "acquisition_date": "",
+          "cc": 4293
+        },
+        {
+          "brand": "中華",
+          "owner": "購買",
+          "amount": 100000,
+          "acquisition_date": "",
+          "cc": 1198
+        },
+        {
+          "brand": "LEXUS",
+          "owner": "購買",
+          "amount": 300000,
+          "acquisition_date": "",
+          "cc": 4600
+        }
+      ]
+    },
+    "方賢仁": {
+      "count": 1,
+      "total": 600000,
+      "items": [
+        {
+          "brand": "福特六和",
+          "owner": "方賢仁",
+          "amount": 600000,
+          "acquisition_date": "",
+          "cc": 2261
+        }
+      ]
+    },
+    "王姷力": {
+      "count": 1,
+      "total": 65000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "王姷力",
+          "amount": 65000,
+          "acquisition_date": "",
+          "cc": 1497
+        }
+      ]
+    },
+    "胡秀英": {
+      "count": 2,
+      "total": 180000,
+      "items": [
+        {
+          "brand": "納智捷",
+          "owner": "胡秀英",
+          "amount": 120000,
+          "acquisition_date": "98年10月24日",
+          "cc": 2198
+        },
+        {
+          "brand": "中華",
+          "owner": "胡秀英",
+          "amount": 60000,
+          "acquisition_date": "",
+          "cc": 1198
+        }
+      ]
+    },
+    "林東滿": {
+      "count": 1,
+      "total": 2250000,
+      "items": [
+        {
+          "brand": "VOLVO",
+          "owner": "林東滿",
+          "amount": 2250000,
+          "acquisition_date": "",
+          "cc": 1969
+        }
+      ]
+    },
+    "蔡旻真": {
+      "count": 1,
+      "total": 100000,
+      "items": [
+        {
+          "brand": "日產",
+          "owner": "蔡旻真",
+          "amount": 100000,
+          "acquisition_date": "",
+          "cc": 1797
+        }
+      ]
+    },
+    "翁麗吟": {
+      "count": 1,
+      "total": 850000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "翁麗吟",
+          "amount": 850000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "江家榛": {
+      "count": 2,
+      "total": 2890000,
+      "items": [
+        {
+          "brand": "MERCEDES-BENZ",
+          "owner": "江家榛",
+          "amount": 2090000,
+          "acquisition_date": "",
+          "cc": 1332
+        },
+        {
+          "brand": "日產",
+          "owner": "江家榛",
+          "amount": 800000,
+          "acquisition_date": "",
+          "cc": 1598
+        }
+      ]
+    },
+    "陳政宗": {
+      "count": 1,
+      "total": 100000,
+      "items": [
+        {
+          "brand": "三陽",
+          "owner": "陳政宗",
+          "amount": 100000,
+          "acquisition_date": "",
+          "cc": 2199
+        }
+      ]
+    },
+    "購得": {
+      "count": 1,
+      "total": 1300000,
+      "items": [
+        {
+          "brand": "Mercedes-Benz",
+          "owner": "購得",
+          "amount": 1300000,
+          "acquisition_date": "",
+          "cc": 2987
+        }
+      ]
+    },
+    "張淑玲": {
+      "count": 1,
+      "total": 2480000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "張淑玲",
+          "amount": 2480000,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    },
+    "王銘薇": {
+      "count": 2,
+      "total": 3110000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "王銘薇",
+          "amount": 2690000,
+          "acquisition_date": "",
+          "cc": 2487
+        },
+        {
+          "brand": "TOYOTA",
+          "owner": "王銘薇",
+          "amount": 420000,
+          "acquisition_date": "",
+          "cc": 1987
+        }
+      ]
+    },
+    "董昌華": {
+      "count": 1,
+      "total": 80000,
+      "items": [
+        {
+          "brand": "中華",
+          "owner": "董昌華",
+          "amount": 80000,
+          "acquisition_date": "",
+          "cc": 2835
+        }
+      ]
+    },
+    "楊吳暖": {
+      "count": 1,
+      "total": 220000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "楊吳暖",
+          "amount": 220000,
+          "acquisition_date": "99年06月",
+          "cc": 1497
+        }
+      ]
+    },
+    "楊秋珍": {
+      "count": 1,
+      "total": 935000,
+      "items": [
+        {
+          "brand": "中華名爵",
+          "owner": "楊秋珍",
+          "amount": 935000,
+          "acquisition_date": "",
+          "cc": 1490
+        }
+      ]
+    },
+    "陳毓仁": {
+      "count": 1,
+      "total": 700000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "陳毓仁",
+          "amount": 700000,
+          "acquisition_date": "",
+          "cc": 1496
+        }
+      ]
+    },
+    "藍凱元": {
+      "count": 1,
+      "total": 500000,
+      "items": [
+        {
+          "brand": "本田",
+          "owner": "藍凱元",
+          "amount": 500000,
+          "acquisition_date": "",
+          "cc": 1997
+        }
+      ]
+    },
+    "宋昀芝": {
+      "count": 1,
+      "total": 900000,
+      "items": [
+        {
+          "brand": "VOLKSWAGEN",
+          "owner": "宋昀芝",
+          "amount": 900000,
+          "acquisition_date": "",
+          "cc": 1984
+        }
+      ]
+    },
+    "高惠貞": {
+      "count": 1,
+      "total": 500000,
+      "items": [
+        {
+          "brand": "SMART",
+          "owner": "高惠貞",
+          "amount": 500000,
+          "acquisition_date": "",
+          "cc": 999
+        }
+      ]
+    },
+    "許月里": {
+      "count": 1,
+      "total": 740000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "許月里",
+          "amount": 740000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "許育愷": {
+      "count": 1,
+      "total": 745000,
+      "items": [
+        {
+          "brand": "日產",
+          "owner": "許育愷",
+          "amount": 745000,
+          "acquisition_date": "",
+          "cc": 1598
+        }
+      ]
+    }
+  },
+  "313": {
+    "石永城": {
+      "count": 1,
+      "total": 2700000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "石永城",
+          "amount": 2700000,
+          "acquisition_date": "",
+          "cc": 2393
+        }
+      ]
+    },
+    "洪鴻斌": {
+      "count": 1,
+      "total": 1120000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "洪鴻斌",
+          "amount": 1120000,
+          "acquisition_date": "",
+          "cc": 1987
+        }
+      ]
+    },
+    "陳錦偉": {
+      "count": 1,
+      "total": 368000,
+      "items": [
+        {
+          "brand": "AUDI",
+          "owner": "陳錦偉",
+          "amount": 368000,
+          "acquisition_date": "",
+          "cc": 1968
+        }
+      ]
+    },
+    "許懿芹": {
+      "count": 1,
+      "total": 240000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "許懿芹",
+          "amount": 240000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "嚴淑娟": {
+      "count": 1,
+      "total": 1000000,
+      "items": [
+        {
+          "brand": "Mercedes-Benz",
+          "owner": "嚴淑娟",
+          "amount": 1000000,
+          "acquisition_date": "98年02月07日",
+          "cc": 1991
+        }
+      ]
+    },
+    "李志平": {
+      "count": 1,
+      "total": 2500000,
+      "items": [
+        {
+          "brand": "BMW",
+          "owner": "李志平",
+          "amount": 2500000,
+          "acquisition_date": "",
+          "cc": 1998
+        }
+      ]
+    },
+    "曹曉芳": {
+      "count": 1,
+      "total": 250000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "曹曉芳",
+          "amount": 250000,
+          "acquisition_date": "",
+          "cc": 1987
+        }
+      ]
+    },
+    "呂美玲": {
+      "count": 1,
+      "total": 400000,
+      "items": [
+        {
+          "brand": "日產",
+          "owner": "呂美玲",
+          "amount": 400000,
+          "acquisition_date": "",
+          "cc": 1598
+        }
+      ]
+    },
+    "宋瑋莉": {
+      "count": 1,
+      "total": 450000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "宋瑋莉",
+          "amount": 450000,
+          "acquisition_date": "",
+          "cc": 1998
+        }
+      ]
+    },
+    "施偉政": {
+      "count": 1,
+      "total": 800000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "施偉政",
+          "amount": 800000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "周秀娥": {
+      "count": 1,
+      "total": 700000,
+      "items": [
+        {
+          "brand": "日產",
+          "owner": "周秀娥",
+          "amount": 700000,
+          "acquisition_date": "",
+          "cc": 1598
+        }
+      ]
+    },
+    "周嘉莉": {
+      "count": 1,
+      "total": 800000,
+      "items": [
+        {
+          "brand": "日產",
+          "owner": "周嘉莉",
+          "amount": 800000,
+          "acquisition_date": "",
+          "cc": 1498
+        }
+      ]
+    },
+    "郭美秀": {
+      "count": 1,
+      "total": 870000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "郭美秀",
+          "amount": 870000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "陳軍佐": {
+      "count": 1,
+      "total": 1020000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "陳軍佐",
+          "amount": 1020000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "張之豪": {
+      "count": 1,
+      "total": 300000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "張之豪",
+          "amount": 300000,
+          "acquisition_date": "",
+          "cc": 1497
+        }
+      ]
+    },
+    "張雅琁": {
+      "count": 1,
+      "total": 898000,
+      "items": [
+        {
+          "brand": "福特六和",
+          "owner": "張雅琁",
+          "amount": 898000,
+          "acquisition_date": "",
+          "cc": 1496
+        }
+      ]
+    },
+    "張耿輝": {
+      "count": 1,
+      "total": 797040,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "張耿輝",
+          "amount": 797040,
+          "acquisition_date": "",
+          "cc": 1988
+        }
+      ]
+    },
+    "張顥瀚": {
+      "count": 1,
+      "total": 1050000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "張顥瀚",
+          "amount": 1050000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "曾怡芳": {
+      "count": 1,
+      "total": 1296000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "曾怡芳",
+          "amount": 1296000,
+          "acquisition_date": "",
+          "cc": 3456
+        }
+      ]
+    },
+    "施翰廷": {
+      "count": 1,
+      "total": 100000,
+      "items": [
+        {
+          "brand": "中華",
+          "owner": "施翰廷",
+          "amount": 100000,
+          "acquisition_date": "",
+          "cc": 2359
+        }
+      ]
+    },
+    "吳欣宇": {
+      "count": 1,
+      "total": 60000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "吳欣宇",
+          "amount": 60000,
+          "acquisition_date": "",
+          "cc": 1497
+        }
+      ]
+    },
+    "蔡旺璉": {
+      "count": 1,
+      "total": 2360000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "蔡旺璉",
+          "amount": 2360000,
+          "acquisition_date": "",
+          "cc": 2393
+        }
+      ]
+    },
+    "鄭文婷": {
+      "count": 1,
+      "total": 720000,
+      "items": [
+        {
+          "brand": "Toyota",
+          "owner": "鄭文婷",
+          "amount": 720000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "鄭愷玲": {
+      "count": 1,
+      "total": 999000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "鄭愷玲",
+          "amount": 999000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "方偉光": {
+      "count": 1,
+      "total": 450000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "方偉光",
+          "amount": 450000,
+          "acquisition_date": "",
+          "cc": 1998
+        }
+      ]
+    },
+    "吳國寶": {
+      "count": 1,
+      "total": 9990000,
+      "items": [
+        {
+          "brand": "LAMBORGHINI",
+          "owner": "吳國寶",
+          "amount": 9990000,
+          "acquisition_date": "",
+          "cc": 3996
+        }
+      ]
+    },
+    "宋品瑩": {
+      "count": 1,
+      "total": 500000,
+      "items": [
+        {
+          "brand": "本田",
+          "owner": "宋品瑩",
+          "amount": 500000,
+          "acquisition_date": "",
+          "cc": 1497
+        }
+      ]
+    },
+    "李國璋": {
+      "count": 1,
+      "total": 250000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "李國璋",
+          "amount": 250000,
+          "acquisition_date": "",
+          "cc": 1794
+        }
+      ]
+    },
+    "張瑋芳": {
+      "count": 1,
+      "total": 1120000,
+      "items": [
+        {
+          "brand": "SUBARU",
+          "owner": "張瑋芳",
+          "amount": 1120000,
+          "acquisition_date": "",
+          "cc": 1995
+        }
+      ]
+    },
+    "林盈徹": {
+      "count": 1,
+      "total": 700000,
+      "items": [
+        {
+          "brand": "中華",
+          "owner": "林盈徹",
+          "amount": 700000,
+          "acquisition_date": "",
+          "cc": 2378
+        }
+      ]
+    },
+    "林慈愛": {
+      "count": 1,
+      "total": 1710000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "林慈愛",
+          "amount": 1710000,
+          "acquisition_date": "",
+          "cc": 1987
+        }
+      ]
+    },
+    "段孝芳": {
+      "count": 2,
+      "total": 1200000,
+      "items": [
+        {
+          "brand": "中華",
+          "owner": "段孝芳",
+          "amount": 200000,
+          "acquisition_date": "",
+          "cc": 1299
+        },
+        {
+          "brand": "國瑞",
+          "owner": "段孝芳",
+          "amount": 1000000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    }
+  },
+  "314": {
+    "孫鍚洲": {
+      "count": 1,
+      "total": 1150000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "孫鍚洲",
+          "amount": 1150000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "吳青雲": {
+      "count": 1,
+      "total": 1873000,
+      "items": [
+        {
+          "brand": "MERCEDES-BENZ",
+          "owner": "吳青雲",
+          "amount": 1873000,
+          "acquisition_date": "",
+          "cc": 1332
+        }
+      ]
+    },
+    "徐美惠": {
+      "count": 1,
+      "total": 782617,
+      "items": [
+        {
+          "brand": "本田",
+          "owner": "徐美惠",
+          "amount": 782617,
+          "acquisition_date": "",
+          "cc": 1799
+        }
+      ]
+    },
+    "吳冠諭": {
+      "count": 1,
+      "total": 150000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "吳冠諭",
+          "amount": 150000,
+          "acquisition_date": "",
+          "cc": 1497
+        }
+      ]
+    },
+    "陳啓源": {
+      "count": 1,
+      "total": 900000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "陳啓源",
+          "amount": 900000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "陳慶齡": {
+      "count": 1,
+      "total": 3210000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "陳慶齡",
+          "amount": 3210000,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    },
+    "張祖琰": {
+      "count": 1,
+      "total": 270000,
+      "items": [
+        {
+          "brand": "FORD",
+          "owner": "張祖琰",
+          "amount": 270000,
+          "acquisition_date": "96年12月",
+          "cc": 1596
+        }
+      ]
+    },
+    "黃文政": {
+      "count": 1,
+      "total": 662000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "黃文政",
+          "amount": 662000,
+          "acquisition_date": "",
+          "cc": 1496
+        }
+      ]
+    },
+    "黃千芳": {
+      "count": 2,
+      "total": 2240000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "黃千芳",
+          "amount": 1990000,
+          "acquisition_date": "",
+          "cc": 2362
+        },
+        {
+          "brand": "MAZDA",
+          "owner": "黃千芳",
+          "amount": 250000,
+          "acquisition_date": "",
+          "cc": 1998
+        }
+      ]
+    },
+    "廖子齊": {
+      "count": 1,
+      "total": 853000,
+      "items": [
+        {
+          "brand": "VOLKSWAGEN",
+          "owner": "廖子齊",
+          "amount": 853000,
+          "acquisition_date": "",
+          "cc": 999
+        }
+      ]
+    },
+    "羅祥銓": {
+      "count": 1,
+      "total": 1098000,
+      "items": [
+        {
+          "brand": "Kia",
+          "owner": "羅祥銓",
+          "amount": 1098000,
+          "acquisition_date": "",
+          "cc": 1500
+        }
+      ]
+    },
+    "葉瑋庭": {
+      "count": 1,
+      "total": 1730000,
+      "items": [
+        {
+          "brand": "Tesla",
+          "owner": "葉瑋庭",
+          "amount": 1730000,
+          "acquisition_date": "",
+          "cc": 2560
+        }
+      ]
+    },
+    "劉康彥": {
+      "count": 1,
+      "total": 200000,
+      "items": [
+        {
+          "brand": "VOLKSWAGEN",
+          "owner": "劉康彥",
+          "amount": 200000,
+          "acquisition_date": "",
+          "cc": 1598
+        }
+      ]
+    },
+    "郭定緯": {
+      "count": 1,
+      "total": 3348000,
+      "items": [
+        {
+          "brand": "Mercedes-Benz",
+          "owner": "郭定緯",
+          "amount": 3348000,
+          "acquisition_date": "",
+          "cc": 2880
+        }
+      ]
+    },
+    "林惠品": {
+      "count": 1,
+      "total": 1249000,
+      "items": [
+        {
+          "brand": "納智捷(鴻華先進)",
+          "owner": "林惠品",
+          "amount": 1249000,
+          "acquisition_date": "97年10月",
+          "cc": 2300
+        }
+      ]
+    },
+    "蘇小晏": {
+      "count": 3,
+      "total": 3839000,
+      "items": [
+        {
+          "brand": "VOLVO",
+          "owner": "蘇小晏",
+          "amount": 1190000,
+          "acquisition_date": "",
+          "cc": 1498
+        },
+        {
+          "brand": "Mercedes-Benz",
+          "owner": "蘇小晏",
+          "amount": 1900000,
+          "acquisition_date": "",
+          "cc": 1598
+        },
+        {
+          "brand": "中華名爵",
+          "owner": "蘇小晏",
+          "amount": 749000,
+          "acquisition_date": "",
+          "cc": 1498
+        }
+      ]
+    },
+    "黃思婷": {
+      "count": 1,
+      "total": 2400000,
+      "items": [
+        {
+          "brand": "LAND",
+          "owner": "黃思婷",
+          "amount": 2400000,
+          "acquisition_date": "",
+          "cc": 1997
+        }
+      ]
+    },
+    "郭福利": {
+      "count": 1,
+      "total": 3200000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "郭福利",
+          "amount": 3200000,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    },
+    "黃露慧": {
+      "count": 1,
+      "total": 100000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "黃露慧",
+          "amount": 100000,
+          "acquisition_date": "",
+          "cc": 1497
+        }
+      ]
+    },
+    "王登琦": {
+      "count": 1,
+      "total": 122404,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "王登琦",
+          "amount": 122404,
+          "acquisition_date": "",
+          "cc": 1497
+        }
+      ]
+    },
+    "王方玉": {
+      "count": 1,
+      "total": 1750000,
+      "items": [
+        {
+          "brand": "Lexus",
+          "owner": "王方玉",
+          "amount": 1750000,
+          "acquisition_date": "",
+          "cc": 1987
+        }
+      ]
+    },
+    "蔡坤叡": {
+      "count": 1,
+      "total": 2000000,
+      "items": [
+        {
+          "brand": "KIA",
+          "owner": "蔡坤叡",
+          "amount": 2000000,
+          "acquisition_date": "",
+          "cc": 2151
+        }
+      ]
+    },
+    "林子淨": {
+      "count": 2,
+      "total": 1980000,
+      "items": [
+        {
+          "brand": "本田",
+          "owner": "林子淨",
+          "amount": 300000,
+          "acquisition_date": "",
+          "cc": 1798
+        },
+        {
+          "brand": "Mercedes-Benz",
+          "owner": "林子淨",
+          "amount": 1680000,
+          "acquisition_date": "",
+          "cc": 1991
+        }
+      ]
+    },
+    "羅文孜": {
+      "count": 1,
+      "total": 1430000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "羅文孜",
+          "amount": 1430000,
+          "acquisition_date": "",
+          "cc": 1987
+        }
+      ]
+    },
+    "陳道青": {
+      "count": 1,
+      "total": 480000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "陳道青",
+          "amount": 480000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "李明賢": {
+      "count": 2,
+      "total": 1060000,
+      "items": [
+        {
+          "brand": "MAZDA",
+          "owner": "李明賢",
+          "amount": 500000,
+          "acquisition_date": "",
+          "cc": 1998
+        },
+        {
+          "brand": "中華",
+          "owner": "李明賢",
+          "amount": 560000,
+          "acquisition_date": "",
+          "cc": 1488
+        }
+      ]
+    },
+    "詹為元": {
+      "count": 1,
+      "total": 1832000,
+      "items": [
+        {
+          "brand": "Tesla",
+          "owner": "詹為元",
+          "amount": 1832000,
+          "acquisition_date": "",
+          "cc": 2560
+        }
+      ]
+    },
+    "應曉薇": {
+      "count": 1,
+      "total": 400000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "應曉薇",
+          "amount": 400000,
+          "acquisition_date": "",
+          "cc": 3456
+        }
+      ]
+    },
+    "鍾小平": {
+      "count": 1,
+      "total": 2960000,
+      "items": [
+        {
+          "brand": "BMW",
+          "owner": "鍾小平",
+          "amount": 2960000,
+          "acquisition_date": "",
+          "cc": 1998
+        }
+      ]
+    },
+    "江怡臻": {
+      "count": 1,
+      "total": 368000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "江怡臻",
+          "amount": 368000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "李欣達": {
+      "count": 1,
+      "total": 2100000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "李欣達",
+          "amount": 2100000,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    },
+    "楊志中": {
+      "count": 1,
+      "total": 1950000,
+      "items": [
+        {
+          "brand": "MERCEDES-BENZ",
+          "owner": "楊志中",
+          "amount": 1950000,
+          "acquisition_date": "",
+          "cc": 1950
+        }
+      ]
+    },
+    "陳偉杰": {
+      "count": 1,
+      "total": 500000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "陳偉杰",
+          "amount": 500000,
+          "acquisition_date": "",
+          "cc": 2362
+        }
+      ]
+    },
+    "林宛蓁": {
+      "count": 2,
+      "total": 4360000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "林宛蓁",
+          "amount": 2410000,
+          "acquisition_date": "",
+          "cc": 1998
+        },
+        {
+          "brand": "LEXUS",
+          "owner": "林宛蓁",
+          "amount": 1950000,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    },
+    "張錦豪": {
+      "count": 1,
+      "total": 2000000,
+      "items": [
+        {
+          "brand": "HONDA",
+          "owner": "張錦豪",
+          "amount": 2000000,
+          "acquisition_date": "",
+          "cc": 2356
+        }
+      ]
+    },
+    "鍾宏仁": {
+      "count": 1,
+      "total": 130000,
+      "items": [
+        {
+          "brand": "VOLKSWAGEN",
+          "owner": "鍾宏仁",
+          "amount": 130000,
+          "acquisition_date": "",
+          "cc": 2461
+        }
+      ]
+    },
+    "高麗卿": {
+      "count": 1,
+      "total": 1130000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "高麗卿",
+          "amount": 1130000,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    },
+    "于北辰": {
+      "count": 1,
+      "total": 1690000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "于北辰",
+          "amount": 1690000,
+          "acquisition_date": "95年09月",
+          "cc": 2010
+        }
+      ]
+    },
+    "徐玉樹": {
+      "count": 1,
+      "total": 500000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "徐玉樹",
+          "amount": 500000,
+          "acquisition_date": "",
+          "cc": 1496
+        }
+      ]
+    },
+    "謝鳳英": {
+      "count": 2,
+      "total": 1700000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "謝鳳英",
+          "amount": 600000,
+          "acquisition_date": "",
+          "cc": 1496
+        },
+        {
+          "brand": "TOYOTA",
+          "owner": "謝鳳英",
+          "amount": 1100000,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    },
+    "謝美玲": {
+      "count": 1,
+      "total": 1000000,
+      "items": [
+        {
+          "brand": "MITSUBISHI",
+          "owner": "謝美玲",
+          "amount": 1000000,
+          "acquisition_date": "111年3月",
+          "cc": 1499
+        }
+      ]
+    },
+    "期貸款": {
+      "count": 1,
+      "total": 600000,
+      "items": [
+        {
+          "brand": "113",
+          "owner": "期貸款",
+          "amount": 600000,
+          "acquisition_date": "",
+          "cc": 113
+        }
+      ]
+    }
+  },
+  "315": {
+    "林欣怡": {
+      "count": 1,
+      "total": 990000,
+      "items": [
+        {
+          "brand": "AUDI",
+          "owner": "林欣怡",
+          "amount": 990000,
+          "acquisition_date": "114年02月07日",
+          "cc": 1984
+        }
+      ]
+    },
+    "石瑤玲": {
+      "count": 1,
+      "total": 1500000,
+      "items": [
+        {
+          "brand": "VOLKSWAGEN",
+          "owner": "石瑤玲",
+          "amount": 1500000,
+          "acquisition_date": "",
+          "cc": 1984
+        }
+      ]
+    },
+    "羅敏華": {
+      "count": 1,
+      "total": 1100000,
+      "items": [
+        {
+          "brand": "MAZDA",
+          "owner": "羅敏華",
+          "amount": 1100000,
+          "acquisition_date": "",
+          "cc": 1998
+        }
+      ]
+    },
+    "葉昭甫": {
+      "count": 1,
+      "total": 400000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "葉昭甫",
+          "amount": 400000,
+          "acquisition_date": "",
+          "cc": 3456
+        }
+      ]
+    },
+    "盧智銘": {
+      "count": 1,
+      "total": 1300000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "盧智銘",
+          "amount": 1300000,
+          "acquisition_date": "",
+          "cc": 1987
+        }
+      ]
+    },
+    "范世億": {
+      "count": 1,
+      "total": 1590000,
+      "items": [
+        {
+          "brand": "MAZDA",
+          "owner": "范世億",
+          "amount": 1590000,
+          "acquisition_date": "",
+          "cc": 1998
+        }
+      ]
+    },
+    "陳慧淑": {
+      "count": 1,
+      "total": 749000,
+      "items": [
+        {
+          "brand": "中華名爵",
+          "owner": "陳慧淑",
+          "amount": 749000,
+          "acquisition_date": "",
+          "cc": 1498
+        }
+      ]
+    },
+    "林谷隆": {
+      "count": 1,
+      "total": 1754900,
+      "items": [
+        {
+          "brand": "Tesla",
+          "owner": "林谷隆",
+          "amount": 1754900,
+          "acquisition_date": "",
+          "cc": 2610
+        }
+      ]
+    },
+    "陳銀再": {
+      "count": 1,
+      "total": 1190000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "陳銀再",
+          "amount": 1190000,
+          "acquisition_date": "",
+          "cc": 1987
+        }
+      ]
+    },
+    "劉育菁": {
+      "count": 2,
+      "total": 1970000,
+      "items": [
+        {
+          "brand": "SUZUKI",
+          "owner": "劉育菁",
+          "amount": 1000000,
+          "acquisition_date": "",
+          "cc": 1197
+        },
+        {
+          "brand": "TOYOTA",
+          "owner": "劉育菁",
+          "amount": 970000,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    },
+    "田玲瑚": {
+      "count": 1,
+      "total": 800000,
+      "items": [
+        {
+          "brand": "馬自達",
+          "owner": "田玲瑚",
+          "amount": 800000,
+          "acquisition_date": "",
+          "cc": 1999
+        }
+      ]
+    },
+    "謝明潔": {
+      "count": 1,
+      "total": 995000,
+      "items": [
+        {
+          "brand": "SKODA",
+          "owner": "謝明潔",
+          "amount": 995000,
+          "acquisition_date": "",
+          "cc": 999
+        }
+      ]
+    },
+    "王銘德": {
+      "count": 1,
+      "total": 1620000,
+      "items": [
+        {
+          "brand": "BMW",
+          "owner": "王銘德",
+          "amount": 1620000,
+          "acquisition_date": "",
+          "cc": 1499
+        }
+      ]
+    },
+    "林秀貞": {
+      "count": 1,
+      "total": 1900000,
+      "items": [
+        {
+          "brand": "VOVOL",
+          "owner": "林秀貞",
+          "amount": 1900000,
+          "acquisition_date": "",
+          "cc": 1969
+        }
+      ]
+    }
+  },
+  "316": {
+    "陳伊楓": {
+      "count": 1,
+      "total": 100000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "陳伊楓",
+          "amount": 100000,
+          "acquisition_date": "97年05月02日",
+          "cc": 1998
+        }
+      ]
+    },
+    "陳成添": {
+      "count": 1,
+      "total": 1835000,
+      "items": [
+        {
+          "brand": "MAZDA",
+          "owner": "陳成添",
+          "amount": 1835000,
+          "acquisition_date": "",
+          "cc": 2488
+        }
+      ]
+    },
+    "其他": {
+      "count": 1,
+      "total": 1296000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "其他",
+          "amount": 1296000,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    },
+    "謝志忠": {
+      "count": 1,
+      "total": 1600000,
+      "items": [
+        {
+          "brand": "SUBARU",
+          "owner": "謝志忠",
+          "amount": 1600000,
+          "acquisition_date": "",
+          "cc": 2498
+        }
+      ]
+    },
+    "沈家鳳": {
+      "count": 1,
+      "total": 250000,
+      "items": [
+        {
+          "brand": "YAMAHA",
+          "owner": "沈家鳳",
+          "amount": 250000,
+          "acquisition_date": "",
+          "cc": 942
+        }
+      ]
+    },
+    "龍思呈": {
+      "count": 1,
+      "total": 890000,
+      "items": [
+        {
+          "brand": "MAZDA",
+          "owner": "龍思呈",
+          "amount": 890000,
+          "acquisition_date": "",
+          "cc": 1998
+        }
+      ]
+    },
+    "周麗津": {
+      "count": 2,
+      "total": 1188000,
+      "items": [
+        {
+          "brand": "MAZDA",
+          "owner": "周麗津",
+          "amount": 1020000,
+          "acquisition_date": "",
+          "cc": 1998
+        },
+        {
+          "brand": "中華",
+          "owner": "周麗津",
+          "amount": 168000,
+          "acquisition_date": "",
+          "cc": 1198
+        }
+      ]
+    },
+    "郭鴻儀": {
+      "count": 1,
+      "total": 120000,
+      "items": [
+        {
+          "brand": "日產",
+          "owner": "郭鴻儀",
+          "amount": 120000,
+          "acquisition_date": "",
+          "cc": 1598
+        }
+      ]
+    },
+    "朱苡聆": {
+      "count": 1,
+      "total": 1831700,
+      "items": [
+        {
+          "brand": "Tesla",
+          "owner": "朱苡聆",
+          "amount": 1831700,
+          "acquisition_date": "",
+          "cc": 2560
+        }
+      ]
+    },
+    "黃飛鳳": {
+      "count": 1,
+      "total": 1158000,
+      "items": [
+        {
+          "brand": "SUBARU",
+          "owner": "黃飛鳳",
+          "amount": 1158000,
+          "acquisition_date": "",
+          "cc": 1995
+        }
+      ]
+    },
+    "吳旭智": {
+      "count": 1,
+      "total": 190000,
+      "items": [
+        {
+          "brand": "馬自達",
+          "owner": "吳旭智",
+          "amount": 190000,
+          "acquisition_date": "",
+          "cc": 1999
+        }
+      ]
+    },
+    "邱靖雅": {
+      "count": 1,
+      "total": 850000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "邱靖雅",
+          "amount": 850000,
+          "acquisition_date": "",
+          "cc": 1496
+        }
+      ]
+    },
+    "周佳伶": {
+      "count": 1,
+      "total": 875000,
+      "items": [
+        {
+          "brand": "福特六和",
+          "owner": "周佳伶",
+          "amount": 875000,
+          "acquisition_date": "",
+          "cc": 1497
+        }
+      ]
+    },
+    "周君綾": {
+      "count": 1,
+      "total": 400000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "周君綾",
+          "amount": 400000,
+          "acquisition_date": "",
+          "cc": 1496
+        }
+      ]
+    },
+    "曹嘉豪": {
+      "count": 4,
+      "total": 1360000,
+      "items": [
+        {
+          "brand": "福特六和",
+          "owner": "曹嘉豪",
+          "amount": 80000,
+          "acquisition_date": "95年01月",
+          "cc": 993
+        },
+        {
+          "brand": "AUSTIN",
+          "owner": "曹嘉豪",
+          "amount": 180000,
+          "acquisition_date": "",
+          "cc": 998
+        },
+        {
+          "brand": "PORSCHE",
+          "owner": "曹嘉豪",
+          "amount": 600000,
+          "acquisition_date": "",
+          "cc": 3824
+        },
+        {
+          "brand": "ROVER",
+          "owner": "曹嘉豪",
+          "amount": 500000,
+          "acquisition_date": "",
+          "cc": 1275
+        }
+      ]
+    },
+    "黃惠娟": {
+      "count": 2,
+      "total": 2000000,
+      "items": [
+        {
+          "brand": "VOLVO",
+          "owner": "黃惠娟",
+          "amount": 1300000,
+          "acquisition_date": "",
+          "cc": 1477
+        },
+        {
+          "brand": "國瑞",
+          "owner": "黃惠娟",
+          "amount": 700000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "何子凡": {
+      "count": 3,
+      "total": 750000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "何子凡",
+          "amount": 120000,
+          "acquisition_date": "",
+          "cc": 2362
+        },
+        {
+          "brand": "SUZUKI",
+          "owner": "何子凡",
+          "amount": 480000,
+          "acquisition_date": "",
+          "cc": 1462
+        },
+        {
+          "brand": "TOYOTA",
+          "owner": "何子凡",
+          "amount": 150000,
+          "acquisition_date": "",
+          "cc": 1497
+        }
+      ]
+    },
+    "周嘉韋": {
+      "count": 1,
+      "total": 920000,
+      "items": [
+        {
+          "brand": "1★國瑞",
+          "owner": "周嘉韋",
+          "amount": 920000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    }
+  },
+  "317": {
+    "李懷仁": {
+      "count": 1,
+      "total": 350000,
+      "items": [
+        {
+          "brand": "三陽",
+          "owner": "李懷仁",
+          "amount": 350000,
+          "acquisition_date": "109年12月14日",
+          "cc": 1998
+        }
+      ]
+    },
+    "閻青智": {
+      "count": 1,
+      "total": 130000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "閻青智",
+          "amount": 130000,
+          "acquisition_date": "97年03月",
+          "cc": 1794
+        }
+      ]
+    },
+    "吳立森": {
+      "count": 1,
+      "total": 700000,
+      "items": [
+        {
+          "brand": "本田",
+          "owner": "吳立森",
+          "amount": 700000,
+          "acquisition_date": "",
+          "cc": 1498
+        }
+      ]
+    },
+    "蔡志傑": {
+      "count": 1,
+      "total": 450000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "蔡志傑",
+          "amount": 450000,
+          "acquisition_date": "",
+          "cc": 3456
+        }
+      ]
+    },
+    "陳玉貴": {
+      "count": 2,
+      "total": 3300000,
+      "items": [
+        {
+          "brand": "日產",
+          "owner": "陳玉貴",
+          "amount": 800000,
+          "acquisition_date": "",
+          "cc": 1598
+        },
+        {
+          "brand": "MERCEDES-BENZ",
+          "owner": "陳玉貴",
+          "amount": 2500000,
+          "acquisition_date": "",
+          "cc": 1991
+        }
+      ]
+    },
+    "彭芸芳": {
+      "count": 2,
+      "total": 2250000,
+      "items": [
+        {
+          "brand": "VOLKSWAGEN",
+          "owner": "彭芸芳",
+          "amount": 1200000,
+          "acquisition_date": "113年08月27日",
+          "cc": 1498
+        },
+        {
+          "brand": "LEXUS",
+          "owner": "彭芸芳",
+          "amount": 1050000,
+          "acquisition_date": "114年05月23日",
+          "cc": 3456
+        }
+      ]
+    },
+    "何韻麗": {
+      "count": 1,
+      "total": 2670000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "何韻麗",
+          "amount": 2670000,
+          "acquisition_date": "114年10月07日",
+          "cc": 2487
+        }
+      ]
+    },
+    "盧曉玲": {
+      "count": 1,
+      "total": 900000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "盧曉玲",
+          "amount": 900000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "陳柏村": {
+      "count": 1,
+      "total": 915000,
+      "items": [
+        {
+          "brand": "中華名爵",
+          "owner": "陳柏村",
+          "amount": 915000,
+          "acquisition_date": "",
+          "cc": 1490
+        }
+      ]
+    },
+    "邱紹偉": {
+      "count": 1,
+      "total": 800000,
+      "items": [
+        {
+          "brand": "Mercedes-Benz",
+          "owner": "邱紹偉",
+          "amount": 800000,
+          "acquisition_date": "",
+          "cc": 2996
+        }
+      ]
+    },
+    "洪群穗": {
+      "count": 1,
+      "total": 680000,
+      "items": [
+        {
+          "brand": "本田",
+          "owner": "洪群穗",
+          "amount": 680000,
+          "acquisition_date": "112年07月28日",
+          "cc": 1498
+        }
+      ]
+    },
+    "孫綿凰": {
+      "count": 1,
+      "total": 200000,
+      "items": [
+        {
+          "brand": "日產",
+          "owner": "孫綿凰",
+          "amount": 200000,
+          "acquisition_date": "",
+          "cc": 2496
+        }
+      ]
+    },
+    "陳其育": {
+      "count": 1,
+      "total": 400000,
+      "items": [
+        {
+          "brand": "BMW",
+          "owner": "陳其育",
+          "amount": 400000,
+          "acquisition_date": "",
+          "cc": 2993
+        }
+      ]
+    },
+    "洪秀鳳": {
+      "count": 1,
+      "total": 300000,
+      "items": [
+        {
+          "brand": "馬自達",
+          "owner": "洪秀鳳",
+          "amount": 300000,
+          "acquisition_date": "",
+          "cc": 1999
+        }
+      ]
+    },
+    "陳璧君": {
+      "count": 1,
+      "total": 1240000,
+      "items": [
+        {
+          "brand": "TOYOTA",
+          "owner": "陳璧君",
+          "amount": 1240000,
+          "acquisition_date": "",
+          "cc": 2487
+        }
+      ]
+    },
+    "黃國榮": {
+      "count": 1,
+      "total": 820000,
+      "items": [
+        {
+          "brand": "福特六和",
+          "owner": "黃國榮",
+          "amount": 820000,
+          "acquisition_date": "",
+          "cc": 1496
+        }
+      ]
+    },
+    "吳明榮": {
+      "count": 1,
+      "total": 500000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "吳明榮",
+          "amount": 500000,
+          "acquisition_date": "",
+          "cc": 1987
+        }
+      ]
+    },
+    "賴郁涵": {
+      "count": 1,
+      "total": 674000,
+      "items": [
+        {
+          "brand": "SUZUKI",
+          "owner": "賴郁涵",
+          "amount": 674000,
+          "acquisition_date": "",
+          "cc": 1197
+        }
+      ]
+    },
+    "葉俊雄": {
+      "count": 1,
+      "total": 80000,
+      "items": [
+        {
+          "brand": "BENZ",
+          "owner": "葉俊雄",
+          "amount": 80000,
+          "acquisition_date": "",
+          "cc": 2397
+        }
+      ]
+    }
+  },
+  "318": {
+    "洪宗麒": {
+      "count": 1,
+      "total": 1200000,
+      "items": [
+        {
+          "brand": "三陽",
+          "owner": "洪宗麒",
+          "amount": 1200000,
+          "acquisition_date": "",
+          "cc": 1598
+        }
+      ]
+    },
+    "胡嘉玲": {
+      "count": 2,
+      "total": 2552000,
+      "items": [
+        {
+          "brand": "三陽",
+          "owner": "胡嘉玲",
+          "amount": 760000,
+          "acquisition_date": "",
+          "cc": 2497
+        },
+        {
+          "brand": "SUBARU",
+          "owner": "胡嘉玲",
+          "amount": 1792000,
+          "acquisition_date": "",
+          "cc": 2150
+        }
+      ]
+    },
+    "林秀英": {
+      "count": 1,
+      "total": 3320000,
+      "items": [
+        {
+          "brand": "MERCEDES-BENZ",
+          "owner": "林秀英",
+          "amount": 3320000,
+          "acquisition_date": "",
+          "cc": 1999
+        }
+      ]
+    },
+    "蔣家煌": {
+      "count": 1,
+      "total": 1680000,
+      "items": [
+        {
+          "brand": "BMW",
+          "owner": "蔣家煌",
+          "amount": 1680000,
+          "acquisition_date": "",
+          "cc": 1499
+        }
+      ]
+    },
+    "鄭麗貞": {
+      "count": 1,
+      "total": 850000,
+      "items": [
+        {
+          "brand": "SUZUKI",
+          "owner": "鄭麗貞",
+          "amount": 850000,
+          "acquisition_date": "",
+          "cc": 1462
+        }
+      ]
+    },
+    "鄭清原": {
+      "count": 1,
+      "total": 6130000,
+      "items": [
+        {
+          "brand": "BMW",
+          "owner": "鄭清原",
+          "amount": 6130000,
+          "acquisition_date": "",
+          "cc": 4395
+        }
+      ]
+    },
+    "羅暐暘": {
+      "count": 1,
+      "total": 470000,
+      "items": [
+        {
+          "brand": "SUZUKI",
+          "owner": "羅暐暘",
+          "amount": 470000,
+          "acquisition_date": "",
+          "cc": 1462
+        }
+      ]
+    },
+    "林姵均": {
+      "count": 1,
+      "total": 670000,
+      "items": [
+        {
+          "brand": "MINI",
+          "owner": "林姵均",
+          "amount": 670000,
+          "acquisition_date": "",
+          "cc": 1499
+        }
+      ]
+    },
+    "蘇育德": {
+      "count": 1,
+      "total": 619000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "蘇育德",
+          "amount": 619000,
+          "acquisition_date": "",
+          "cc": 1496
+        }
+      ]
+    },
+    "洪瑄璟": {
+      "count": 2,
+      "total": 998443,
+      "items": [
+        {
+          "brand": "日產",
+          "owner": "洪瑄璟",
+          "amount": 300000,
+          "acquisition_date": "",
+          "cc": 1797
+        },
+        {
+          "brand": "國瑞",
+          "owner": "洪瑄璟",
+          "amount": 698443,
+          "acquisition_date": "",
+          "cc": 1496
+        }
+      ]
+    },
+    "蘇育緯": {
+      "count": 1,
+      "total": 300000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "蘇育緯",
+          "amount": 300000,
+          "acquisition_date": "",
+          "cc": 2494
+        }
+      ]
+    },
+    "許睿慈": {
+      "count": 1,
+      "total": 1810000,
+      "items": [
+        {
+          "brand": "BMW",
+          "owner": "許睿慈",
+          "amount": 1810000,
+          "acquisition_date": "",
+          "cc": 1499
+        }
+      ]
+    },
+    "鄭慶欽": {
+      "count": 1,
+      "total": 2500000,
+      "items": [
+        {
+          "brand": "BMW",
+          "owner": "鄭慶欽",
+          "amount": 2500000,
+          "acquisition_date": "",
+          "cc": 2998
+        }
+      ]
+    }
+  },
+  "319": {
+    "黃向文": {
+      "count": 1,
+      "total": 1500000,
+      "items": [
+        {
+          "brand": "Hyundai",
+          "owner": "黃向文",
+          "amount": 1500000,
+          "acquisition_date": "",
+          "cc": 1975
+        }
+      ]
+    },
+    "林國成": {
+      "count": 1,
+      "total": 300000,
+      "items": [
+        {
+          "brand": "Mercedes-Benz",
+          "owner": "林國成",
+          "amount": 300000,
+          "acquisition_date": "",
+          "cc": 3498
+        }
+      ]
+    },
+    "麥玉珍": {
+      "count": 1,
+      "total": 1500000,
+      "items": [
+        {
+          "brand": "LEXUS",
+          "owner": "麥玉珍",
+          "amount": 1500000,
+          "acquisition_date": "",
+          "cc": 1987
+        }
+      ]
+    },
+    "黃珊珊": {
+      "count": 1,
+      "total": 1985400,
+      "items": [
+        {
+          "brand": "Tesla",
+          "owner": "黃珊珊",
+          "amount": 1985400,
+          "acquisition_date": "",
+          "cc": 2790
+        }
+      ]
+    },
+    "朱家祥": {
+      "count": 1,
+      "total": 1200000,
+      "items": [
+        {
+          "brand": "MAZDA",
+          "owner": "朱家祥",
+          "amount": 1200000,
+          "acquisition_date": "",
+          "cc": 2488
+        }
+      ]
+    },
+    "饒慶鈴": {
+      "count": 1,
+      "total": 490000,
+      "items": [
+        {
+          "brand": "AUDI",
+          "owner": "饒慶鈴",
+          "amount": 490000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "卜敏正": {
+      "count": 1,
+      "total": 1060000,
+      "items": [
+        {
+          "brand": "NISSAN",
+          "owner": "卜敏正",
+          "amount": 1060000,
+          "acquisition_date": "",
+          "cc": 1198
+        }
+      ]
+    },
+    "吳淑瑾": {
+      "count": 1,
+      "total": 90000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "吳淑瑾",
+          "amount": 90000,
+          "acquisition_date": "",
+          "cc": 1497
+        }
+      ]
+    },
+    "林慧中": {
+      "count": 1,
+      "total": 1248000,
+      "items": [
+        {
+          "brand": "VOLKSWAGEN",
+          "owner": "林慧中",
+          "amount": 1248000,
+          "acquisition_date": "92年05月",
+          "cc": 1498
+        }
+      ]
+    },
+    "陳福海": {
+      "count": 1,
+      "total": 100000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "陳福海",
+          "amount": 100000,
+          "acquisition_date": "",
+          "cc": 1998
+        }
+      ]
+    },
+    "施淑婷": {
+      "count": 1,
+      "total": 2450000,
+      "items": [
+        {
+          "brand": "BMW",
+          "owner": "施淑婷",
+          "amount": 2450000,
+          "acquisition_date": "",
+          "cc": 1995
+        }
+      ]
+    },
+    "顏仕昂": {
+      "count": 1,
+      "total": 2860000,
+      "items": [
+        {
+          "brand": "Tesla",
+          "owner": "顏仕昂",
+          "amount": 2860000,
+          "acquisition_date": "",
+          "cc": 3280
+        }
+      ]
+    },
+    "陳雅慧": {
+      "count": 1,
+      "total": 730000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "陳雅慧",
+          "amount": 730000,
+          "acquisition_date": "",
+          "cc": 1798
+        }
+      ]
+    },
+    "林家緯": {
+      "count": 1,
+      "total": 1050000,
+      "items": [
+        {
+          "brand": "MAZDA",
+          "owner": "林家緯",
+          "amount": 1050000,
+          "acquisition_date": "",
+          "cc": 1998
+        }
+      ]
+    },
+    "許懷群": {
+      "count": 1,
+      "total": 770000,
+      "items": [
+        {
+          "brand": "Volkswagen",
+          "owner": "許懷群",
+          "amount": 770000,
+          "acquisition_date": "",
+          "cc": 999
+        }
+      ]
+    },
+    "李思賢": {
+      "count": 1,
+      "total": 398000,
+      "items": [
+        {
+          "brand": "本田",
+          "owner": "李思賢",
+          "amount": 398000,
+          "acquisition_date": "",
+          "cc": 1497
+        }
+      ]
+    },
+    "連久慧": {
+      "count": 1,
+      "total": 1200000,
+      "items": [
+        {
+          "brand": "國瑞",
+          "owner": "連久慧",
+          "amount": 1200000,
+          "acquisition_date": "",
+          "cc": 1987
+        }
+      ]
+    }
+  }
+}
