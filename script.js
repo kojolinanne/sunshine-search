@@ -587,191 +587,289 @@ const modalStats = document.getElementById('modalStats');
 const modalSectionTitle = document.getElementById('modalSectionTitle');
 const modalRecords = document.getElementById('modalRecords');
 
+// ── Detail JSON lazy-load cache ──
+const detailCache = {};
+const DETAIL_FILES = {
+  land: 'data/land_detail.json',
+  vehicle: 'data/vehicle_detail.json',
+  insurance: 'data/insurance_detail.json',
+  investment: 'data/investment_detail.json',
+  jewelry: 'data/jewelry_detail.json',
+  cash: 'data/cash_detail.json',
+  credit: 'data/credit_detail.json',
+  securities: 'data/securities_detail.json',
+  deposit: 'data/deposit_detail.json',
+  debt: 'data/debt_detail.json',
+  ship: 'data/ship_detail.json',
+};
+
+async function loadDetail(key) {
+  if (detailCache[key] !== undefined) return detailCache[key];
+  const path = DETAIL_FILES[key];
+  if (!path) { detailCache[key] = null; return null; }
+  try {
+    const resp = await fetch(path);
+    detailCache[key] = resp.ok ? await resp.json() : null;
+  } catch(e) { detailCache[key] = null; }
+  return detailCache[key];
+}
+
+async function getPersonDetail(personName, assetKey) {
+  const json = await loadDetail(assetKey);
+  if (!json) return [];
+  const results = [];
+  for (const issueKey in json) {
+    const persons = json[issueKey];
+    if (persons && typeof persons === 'object' && !Array.isArray(persons)) {
+      const data = persons[personName];
+      if (data) results.push({ issue: parseInt(issueKey), data });
+    }
+  }
+  return results;
+}
+
 function openAssetModal(assetKey, personRecord) {
-  const records = filteredRecords.filter(r => r.asset_flags[assetKey]);
-  const label = dataset.asset_labels[assetKey] || assetKey;
-  const isMoney = MONEY_ORDER.includes(assetKey);
-  const isSecurities = (assetKey === 'securities');
-  const isDebt = (assetKey === 'debt');
+  var isPersonMode = !!personRecord;
+  var label = dataset.asset_labels[assetKey] || assetKey;
+  var isMoney = MONEY_ORDER.includes(assetKey);
+  var records = filteredRecords.filter(function(r){ return r.asset_flags[assetKey]; });
 
-  // 如果是從個人卡片點擊有價證券，只顯示這個人
-  const isPersonMode = (isSecurities && personRecord);
-
-  const totalAmount = isPersonMode
-    ? sum(filteredRecords.filter(r => r.name === personRecord.name), r => r.asset_totals[assetKey] || 0)
-    : sum(records, r => r.asset_totals[assetKey] || 0);
-  const uniquePeople = isPersonMode ? 1 : new Set(records.map(r => r.name)).size;
-
-  modalTitle.textContent = isPersonMode ? `${personRecord.name} 的有價證券` : label;
+  modalTitle.textContent = isPersonMode ? personRecord.name + ' 的 ' + label : label;
   modalSubtitle.textContent = isPersonMode
-    ? `${personRecord.title} · ${personRecord.position_group}`
-    : `${records.length} 人次持有`;
+    ? personRecord.title + ' · ' + personRecord.agency
+    : records.length + ' 人次持有';
 
-  // 統計數字
   modalStats.innerHTML = '';
-  const statData = [
-    { label: '持有人次', value: formatNumber(isPersonMode ? 1 : records.length), note: isPersonMode ? '此人的所有記錄' : '申報時有填寫此類資產' },
-    { label: '人數', value: formatNumber(uniquePeople), note: isPersonMode ? personRecord.name : '去重後人數' },
-    { label: '涵蓋期別', value: isPersonMode
-      ? [...new Set(filteredRecords.filter(r => r.name === personRecord.name).map(r => r.issue))].length + ' 期'
-      : (isMoney ? formatMoney(totalAmount) : [...new Set(records.map(r => r.issue))].length + ' 期'),
-      note: isMoney && !isPersonMode ? '加總該欄位總額' : '有記錄的最早至最新' },
-  ];
-  statData.forEach(s => {
-    const el = document.createElement('div');
-    el.className = 'modal-stat';
-    el.innerHTML = `<span class="modal-stat-label">${s.label}</span><strong class="modal-stat-value">${s.value}</strong><span class="modal-stat-note">${s.note}</span>`;
-    modalStats.appendChild(el);
-  });
-
   modalRecords.innerHTML = '';
-  const list = document.createElement('div');
-  list.className = 'modal-record-list';
+  modalSectionTitle.textContent = '';
 
-  if (isDebt && debtData && personRecord) {
-    // ── 債務模式：只顯示該人的債務明細 ──
-    const personDebts = [];
-    for (const issueKey in debtData) {
-      const pdata = debtData[issueKey][personRecord.name];
-      if (pdata) personDebts.push({ ...pdata, _issue: parseInt(issueKey) });
-    }
-    const isPersonDebtMode = !!personRecord;
-
-    if (!personDebts.length) {
-      modalSectionTitle.textContent = `${personRecord.name} 的債務`;
-      modalRecords.innerHTML = '<div style="padding:16px;color:var(--muted)">無債務記錄</div>';
-    } else {
-      modalSectionTitle.textContent = `${personRecord.name} 的債務（${personDebts.length} 期）`;
-      modalRecords.innerHTML = '';
-      const list = document.createElement('div');
-      list.className = 'modal-record-list';
-
-      const totalAmt = sum(personDebts, p => p.total || 0);
-      modalStats.innerHTML = '';
-      [
-        { label: '總金額', value: formatMoney(totalAmt), note: '所有期別加總' },
-        { label: '期別數', value: personDebts.length + ' 期', note: '有記錄的期別' },
-        { label: '筆數', value: personDebts.reduce((s, p) => s + (p.count || 0), 0) + ' 筆', note: '總筆數' },
-      ].forEach(s => {
-        const el = document.createElement('div');
-        el.className = 'modal-stat';
-        el.innerHTML = `<span class="modal-stat-label">${s.label}</span><strong class="modal-stat-value">${s.value}</strong><span class="modal-stat-note">${s.note}</span>`;
-        modalStats.appendChild(el);
-      });
-
-      personDebts.sort((a, b) => (b.total || 0) - (a.total || 0));
-      personDebts.forEach(pd => {
-        pd.items.forEach(item => {
-          const row = document.createElement('div');
-          row.className = 'modal-record-row';
-          const creditor_clean = item.creditor.replace(/\s+/g, ' ').trim();
-          row.innerHTML = `<div><div class="modal-record-name">${creditor_clean.slice(0, 30)}</div><div class="modal-record-meta">第${pd._issue}期</div></div><div class="modal-record-amount">${formatMoney(item.amount)}</div>`;
-          list.appendChild(row);
-        });
-      });
-      modalRecords.appendChild(list);
-    }
-
-  } else if (isSecurities && securitiesData) {
-    // ── 有價證券模式 ──
-    if (isPersonMode) {
-      // 個人模式：收集此人在所有期別的明細
-      const personSecs = [];
-      for (const issueKey in securitiesData) {
-        const personData = securitiesData[issueKey][personRecord.name];
-        if (personData) {
-          personSecs.push(...(personData.stock || []).map(s => ({ ...s, _type: '股票', _issue: parseInt(issueKey) })));
-          personSecs.push(...(personData.fund || []).map(f => ({ ...f, _type: '基金', _issue: parseInt(issueKey) })));
-        }
-      }
-
-      if (!personSecs.length) {
-        list.innerHTML = '<div style="padding:16px;color:var(--muted)">無有價證券明細記錄</div>';
-      } else {
-        const stocks = personSecs.filter(s => s._type === '股票');
-        const funds = personSecs.filter(s => s._type === '基金');
-        const container = document.createElement('div');
-        let html = '';
-
-        if (stocks.length) {
-          html += `<div class="modal-record-row" style="display:block"><div class="modal-record-name">💹 股票（${stocks.length} 檔）</div>`;
-          stocks.forEach(s => {
-            const amtStr = s.amount ? formatMoney(s.amount) : '-';
-            const sharesStr = s.shares ? s.shares.toLocaleString() + ' 股' : '';
-            const issueStr = s._issue ? ` 第${s._issue}期` : '';
-            html += `<div class="modal-record-detail">◦ ${s.name}${sharesStr ? ' · ' + sharesStr : ''} → ${amtStr}${issueStr}</div>`;
-          });
-          html += '</div>';
-        }
-        if (funds.length) {
-          html += `<div class="modal-record-row" style="display:block"><div class="modal-record-name">📊 基金（${funds.length} 檔）</div>`;
-          funds.forEach(f => {
-            const amtStr = f.amount ? formatMoney(f.amount) : '-';
-            const unitsStr = f.units ? f.units.toLocaleString() + ' 單位' : '';
-            const issueStr = f._issue ? ` 第${f._issue}期` : '';
-            html += `<div class="modal-record-detail">◦ ${f.name}${unitsStr ? ' · ' + unitsStr : ''} → ${amtStr}${issueStr}</div>`;
-          });
-          html += '</div>';
-        }
-        container.innerHTML = html;
-        list.appendChild(container);
-      }
-    } else {
-      // 全域模式：顯示所有有價證券持有人的排名
-      const sorted = [...records].sort((a, b) => {
-        const va = a.asset_totals[assetKey] || 0;
-        const vb = b.asset_totals[assetKey] || 0;
-        return vb - va;
-      }).slice(0, 20);
-
-      sorted.forEach(r => {
-        const personSecs = [];
-        for (const issueKey in securitiesData) {
-          const personData = securitiesData[issueKey][r.name];
-          if (personData) {
-            personSecs.push(...(personData.stock || []).map(s => ({ ...s, _type: '股票', _issue: parseInt(issueKey) })));
-            personSecs.push(...(personData.fund || []).map(f => ({ ...f, _type: '基金', _issue: parseInt(issueKey) })));
-          }
-        }
-        if (!personSecs.length) return;
-
-        const container = document.createElement('div');
-        container.className = 'modal-record-row';
-        const totalAmt = sum(personSecs, s => s.amount || 0);
-        const stocks = personSecs.filter(s => s._type === '股票');
-        const funds = personSecs.filter(s => s._type === '基金');
-        let html = `<div><div class="modal-record-name">${r.name}</div>`;
-        html += `<div class="modal-record-meta">`;
-        if (stocks.length) html += `股票 ${stocks.length} 檔`;
-        if (stocks.length && funds.length) html += ` · `;
-        if (funds.length) html += `基金 ${funds.length} 檔`;
-        html += `</div></div>`;
-        container.innerHTML = html + `<div class="modal-record-amount">${formatMoney(totalAmt)}</div>`;
-        list.appendChild(container);
-      });
-    }
+  if (isPersonMode) {
+    showPersonAssetDetail(personRecord.name, assetKey, label);
   } else {
-    // 非有價證券：通用排行榜
-    const sorted = [...records].sort((a, b) => {
-      const va = isMoney ? (a.asset_totals[assetKey] || 0) : (a.disclosed_amount_total || 0);
-      const vb = isMoney ? (b.asset_totals[assetKey] || 0) : (b.disclosed_amount_total || 0);
+    var uniquePeople = new Set(records.map(function(r){ return r.name; })).size;
+    var totalAmount = sum(records, function(r){ return r.asset_totals[assetKey] || 0; });
+    var iss = isMoney
+      ? formatMoney(totalAmount)
+      : [...new Set(records.map(function(r){ return r.issue; }))].length + ' 期';
+    [
+      { label: '持有人次', value: formatNumber(records.length), note: '申報時有填寫此類資產' },
+      { label: '人數', value: formatNumber(uniquePeople), note: '去重後人數' },
+      { label: isMoney ? '加總總額' : '涵蓋期別', value: iss, note: isMoney ? '加總該欄位總額' : '有記錄的最早至最新' },
+    ].forEach(function(s) {
+      var el2 = document.createElement('div');
+      el2.className = 'modal-stat';
+      el2.innerHTML = '<span class="modal-stat-label">' + s.label + '</span><strong class="modal-stat-value">' + s.value + '</strong><span class="modal-stat-note">' + s.note + '</span>';
+      modalStats.appendChild(el2);
+    });
+    var list = document.createElement('div');
+    list.className = 'modal-record-list';
+    var sorted = records.slice().sort(function(a, b) {
+      var va = isMoney ? (a.asset_totals[assetKey] || 0) : (a.disclosed_amount_total || 0);
+      var vb = isMoney ? (b.asset_totals[assetKey] || 0) : (b.disclosed_amount_total || 0);
       return vb - va;
     }).slice(0, 20);
-    sorted.forEach(r => {
-      const row = document.createElement('div');
+    sorted.forEach(function(r) {
+      var row = document.createElement('div');
       row.className = 'modal-record-row';
-      const amt = isMoney ? r.asset_totals[assetKey] : r.disclosed_amount_total;
-      const amtStr = amt ? formatMoney(amt) : '未列總額';
-      const issues = [...new Set(records.filter(x => x.name === r.name).map(x => x.issue))].sort((a,b)=>b-a);
-      row.innerHTML = `<div><div class="modal-record-name">${r.name}</div><div class="modal-record-meta">${r.title} · ${r.position_group} · 第 ${issues.slice(0,3).join('/')} 期</div></div><div class="modal-record-amount">${amtStr}</div>`;
+      var amt = isMoney ? r.asset_totals[assetKey] : r.disclosed_amount_total;
+      var pIssues = [...new Set(records.filter(function(x){ return x.name === r.name; }).map(function(x){ return x.issue; }))].sort(function(a,b){ return b-a; });
+      row.innerHTML = '<div><div class="modal-record-name">' + r.name + '</div><div class="modal-record-meta">' + r.title + ' · ' + r.position_group + ' · 第 ' + pIssues.slice(0,3).join('/') + ' 期</div></div><div class="modal-record-amount">' + (amt ? formatMoney(amt) : '未列總額') + '</div>';
       list.appendChild(row);
     });
+    modalRecords.appendChild(list);
   }
-
-  modalRecords.appendChild(list);
   modal.hidden = false;
   document.body.style.overflow = 'hidden';
 }
+
+async function showPersonAssetDetail(personName, assetKey, label) {
+  var details = await getPersonDetail(personName, assetKey);
+  var list = document.createElement('div');
+  list.className = 'modal-record-list';
+
+  var totalItems = 0, totalAmount = 0;
+  details.forEach(function(d) {
+    if (!d.data) return;
+    if (Array.isArray(d.data)) {
+      totalItems += d.data.length;
+      d.data.forEach(function(i){ if(i.amount) totalAmount+=parseFloat(i.amount)||0; if(i.price) totalAmount+=parseFloat(i.price)||0; });
+    } else if (d.data.items) {
+      totalItems += d.data.items.length;
+      d.data.items.forEach(function(i){ if(i.amount) totalAmount+=parseFloat(i.amount)||0; if(i.price) totalAmount+=parseFloat(i.price)||0; });
+    } else if (d.data.land) { totalItems += d.data.land.length; }
+    if (d.data.total) totalAmount += parseFloat(d.data.total)||0;
+  });
+
+  [
+    { label: '期別數', value: details.length + ' 期', note: '有記錄的期別' },
+    { label: '總筆數', value: formatNumber(totalItems), note: '明細筆數加總' },
+    { label: '估計總額', value: totalAmount > 0 ? formatMoney(totalAmount) : '-', note: '已解析金額（僅供參考）' },
+  ].forEach(function(s) {
+    var el2 = document.createElement('div');
+    el2.className = 'modal-stat';
+    el2.innerHTML = '<span class="modal-stat-label">' + s.label + '</span><strong class="modal-stat-value">' + s.value + '</strong><span class="modal-stat-note">' + s.note + '</span>';
+    modalStats.appendChild(el2);
+  });
+
+  modalSectionTitle.textContent = '第 292–319 期明細（共 ' + details.length + ' 期有記錄）';
+
+  if (!details.length) {
+    list.innerHTML = '<div style="padding:16px;color:var(--muted);text-align:center">無明細記錄</div>';
+    modalRecords.appendChild(list);
+    return;
+  }
+
+  details.forEach(function(d2) {
+    if (!d2.data) return;
+    renderDetailRows(personName, assetKey, d2.issue, d2.data, list);
+  });
+
+  modalRecords.appendChild(list);
+}
+
+function renderDetailRows(personName, assetKey, issue, data, list) {
+  var h = function(s){ return String(s).replace(/&/g,'&').replace(/</g,'<').replace(/>/g,'>').replace(/"/g,'"'); };
+
+  function mkrow(left, right, extraStyle) {
+    var d = document.createElement('div');
+    d.className = 'modal-record-row';
+    if (extraStyle) d.setAttribute('style', extraStyle);
+    d.appendChild(left);
+    if (right) d.appendChild(right);
+    return d;
+  }
+
+  function mkdiv(cls, txt) {
+    var e = document.createElement('div');
+    if (cls) e.className = cls;
+    if (txt) e.textContent = txt;
+    return e;
+  }
+
+  function left(name, meta) {
+    var d = document.createElement('div');
+    d.appendChild(mkdiv('modal-record-name', name));
+    if (meta) d.appendChild(mkdiv('modal-record-meta', meta));
+    return d;
+  }
+
+  function amtDiv(amount) {
+    var e = document.createElement('div');
+    e.className = 'modal-record-amount';
+    e.textContent = amount;
+    return e;
+  }
+
+  if (assetKey === 'land') {
+    (data.land || []).forEach(function(item) {
+      var loc = (item.location||'').replace(/\s+/g,' ').trim();
+      var rights = item.rights || '';
+      var price = item.price ? formatMoney(parseFloat(item.price)) : '-';
+      var reason = item.acquisition_reason || '';
+      var area = item.area || '';
+      var d = mkrow(null, null, 'display:block');
+      d.appendChild(mkdiv('modal-record-name', '📍 '+(loc.slice(0,42)||'（未解析）')+(rights?' · '+rights:'')));
+      d.appendChild(mkdiv('modal-record-meta', (area?'面積: '+area+' · ':'')+(reason?reason+' · ':'')+'第'+issue+'期'));
+      d.appendChild(mkdiv('', '💰 '+price));
+      list.appendChild(d);
+    });
+
+  } else if (assetKey === 'vehicle') {
+    (data.items || []).forEach(function(item) {
+      var brand = item.brand || '（未解析）';
+      var cc = item.cc ? ' '+item.cc+'cc' : '';
+      var amount = item.amount ? formatMoney(item.amount) : '-';
+      var acq = item.acquisition_date || '';
+      list.appendChild(mkrow(left('🚗 '+h(brand+cc), acq||'第'+issue+'期'), amtDiv(amount)));
+    });
+
+  } else if (assetKey === 'insurance') {
+    (data.items || []).forEach(function(item) {
+      var company = item.company || '（未解析）';
+      var policy = item.policy || '（未解析）';
+      var period = item.period || '';
+      var amount = (item.amount||item.price) ? formatMoney(parseFloat(item.amount||item.price)) : '-';
+      list.appendChild(mkrow(left('🏦 '+h(company), '保單: '+h(policy)+' · '+(period||'第'+issue+'期')), amtDiv(amount)));
+    });
+
+  } else if (assetKey === 'investment') {
+    var idata = Array.isArray(data) ? data : (data ? [data] : []);
+    idata.forEach(function(item) {
+      var company = item.company_name || '（未解析）';
+      var addr = item.company_address || '';
+      var amount = item.amount ? formatMoney(parseFloat(item.amount)) : '-';
+      var time = item.acquisition_time || '';
+      list.appendChild(mkrow(left('🏢 '+h(company), (addr?h(addr)+' · ':'')+(time||'第'+issue+'期')), amtDiv(amount)));
+    });
+
+  } else if (assetKey === 'jewelry') {
+    (data.items || []).forEach(function(item) {
+      var type = item.type || '珠寶/古董/字畫';
+      var cnt = item.count || '1';
+      var price = item.price ? formatMoney(item.price) : '-';
+      list.appendChild(mkrow(left('💎 '+h(type)+' × '+cnt, '第'+issue+'期'), amtDiv(price)));
+    });
+
+  } else if (assetKey === 'cash') {
+    (data.items || []).forEach(function(item) {
+      var currency = item.currency || '未解析';
+      var amount = (item.amount||item.total) ? formatMoney(parseFloat(item.amount||item.total)) : '-';
+      list.appendChild(mkrow(left('💵 '+h(currency), '第'+issue+'期'), amtDiv(amount)));
+    });
+
+  } else if (assetKey === 'securities') {
+    var sec = [...(data.stock||[]), ...(data.bond||[]), ...(data.fund||[])];
+    sec.forEach(function(item) {
+      var isStock = data.stock && data.stock.indexOf(item) !== -1;
+      var isFund = data.fund && data.fund.indexOf(item) !== -1;
+      var icon = isStock ? '💹 股票' : (isFund ? '📊 基金' : '📄 債券');
+      var name = item.name || '（未解析）';
+      var amount = item.amount ? formatMoney(item.amount) : '-';
+      var extra = item.shares ? ' '+item.shares.toLocaleString()+' 股' : (item.units ? ' '+item.units.toLocaleString()+' 單位' : '');
+      list.appendChild(mkrow(left(icon+'：'+h(name), extra+' 第'+issue+'期'), amtDiv(amount)));
+    });
+
+  } else if (assetKey === 'debt') {
+    (data.items || []).forEach(function(item) {
+      var creditor = (item.creditor||'（未解析）').replace(/\s+/g,' ').trim();
+      var amount = item.amount ? formatMoney(item.amount) : '-';
+      list.appendChild(mkrow(left('📋 '+h(creditor.slice(0,40)), '第'+issue+'期'), amtDiv(amount)));
+    });
+
+  } else if (assetKey === 'credit') {
+    (Array.isArray(data) ? data : []).forEach(function(item) {
+      var creditor = item.creditor || '（未解析）';
+      var debtor = item.debtor || '（未解析）';
+      var balance = item.balance ? formatMoney(parseFloat(item.balance)) : '-';
+      list.appendChild(mkrow(left('🔑 債權人：'+h(creditor), '債務人：'+h(debtor)+' · 第'+issue+'期'), amtDiv(balance)));
+    });
+
+  } else if (assetKey === 'ship') {
+    (data.items || []).forEach(function(item) {
+      var kind = item.kind || '船舶';
+      var tons = item.tons || '';
+      var port = item.port || '';
+      var amount = item.amount ? formatMoney(parseFloat(item.amount)) : '-';
+      list.appendChild(mkrow(left('🚢 '+h(kind), (tons?'總噸數: '+tons+' · ':'')+(port?'船籍港: '+port+' · ':'')+'第'+issue+'期'), amtDiv(amount)));
+    });
+
+  } else if (assetKey === 'deposit') {
+    (data.items || []).forEach(function(item) {
+      var bank = item.bank || '（未解析）';
+      var type = item.type || '';
+      var ntd = item.ntd_amount ? formatMoney(item.ntd_amount) : '-';
+      var foreign = item.foreign_amount ? ' 外幣 '+item.foreign_amount.toLocaleString() : '';
+      list.appendChild(mkrow(left('🏦 '+h(bank), (type?type+' · ':'')+'第'+issue+'期'+foreign), amtDiv(ntd)));
+    });
+
+  } else {
+    var d = mkrow(null, null, 'display:block;font-family:monospace;font-size:0.78rem;white-space:pre-wrap;max-width:420px;overflow:hidden');
+    d.appendChild(mkdiv('modal-record-name', '第 '+issue+' 期'));
+    d.appendChild(mkdiv('modal-record-meta', JSON.stringify(data).slice(0,160)));
+    list.appendChild(d);
+  }
+}
+
 
 function closeModal() {
   modal.hidden = true;
