@@ -483,7 +483,7 @@ function createRecordCard(record) {
   return card;
 }
 
-function appendAssetTags(parent, record, limit = 6) {
+function appendAssetTags(parent, record, limit = 5) {
   const keys = MAIN_ASSET_ORDER.filter(key => record.asset_flags[key]);
   const items = keys.map(key => ({ key, name: dataset.asset_labels[key] }));
 
@@ -501,8 +501,26 @@ function appendAssetTags(parent, record, limit = 6) {
       });
     });
     if (items.length > limit) {
-      const more = appendText(parent, 'span', 'tag more-tag', `+${items.length - limit}`);
-      more.title = `還有 ${items.length - limit} 種類型`;
+      const remaining = items.slice(limit);
+      const more = appendText(parent, 'span', 'tag more-tag', `+${remaining.length} 更多`);
+      more.style.cursor = 'pointer';
+      more.title = '點擊展開顯示其餘類別';
+      more.addEventListener('click', (e) => {
+        e.stopPropagation();
+        // Remove the "more" button
+        more.remove();
+        // Show remaining tags
+        remaining.forEach(({ key, name }) => {
+          const el = appendText(parent, 'span', 'tag', name);
+          el.dataset.key = key;
+          el.style.cursor = 'pointer';
+          el.title = `點擊查看「${name}」詳細資料`;
+          el.addEventListener('click', (ev) => {
+            ev.stopPropagation();
+            openAssetModal(key, record);
+          });
+        });
+      });
     }
   }
 }

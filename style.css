@@ -561,6 +561,11 @@ button:hover {
   background: #fff7ed;
   color: var(--warn);
 }
+.more-tag:hover {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
 
 .error {
   padding: 16px;
