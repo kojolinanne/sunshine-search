@@ -39,6 +39,40 @@ def extract_from_pdf(pdf_path):
     results = {}
     in_section = False
 
+    # Blocklist of strings that look like names but are institution / table-artifact
+    BLOCKLIST = {
+        '本欄空白', '持有', '珠寶', '古董', '字畫', '具有', '相當', '價值',
+        '財產', '種類', '件數', '價額', '新臺幣', '合計', '總計',
+        '合作金庫商業', '合作金庫商業銀行', '臺灣銀行', '兆豐銀行',
+        '華南銀行', '彰化銀行', '國泰世華', '富邦人壽', '臺灣人壽',
+        '南山人壽', '台新人壽', '郵政簡易人壽', '保險', '壽險',
+        # Financial institution / product artifacts from pdftotext column splitting
+        '黃金存摺', '金融機構', '分行', '保單', '銀行',
+        '信任', '壽險股份有限公司', '人壽保險', '簡易人壽',
+        # Company name fragments from insurance table column splitting
+        '股份有限公司', '有限公司', '有限', '股份',
+        # Insurance company full names
+        '國泰人壽', '新光人壽', '中信人壽', '遠雄人壽', '全球人壽',
+        '安聯人壽', '法國巴黎人壽', 'KKR', '保德信', '蘇黎世',
+        '富邦產物', '國泰產物', '新光產物', '明台產物', '泰安產物',
+        '旺旺友聯', '華南產物', '彰化產物', '第一產物', '兆豐產物',
+        # Common insurance table header keywords
+        '合作金庫', '中華郵政', '郵局', '郵政',
+    }
+
+    def join_price_fragments(lines):
+        """Reconstruct prices broken across lines by pdftotext layout mode.
+        Lines containing only digits/comma chars are price fragments -> merge with prev."""
+        merged = []
+        for i, ln in enumerate(lines):
+            stripped = ln.strip()
+            # A pure-digit/comma line is a price fragment; merge with previous row
+            if stripped and re.fullmatch(r'[\d,\s]+', stripped) and i > 0:
+                merged[-1] = merged[-1] + ' ' + stripped
+            else:
+                merged.append(ln)
+        return merged
+
     for pi, text in enumerate(pages):
         if not text.strip():
             continue
@@ -51,6 +85,9 @@ def extract_from_pdf(pdf_path):
                 current_person = name
 
         lines = text.split('\n')
+        # Join price fragments before processing
+        lines = join_price_fragments(lines)
+
         for li, line in enumerate(lines):
             ls = clean(line)
 
@@ -59,12 +96,21 @@ def extract_from_pdf(pdf_path):
                 continue
 
             if in_section:
+                # Section (九) ends at these markers; also stop at nested subsections
                 if re.search(r'（十）|（十一）|（十二）|（十三）|（七）|（八）', ls):
                     in_section = False
                     continue
                 if ls.startswith('備註') and len(ls) < 10:
                     in_section = False
                     continue
+                # Skip nested subsections inside (九): "2.保險" / "3.虛擬資產"
+                if re.match(r'^\s*\d+\.[\u4e00-\u9fff]', ls):
+                    continue
+                # Skip lines that are clearly section-sub-headers
+                if re.match(r'^\s*[\u4e00-\u9fff]+[\s\u3000]*[\u4e00-\u9fff]', ls) and len(ls) < 15:
+                    # e.g. "保    險    公    司" (spaced header)
+                    if any(kw in ls for kw in ('保險', '虛擬', '債權', '債務')):
+                        continue
 
             if not in_section:
                 continue
@@ -79,6 +125,11 @@ def extract_from_pdf(pdf_path):
             if re.match(r'^\s*[\u4e00-\u9fff]+保\s*險', ls):
                 continue
 
+            # Skip insurance product lines (section 九-2) — they have different columns
+            # (保險公司, 保單號碼, 要保人) and are not jewelry items
+            if '壽險' in ls or '醫療' in ls or '癌症' in ls or '意外' in ls or '年金' in ls:
+                continue
+
             stripped = ls.strip()
             if not stripped:
                 continue
@@ -87,33 +138,40 @@ def extract_from_pdf(pdf_path):
             if re.match(r'^[\u4e00-\u9fff]{1,4}$', stripped):
                 continue
 
-            # Find holder
-            holder = None
-            for nc in re.findall(r'[\u4e00-\u9fff·]{2,6}', stripped):
-                if nc not in ('本欄空白', '持有', '珠寶', '古董', '字畫', '具有',
-                              '相當', '價值', '財產', '種類', '件數', '價額',
-                              '新臺幣', '合計', '總計'):
-                    holder = nc
-                    break
+            # Skip financial institution / product name lines from pdftotext column splitting
+            # (e.g. "黃金存摺(金融機構:臺灣銀行信安分行)" or "行信安分行)" artifact lines)
+            if any(kw in stripped for kw in ('黃金存摺', '金融機構', '分行', '保單', '行信安', '銀行')):
+                continue
 
+            # Find holder: use the LAST Chinese name (owner usually after item+count)
+            all_names = [nc for nc in re.findall(r'[\u4e00-\u9fff·]{2,6}', stripped)
+                         if nc not in BLOCKLIST]
+            holder = all_names[-1] if all_names else None
             if not holder:
                 continue
 
             # Find count (small number like 1, 2, 3)
-            numbers = [int(parse_num(m)) for m in re.findall(r'\b[\d,]+\b', stripped) if parse_num(m) is not None and parse_num(m) <= 1000]
+            numbers = [int(parse_num(m)) for m in re.findall(r'\b[\d,]+\b', stripped)
+                       if parse_num(m) is not None and parse_num(m) <= 1000]
             count = None
             for n in numbers:
                 if 1 <= n <= 100:
                     count = n
                     break
 
-            # Find price (large number)
-            all_nums = [parse_num(m) for m in re.findall(r'[\d,]+', stripped) if parse_num(m) is not None]
+            # Find price (large number) — use full text to catch joined price fragments
+            # Accept prices ≥ 500 to filter out insurance/trust section fragments (they rarely exceed 500)
+            all_nums = [parse_num(m) for m in re.findall(r'[\d,]+', stripped)
+                        if parse_num(m) is not None]
             price = None
             for n in sorted(all_nums, reverse=True):
-                if n >= 1000:
+                if n >= 500:
                     price = int(n)
                     break
+
+            # Skip if no price (not a valid jewelry row — likely insurance/trust artifact)
+            if price is None:
+                continue
 
             # Find type
             jtype = None
@@ -124,8 +182,6 @@ def extract_from_pdf(pdf_path):
                     jtype = t
                     break
 
-            # Fix: use current_person (declaration filer) as key,
-            # so getPersonDetail(personName) can find all their items.
             holder_key = current_person
             if holder_key not in results:
                 results[holder_key] = {'count': 0, 'items': []}
