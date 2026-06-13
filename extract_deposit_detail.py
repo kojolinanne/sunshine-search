@@ -197,7 +197,10 @@ def extract_from_pdf(pdf_path):
 
                     pending_bank_parts = []
 
-                    holder_key = holder
+                    # Fix: use current_person (declaration filer) as key,
+                    # so getPersonDetail(personName) can find all their items.
+                    # Each item still carries its own holder/bank info in the item fields.
+                    holder_key = current_person
                     if holder_key not in results:
                         results[holder_key] = {'count': 0, 'items': []}
                     results[holder_key]['count'] += 1
@@ -272,7 +275,49 @@ def extract_from_pdf(pdf_path):
 
                         pending_bank_parts = []
 
-                        holder_key = holder
+                        # This is a continuation of a data line - bank name ends at start
+                        # Parse fields from this line
+                        bank_name = ' '.join(pending_bank_parts)
+                        if not bank_name:
+                            bank_name = '不明'
+
+                        acct_type = None
+                        for t in ACCT_TYPES:
+                            if t in stripped_inner:
+                                acct_type = t
+                                break
+
+                        currency = None
+                        for c in CURRENCIES:
+                            if c in stripped_inner:
+                                currency = c
+                                break
+                        if not currency:
+                            currency = '新臺幣'
+
+                        holder = None
+                        for nc in re.findall(r'[\u4e00-\u9fff·]{2,6}', stripped_inner):
+                            if nc not in ('新臺幣', '本欄空白', '持有', '存款', '活期', '定期',
+                                          '綜合', '支票', '儲蓄', '外幣', '別所', '總額',
+                                          '幣別', '美元', '日圓', '歐元', '英鎊', '港幣',
+                                          '人民幣', '澳幣', '加幣'):
+                                holder = nc
+                                break
+                        if not holder:
+                            holder = current_person or '不明'
+
+                        all_amounts = [parse_num(m) for m in re.findall(r'[\d,]+', stripped_inner) if parse_num(m) is not None]
+                        ntd_amount = None
+                        foreign_amount = None
+                        if len(all_amounts) >= 2:
+                            ntd_amount = all_amounts[-1]
+                            foreign_amount = all_amounts[-2]
+                        elif all_amounts:
+                            ntd_amount = all_amounts[-1]
+
+                        pending_bank_parts = []
+
+                        holder_key = current_person
                         if holder_key not in results:
                             results[holder_key] = {'count': 0, 'items': []}
                         results[holder_key]['count'] += 1

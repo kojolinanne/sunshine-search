@@ -1,6 +1,6 @@
 {
   "292": {
-    "監察院公報": {
+    "劉鏡清": {
       "count": 1,
       "items": [
         {
@@ -30,7 +30,7 @@
         }
       ]
     },
-    "蘇如玉": {
+    "吳釗燮": {
       "count": 1,
       "items": [
         {
@@ -42,19 +42,14 @@
       ]
     },
     "卓榮泰": {
-      "count": 1,
+      "count": 2,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "卓榮泰",
           "foreign_amount": null,
           "ntd_amount": 6720.0
-        }
-      ]
-    },
-    "高美智": {
-      "count": 1,
-      "items": [
+        },
         {
           "currency": "新臺幣",
           "holder": "高美智",
@@ -81,19 +76,14 @@
       ]
     },
     "林佳龍": {
-      "count": 1,
+      "count": 2,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "林佳龍",
           "foreign_amount": null,
           "ntd_amount": 230000.0
-        }
-      ]
-    },
-    "廖婉如": {
-      "count": 1,
-      "items": [
+        },
         {
           "currency": "新臺幣",
           "holder": "廖婉如",
@@ -103,19 +93,14 @@
       ]
     },
     "李廷盛": {
-      "count": 1,
+      "count": 2,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "李廷盛",
           "foreign_amount": null,
           "ntd_amount": 100000.0
-        }
-      ]
-    },
-    "張採景": {
-      "count": 1,
-      "items": [
+        },
         {
           "currency": "新臺幣",
           "holder": "張採景",
@@ -199,32 +184,14 @@
         }
       ]
     },
-    "監察院公報": {
-      "count": 4,
+    "洪婉臻": {
+      "count": 1,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "監察院公報",
           "foreign_amount": 294.0,
           "ntd_amount": 110.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 294.0,
-          "ntd_amount": 359.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 294.0,
-          "ntd_amount": 365.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 294.0,
-          "ntd_amount": 385.0
         }
       ]
     },
@@ -236,6 +203,28 @@
           "holder": "耿葳",
           "foreign_amount": null,
           "ntd_amount": 320000.0
+        }
+      ]
+    },
+    "張志豪": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 294.0,
+          "ntd_amount": 359.0
+        }
+      ]
+    },
+    "張斯綱": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 294.0,
+          "ntd_amount": 365.0
         }
       ]
     },
@@ -251,19 +240,20 @@
       ]
     },
     "鍾沛君": {
-      "count": 1,
+      "count": 3,
       "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 294.0,
+          "ntd_amount": 385.0
+        },
         {
           "currency": "新臺幣",
           "holder": "鍾沛君",
           "foreign_amount": null,
           "ntd_amount": 32000.0
-        }
-      ]
-    },
-    "陳志偉": {
-      "count": 1,
-      "items": [
+        },
         {
           "currency": "新臺幣",
           "holder": "陳志偉",
@@ -297,38 +287,25 @@
         }
       ]
     },
-    "監察院公報": {
-      "count": 5,
+    "李倩萍": {
+      "count": 1,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "監察院公報",
           "foreign_amount": 295.0,
           "ntd_amount": 108.0
-        },
+        }
+      ]
+    },
+    "林銘仁": {
+      "count": 1,
+      "items": [
         {
           "currency": "新臺幣",
           "holder": "監察院公報",
           "foreign_amount": 295.0,
           "ntd_amount": 182.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 295.0,
-          "ntd_amount": 274.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 295.0,
-          "ntd_amount": 321.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 295.0,
-          "ntd_amount": 363.0
         }
       ]
     },
@@ -344,24 +321,25 @@
       ]
     },
     "陳錦錠": {
-      "count": 1,
+      "count": 3,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "陳錦錠",
           "foreign_amount": null,
           "ntd_amount": 100000.0
-        }
-      ]
-    },
-    "張慶忠": {
-      "count": 1,
-      "items": [
+        },
         {
           "currency": "新臺幣",
           "holder": "張慶忠",
           "foreign_amount": null,
           "ntd_amount": 150000.0
+        },
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 295.0,
+          "ntd_amount": 274.0
         }
       ]
     },
@@ -377,8 +355,14 @@
       ]
     },
     "黃心華": {
-      "count": 4,
+      "count": 5,
       "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 295.0,
+          "ntd_amount": 321.0
+        },
         {
           "currency": "新臺幣",
           "holder": "黃心華",
@@ -405,6 +389,17 @@
         }
       ]
     },
+    "游輝宂": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 295.0,
+          "ntd_amount": 363.0
+        }
+      ]
+    },
     "蔡健棠": {
       "count": 1,
       "items": [
@@ -417,19 +412,14 @@
       ]
     },
     "劉美芳": {
-      "count": 1,
+      "count": 2,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "劉美芳",
           "foreign_amount": null,
           "ntd_amount": 20000.0
-        }
-      ]
-    },
-    "郭景裕": {
-      "count": 1,
-      "items": [
+        },
         {
           "currency": "新臺幣",
           "holder": "郭景裕",
@@ -440,25 +430,19 @@
     }
   },
   "296": {
-    "監察院公報": {
-      "count": 2,
+    "蔡明耀": {
+      "count": 1,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "監察院公報",
           "foreign_amount": 296.0,
           "ntd_amount": 66.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 296.0,
-          "ntd_amount": 137.0
         }
       ]
     },
-    "加拿大幣": {
-      "count": 2,
+    "曾厚仁": {
+      "count": 4,
       "items": [
         {
           "currency": "新臺幣",
@@ -467,27 +451,17 @@
           "ntd_amount": 21810.0
         },
         {
-          "currency": "新臺幣",
-          "holder": "加拿大幣",
-          "foreign_amount": 2000.0,
-          "ntd_amount": 43620.0
-        }
-      ]
-    },
-    "曾厚仁": {
-      "count": 1,
-      "items": [
-        {
           "currency": "美元",
           "holder": "曾厚仁",
           "foreign_amount": 800.0,
           "ntd_amount": 24740.0
-        }
-      ]
-    },
-    "呂玉玲": {
-      "count": 1,
-      "items": [
+        },
+        {
+          "currency": "新臺幣",
+          "holder": "加拿大幣",
+          "foreign_amount": 2000.0,
+          "ntd_amount": 43620.0
+        },
         {
           "currency": "新臺幣",
           "holder": "呂玉玲",
@@ -497,19 +471,14 @@
       ]
     },
     "劉世忠": {
-      "count": 1,
+      "count": 2,
       "items": [
         {
           "currency": "美元",
           "holder": "劉世忠",
           "foreign_amount": 1000.0,
           "ntd_amount": 31400.0
-        }
-      ]
-    },
-    "越南盾": {
-      "count": 1,
-      "items": [
+        },
         {
           "currency": "越南盾",
           "holder": "越南盾",
@@ -517,23 +486,28 @@
           "ntd_amount": 23952.0
         }
       ]
+    },
+    "陳彥伯": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 296.0,
+          "ntd_amount": 137.0
+        }
+      ]
     }
   },
   "297": {
-    "監察院公報": {
-      "count": 2,
+    "朱珍瑤": {
+      "count": 1,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "監察院公報",
           "foreign_amount": 297.0,
           "ntd_amount": 411.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 297.0,
-          "ntd_amount": 423.0
         }
       ]
     },
@@ -545,6 +519,17 @@
           "holder": "林志強",
           "foreign_amount": null,
           "ntd_amount": 1000000.0
+        }
+      ]
+    },
+    "陳治文": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 297.0,
+          "ntd_amount": 423.0
         }
       ]
     }
@@ -561,97 +546,26 @@
         }
       ]
     },
-    "監察院公報": {
-      "count": 12,
+    "吳嘉和": {
+      "count": 1,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "監察院公報",
           "foreign_amount": 298.0,
           "ntd_amount": 10.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 298.0,
-          "ntd_amount": 52.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 298.0,
-          "ntd_amount": 80.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 298.0,
-          "ntd_amount": 95.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 298.0,
-          "ntd_amount": 100.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 298.0,
-          "ntd_amount": 280.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 298.0,
-          "ntd_amount": 323.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 298.0,
-          "ntd_amount": 330.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 298.0,
-          "ntd_amount": 377.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 298.0,
-          "ntd_amount": 387.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 298.0,
-          "ntd_amount": 412.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 298.0,
-          "ntd_amount": 454.0
         }
       ]
     },
     "李宗豪": {
-      "count": 1,
+      "count": 2,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "李宗豪",
           "foreign_amount": null,
           "ntd_amount": 17966.0
-        }
-      ]
-    },
-    "林俐彣": {
-      "count": 1,
-      "items": [
+        },
         {
           "currency": "新臺幣",
           "holder": "林俐彣",
@@ -660,9 +574,48 @@
         }
       ]
     },
-    "孫韻璇": {
+    "李柏坊": {
       "count": 1,
       "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 298.0,
+          "ntd_amount": 52.0
+        }
+      ]
+    },
+    "林政賢": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 298.0,
+          "ntd_amount": 80.0
+        }
+      ]
+    },
+    "段樹文": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 298.0,
+          "ntd_amount": 95.0
+        }
+      ]
+    },
+    "孫韻璇": {
+      "count": 2,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 298.0,
+          "ntd_amount": 100.0
+        },
         {
           "currency": "新臺幣",
           "holder": "孫韻璇",
@@ -672,19 +625,14 @@
       ]
     },
     "徐其萬": {
-      "count": 1,
+      "count": 2,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "徐其萬",
           "foreign_amount": null,
           "ntd_amount": 658000.0
-        }
-      ]
-    },
-    "徐林素霞": {
-      "count": 1,
-      "items": [
+        },
         {
           "currency": "新臺幣",
           "holder": "徐林素霞",
@@ -693,20 +641,43 @@
         }
       ]
     },
-    "許清順": {
+    "陳美梅": {
       "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 298.0,
+          "ntd_amount": 280.0
+        }
+      ]
+    },
+    "許更生": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 298.0,
+          "ntd_amount": 323.0
+        }
+      ]
+    },
+    "許清順": {
+      "count": 3,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "許清順",
           "foreign_amount": null,
           "ntd_amount": 210000.0
-        }
-      ]
-    },
-    "李淑惠": {
-      "count": 1,
-      "items": [
+        },
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 298.0,
+          "ntd_amount": 330.0
+        },
         {
           "currency": "新臺幣",
           "holder": "李淑惠",
@@ -715,9 +686,48 @@
         }
       ]
     },
-    "黃瑄雅": {
+    "舒翠玲": {
       "count": 1,
       "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 298.0,
+          "ntd_amount": 377.0
+        }
+      ]
+    },
+    "楊家俍": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 298.0,
+          "ntd_amount": 387.0
+        }
+      ]
+    },
+    "劉勝全": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 298.0,
+          "ntd_amount": 412.0
+        }
+      ]
+    },
+    "蘇偉恩": {
+      "count": 2,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 298.0,
+          "ntd_amount": 454.0
+        },
         {
           "currency": "新臺幣",
           "holder": "黃瑄雅",
@@ -728,72 +738,53 @@
     }
   },
   "299": {
-    "監察院公報": {
-      "count": 7,
+    "牛煦庭": {
+      "count": 1,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "監察院公報",
           "foreign_amount": 299.0,
           "ntd_amount": 13.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 299.0,
-          "ntd_amount": 30.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 299.0,
-          "ntd_amount": 42.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 299.0,
-          "ntd_amount": 178.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 299.0,
-          "ntd_amount": 224.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 299.0,
-          "ntd_amount": 293.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 299.0,
-          "ntd_amount": 351.0
         }
       ]
     },
     "王正旭": {
-      "count": 1,
+      "count": 2,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "王正旭",
           "foreign_amount": null,
           "ntd_amount": 10000.0
-        }
-      ]
-    },
-    "王貞乃": {
-      "count": 1,
-      "items": [
+        },
         {
           "currency": "新臺幣",
           "holder": "王貞乃",
           "foreign_amount": null,
           "ntd_amount": 6000.0
+        }
+      ]
+    },
+    "王定宇": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 299.0,
+          "ntd_amount": 30.0
+        }
+      ]
+    },
+    "王美惠": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 299.0,
+          "ntd_amount": 42.0
         }
       ]
     },
@@ -848,6 +839,17 @@
         }
       ]
     },
+    "林德福": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 299.0,
+          "ntd_amount": 178.0
+        }
+      ]
+    },
     "郭國文": {
       "count": 3,
       "items": [
@@ -871,6 +873,28 @@
         }
       ]
     },
+    "陳冠廷": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 299.0,
+          "ntd_amount": 224.0
+        }
+      ]
+    },
+    "黃秀芳": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 299.0,
+          "ntd_amount": 293.0
+        }
+      ]
+    },
     "廖先翔": {
       "count": 1,
       "items": [
@@ -879,6 +903,17 @@
           "holder": "廖先翔",
           "foreign_amount": null,
           "ntd_amount": 900000.0
+        }
+      ]
+    },
+    "廖偉翔": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 299.0,
+          "ntd_amount": 351.0
         }
       ]
     },
@@ -912,38 +947,14 @@
     }
   },
   "300": {
-    "監察院公報": {
-      "count": 5,
+    "王仙蓮": {
+      "count": 1,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "監察院公報",
           "foreign_amount": 300.0,
           "ntd_amount": 1.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 300.0,
-          "ntd_amount": 238.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 300.0,
-          "ntd_amount": 333.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 300.0,
-          "ntd_amount": 353.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 300.0,
-          "ntd_amount": 359.0
         }
       ]
     },
@@ -959,19 +970,14 @@
       ]
     },
     "吳振嘉": {
-      "count": 1,
+      "count": 2,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "吳振嘉",
           "foreign_amount": null,
           "ntd_amount": 50000.0
-        }
-      ]
-    },
-    "邱瑞華": {
-      "count": 1,
-      "items": [
+        },
         {
           "currency": "新臺幣",
           "holder": "邱瑞華",
@@ -980,20 +986,26 @@
         }
       ]
     },
-    "邱愛珊": {
+    "李天生": {
       "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 300.0,
+          "ntd_amount": 238.0
+        }
+      ]
+    },
+    "邱愛珊": {
+      "count": 2,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "邱愛珊",
           "foreign_amount": null,
           "ntd_amount": 110000.0
-        }
-      ]
-    },
-    "魏隆琪": {
-      "count": 1,
-      "items": [
+        },
         {
           "currency": "新臺幣",
           "holder": "魏隆琪",
@@ -1014,8 +1026,14 @@
       ]
     },
     "林霈涵": {
-      "count": 1,
+      "count": 2,
       "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 300.0,
+          "ntd_amount": 333.0
+        },
         {
           "currency": "新臺幣",
           "holder": "林霈涵",
@@ -1023,11 +1041,33 @@
           "ntd_amount": 300000.0
         }
       ]
+    },
+    "陳本添": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 300.0,
+          "ntd_amount": 353.0
+        }
+      ]
+    },
+    "陳廷秀": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 300.0,
+          "ntd_amount": 359.0
+        }
+      ]
     }
   },
   "301": {
     "張家銨": {
-      "count": 3,
+      "count": 4,
       "items": [
         {
           "currency": "新臺幣",
@@ -1046,12 +1086,7 @@
           "holder": "張家銨",
           "foreign_amount": 10000.0,
           "ntd_amount": 2000.0
-        }
-      ]
-    },
-    "李光正": {
-      "count": 1,
-      "items": [
+        },
         {
           "currency": "新臺幣",
           "holder": "李光正",
@@ -1060,48 +1095,62 @@
         }
       ]
     },
-    "監察院公報": {
-      "count": 6,
+    "蕭隆澤": {
+      "count": 1,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "監察院公報",
           "foreign_amount": 301.0,
           "ntd_amount": 62.0
-        },
+        }
+      ]
+    },
+    "賴義鍠": {
+      "count": 1,
+      "items": [
         {
           "currency": "新臺幣",
           "holder": "監察院公報",
           "foreign_amount": 301.0,
           "ntd_amount": 85.0
-        },
+        }
+      ]
+    },
+    "尤榮智": {
+      "count": 1,
+      "items": [
         {
           "currency": "新臺幣",
           "holder": "監察院公報",
           "foreign_amount": 301.0,
           "ntd_amount": 114.0
-        },
+        }
+      ]
+    },
+    "方一峰": {
+      "count": 1,
+      "items": [
         {
           "currency": "新臺幣",
           "holder": "監察院公報",
           "foreign_amount": 301.0,
           "ntd_amount": 118.0
-        },
+        }
+      ]
+    },
+    "王家貞": {
+      "count": 1,
+      "items": [
         {
           "currency": "新臺幣",
           "holder": "監察院公報",
           "foreign_amount": 301.0,
           "ntd_amount": 122.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 301.0,
-          "ntd_amount": 342.0
         }
       ]
     },
-    "劉瑋婷": {
+    "朱正軒": {
       "count": 2,
       "items": [
         {
@@ -1141,24 +1190,30 @@
       ]
     },
     "林美燕": {
-      "count": 1,
+      "count": 2,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "林美燕",
           "foreign_amount": null,
           "ntd_amount": 2000000.0
-        }
-      ]
-    },
-    "葉明源": {
-      "count": 1,
-      "items": [
+        },
         {
           "currency": "新臺幣",
           "holder": "葉明源",
           "foreign_amount": null,
           "ntd_amount": 500000.0
+        }
+      ]
+    },
+    "陳皇宇": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 301.0,
+          "ntd_amount": 342.0
         }
       ]
     },
@@ -1174,19 +1229,14 @@
       ]
     },
     "蔡宗豪": {
-      "count": 1,
+      "count": 2,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "蔡宗豪",
           "foreign_amount": null,
           "ntd_amount": 650000.0
-        }
-      ]
-    },
-    "吳采霖": {
-      "count": 1,
-      "items": [
+        },
         {
           "currency": "新臺幣",
           "holder": "吳采霖",
@@ -1197,102 +1247,64 @@
     }
   },
   "302": {
-    "監察院公報": {
-      "count": 12,
+    "丁學忠": {
+      "count": 1,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "監察院公報",
           "foreign_amount": 302.0,
           "ntd_amount": 1.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 302.0,
-          "ntd_amount": 194.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 302.0,
-          "ntd_amount": 200.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 302.0,
-          "ntd_amount": 206.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 302.0,
-          "ntd_amount": 246.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 302.0,
-          "ntd_amount": 252.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 302.0,
-          "ntd_amount": 270.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 302.0,
-          "ntd_amount": 283.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 302.0,
-          "ntd_amount": 296.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 302.0,
-          "ntd_amount": 314.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 302.0,
-          "ntd_amount": 392.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 302.0,
-          "ntd_amount": 397.0
         }
       ]
     },
     "邱鎮軍": {
-      "count": 1,
+      "count": 2,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "邱鎮軍",
           "foreign_amount": null,
           "ntd_amount": 150000.0
-        }
-      ]
-    },
-    "詹美娟": {
-      "count": 1,
-      "items": [
+        },
         {
           "currency": "新臺幣",
           "holder": "詹美娟",
           "foreign_amount": null,
           "ntd_amount": 50000.0
+        }
+      ]
+    },
+    "徐欣瑩": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 302.0,
+          "ntd_amount": 194.0
+        }
+      ]
+    },
+    "徐富癸": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 302.0,
+          "ntd_amount": 200.0
+        }
+      ]
+    },
+    "翁曉玲": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 302.0,
+          "ntd_amount": 206.0
         }
       ]
     },
@@ -1307,6 +1319,61 @@
         }
       ]
     },
+    "陳俊宇": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 302.0,
+          "ntd_amount": 246.0
+        }
+      ]
+    },
+    "陳昭姿": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 302.0,
+          "ntd_amount": 252.0
+        }
+      ]
+    },
+    "陳素月": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 302.0,
+          "ntd_amount": 270.0
+        }
+      ]
+    },
+    "陳菁徽": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 302.0,
+          "ntd_amount": 283.0
+        }
+      ]
+    },
+    "陳超明": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 302.0,
+          "ntd_amount": 296.0
+        }
+      ]
+    },
     "陳瑩": {
       "count": 1,
       "items": [
@@ -1318,8 +1385,19 @@
         }
       ]
     },
+    "張啓楷": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 302.0,
+          "ntd_amount": 314.0
+        }
+      ]
+    },
     "張智倫": {
-      "count": 2,
+      "count": 4,
       "items": [
         {
           "currency": "新臺幣",
@@ -1332,12 +1410,7 @@
           "holder": "張智倫",
           "foreign_amount": 2000.0,
           "ntd_amount": 63054.0
-        }
-      ]
-    },
-    "彭涵": {
-      "count": 2,
-      "items": [
+        },
         {
           "currency": "新臺幣",
           "holder": "彭涵",
@@ -1349,6 +1422,28 @@
           "holder": "彭涵",
           "foreign_amount": 3000.0,
           "ntd_amount": 94581.0
+        }
+      ]
+    },
+    "魯明哲": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 302.0,
+          "ntd_amount": 392.0
+        }
+      ]
+    },
+    "盧縣一": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 302.0,
+          "ntd_amount": 397.0
         }
       ]
     }
@@ -1365,68 +1460,25 @@
         }
       ]
     },
-    "監察院公報": {
-      "count": 10,
+    "蔡蘇秋金": {
+      "count": 1,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "監察院公報",
           "foreign_amount": 303.0,
           "ntd_amount": 15.0
-        },
+        }
+      ]
+    },
+    "趙昆原": {
+      "count": 1,
+      "items": [
         {
           "currency": "新臺幣",
           "holder": "監察院公報",
           "foreign_amount": 303.0,
           "ntd_amount": 24.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 303.0,
-          "ntd_amount": 86.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 303.0,
-          "ntd_amount": 105.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 303.0,
-          "ntd_amount": 120.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 303.0,
-          "ntd_amount": 258.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 303.0,
-          "ntd_amount": 331.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 303.0,
-          "ntd_amount": 338.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 303.0,
-          "ntd_amount": 372.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 303.0,
-          "ntd_amount": 451.0
         }
       ]
     },
@@ -1441,7 +1493,40 @@
         }
       ]
     },
-    "陳界水": {
+    "江瑞鴻": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 303.0,
+          "ntd_amount": 86.0
+        }
+      ]
+    },
+    "吳銘賜": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 303.0,
+          "ntd_amount": 105.0
+        }
+      ]
+    },
+    "李雨庭": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 303.0,
+          "ntd_amount": 120.0
+        }
+      ]
+    },
+    "李順進": {
       "count": 1,
       "items": [
         {
@@ -1453,19 +1538,14 @@
       ]
     },
     "林義迪": {
-      "count": 1,
+      "count": 2,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "林義迪",
           "foreign_amount": null,
           "ntd_amount": 4600000.0
-        }
-      ]
-    },
-    "林吳雪鳳": {
-      "count": 1,
-      "items": [
+        },
         {
           "currency": "新臺幣",
           "holder": "林吳雪鳳",
@@ -1475,24 +1555,63 @@
       ]
     },
     "陳明澤": {
-      "count": 1,
+      "count": 2,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "陳明澤",
           "foreign_amount": null,
           "ntd_amount": 6650000.0
-        }
-      ]
-    },
-    "陳郭淑容": {
-      "count": 1,
-      "items": [
+        },
         {
           "currency": "新臺幣",
           "holder": "陳郭淑容",
           "foreign_amount": null,
           "ntd_amount": 9800000.0
+        }
+      ]
+    },
+    "陳麗珍": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 303.0,
+          "ntd_amount": 258.0
+        }
+      ]
+    },
+    "黃秋媖": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 303.0,
+          "ntd_amount": 331.0
+        }
+      ]
+    },
+    "黃香菽": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 303.0,
+          "ntd_amount": 338.0
+        }
+      ]
+    },
+    "鄭光峰": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 303.0,
+          "ntd_amount": 372.0
         }
       ]
     },
@@ -1508,19 +1627,14 @@
       ]
     },
     "張鎮榮": {
-      "count": 1,
+      "count": 2,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "張鎮榮",
           "foreign_amount": null,
           "ntd_amount": 388000.0
-        }
-      ]
-    },
-    "張許金鐶": {
-      "count": 1,
-      "items": [
+        },
         {
           "currency": "新臺幣",
           "holder": "張許金鐶",
@@ -1530,19 +1644,20 @@
       ]
     },
     "張良印": {
-      "count": 1,
+      "count": 3,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "張良印",
           "foreign_amount": null,
           "ntd_amount": 200000.0
-        }
-      ]
-    },
-    "李小菁": {
-      "count": 1,
-      "items": [
+        },
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 303.0,
+          "ntd_amount": 451.0
+        },
         {
           "currency": "新臺幣",
           "holder": "李小菁",
@@ -1554,19 +1669,14 @@
   },
   "304": {
     "何建樺": {
-      "count": 1,
+      "count": 2,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "何建樺",
           "foreign_amount": null,
           "ntd_amount": 55200.0
-        }
-      ]
-    },
-    "甘金娥": {
-      "count": 1,
-      "items": [
+        },
         {
           "currency": "新臺幣",
           "holder": "甘金娥",
@@ -1575,32 +1685,25 @@
         }
       ]
     },
-    "監察院公報": {
-      "count": 4,
+    "吳菊花": {
+      "count": 1,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "監察院公報",
           "foreign_amount": 304.0,
           "ntd_amount": 20.0
-        },
+        }
+      ]
+    },
+    "邱坤桶": {
+      "count": 1,
+      "items": [
         {
           "currency": "新臺幣",
           "holder": "監察院公報",
           "foreign_amount": 304.0,
           "ntd_amount": 26.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 304.0,
-          "ntd_amount": 157.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 304.0,
-          "ntd_amount": 421.0
         }
       ]
     },
@@ -1615,7 +1718,7 @@
         }
       ]
     },
-    "楊玲珍": {
+    "陳栢誠": {
       "count": 2,
       "items": [
         {
@@ -1632,25 +1735,42 @@
         }
       ]
     },
-    "楊明燁": {
+    "鄭朝鐘": {
       "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 304.0,
+          "ntd_amount": 157.0
+        }
+      ]
+    },
+    "楊明燁": {
+      "count": 2,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "楊明燁",
           "foreign_amount": null,
           "ntd_amount": 152190.0
-        }
-      ]
-    },
-    "邱秀屏": {
-      "count": 1,
-      "items": [
+        },
         {
           "currency": "新臺幣",
           "holder": "邱秀屏",
           "foreign_amount": null,
           "ntd_amount": 770718.0
+        }
+      ]
+    },
+    "鄭秋風": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 304.0,
+          "ntd_amount": 421.0
         }
       ]
     }
@@ -1668,19 +1788,14 @@
       ]
     },
     "謝銘洋": {
-      "count": 1,
+      "count": 2,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "謝銘洋",
           "foreign_amount": null,
           "ntd_amount": 50000.0
-        }
-      ]
-    },
-    "林麗真": {
-      "count": 1,
-      "items": [
+        },
         {
           "currency": "新臺幣",
           "holder": "林麗真",
@@ -1691,91 +1806,30 @@
     }
   },
   "306": {
-    "監察院公報": {
-      "count": 13,
+    "許原龍": {
+      "count": 1,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "監察院公報",
           "foreign_amount": 306.0,
           "ntd_amount": 86.0
-        },
+        }
+      ]
+    },
+    "李俊諭": {
+      "count": 1,
+      "items": [
         {
           "currency": "新臺幣",
           "holder": "監察院公報",
           "foreign_amount": 306.0,
           "ntd_amount": 117.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 306.0,
-          "ntd_amount": 140.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 306.0,
-          "ntd_amount": 159.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 306.0,
-          "ntd_amount": 163.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 306.0,
-          "ntd_amount": 241.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 306.0,
-          "ntd_amount": 251.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 306.0,
-          "ntd_amount": 283.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 306.0,
-          "ntd_amount": 293.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 306.0,
-          "ntd_amount": 314.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 306.0,
-          "ntd_amount": 333.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 306.0,
-          "ntd_amount": 415.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 306.0,
-          "ntd_amount": 431.0
         }
       ]
     },
     "林宗翰": {
-      "count": 2,
+      "count": 3,
       "items": [
         {
           "currency": "新臺幣",
@@ -1785,20 +1839,26 @@
         },
         {
           "currency": "新臺幣",
+          "holder": "辜宇仙",
+          "foreign_amount": null,
+          "ntd_amount": 921000.0
+        },
+        {
+          "currency": "新臺幣",
           "holder": "林宗翰",
           "foreign_amount": null,
           "ntd_amount": 503000.0
         }
       ]
     },
-    "辜宇仙": {
+    "凃俊任": {
       "count": 1,
       "items": [
         {
           "currency": "新臺幣",
-          "holder": "辜宇仙",
-          "foreign_amount": null,
-          "ntd_amount": 921000.0
+          "holder": "監察院公報",
+          "foreign_amount": 306.0,
+          "ntd_amount": 140.0
         }
       ]
     },
@@ -1813,25 +1873,37 @@
         }
       ]
     },
-    "洪子超": {
+    "柯振杯": {
       "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 306.0,
+          "ntd_amount": 159.0
+        }
+      ]
+    },
+    "洪子超": {
+      "count": 3,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "洪子超",
           "foreign_amount": null,
           "ntd_amount": 520000.0
-        }
-      ]
-    },
-    "許芳瑜": {
-      "count": 1,
-      "items": [
+        },
         {
           "currency": "新臺幣",
           "holder": "許芳瑜",
           "foreign_amount": null,
           "ntd_amount": 600000.0
+        },
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 306.0,
+          "ntd_amount": 163.0
         }
       ]
     },
@@ -1843,6 +1915,94 @@
           "holder": "陳榮妹",
           "foreign_amount": null,
           "ntd_amount": 100000.0
+        }
+      ]
+    },
+    "張國棟": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 306.0,
+          "ntd_amount": 241.0
+        }
+      ]
+    },
+    "張錦昆": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 306.0,
+          "ntd_amount": 251.0
+        }
+      ]
+    },
+    "黃俊源": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 306.0,
+          "ntd_amount": 283.0
+        }
+      ]
+    },
+    "葉永清": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 306.0,
+          "ntd_amount": 293.0
+        }
+      ]
+    },
+    "詹琬惠": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 306.0,
+          "ntd_amount": 314.0
+        }
+      ]
+    },
+    "蕭文雄": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 306.0,
+          "ntd_amount": 333.0
+        }
+      ]
+    },
+    "宋懷琳": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 306.0,
+          "ntd_amount": 415.0
+        }
+      ]
+    },
+    "林芳伃": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 306.0,
+          "ntd_amount": 431.0
         }
       ]
     }
@@ -1870,37 +2030,19 @@
         }
       ]
     },
-    "監察院公報": {
-      "count": 4,
+    "簡峻庭": {
+      "count": 1,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "監察院公報",
           "foreign_amount": 307.0,
           "ntd_amount": 90.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 307.0,
-          "ntd_amount": 115.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 307.0,
-          "ntd_amount": 124.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 307.0,
-          "ntd_amount": 457.0
         }
       ]
     },
     "蘇昱誠": {
-      "count": 2,
+      "count": 3,
       "items": [
         {
           "currency": "新臺幣",
@@ -1913,17 +2055,34 @@
           "holder": "蘇昱誠",
           "foreign_amount": 50000.0,
           "ntd_amount": 10000.0
-        }
-      ]
-    },
-    "劉芊余": {
-      "count": 1,
-      "items": [
+        },
         {
           "currency": "新臺幣",
           "holder": "劉芊余",
           "foreign_amount": null,
           "ntd_amount": 20000.0
+        }
+      ]
+    },
+    "黃凱": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 307.0,
+          "ntd_amount": 115.0
+        }
+      ]
+    },
+    "蔡咏鍀": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 307.0,
+          "ntd_amount": 124.0
         }
       ]
     },
@@ -1939,19 +2098,14 @@
       ]
     },
     "蔡永富": {
-      "count": 1,
+      "count": 2,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "蔡永富",
           "foreign_amount": null,
           "ntd_amount": 225600.0
-        }
-      ]
-    },
-    "張孝蘭": {
-      "count": 1,
-      "items": [
+        },
         {
           "currency": "新臺幣",
           "holder": "張孝蘭",
@@ -1959,63 +2113,89 @@
           "ntd_amount": 147800.0
         }
       ]
+    },
+    "賴淑娞": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 307.0,
+          "ntd_amount": 457.0
+        }
+      ]
     }
   },
   "308": {
-    "監察院公報": {
-      "count": 5,
+    "顏嘉葦": {
+      "count": 1,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "監察院公報",
           "foreign_amount": 308.0,
           "ntd_amount": 9.0
-        },
+        }
+      ]
+    },
+    "蘇俊豪": {
+      "count": 1,
+      "items": [
         {
           "currency": "新臺幣",
           "holder": "監察院公報",
           "foreign_amount": 308.0,
           "ntd_amount": 16.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 308.0,
-          "ntd_amount": 81.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 308.0,
-          "ntd_amount": 172.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 308.0,
-          "ntd_amount": 202.0
         }
       ]
     },
     "江季珍": {
-      "count": 1,
+      "count": 2,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "江季珍",
           "foreign_amount": null,
           "ntd_amount": 15000.0
-        }
-      ]
-    },
-    "王焜玄": {
-      "count": 1,
-      "items": [
+        },
         {
           "currency": "新臺幣",
           "holder": "王焜玄",
           "foreign_amount": null,
           "ntd_amount": 12000.0
+        }
+      ]
+    },
+    "林岱杰": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 308.0,
+          "ntd_amount": 81.0
+        }
+      ]
+    },
+    "陳福成": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 308.0,
+          "ntd_amount": 172.0
+        }
+      ]
+    },
+    "楊秀琴": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 308.0,
+          "ntd_amount": 202.0
         }
       ]
     },
@@ -2043,7 +2223,7 @@
     }
   },
   "309": {
-    "監察院公報": {
+    "高涌誠": {
       "count": 1,
       "items": [
         {
@@ -2054,7 +2234,7 @@
         }
       ]
     },
-    "黃世妍": {
+    "賴振昌": {
       "count": 2,
       "items": [
         {
@@ -2072,19 +2252,14 @@
       ]
     },
     "黃建華": {
-      "count": 1,
+      "count": 2,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "黃建華",
           "foreign_amount": null,
           "ntd_amount": 10000.0
-        }
-      ]
-    },
-    "張郁玟": {
-      "count": 1,
-      "items": [
+        },
         {
           "currency": "新臺幣",
           "holder": "張郁玟",
@@ -2107,19 +2282,14 @@
       ]
     },
     "劉孟君": {
-      "count": 1,
+      "count": 2,
       "items": [
         {
           "currency": "日圓",
           "holder": "劉孟君",
           "foreign_amount": 26134.0,
           "ntd_amount": 30.0
-        }
-      ]
-    },
-    "加拿大幣": {
-      "count": 1,
-      "items": [
+        },
         {
           "currency": "新臺幣",
           "holder": "加拿大幣",
@@ -2128,55 +2298,26 @@
         }
       ]
     },
-    "監察院公報": {
-      "count": 5,
+    "潘芳泉": {
+      "count": 1,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "監察院公報",
           "foreign_amount": 310.0,
           "ntd_amount": 116.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 310.0,
-          "ntd_amount": 273.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 310.0,
-          "ntd_amount": 316.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 310.0,
-          "ntd_amount": 345.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 310.0,
-          "ntd_amount": 385.0
         }
       ]
     },
     "張勝德": {
-      "count": 1,
+      "count": 2,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "張勝德",
           "foreign_amount": null,
           "ntd_amount": 900000.0
-        }
-      ]
-    },
-    "吳麗玉": {
-      "count": 1,
-      "items": [
+        },
         {
           "currency": "新臺幣",
           "holder": "吳麗玉",
@@ -2195,10 +2336,54 @@
           "ntd_amount": 3500000.0
         }
       ]
+    },
+    "林岳賢": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 310.0,
+          "ntd_amount": 273.0
+        }
+      ]
+    },
+    "孫湯玉惠": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 310.0,
+          "ntd_amount": 316.0
+        }
+      ]
+    },
+    "黃定和": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 310.0,
+          "ntd_amount": 345.0
+        }
+      ]
+    },
+    "游吉祥": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 310.0,
+          "ntd_amount": 385.0
+        }
+      ]
     }
   },
   "311": {
-    "監察院公報": {
+    "羅楚東": {
       "count": 1,
       "items": [
         {
@@ -2228,63 +2413,108 @@
     }
   },
   "312": {
-    "監察院公報": {
-      "count": 10,
+    "楊華美": {
+      "count": 1,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "監察院公報",
           "foreign_amount": 312.0,
           "ntd_amount": 39.0
-        },
+        }
+      ]
+    },
+    "王姷力": {
+      "count": 1,
+      "items": [
         {
           "currency": "新臺幣",
           "holder": "監察院公報",
           "foreign_amount": 312.0,
           "ntd_amount": 150.0
-        },
+        }
+      ]
+    },
+    "周達三": {
+      "count": 1,
+      "items": [
         {
           "currency": "新臺幣",
           "holder": "監察院公報",
           "foreign_amount": 312.0,
           "ntd_amount": 219.0
-        },
+        }
+      ]
+    },
+    "楊招信": {
+      "count": 1,
+      "items": [
         {
           "currency": "新臺幣",
           "holder": "監察院公報",
           "foreign_amount": 312.0,
           "ntd_amount": 315.0
-        },
+        }
+      ]
+    },
+    "楊秋珍": {
+      "count": 1,
+      "items": [
         {
           "currency": "新臺幣",
           "holder": "監察院公報",
           "foreign_amount": 312.0,
           "ntd_amount": 320.0
-        },
+        }
+      ]
+    },
+    "鄭崗山": {
+      "count": 1,
+      "items": [
         {
           "currency": "新臺幣",
           "holder": "監察院公報",
           "foreign_amount": 312.0,
           "ntd_amount": 336.0
-        },
+        }
+      ]
+    },
+    "宋昀芝": {
+      "count": 1,
+      "items": [
         {
           "currency": "新臺幣",
           "holder": "監察院公報",
           "foreign_amount": 312.0,
           "ntd_amount": 393.0
-        },
+        }
+      ]
+    },
+    "莊光大": {
+      "count": 1,
+      "items": [
         {
           "currency": "新臺幣",
           "holder": "監察院公報",
           "foreign_amount": 312.0,
           "ntd_amount": 427.0
-        },
+        }
+      ]
+    },
+    "陳佩真": {
+      "count": 1,
+      "items": [
         {
           "currency": "新臺幣",
           "holder": "監察院公報",
           "foreign_amount": 312.0,
           "ntd_amount": 433.0
-        },
+        }
+      ]
+    },
+    "陳海山": {
+      "count": 1,
+      "items": [
         {
           "currency": "新臺幣",
           "holder": "監察院公報",
@@ -2318,19 +2548,14 @@
       ]
     },
     "洪森永": {
-      "count": 1,
+      "count": 2,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "洪森永",
           "foreign_amount": null,
           "ntd_amount": 100000.0
-        }
-      ]
-    },
-    "周秀娥": {
-      "count": 1,
-      "items": [
+        },
         {
           "currency": "新臺幣",
           "holder": "周秀娥",
@@ -2350,7 +2575,7 @@
         }
       ]
     },
-    "監察院公報": {
+    "曾紀嚴": {
       "count": 1,
       "items": [
         {
@@ -2362,19 +2587,14 @@
       ]
     },
     "許修睿": {
-      "count": 1,
+      "count": 4,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "許修睿",
           "foreign_amount": null,
           "ntd_amount": 100000.0
-        }
-      ]
-    },
-    "許林俞彣": {
-      "count": 3,
-      "items": [
+        },
         {
           "currency": "港幣",
           "holder": "許林俞彣",
@@ -2397,43 +2617,26 @@
     }
   },
   "314": {
-    "監察院公報": {
-      "count": 3,
+    "孫鍚洲": {
+      "count": 1,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "監察院公報",
           "foreign_amount": 314.0,
           "ntd_amount": 1.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 314.0,
-          "ntd_amount": 180.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 314.0,
-          "ntd_amount": 389.0
         }
       ]
     },
     "陳啓源": {
-      "count": 1,
+      "count": 2,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "陳啓源",
           "foreign_amount": null,
           "ntd_amount": 8000.0
-        }
-      ]
-    },
-    "張桂芬": {
-      "count": 1,
-      "items": [
+        },
         {
           "currency": "新臺幣",
           "holder": "張桂芬",
@@ -2443,24 +2646,30 @@
       ]
     },
     "郭定緯": {
-      "count": 1,
+      "count": 2,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "郭定緯",
           "foreign_amount": null,
           "ntd_amount": 200000.0
-        }
-      ]
-    },
-    "林淳芳": {
-      "count": 1,
-      "items": [
+        },
         {
           "currency": "新臺幣",
           "holder": "林淳芳",
           "foreign_amount": null,
           "ntd_amount": 200000.0
+        }
+      ]
+    },
+    "黃盈智": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 314.0,
+          "ntd_amount": 180.0
         }
       ]
     },
@@ -2487,24 +2696,30 @@
       ]
     },
     "張錦豪": {
-      "count": 1,
+      "count": 2,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "張錦豪",
           "foreign_amount": null,
           "ntd_amount": 980000.0
-        }
-      ]
-    },
-    "林詩琪": {
-      "count": 1,
-      "items": [
+        },
         {
           "currency": "新臺幣",
           "holder": "林詩琪",
           "foreign_amount": null,
           "ntd_amount": 310000.0
+        }
+      ]
+    },
+    "顏蔚慈": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 314.0,
+          "ntd_amount": 389.0
         }
       ]
     }
@@ -2523,55 +2738,37 @@
     }
   },
   "316": {
-    "監察院公報": {
-      "count": 5,
+    "黃守達": {
+      "count": 1,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "監察院公報",
           "foreign_amount": 316.0,
           "ntd_amount": 44.0
-        },
+        }
+      ]
+    },
+    "周麗津": {
+      "count": 1,
+      "items": [
         {
           "currency": "新臺幣",
           "holder": "監察院公報",
           "foreign_amount": 316.0,
           "ntd_amount": 107.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 316.0,
-          "ntd_amount": 189.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 316.0,
-          "ntd_amount": 323.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 316.0,
-          "ntd_amount": 361.0
         }
       ]
     },
     "郭鴻儀": {
-      "count": 1,
+      "count": 2,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "郭鴻儀",
           "foreign_amount": null,
           "ntd_amount": 100000.0
-        }
-      ]
-    },
-    "朱苡聆": {
-      "count": 1,
-      "items": [
+        },
         {
           "currency": "新臺幣",
           "holder": "朱苡聆",
@@ -2579,24 +2776,67 @@
           "ntd_amount": 20000.0
         }
       ]
+    },
+    "陳秋宏": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 316.0,
+          "ntd_amount": 189.0
+        }
+      ]
+    },
+    "吳韋達": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 316.0,
+          "ntd_amount": 323.0
+        }
+      ]
+    },
+    "曹嘉豪": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 316.0,
+          "ntd_amount": 361.0
+        }
+      ]
     }
   },
   "317": {
-    "監察院公報": {
-      "count": 3,
+    "張瑞琿": {
+      "count": 1,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "監察院公報",
           "foreign_amount": 317.0,
           "ntd_amount": 56.0
-        },
+        }
+      ]
+    },
+    "楊皓茹": {
+      "count": 1,
+      "items": [
         {
           "currency": "新臺幣",
           "holder": "監察院公報",
           "foreign_amount": 317.0,
           "ntd_amount": 315.0
-        },
+        }
+      ]
+    },
+    "李明宗": {
+      "count": 1,
+      "items": [
         {
           "currency": "新臺幣",
           "holder": "監察院公報",
@@ -2607,7 +2847,7 @@
     }
   },
   "318": {
-    "林高碧玉": {
+    "林明順": {
       "count": 1,
       "items": [
         {
@@ -2618,21 +2858,31 @@
         }
       ]
     },
-    "監察院公報": {
-      "count": 3,
+    "黃明賢": {
+      "count": 1,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "監察院公報",
           "foreign_amount": 318.0,
           "ntd_amount": 51.0
-        },
+        }
+      ]
+    },
+    "鄭清原": {
+      "count": 1,
+      "items": [
         {
           "currency": "新臺幣",
           "holder": "監察院公報",
           "foreign_amount": 318.0,
           "ntd_amount": 76.0
-        },
+        }
+      ]
+    },
+    "蘇孟婕": {
+      "count": 1,
+      "items": [
         {
           "currency": "新臺幣",
           "holder": "監察院公報",
@@ -2665,32 +2915,14 @@
     }
   },
   "319": {
-    "監察院公報": {
-      "count": 4,
+    "張啓楷": {
+      "count": 1,
       "items": [
         {
           "currency": "新臺幣",
           "holder": "監察院公報",
           "foreign_amount": 319.0,
           "ntd_amount": 28.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 319.0,
-          "ntd_amount": 228.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 319.0,
-          "ntd_amount": 257.0
-        },
-        {
-          "currency": "新臺幣",
-          "holder": "監察院公報",
-          "foreign_amount": 319.0,
-          "ntd_amount": 281.0
         }
       ]
     },
@@ -2727,7 +2959,7 @@
         }
       ]
     },
-    "吳淑瑾": {
+    "陳光復": {
       "count": 1,
       "items": [
         {
@@ -2738,7 +2970,7 @@
         }
       ]
     },
-    "許梨羡": {
+    "陳福海": {
       "count": 1,
       "items": [
         {
@@ -2772,20 +3004,43 @@
         }
       ]
     },
-    "嚴翊琦": {
+    "陳明傑": {
       "count": 1,
       "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 319.0,
+          "ntd_amount": 228.0
+        }
+      ]
+    },
+    "高虹安": {
+      "count": 1,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 319.0,
+          "ntd_amount": 257.0
+        }
+      ]
+    },
+    "嚴翊琦": {
+      "count": 3,
+      "items": [
+        {
+          "currency": "新臺幣",
+          "holder": "監察院公報",
+          "foreign_amount": 319.0,
+          "ntd_amount": 281.0
+        },
         {
           "currency": "新臺幣",
           "holder": "嚴翊琦",
           "foreign_amount": null,
           "ntd_amount": 10000.0
-        }
-      ]
-    },
-    "范憶蓮": {
-      "count": 1,
-      "items": [
+        },
         {
           "currency": "新臺幣",
           "holder": "范憶蓮",

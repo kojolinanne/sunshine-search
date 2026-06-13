@@ -124,18 +124,19 @@ def extract_from_pdf(pdf_path):
                     jtype = t
                     break
 
-            if holder and price:
-                holder_key = holder
-                if holder_key not in results:
-                    results[holder_key] = {'count': 0, 'items': []}
+            # Fix: use current_person (declaration filer) as key,
+            # so getPersonDetail(personName) can find all their items.
+            holder_key = current_person
+            if holder_key not in results:
+                results[holder_key] = {'count': 0, 'items': []}
 
-                results[holder_key]['count'] += 1
-                results[holder_key]['items'].append({
-                    'type': jtype or '',
-                    'count': count,
-                    'holder': holder,
-                    'price': price,
-                })
+            results[holder_key]['count'] += 1
+            results[holder_key]['items'].append({
+                'type': jtype or '',
+                'count': count,
+                'holder': holder,
+                'price': price,
+            })
 
     return results
 

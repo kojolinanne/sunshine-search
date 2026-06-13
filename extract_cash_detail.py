@@ -118,7 +118,8 @@ def extract_from_pdf(pdf_path):
                 ntd_amount = all_amounts[0]
 
             if ntd_amount is not None or currency != '新臺幣':
-                holder_key = holder
+                # Fix: use current_person as key so getPersonDetail can find by person name
+                holder_key = current_person
                 if holder_key not in results:
                     results[holder_key] = {'count': 0, 'items': []}
                 results[holder_key]['count'] += 1

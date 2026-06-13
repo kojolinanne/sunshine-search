@@ -134,12 +134,13 @@ def extract_from_pdf(pdf_path):
 
             # Only create entry if we have at least a holder and some evidence
             if holder and (price or tonnage or ship_type):
-                holder_key = holder
+                # Fix: use current_person as key so getPersonDetail can find by person name
+                holder_key = current_person
                 if holder_key not in results:
                     results[holder_key] = {'count': 0, 'items': []}
 
-                # Dedupe by holder+price+tonnage
-                dup_key = (holder, price, tonnage)
+                # Dedupe by ship_type+port+price+tonnage (same ship can appear across pages)
+                dup_key = (ship_type or '', port or '', price, tonnage)
                 seen = results[holder_key].get('_seen', set())
                 if dup_key in seen:
                     pending_date = ''
