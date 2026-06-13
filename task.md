@@ -19,18 +19,6 @@ PDF 期別：292–319（共 28 期）
 
 ---
 
-### P2｜車輛 detail 筆數偏低
-
-- **現況**：`vehicle_detail.json` 僅 747 筆，預期應有 1,500+
-- **原因**：萃取腳本可能漏抓或格式解析有誤
-- **影響**：少數車主的車輛資料不完整
-- **修復方向**：
-  1. review `extract_vehicle_detail.py` 的萃取邏輯
-  2. 比對 PDF 原始文字與萃取結果
-  3. 重新萃取
-
----
-
 ### P3｜land_detail 萃取品質（可延後）
 
 - **現況**：`land_detail.json` 每筆土地被萃取成多個 fragment（1筆土地→17個錯誤 entry）
@@ -48,7 +36,7 @@ PDF 期別：292–319（共 28 期）
 | 2026-06-13 | 前端 showPersonAssetDetail 統計漏算 ntd_amount | 統計 now sums price/ntd_amount/total/balance，commit 58d9deb |
 | 2026-06-13 | ship_detail.json 假資料 | 全部 28 期 PDF 船舶欄位均為「本欄空白」，舊 149 筆為錯誤萃取，已清除 |
 | 2026-06-13 | 卡片 +N 展開按鈕無作用 | 改為可點擊，點擊後展開顯示其餘所有財產類別，commit be9551a |
-| 2026-06-13 | ship render 用錯欄位 | `item.kind`→`item.type`、`item.tons`→`item.tonnage`、`item.amount`→`item.price`，commit 58d9deb |
+| 2026-06-13 | 車輛萃取跨頁漏抓 | vehicle 從 747→1,087 輛（+45%），fix cross-page section handling，commit e59bbc5 |
 
 ---
 
@@ -61,10 +49,10 @@ PDF 期別：292–319（共 28 期）
 | jewelry_detail.json | 46,625 | ⚠ price 98%為 null |
 | cash_detail.json | 312 | ✅ 正常（人名 key） |
 | ship_detail.json | 0 | ✅ 正確（PDF 全為空白） |
-| vehicle_detail.json | 747 | ⚠ 偏低 |
+| vehicle_detail.json | 1,087 | ✅ 已修復（跨頁問題，+45%） |
 | securities_detail.json | 4,121 | ✅ 正常 |
 | insurance_detail.json | 5,857 | ✅ 正常 |
 | credit_detail.json | 4,884 | ✅ 正常 |
 | investment_detail.json | 1,761 | ✅ 正常 |
 | debt_detail.json | 963 | ✅ 正常 |
-| aircraft_detail.json | 0 | ✅ 正常（PDF 全為空白） |
+| aircraft_detail.json | 0 | ✅ 正確（PDF 全為空白） |
