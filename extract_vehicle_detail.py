@@ -38,11 +38,26 @@ def extract_from_pdf(pdf_path):
     current_person = None
     results = {}
 
-    for pi, text in enumerate(pages):
+    def join_date_and_row(lines):
+        """Prepend date-only lines (e.g. '            月 25 日') to the next real row.
+        Also join pure-number lines (price fragments) with the preceding row."""
+        merged = []
+        for i, ln in enumerate(lines):
+            stripped = ln.strip()
+            if stripped and re.fullmatch(r'[\d,\s]+', stripped) and i > 0:
+                # Price fragment: merge with previous row
+                merged[-1] = merged[-1] + ' ' + stripped
+            elif stripped and re.match(r'^\s*[月日\s\d]+$', stripped) and i > 0:
+                # Date-only line (e.g. '月 25 日' or '  112 年 07'): merge with next
+                merged[-1] = merged[-1] + ' ' + stripped
+            else:
+                merged.append(ln)
+        return merged
+
+    for page_idx, text in enumerate(pages):
         if not text.strip():
             continue
 
-        # ── 更新當前申報人 ─────────────────────────────────────
         for m in re.finditer(r'申報人姓名\s+([^\n]+)', text):
             raw = m.group(1).strip()
             name = re.split(r'\s{2,}', raw)[0].strip()
@@ -53,18 +68,25 @@ def extract_from_pdf(pdf_path):
         if '（四）汽車' not in text:
             continue
 
-        # ── 取 section：從 marker 到下一個 section 或頁尾 ────────
         marker_idx = text.find('（四）汽車')
         rest = text[marker_idx + len('（四）汽車'):]
-
-        # 找下一個章節：備註、第五項、六、珠寶等其他大項
         next_sec = re.search(r'（[一二三四五六七八九十]+[）.]|（五）|（六）|（七）|（八）|（九）|（十）|（十一）|（十二）|（十三）|備註', rest)
         if next_sec:
             section = text[marker_idx:marker_idx + len('（四）汽車') + next_sec.start()]
         else:
-            section = text[marker_idx:marker_idx + len('（四）汽車') + 1200]  # 保守限制
+            section = text[marker_idx:marker_idx + len('（四）汽車') + 1200]
+
+        section_len = len(section) - len('（四）汽車')
+        if section_len < 300 and page_idx + 1 < len(pages):
+            next_page = pages[page_idx + 1]
+            ns2 = re.search(r'（[一二三四五六七八九十]+[）.]|（五）|（六）|（七）|（八）|（九）|（十）|備註', next_page)
+            if ns2:
+                section += next_page[:ns2.start()]
+            else:
+                section += next_page
 
         lines = section.split('\n')
+        lines = join_date_and_row(lines)  # join date/price fragments before parsing
         pending_date = ''
 
         for line in lines:
@@ -73,7 +95,6 @@ def extract_from_pdf(pdf_path):
                 pending_date = ''
                 continue
 
-            # ── 嘗試抓日期 ────────────────────────────────────
             ym_m = re.search(r'(\d+)\s*年\s*(\d+)\s*月', ls)
             d_m  = re.search(r'月\s*(\d+)\s*日', ls)
             if ym_m:
@@ -81,9 +102,6 @@ def extract_from_pdf(pdf_path):
             if d_m and pending_date:
                 pending_date += f'{d_m.group(1)}日'
 
-            # ── 嘗試抓車輛行 ───────────────────────────────────
-            # 典型行: VOLKSWAGEN  1,498  程瑞芳  買賣  1,248,000
-            # 格式：[品牌] [CC] [人名] [原因] [價格]
             parts = ls.split()
             if len(parts) < 3:
                 continue
@@ -99,7 +117,6 @@ def extract_from_pdf(pdf_path):
                         amount_candidates.append(num)
                     elif 100 < num < 10000:
                         cc_candidates.append(num)
-                # 人名候選
                 if re.match(r'^[\u4e00-\u9fff·]{2,6}$', p) and p not in ('買賣', '贈與', '繼承', '承受', '出租', '本欄空白'):
                     human_name = p
 
@@ -110,7 +127,6 @@ def extract_from_pdf(pdf_path):
                 if human_name not in results:
                     results[human_name] = {'count': 0, 'total': 0, 'items': [], 'seen_prices': set()}
 
-                # 去重（用價格）
                 if price in results[human_name]['seen_prices']:
                     pending_date = ''
                     continue
@@ -130,7 +146,6 @@ def extract_from_pdf(pdf_path):
                 results[human_name]['items'].append(entry)
                 pending_date = ''
 
-    # 清理 seen_prices
     for h in results:
         results[h].pop('seen_prices', None)
 
