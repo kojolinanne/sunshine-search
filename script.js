@@ -713,9 +713,19 @@ async function showPersonAssetDetail(personName, assetKey, label) {
       d.data.forEach(function(i){ if(i.amount) totalAmount+=parseFloat(i.amount)||0; if(i.price) totalAmount+=parseFloat(i.price)||0; });
     } else if (d.data.items) {
       totalItems += d.data.items.length;
-      d.data.items.forEach(function(i){ if(i.amount) totalAmount+=parseFloat(i.amount)||0; if(i.price) totalAmount+=parseFloat(i.price)||0; });
-    } else if (d.data.land) { totalItems += d.data.land.length; }
-    if (d.data.total) totalAmount += parseFloat(d.data.total)||0;
+      d.data.items.forEach(function(i){
+        var amt = i.amount || i.price || i.ntd_amount || i.total || 0;
+        if(amt) totalAmount+=parseFloat(amt)||0;
+      });
+    } else if (d.data.land) {
+      totalItems += d.data.land.length;
+      d.data.land.forEach(function(i){ if(i.price) totalAmount+=parseFloat(i.price)||0; });
+    } else if (Array.isArray(d.data)) {
+      totalItems += d.data.length;
+      d.data.forEach(function(i){
+        var amt = i.amount || i.balance || 0;
+        if(amt) totalAmount+=parseFloat(amt)||0;
+      });
   });
 
   [
@@ -864,10 +874,10 @@ function renderDetailRows(personName, assetKey, issue, data, list) {
 
   } else if (assetKey === 'ship') {
     (data.items || []).forEach(function(item) {
-      var kind = item.kind || '船舶';
-      var tons = item.tons || '';
+      var kind = item.type || '船舶';
+      var tons = item.tonnage || '';
       var port = item.port || '';
-      var amount = item.amount ? formatMoney(parseFloat(item.amount)) : '-';
+      var amount = (item.price || item.amount) ? formatMoney(parseFloat(item.price||item.amount)) : '未填寫價額';
       list.appendChild(mkrow(left('🚢 '+h(kind), (tons?'總噸數: '+tons+' · ':'')+(port?'船籍港: '+port+' · ':'')+'第'+issue+'期'), amtDiv(amount)));
     });
 
