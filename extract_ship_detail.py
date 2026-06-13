@@ -110,7 +110,7 @@ def extract_from_pdf(pdf_path):
                     reason = r_word
                     break
 
-            # Find price (large number at end)
+            # Find price (large number); find tonnage (small number)
             price = None
             tonnage = None
             for n in numbers:
