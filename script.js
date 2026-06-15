@@ -170,24 +170,36 @@ function scrollToCard(card) {
 }
 
 async function init() {
+  // Update loading indicator so user knows it's in progress
+  els.sourceRecordCount.textContent = '載入中（下載資料約需 15–60 秒）...';
+
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 60000); // 60s hard limit
+
   try {
-    const resp = await fetch('data/declarations.json');
-    const secResp = await fetch('data/securities_detail.json');
-    if (secResp.ok) {
-      securitiesData = await secResp.json();
-    }
-    const debtResp = await fetch('data/debt_detail.json');
-    if (debtResp.ok) {
-      debtData = await debtResp.json();
-    }
-    if (!resp.ok) throw new Error(`資料載入失敗：${resp.status}`);
+    // Fetch all three files in parallel (was sequential, wasting time)
+    const [resp, secResp, debtResp] = await Promise.all([
+      fetch('data/declarations.json', { signal: controller.signal }),
+      fetch('data/securities_detail.json', { signal: controller.signal }),
+      fetch('data/debt_detail.json', { signal: controller.signal }),
+    ]);
+    clearTimeout(timeout);
+
+    if (!resp.ok) throw new Error(`主資料載入失敗：${resp.status}`);
+    if (secResp.ok) securitiesData = await secResp.json();
+    if (debtResp.ok) debtData = await debtResp.json();
+
     dataset = await resp.json();
     els.sourceRecordCount.textContent = `${formatNumber(dataset.metadata.record_count)} 筆申報表`;
     populateFilters();
     bindEvents();
     applyFilters();
   } catch (err) {
-    els.metrics.textContent = '資料載入失敗';
+    clearTimeout(timeout);
+    const isAbort = err.name === 'AbortError';
+    els.metrics.innerHTML = isAbort
+      ? '資料下載逾時（檔案過大，請稍後再試）'
+      : `資料載入失敗：${err.message}`;
     els.metrics.classList.add('error');
     console.error(err);
   }
