@@ -1,6 +1,6 @@
 # 廉政專刊陽光法案系統 - 待辦事項
 
-最後更新：2026-06-15
+最後更新：2026-06-16
 PDF 期別：292–319（共 28 期）
 
 ---
@@ -38,7 +38,7 @@ PDF 期別：292–319（共 28 期）
 | 2026-06-13 | ship_detail.json 假資料 | 全部 28 期 PDF 船舶欄位均為「本欄空白」，舊 149 筆為錯誤萃取，已清除 |
 | 2026-06-13 | 卡片 +N 展開按鈕無作用 | 改為可點擊，點擊後展開顯示其餘所有財產類別（commit be9551a） |
 | 2026-06-13 | 車輛萃取跨頁漏抓 | vehicle 從 636→756 輛（+19%），fix cross-page section handling（commit e59bbc5） |
-| 2026-06-13 | P1 珠寶 price 萃取 | jewelry 從 46,625 筆（2%有價格）→511 筆（100%有價格），過濾金融商品 artifact、保險項目（commit 4e08b67） |
+| 2026-06-15 | script.js timeout+parallel fetch | parallel fetch → 60s AbortController timeout，防止慢速網路永久卡死（commit 45c207d） |
 
 ---
 
