@@ -738,6 +738,7 @@ async function showPersonAssetDetail(personName, assetKey, label) {
         var amt = i.amount || i.balance || 0;
         if(amt) totalAmount+=parseFloat(amt)||0;
       });
+    }
   });
 
   [
