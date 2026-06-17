@@ -22,22 +22,21 @@ PDF 期別：292–319（共 28 期）
   4. 重新執行 `incremental_download.py` 更新 GitHub Pages
 - **優先級**：低（不影響資料正確性，僅為 UI 呈現）
 
-### P3｜land_detail 萃取品質（部分修復 ⚠）
+### P3｜land_detail 萃取品質（✅ 已修復，2026-06-17）
 
-- **現況**：`land_detail.json` 萃取邏輯已重寫（v11），但萃取品質仍不理想
-- **根本原因**：PDF 版面複雜，兩種不同 column 格式混用，且 follow-line 數據分布不一致
-- **2026-06-14 修復內容**：
-  1. skip pattern bug：clean() 在中文間加空格導致 header 比對失效 → 改用 is_header_line() 直接比對原始字串
-  2. 多人 block 問題：同一人在 PDF 中出現 2 次「申報人姓名」導致部分土地被錯誤歸屬 → 改為不 deduplicate person markers，依 name 合併
-  3. 新舊雙格式支援：舊格式（len>=100）vs 新格式（len~79+111 pair）
-- **萃取結果**（v11，共 28 期，共 1,363 筆）：
-  - 有 location：~100%
-  - 有 rights（持分）：84%
-  - 有 area（面積）：11%（主要在 main+follow pair 新格式）
-  - 有 price（取得價額）：12%
-  - 有 date（取得日期）：1%（散布在 col 80-124）
-- **仍存在的限制**：area/price/date 主要依賴 main+follow pair 的新格式才能乾淨萃取；舊格式（len>=100）則依賴 col 80+ 的位置，準確率較低
-- **建議**：P3 可視為已稳定运行，陽光法案P2優先，若日後需求更完整的土地資料，再重構萃取逻辑
+- **根本問題**：pdftotext -layout 對多byte字符（中文）使用 3-byte 編碼，v11 固定 byte 位置全部錯位，導致 area/rights/price 抓錯位置。
+- **修復（v12）**：改用 regex 在整行文本中直接定位各欄位：
+  - area：地址關鍵詞（段/路/街...）之後第一個數值（含小數）
+  - rights：紧随 area 段落後的 `分之N` 或 `全部`
+  - price：行末倒數取逗號千分位數字
+  - date：regex 搜索 `\d{2,3}年\d{1,2}月`
+- **萃取結果（v12，28期，共 14,609 筆）**：
+  - area: 98.1%（v11: 11.4%，**+86.7pp**）
+  - rights: 82.4%（v11: 83.7%）
+  - price: 17.0%（v11: 12.1%，**+4.9pp**）
+  - date: 36.3%（v11: 無萃取）
+- **萃取腳本**：`extract_land_v12.py`（commit 6b62b3f）
+- **P3 視為已解決**
 
 ---
 
@@ -60,7 +59,7 @@ PDF 期別：292–319（共 28 期）
 
 | 檔案 | 筆數 | 備註 |
 |------|------|------|
-| land_detail.json | 1,363 | ✅ 正常 |
+| land_detail.json | 14,609 | ✅ area 98%, price 17%, date 36% |
 | deposit_detail.json | 1,411 | ✅ 正常 |
 | jewelry_detail.json | 511 | ✅ 正常（100%有價格） |
 | securities_detail.json | 713 | ✅ 正常 |
