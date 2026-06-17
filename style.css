@@ -912,3 +912,17 @@ code {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.4; }
 }
+
+/* ── 詳情彈窗載入提示 ── */
+.modal-loading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 20px 16px;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.modal-loading-dot {
+  animation: pulse 1s infinite;
+  flex-shrink: 0;
+}

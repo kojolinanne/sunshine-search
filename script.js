@@ -655,6 +655,10 @@ function formatPercent(value) {
   return `${Math.round(value * 100)}%`;
 }
 
+function formatDate(value) {
+  return value || '未解析日期';
+}
+
 // ── Loading Progress ──
 function updateLoadItem(key, status, label) {
   const dotMap = { decl: els.dotDecl, sec: els.dotSec, debt: els.dotDebt };
@@ -841,7 +845,7 @@ async function getPersonDetail(personName, assetKey) {
   return results;
 }
 
-function openAssetModal(assetKey, personRecord) {
+async function openAssetModal(assetKey, personRecord) {
   var isPersonMode = !!personRecord;
   var label = dataset.asset_labels[assetKey] || assetKey;
   var isMoney = MONEY_ORDER.includes(assetKey);
@@ -857,7 +861,8 @@ function openAssetModal(assetKey, personRecord) {
   modalSectionTitle.textContent = '';
 
   if (isPersonMode) {
-    showPersonAssetDetail(personRecord.name, assetKey, label);
+    modalRecords.innerHTML = '<div class="modal-loading"><span class="modal-loading-dot">○</span> 載入明細資料（首次約需 3-5 秒）...</div>';
+    await showPersonAssetDetail(personRecord.name, assetKey, label);
   } else {
     var uniquePeople = new Set(records.map(function(r){ return r.name; })).size;
     var totalAmount = sum(records, function(r){ return r.asset_totals[assetKey] || 0; });
