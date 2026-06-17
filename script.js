@@ -14,6 +14,14 @@ const MAIN_ASSET_ORDER = [
 const els = {
   searchInput: document.getElementById('searchInput'),
   searchSuggestions: document.getElementById('searchSuggestions'),
+  loadProgress: document.getElementById('loadProgress'),
+  loadBarFill: document.getElementById('loadBarFill'),
+  dotDecl: document.getElementById('dotDecl'),
+  dotSec: document.getElementById('dotSec'),
+  dotDebt: document.getElementById('dotDebt'),
+  labelDecl: document.getElementById('labelDecl'),
+  labelSec: document.getElementById('labelSec'),
+  labelDebt: document.getElementById('labelDebt'),
   issueFilter: document.getElementById('issueFilter'),
   partyFilter: document.getElementById('partyFilter'),
   positionFilter: document.getElementById('positionFilter'),
@@ -173,27 +181,48 @@ function scrollToCard(card) {
 }
 
 async function init() {
-  // Update loading indicator so user knows it's in progress
-  els.sourceRecordCount.textContent = '載入中（下載資料約需 15–60 秒）...';
+  // Set up progress indicators
+  updateLoadItem('decl', 'loading', '主資料（~30MB）下載中...');
+  updateLoadItem('sec', 'loading', '有價證券（~0.7MB）下載中...');
+  updateLoadItem('debt', 'loading', '負債資料（~0.2MB）下載中...');
+  updateLoadBar(0);
 
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), 60000); // 60s hard limit
 
   try {
-    // Fetch all three files in parallel (was sequential, wasting time)
-    const [resp, secResp, debtResp] = await Promise.all([
-      fetch('data/declarations.json', { signal: controller.signal }),
-      fetch('data/securities_detail.json', { signal: controller.signal }),
-      fetch('data/debt_detail.json', { signal: controller.signal }),
-    ]);
+    // Track each download individually for progress display
+    let resp, secResp, debtResp;
+    let completed = 0;
+    const total = 3;
+    const advance = () => { completed++; updateLoadBar(completed / total); };
+
+    // declarations.json (main data)
+    updateLoadItem('decl', 'loading', '主資料（~30MB）下載中...');
+    resp = await fetch('data/declarations.json', { signal: controller.signal });
+    if (!resp.ok) throw new Error(`主資料載入失敗：${resp.status}`);
+    updateLoadItem('decl', 'done', `主資料（~30MB）載入完成`);
+    advance();
+
+    // securities_detail.json
+    updateLoadItem('sec', 'loading', '有價證券（~0.7MB）下載中...');
+    secResp = await fetch('data/securities_detail.json', { signal: controller.signal });
+    if (secResp.ok) securitiesData = await secResp.json();
+    updateLoadItem('sec', 'done', `有價證券（~0.7MB）載入完成`);
+    advance();
+
+    // debt_detail.json
+    updateLoadItem('debt', 'loading', '負債資料（~0.2MB）下載中...');
+    debtResp = await fetch('data/debt_detail.json', { signal: controller.signal });
+    if (debtResp.ok) debtData = await debtResp.json();
+    updateLoadItem('debt', 'done', `負債資料（~0.2MB）載入完成`);
+    advance();
+
     clearTimeout(timeout);
 
-    if (!resp.ok) throw new Error(`主資料載入失敗：${resp.status}`);
-    if (secResp.ok) securitiesData = await secResp.json();
-    if (debtResp.ok) debtData = await debtResp.json();
-
     dataset = await resp.json();
-    els.sourceRecordCount.textContent = `${formatNumber(dataset.metadata.record_count)} 筆申報表`;
+    updateLoadItem('decl', 'done', `${formatNumber(dataset.metadata.record_count)} 筆申報表已載入`);
+    updateLoadBar(1);
     buildFuseIndex();
     populateFilters();
     bindEvents();
@@ -626,8 +655,35 @@ function formatPercent(value) {
   return `${Math.round(value * 100)}%`;
 }
 
-function formatDate(value) {
-  return value || '未解析日期';
+// ── Loading Progress ──
+function updateLoadItem(key, status, label) {
+  const dotMap = { decl: els.dotDecl, sec: els.dotSec, debt: els.dotDebt };
+  const labelMap = { decl: els.labelDecl, sec: els.labelSec, debt: els.labelDebt };
+  const dot = dotMap[key];
+  const lbl = labelMap[key];
+  if (!dot || !lbl) return;
+
+  dot.className = 'load-dot';
+  if (status === 'done') {
+    dot.classList.add('done');
+    dot.textContent = '✓';
+  } else if (status === 'error') {
+    dot.classList.add('error');
+    dot.textContent = '✗';
+  } else {
+    dot.classList.add('loading');
+    dot.textContent = '○';
+  }
+  lbl.textContent = label;
+}
+
+function updateLoadBar(ratio) {
+  if (els.loadBarFill) {
+    els.loadBarFill.style.width = `${Math.round(ratio * 100)}%`;
+  }
+  if (els.loadProgress) {
+    els.loadProgress.setAttribute('aria-label', `下載進度 ${Math.round(ratio * 100)}%`);
+  }
 }
 
 // ── Fuzzy Search + Autocomplete ──

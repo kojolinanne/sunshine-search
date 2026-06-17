@@ -863,3 +863,52 @@ code {
   font-size: 0.75rem;
   color: var(--secondary);
 }
+
+/* ── 載入進度條 ── */
+.load-progress {
+  font-size: 0.78rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 4px 0;
+}
+.load-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.load-dot {
+  width: 14px;
+  text-align: center;
+  font-size: 0.7rem;
+  flex-shrink: 0;
+}
+.load-dot.loading {
+  animation: pulse 1s infinite;
+}
+.load-dot.done { color: var(--accent); }
+.load-dot.error { color: var(--danger); }
+.load-label {
+  color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.load-bar-wrap {
+  height: 4px;
+  background: var(--line);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-top: 4px;
+}
+.load-bar-fill {
+  height: 100%;
+  width: 0%;
+  background: var(--accent);
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}

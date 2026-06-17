@@ -15,7 +15,23 @@
       </div>
       <div class="source-card">
         <span>資料狀態</span>
-        <strong id="sourceRecordCount">載入中</strong>
+        <div id="loadProgress" class="load-progress" aria-live="polite">
+          <div class="load-row">
+            <span class="load-dot" id="dotDecl" aria-hidden="true"></span>
+            <span class="load-label" id="labelDecl">等待主資料（~30MB）...</span>
+          </div>
+          <div class="load-row">
+            <span class="load-dot" id="dotSec" aria-hidden="true"></span>
+            <span class="load-label" id="labelSec">等待有價證券（~0.7MB）...</span>
+          </div>
+          <div class="load-row">
+            <span class="load-dot" id="dotDebt" aria-hidden="true"></span>
+            <span class="load-label" id="labelDebt">等待負債資料（~0.2MB）...</span>
+          </div>
+          <div class="load-bar-wrap" role="progressbar" aria-label="下載進度">
+            <div class="load-bar-fill" id="loadBarFill"></div>
+          </div>
+        </div>
         <small>資料來自監察院公報全文解析</small>
       </div>
     </div>
