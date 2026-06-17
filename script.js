@@ -1,4 +1,6 @@
 let dataset = null;
+let fuse = null;
+let debounceTimer = null;
 let securitiesData = null;
 let debtData = null;
 let filteredRecords = [];
@@ -11,6 +13,7 @@ const MAIN_ASSET_ORDER = [
 
 const els = {
   searchInput: document.getElementById('searchInput'),
+  searchSuggestions: document.getElementById('searchSuggestions'),
   issueFilter: document.getElementById('issueFilter'),
   partyFilter: document.getElementById('partyFilter'),
   positionFilter: document.getElementById('positionFilter'),
@@ -191,6 +194,7 @@ async function init() {
 
     dataset = await resp.json();
     els.sourceRecordCount.textContent = `${formatNumber(dataset.metadata.record_count)} 筆申報表`;
+    buildFuseIndex();
     populateFilters();
     bindEvents();
     applyFilters();
@@ -206,7 +210,24 @@ async function init() {
 }
 
 function bindEvents() {
-  els.searchInput.addEventListener('input', applyFilters);
+  els.searchInput.addEventListener('input', () => {
+    const q = els.searchInput.value.trim();
+    clearTimeout(debounceTimer);
+    if (!q) {
+      hideSuggestions();
+      applyFilters();
+      return;
+    }
+    debounceTimer = setTimeout(() => {
+      showSuggestions(q);
+      applyFilters();
+    }, 300);
+  });
+  els.searchInput.addEventListener('keydown', handleSearchKeydown);
+  els.searchInput.addEventListener('blur', () => setTimeout(hideSuggestions, 200));
+  els.searchInput.addEventListener('focus', () => {
+    if (els.searchInput.value.trim()) showSuggestions(els.searchInput.value.trim());
+  });
   [els.issueFilter, els.partyFilter, els.positionFilter, els.assetFilter]
     .forEach(el => el.addEventListener('change', applyFilters));
   els.groupTabs.forEach(tab => {
@@ -222,6 +243,7 @@ function bindEvents() {
     els.partyFilter.value = 'all';
     els.positionFilter.value = 'all';
     els.assetFilter.value = 'all';
+    hideSuggestions();
     applyFilters();
   });
 }
@@ -607,6 +629,111 @@ function formatPercent(value) {
 function formatDate(value) {
   return value || '未解析日期';
 }
+
+// ── Fuzzy Search + Autocomplete ──
+function buildFuseIndex() {
+  if (!dataset || !dataset.records) return;
+  const searchFields = [
+    { name: 'name',            weight: 0.4 },
+    { name: 'agency',           weight: 0.2 },
+    { name: 'title',           weight: 0.2 },
+    { name: 'party',           weight: 0.1 },
+    { name: 'position_group',  weight: 0.1 },
+  ];
+  fuse = new Fuse(dataset.records, {
+    keys: searchFields.map(f => ({ name: f.name, weight: f.weight })),
+    threshold: 0.4,
+    includeScore: true,
+    minMatchCharLength: 1,
+  });
+}
+
+function showSuggestions(query) {
+  if (!fuse || !query) { hideSuggestions(); return; }
+  const results = fuse.search(query, { limit: 6 });
+  if (!results.length) { hideSuggestions(); return; }
+
+  // Build unique suggestions (prefer name matches)
+  const seen = new Set();
+  const items = [];
+  for (const { item } of results) {
+    const label = item.name;
+    if (seen.has(label)) continue;
+    seen.add(label);
+    items.push(item);
+    if (items.length >= 5) break;
+  }
+
+  els.searchSuggestions.innerHTML = '';
+  items.forEach((record, i) => {
+    const div = document.createElement('div');
+    div.className = 'suggestion-item';
+    div.setAttribute('role', 'option');
+    div.dataset.index = i;
+    div.dataset.name = record.name;
+    div.innerHTML = `<span class="suggestion-name">${escHtml(record.name)}</span><span class="suggestion-sub">${escHtml(record.agency)} · ${record.position_group}</span>`;
+    div.addEventListener('mousedown', (e) => {
+      e.preventDefault(); // prevent blur from firing hideSuggestions
+      selectSuggestion(record.name);
+    });
+    els.searchSuggestions.appendChild(div);
+  });
+
+  els.searchSuggestions.hidden = false;
+  els.searchInput.setAttribute('aria-expanded', 'true');
+}
+
+function hideSuggestions() {
+  els.searchSuggestions.innerHTML = '';
+  els.searchSuggestions.hidden = true;
+  els.searchInput.setAttribute('aria-expanded', 'false');
+}
+
+function selectSuggestion(name) {
+  els.searchInput.value = name;
+  hideSuggestions();
+  applyFilters();
+}
+
+function handleSearchKeydown(e) {
+  const suggestions = els.searchSuggestions;
+  if (suggestions.hidden) return;
+  const items = [...suggestions.querySelectorAll('.suggestion-item')];
+  if (!items.length) return;
+
+  if (e.key === 'ArrowDown') {
+    e.preventDefault();
+    const cur = suggestions.querySelector('.suggestion-item.focused');
+    if (cur) cur.classList.remove('focused');
+    const next = (cur ? items.indexOf(cur) + 1 : 0) % items.length;
+    items[next].classList.add('focused');
+    items[next].scrollIntoView({ block: 'nearest' });
+  } else if (e.key === 'ArrowUp') {
+    e.preventDefault();
+    const cur = suggestions.querySelector('.suggestion-item.focused');
+    if (cur) cur.classList.remove('focused');
+    const prev = (cur ? items.indexOf(cur) - 1 : items.length - 1 + items.length) % items.length;
+    items[prev].classList.add('focused');
+    items[prev].scrollIntoView({ block: 'nearest' });
+  } else if (e.key === 'Enter') {
+    const focused = suggestions.querySelector('.suggestion-item.focused');
+    if (focused) {
+      e.preventDefault();
+      selectSuggestion(focused.dataset.name);
+    }
+  } else if (e.key === 'Escape') {
+    hideSuggestions();
+  }
+}
+
+function escHtml(str) {
+  return String(str || '')
+    .replace(/&/g, '&')
+    .replace(/</g, '<')
+    .replace(/>/g, '>')
+    .replace(/"/g, '"');
+}
+
 
 
 // ── 資產類別詳情彈出視窗 ──

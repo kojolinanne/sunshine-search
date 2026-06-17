@@ -31,7 +31,8 @@
 
         <label class="field">
           <span>關鍵字</span>
-          <input type="search" id="searchInput" placeholder="例：立法院、議員、王仙蓮">
+          <input type="search" id="searchInput" placeholder="例：立法院、議員、王仙蓮" autocomplete="off" aria-autocomplete="list" aria-controls="searchSuggestions" aria-expanded="false">
+          <div id="searchSuggestions" class="search-suggestions" role="listbox" hidden></div>
         </label>
 
         <label class="field">
@@ -160,6 +161,7 @@
     </div>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
   <script src="script.js"></script>
 </body>
 </html>

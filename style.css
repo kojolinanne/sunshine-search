@@ -1,4 +1,7 @@
 :root {
+  --border: #d9e0e7;
+  --hover: #f0f4f8;
+  --secondary: #607080;
   --ink: #1f2933;
   --muted: #607080;
   --faint: #8a98a8;
@@ -825,4 +828,38 @@ code {
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 320px;
+}
+
+/* ── 搜尋建議下拉 ── */
+.search-suggestions {
+  position: relative;
+  z-index: 100;
+}
+.search-suggestions[hidden] {
+  display: none;
+}
+.suggestion-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.85rem;
+  line-height: 1.3;
+}
+.suggestion-item:last-child {
+  border-bottom: none;
+}
+.suggestion-item:hover,
+.suggestion-item.focused {
+  background: var(--hover);
+}
+.suggestion-name {
+  font-weight: 500;
+  color: var(--ink);
+}
+.suggestion-sub {
+  font-size: 0.75rem;
+  color: var(--secondary);
 }
