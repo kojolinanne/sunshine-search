@@ -79,13 +79,12 @@ PDF 期別：292–319（共 28 期）
 
 ## 可改進項目（網站與資料品質）
 
-### 改進｜搜尋體驗（無模糊匹配、無提示）
+### 改進｜搜尋體驗（✅ 已完成，2026-06-18）
 
-- **現況**：搜尋框只能精確包含匹配（`includes()`），沒有模糊搜尋或 autocomplete 提示。使用者輸入錯字就找不到。
-- **改善方向**：
-  1. 加入 `fuse.js` 模糊搜尋（支援錯字容忍）
-  2. 加入搜尋框即時建議（debounce 300ms，顯示前 5 個候選）
-  3. 支援 Enter 直接選取第一個建議
+- **實作**：fuse.js 7.0.0 fuzzy search + 即時 autocomplete 建議（commit 1d26ce6）
+  - `buildFuseIndex()`：name/agency/title/party/position_group 加權搜尋
+  - debounce 300ms，顯示前 5 個候選
+  - 鍵盤支援：↑↓ 選擇、Enter 確認、Esc 關閉
 - **優先級**：中
 
 ### 改進｜載入體驗（首次載入約 15-30 秒）
