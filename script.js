@@ -821,16 +821,20 @@ const DETAIL_FILES = {
 };
 
 async function loadDetail(key) {
-  if (detailCache[key] !== undefined) return detailCache[key];
   const path = DETAIL_FILES[key];
-  if (!path) { detailCache[key] = null; return null; }
+  if (!path) return null;
+  // Return any cached positive result immediately to avoid redundant fetches
+  if (detailCache[key] !== undefined) return detailCache[key];
   try {
     const controller = new AbortController();
-    const timer = setTimeout(() => controller.abort(), 30000); // 30s timeout per detail file
+    const timer = setTimeout(() => controller.abort(), 60000); // 60s timeout per detail file
     const resp = await fetch(path, { signal: controller.signal });
     clearTimeout(timer);
     detailCache[key] = resp.ok ? await resp.json() : null;
-  } catch(e) { detailCache[key] = null; }
+  } catch(e) {
+    // On failure, do NOT cache null — allow retry on next click
+    console.warn(`loadDetail(${key}) failed:`, e.message);
+  }
   return detailCache[key];
 }
 
