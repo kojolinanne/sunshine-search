@@ -825,7 +825,10 @@ async function loadDetail(key) {
   const path = DETAIL_FILES[key];
   if (!path) { detailCache[key] = null; return null; }
   try {
-    const resp = await fetch(path);
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 30000); // 30s timeout per detail file
+    const resp = await fetch(path, { signal: controller.signal });
+    clearTimeout(timer);
     detailCache[key] = resp.ok ? await resp.json() : null;
   } catch(e) { detailCache[key] = null; }
   return detailCache[key];
