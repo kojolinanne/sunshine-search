@@ -825,10 +825,14 @@ const DETAIL_FILES = {
 };
 
 async function loadDetail(key) {
+  console.log('loadDetail(', key, ') path:', path);
   const path = DETAIL_FILES[key];
   if (!path) return null;
   // Return any cached positive result immediately to avoid redundant fetches
-  if (detailCache[key] !== undefined) return detailCache[key];
+  if (detailCache[key] !== undefined) {
+    console.log('loadDetail(', key, ') returning from cache:', detailCache[key] !== null ? 'hit' : 'null');
+    return detailCache[key];
+  }
   try {
     const controller = new AbortController();
     const timer = setTimeout(() => controller.abort(), 60000); // 60s timeout per detail file
@@ -859,6 +863,7 @@ async function getPersonDetail(personName, assetKey) {
 }
 
 async function openAssetModal(assetKey, personRecord) {
+  console.log('openAssetModal called', { assetKey, personMode: !!personRecord, personName: personRecord?.name });
   var isPersonMode = !!personRecord;
   var label = dataset.asset_labels[assetKey] || assetKey;
   var isMoney = MONEY_ORDER.includes(assetKey);
@@ -914,6 +919,7 @@ async function openAssetModal(assetKey, personRecord) {
     });
     modalRecords.appendChild(list);
   }
+  console.log('Setting modal.hidden = false');
   modal.hidden = false;
   document.body.style.overflow = 'hidden';
 }
