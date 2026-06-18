@@ -983,7 +983,7 @@ function renderDetailRows(personName, assetKey, issue, data, list) {
     var d = document.createElement('div');
     d.className = 'modal-record-row';
     if (extraStyle) d.setAttribute('style', extraStyle);
-    d.appendChild(left);
+    if (left) d.appendChild(left);
     if (right) d.appendChild(right);
     return d;
   }
