@@ -836,7 +836,9 @@ async function loadDetail(key) {
     clearTimeout(timer);
     detailCache[key] = resp.ok ? await resp.json() : null;
   } catch(e) {
-    // On failure, do NOT cache null — allow retry on next click
+    // Cache failure for 5 min so we don't hammer the server on repeated bad network
+    detailCache[key] = null;
+    setTimeout(() => { delete detailCache[key]; }, 5 * 60 * 1000);
     console.warn(`loadDetail(${key}) failed:`, e.message);
   }
   return detailCache[key];
