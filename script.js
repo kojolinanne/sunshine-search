@@ -560,7 +560,9 @@ function appendAssetTags(parent, record, limit = 5) {
       el.title = `點擊查看「${name}」詳細資料`;
       el.addEventListener('click', (e) => {
         e.stopPropagation();
-        openAssetModal(key, record);
+        openAssetModal(key, record).catch(function(err) {
+          console.error('openAssetModal error:', err);
+        });
       });
     });
     if (items.length > limit) {
@@ -580,7 +582,9 @@ function appendAssetTags(parent, record, limit = 5) {
           el.title = `點擊查看「${name}」詳細資料`;
           el.addEventListener('click', (ev) => {
             ev.stopPropagation();
-            openAssetModal(key, record);
+            openAssetModal(key, record).catch(function(err) {
+              console.error('openAssetModal error:', err);
+            });
           });
         });
       });
@@ -869,7 +873,12 @@ async function openAssetModal(assetKey, personRecord) {
 
   if (isPersonMode) {
     modalRecords.innerHTML = '<div class="modal-loading"><span class="modal-loading-dot">○</span> 載入明細資料（首次約需 3-5 秒）...</div>';
-    await showPersonAssetDetail(personRecord.name, assetKey, label);
+    try {
+      await showPersonAssetDetail(personRecord.name, assetKey, label);
+    } catch(e) {
+      console.error('showPersonAssetDetail error:', e);
+      modalRecords.innerHTML = '<div style="padding:16px;color:var(--muted);text-align:center">載入失敗，請重試</div>';
+    }
   } else {
     var uniquePeople = new Set(records.map(function(r){ return r.name; })).size;
     var totalAmount = sum(records, function(r){ return r.asset_totals[assetKey] || 0; });
