@@ -141,19 +141,21 @@ def split_documents(text: str):
         end = markers[index + 1][0] if index + 1 < len(markers) else len(text)
         yield kind, text[start:end]
 
-def section_between(text: str, start_pattern: str, end_patterns: tuple[str, ...]) -> str:
+def section_between(text: str, start_pattern: str, end_patterns: tuple[str, ...], max_distance: int = 1500) -> str:
     start = text.find(start_pattern)
     if start == -1:
         return ''
 
     end_candidates = [text.find(pattern, start + len(start_pattern)) for pattern in end_patterns]
-    end_candidates = [pos for pos in end_candidates if pos != -1]
+    end_candidates = [pos for pos in end_candidates if pos != -1 and pos - start <= max_distance]
     end = min(end_candidates) if end_candidates else len(text)
     return text[start:end]
 
-def parse_amount(text: str) -> int | None:
+def parse_amount(text: str, max_chars: int = 0) -> int | None:
+    """Parse a total amount from section text. If max_chars > 0, only search the first max_chars characters."""
     pattern = re.compile(r'總(?:金額|價額)[:：]\s*新臺幣(?P<body>[^元]{0,120})元')
-    for match in pattern.finditer(text):
+    search_text = text if max_chars <= 0 else text[:max_chars]
+    for match in pattern.finditer(search_text):
         body = match.group('body')
         if any(token in body for token in ['（總', '(總', '本欄空白', '名稱', '名\n稱', '所\n有']):
             continue
@@ -324,7 +326,7 @@ def parse_assets(doc: str):
     security_sections = {}
     for key in SECURITY_LABELS:
         section = section_between(doc, *SECURITY_RANGES[key])
-        amount = parse_amount(section)
+        amount = parse_amount(section, max_chars=300)
         security_sections[key] = {
             'amount': amount,
             'has': amount is not None and amount > 0,
@@ -383,6 +385,7 @@ def build_records():
                 'party': party,
                 'party_origin': party_origin,
                 **assets,
+                'full_text': doc,
                 'source_file': issue_path.name,
             })
 
