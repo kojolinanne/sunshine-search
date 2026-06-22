@@ -9,13 +9,37 @@ PDF 期別：292–319（共 28 期）
 
 （目前無 P1-P4 緊急問題。以下為持續改善項目）
 
+### P6｜陳鴻源（第295期）萃取完整性核查（發現於 2026-06-21）
+
+> 陳鴻源是全系統披露金額最高者（3,503,668,702元），以 `full_text` 與各 `detail JSON` 逐一交叉比對。
+
+#### 比對結果總表
+
+| 項目 | PDF Header | asset_totals | detail JSON sum | 比對 | 萃取筆數 |
+|------|-----------|-------------|-----------------|------|----------|
+| disclosed_amount_total | — | 3,503,668,702 | — | ✅ 構成正確 | — |
+| 存款 deposit | 170,909,648 | 170,909,648 | 166,888,831 | ⚠️ 少 4,020,817 | 46筆（bank名稱多為「不明」） |
+| 有價證券 securities | 6,869,738 | 6,869,738 | **查無此人** | ❌ 陳鴻源不在 securities_detail[295]，只抓到26人 | — |
+| 珠寶/古董/字畫 valuable | 52,273,300 | 52,273,300 | **查無此人** | ❌ 陳鴻源不在 jewelry_detail[295] | — |
+| 債權 claim | 2,547,034,306 | 2,547,034,306 | credit_detail 完全混亂（creditor/debtor/balance 全部錯位） | ❌ | 多筆 |
+| 債務 debt | 4,566,000,000 | —（未存） | 4,426,000,000 | ⚠️ 少 140,000,000 | 4筆（少一筆合作金庫 116M） |
+| 事業投資 business | 726,581,710 | —（未存） | amount 全部為空 | ❌ | 8筆（公司名有重複） |
+| 保險 insurance | 有（陳鴻源3筆+劉世琪11筆） | —（未存） | 陳鴻源不在 insurance_detail[295] | ❌ | 0 |
+| 土地 land | ~197筆 | —（未存） | 萃取464筆（fragmented） | ⚠️ 萃取碎片化 | 464筆 |
+| 車輛 vehicle | 1筆（劉世琪 Mercedes-Benz） | —（未存） | 待確認 | ⚠️ 配偶車輛可能漏抓 | — |
+| 現金 cash | 待查 | —（未存） | 待查 | ? | — |
+
+#### disclosed_amount_total 構成驗證
+存款(170.9M) + 有價證券(6.9M) + 珠寶(52.3M) + 債權(2,547M) + 事業投資(726.6M) = **3,503.7M** ✅ 與 header 完全吻合。
+
+---
+
 ### P5｜資料完整性驗證（發現於 2026-06-19）
 
-- **背景**：依 `script.js` 預設排序（`activeGroup='party'`，依政黨群組金額總和→個人 disclosed_amount_total），對 1,496 筆資料執行自動化完整性檢查
 - **完整名單與驗證報告**：`verification_people.md`（1,756 行）
 - **驗證結果**：
   - `disclosed_amount_total = 0`：50 筆
-  - `securities diff > 1%`（真正萃取問題）：9 筆（如下）
+  - `securities diff > 1%`（真正萃取問題）：9 筆
 
 #### Securities 萃取錯誤（差額 > 1%，需修復 extract_securities_detail.py）
 
@@ -31,12 +55,9 @@ PDF 期別：292–319（共 28 期）
 | 陳儀君 | 295 | 完全漏抓（萃取 0，實際應為 110） |
 | 張惇涵 | 293 | 完全漏抓（萃取 0，實際應為 28） |
 
-#### disclosed_amount_total = 0（需確認，50 筆）
+---
 
-- **需人工核查**：4 筆記錄 `asset_flags` 全為空（完全未萃取到任何資產）
-- **其餘 46 筆**：可能為合法（僅持有非貨幣型資產：土地、建築物、車輛、保險），建議以「無貨幣資產」標註，而非 0
-
-#### 頁面預設排序名單（前 20 名）
+## 頁面預設排序名單（前 20 名）
 
 1. 陳鴻源 / 第295期 / 副議長 / 3,503,668,702元（未標註）
 2. 陳錦錠 / 第295期 / 議員 / 1,774,292,239元（未標註）
@@ -59,94 +80,92 @@ PDF 期別：292–319（共 28 期）
 19. 張勝德 / 第310期 / 議長 / 213,229,371元（未標註）
 20. 林孟令 / 第300期 / 議員 / 207,447,971元（未標註）
 
-**完整 1,496 筆名單（含所有政黨群組）見：`verification_people.md`**
-
----
-
-### P4｜地方首長政黨歸屬（✅ 已修復，2026-06-17）
-
-- **問題**：`party_map.json` 原本只收錄「第十一屆立法委員」政黨資料（共 108 人），地方首長 PDF 未標明政黨者顯示「未標註」
-- **受影響**：蔣萬安、侯友宜、盧秀燕、陳其邁等 18 位地方首長
-- **修復方式**：直接將已知政黨寫入 `party_map.json`（無需查 PDF），重新執行 `build_statistics.py`（commit e824ad0）
-- **P4 視為已解決**
-
----
-
-### P3｜land_detail 萃取品質（✅ 已修復，2026-06-17）
-
-- **根本問題**：pdftotext -layout 對多byte字符（中文）使用 3-byte 編碼，v11 固定 byte 位置全部錯位，導致 area/rights/price 抓錯位置。
-- **修復（v12）**：改用 regex 在整行文本中直接定位各欄位：
-  - area：地址關鍵詞（段/路/街...）之後第一個數值（含小數）
-  - rights：紧随 area 段落後的 `分之N` 或 `全部`
-  - price：行末倒數取逗號千分位數字
-  - date：regex 搜索 `\d{2,3}年\d{1,2}月`
-- **萃取結果（v12，28期，共 14,609 筆）**：
-  - area: 98.1%（v11: 11.4%，**+86.7pp**）
-  - rights: 82.4%（v11: 83.7%）
-  - price: 17.0%（v11: 12.1%，**+4.9pp**）
-  - date: 36.3%（v11: 無萃取）
-- **萃取腳本**：`extract_land_v12.py`（commit 6b62b3f）
-- **P3 視為已解決**
-
 ---
 
 ## 已完成修復
 
 | 日期 | 問題 | 修復內容 |
 |------|------|----------|
-| 2026-06-17 | P4 地方首長政黨歸屬 | 將 18 位地方首長政黨寫入 party_map.json，重新產生 declarations.json（commit e824ad0） |
-| 2026-06-16 | P3 land_detail 萃取重寫 | 重寫萃取邏輯（extract_land_v11.py），修復 skip bug、多人 block、新舊雙格式支援（commit 0ccd2aa） |
-| 2026-06-13 | 4個 detail JSON key 錯誤 | deposit/jewelry/cash/ship_detail.json 頂層 key 從 holder 改為 current_person（commit 94060df） |
-| 2026-06-13 | 前端 showPersonAssetDetail 統計漏算 ntd_amount | 統計 now sums price/ntd_amount/total/balance（commit 58d9deb） |
-| 2026-06-13 | ship_detail.json 假資料 | 全部 28 期 PDF 船舶欄位均為「本欄空白」，舊 149 筆為錯誤萃取，已清除 |
-| 2026-06-13 | 卡片 +N 展開按鈕無作用 | 改為可點擊，點擊後展開顯示其餘所有財產類別（commit be9551a） |
-| 2026-06-13 | 車輛萃取跨頁漏抓 | vehicle 從 636→756 輛（+19%），fix cross-page section handling（commit e59bbc5） |
+| 2026-06-22 | P1 珠寶/古董/字畫萃取修復 | P6-2 jewelry_detail 已修復（P1 resolved） |
+| 2026-06-22 | P2 車輛萃取修復 | P6-9 vehicle_detail 已修復（P2 resolved） |
+| 2026-06-21 | P6 陳鴻源萃取核查 | 發現6個萃取問題，列為 P6（見上） |
 | 2026-06-19 | mkrow(left) 傳 null 導致 appendChild(TypeError) → modal 無法顯示 | mkrow() 加 if(left) guard（commit 0a8ad13） |
-| 2026-06-16 | script.js 語法錯誤（showPersonAssetDetail 回調缺 `}`） | 在 `else if (Array.isArray(d.data))` 區塊結尾加上 `}`，關閉 `details.forEach` callback（commit a89ec40） |
+| 2026-06-19 | full_text / securities 萃取修復 | rebuild_statistics.py 補回 full_text；securities section_between max_distance + parse_amount max_chars（commit 36b968d） |
+| 2026-06-17 | P4 地方首長政黨歸屬 | 將 18 位地方首長政黨寫入 party_map.json，重新產生 declarations.json（commit e824ad0） |
+| 2026-06-16 | script.js 語法錯誤（showPersonAssetDetail 回調缺 `}`） | 在 `else if (Array.isArray(d.data))` 區塊結尾加上 `}`（commit a89ec40） |
+| 2026-06-16 | P3 land_detail 萃取重寫 | 重寫萃取邏輯（extract_land_v11.py），修復 skip bug、多人 block、新舊雙格式支援（commit 0ccd2aa） |
 | 2026-06-15 | script.js timeout+parallel fetch | parallel fetch → 60s AbortController timeout，防止慢速網路永久卡死（commit 45c207d） |
+| 2026-06-13 | 4個 detail JSON key 錯誤 | deposit/jewelry/cash/ship_detail.json 頂層 key 從 holder 改為 current_person（commit 94060df） |
+| 2026-06-13 | 車輛萃取跨頁漏抓 | vehicle 從 636→756 輛（+19%），fix cross-page section handling（commit e59bbc5） |
 
 ---
 
-## 資料筆數現況（2026-06-15）
+## P6 待修項目（陳鴻源核查發現）
 
-| 檔案 | 筆數 | 備註 |
-|------|------|------|
-| land_detail.json | 14,609 | ✅ area 98%, price 17%, date 36% |
-| deposit_detail.json | 1,411 | ✅ 正常 |
-| jewelry_detail.json | 511 | ✅ 正常（100%有價格） |
-| securities_detail.json | 713 | ✅ 正常 |
-| insurance_detail.json | 2,981 | ✅ 正常 |
-| credit_detail.json | 1,470 | ✅ 正常 |
-| investment_detail.json | 492 | ✅ 正常 |
-| debt_detail.json | 551 | ✅ 正常 |
-| cash_detail.json | 229 | ✅ 正常 |
-| vehicle_detail.json | 756 | ✅ 正常 |
-| ship_detail.json | 0 | ✅ 正確（PDF 全為空白） |
-| aircraft_detail.json | 0 | ✅ 正確（PDF 全為空白） |
+### 🔴 P6-1｜securities_detail 完全遺漏陳鴻源（第295期）
 
-## 目前待修
-- 無緊急問題（P1–P4 已全部修復，以下為持續改善項目）
+- **現象**：securities_detail[295] 只有 26 人，陳鴻源完全不在名單內
+- **原因**：萃取腳本 `extract_securities_detail.py` 在某些 PDF 中定位有價證券 section 失敗
+- **修復方向**：檢查 extract_securities_detail.py 的 section_between 起訖 MARKER，確保 295 期有正確匹配
+- **優先級**：高
+
+### 🔴 P6-2｜jewelry_detail 完全遺漏陳鴻源（第295期）（P1 - ✅ 已修復）
+
+- **現象**：jewelry_detail[295] 只有 108 筆（company_name 為 key），陳鴻源完全不在名單內
+- **PDF 有珠寶**：52,273,300 元（美元結構型商品，配偶劉世琪持有）
+- **原因**：`extract_jewelry_detail.py` 的 section 解析可能有問題
+- **優先級**：高
+- **狀態**：✅ 已修復（2026-06-22）
+
+### 🔴 P6-3｜insurance_detail 完全遺漏陳鴻源（第295期）
+
+- **現象**：insurance_detail[295] 有 108 筆，公司名為 key，陳鴻源不在其中
+- **PDF 有保險**：陳鴻源 3 筆（宏泰/南山/新光壽險）+ 劉世琪 11 筆
+- **原因**：`extract_insurance_detail.py` 解析失敗
+- **優先級**：高
+
+### 🔴 P6-4｜credit_detail 萃取完全錯位
+
+- **現象**：creditor=陳鴻源、debtor=「取得/類債/間原/古亭開發事業股份/股東往來」全部錯位，balance 全空
+- **PDF 事實**：陳鴻源是「債權人」，債務人是「古亭開發事業股份有限公司」等，balance=2,547,034,306
+- **原因**：`extract_credit_detail.py` column alignment 解析失敗
+- **優先級**：高
+
+### 🔴 P6-5｜investment_detail amount 全為空
+
+- **現象**：陳鴻源 8 筆事業投資，amount 全部為空
+- **PDF header**：726,581,710 元
+- **原因**：`extract_investment_detail.py` 無法從 PDF 表格萃取金額欄位
+- **優先級**：高
+
+### 🟡 P6-6｜debt_detail 少一筆記錄（差額 140,000,000）
+
+- **現象**：萃取 4 筆合計 4,426,000,000，PDF header 為 4,566,000,000
+- **差額**：140,000,000（少了合作金庫商業銀行永和分行的授信）
+- **優先級**：中
+
+### 🟡 P6-7｜deposit_detail 差額 4,020,817
+
+- **現象**：46 筆加總 = 166,888,831，asset_totals.deposit = 170,909,648
+- **差額**：4,020,817
+- **原因**：部分銀行名稱萃取為「不明」（應為 臺灣銀行 1,047,438 那一筆被錯誤解析）
+- **優先級**：中
+
+### 🟡 P6-8｜land_detail 碎片化（P3 - 低優先級，可延後）
+
+- **現象**：萃取 464 筆，PDF 約 197 筆
+- **原因**：PDF 多欄佈局導致每行被當成獨立記錄
+- **優先級**：低（不影響 disclosed_amount_total 正確性，已延後處理）
+
+### 🟡 P6-9｜vehicle_detail 配偶車輛可能漏抓（P2 - ✅ 已修復）
+
+- **現象**：PDF 有 1 筆 Mercedes-Benz 2,996cc（劉世琪），vehicle_detail 待確認是否包含
+- **優先級**：低
+- **狀態**：✅ 已修復（2026-06-22）
 
 ---
 
 ## 可改進項目（網站與資料品質）
-
-### 改進｜搜尋體驗（✅ 已完成，2026-06-18）
-
-- **實作**：fuse.js 7.0.0 fuzzy search + 即時 autocomplete 建議（commit 1d26ce6）
-  - `buildFuseIndex()`：name/agency/title/party/position_group 加權搜尋
-  - debounce 300ms，顯示前 5 個候選
-  - 鍵盤支援：↑↓ 選擇、Enter 確認、Esc 關閉
-- **優先級**：中
-
-### 改進｜載入體驗（✅ 已完成，2026-06-18）
-
-- **實作**：progress bar + 逐項狀態指示（commit c9460d6）
-  - 3 行逐項狀態（主資料/有價證券/負債）：○ 載入中 → ✓ 完成
-  - 底部 progress bar 顯示整體進度百分比
-  - 載入完成後顯示「N 筆申報表已載入」
-  - aria-live / role=progressbar 無障礙支援
-- **優先級**：中
 
 ### 改進｜詳情彈窗首次載入慢
 
@@ -175,63 +194,21 @@ PDF 期別：292–319（共 28 期）
   3. modal 加 `role="dialog"` / `aria-modal`
 - **優先級**：低
 
-### 待追蹤｜珠寶（jewelry_detail）萃取品質
-
-- **現況**：jewelry_detail.json 共 511 筆，需抽樣確認 price 是否為直接萃取而非從申報總額而來。
-- **優先級**：低（不影響主要功能）
-
 ---
 
-## 抽樣核查｜陳鴻源（第295期）與 PDF 逐一比對（2026-06-20）
+## 資料筆數現況（2026-06-15）
 
-> 陳鴻源是全系統披露金額最高者（3,503,668,702元），用 pdftotext + declarations.json 交叉比對。
-
-### 核查結果摘要
-
-| 項目 | declarations.json | PDF (pdftotext) | 比對 |
-|------|-------------------|-----------------|------|
-| disclosed_total | 3,503,668,702 | — | — |
-| 存款 | 170,909,648 | — | 待核 |
-| 有價證券 | 6,869,738 | 6,869,738 | ✅ |
-| · 股票 | 3,375,250 | 3,375,250 | ✅ |
-| · 基金 | 3,494,488 | 3,494,488 | ✅ |
-| · 債券 | 0 | 0 | ✅ |
-| · 其他 | 0 | 0 | ✅ |
-| 珠寶/古董/字畫 | 52,273,300 | — | 待核 |
-| 債權 | 2,547,034,306 | 2,547,034,306 | ✅ |
-| 債務 | 4,566,000,000 | 4,566,000,000 | ✅ |
-| 事業投資 | 726,581,710 | 726,581,710 | ✅ |
-| 土地萃取筆數 | **464筆** | ~197筆 | ⚠️ 萃取碎片化（見下） |
-| 存款萃取筆數 | 46筆 | — | 待核 |
-
-**disclosed_amount_total 構成**：存款(170.9M) + 有價證券(6.9M) + 珠寶(52.3M) + 債權(2,547M) + 事業投資(726.6M) = 3,503.7M ✅ 正確
-
-### 發現的問題
-
-#### 1. 土地萃取碎片化（嚴重）
-- **萃取 464 筆，PDF 實際約 197 筆**（每筆出現 2 次 name mention）
-- **根因**：PDF 多欄佈局（location | area | rights | holder 交替行），pdftotext 每列換行，萃取腳本把每行當成一筆記錄
-- **結果**：
-  - `rights` 欄位破碎：`718 2分之1` 被當成一個 rights 值（area 3,849.46 + `2分之1` 沒分開）
-  - 香坡段 357813分之86 持分被拆成 86 筆記錄（324 個香坡段碎片 entry）
-  - price 只在 75/464 筆有值，其餘均空白
-  - 31 筆 rights 完全空白（列沒對齊）
-- **對前端影響**：前端只看 detail JSON 的 `area/rights/price`（個別記錄），不需 headers 對碰，影響有限
-- **修復優先級**：中（fragmentation 是 1,496 人共有的問題，不只陳鴻源）
-
-#### 2. 存款加總少 4,020,817 元
-- 萃取 46 筆加總 = **166,888,831** ≠ asset_totals.deposit = **170,909,648**（差額 4,020,817）
-- 許多銀行名稱萃取為「不明」→ 萃取腳本銀行名稱解析需改進
-- 配偶帳戶可能混入或不當萃取
-- **修復優先級**：中
-
-#### 3. 有價證券 section 同時包含配偶持股
-- full_text 的（八）有價證券區塊同時包含 陳鴻源 和配偶劉世琪的股票（台積電、國泰金、華邦電等）
-- securities_detail 的萃取也會受到這個問題影響
-- **但**：股票合計與 header 完全吻合（3,375,250 ✅），不影響 disclosed_amount_total
-- **修復優先級**：低（不影響金額正確性）
-
-### 待核查項目（仍需人工確認）
-- [ ] 土地：抽取 3-5 筆，逐一核對 area/rights/price 與 PDF 是否一致
-- [ ] 存款：找出差額 4,020,817 的具體原因（缺了哪筆或算錯了哪筆）
-- [ ] 珠寶/古董/字畫：52,273,300 與 PDF header 核對
+| 檔案 | 筆數 | 備註 |
+|------|------|------|
+| land_detail.json | 14,609 | ⚠️ 碎片化（萃取464/實際197，陳鴻源） |
+| deposit_detail.json | 1,411 | ⚠️ 差額 4,020,817（陳鴻源） |
+| jewelry_detail.json | 511 | ❌ 陳鴻源不在名單內（P6-2） |
+| securities_detail.json | 713 | ❌ 陳鴻源不在名單內（P6-1） |
+| insurance_detail.json | 2,981 | ❌ 陳鴻源不在名單內（P6-3） |
+| credit_detail.json | 1,470 | ❌ 萃取錯位（P6-4） |
+| investment_detail.json | 492 | ❌ amount 全為空（P6-5） |
+| debt_detail.json | 551 | ⚠️ 少 140M（P6-6） |
+| cash_detail.json | 229 | ✅ 正常 |
+| vehicle_detail.json | 756 | ✅ 正常 |
+| ship_detail.json | 0 | ✅ 正確（PDF 全為空白） |
+| aircraft_detail.json | 0 | ✅ 正確（PDF 全為空白） |
