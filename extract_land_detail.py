@@ -122,10 +122,14 @@ def extract_from_pdf(pdf_path):
                 if share_m:
                     rights = clean(share_m.group(1))
 
-                # 價額（數字金額，通常是最後的數值欄）
+                # 價額：優先數字，否則檢查 (超過五年)
                 price_m = re.search(r'([0-9,]+)\s*$', ls.strip())
+                price = ''
+                over5 = False
                 if price_m:
                     price = price_m.group(1)
+                elif '超過五年' in ls or '(超過五年)' in ls:
+                    over5 = True
 
                 # 所有人（從 current_person 或從行末非數字欄位）
                 holder = current_person or 'unknown'
@@ -148,6 +152,7 @@ def extract_from_pdf(pdf_path):
                         'acquisition_time': acq_time,
                         'acquisition_reason': acq_reason,
                         'price': price,
+                        'over5': over5,
                         'type': '土地'
                     })
 
@@ -202,14 +207,6 @@ def extract_from_pdf(pdf_path):
 def main():
     issues = list(range(292, 320))
     all_data = {}
-
-    if OUT_FILE.exists():
-        try:
-            with open(OUT_FILE, encoding='utf-8') as f:
-                all_data = json.load(f)
-            print(f'已讀取 {len(all_data)} 期進度')
-        except Exception:
-            pass
 
     for issue_num in issues:
         issue_key = str(issue_num)

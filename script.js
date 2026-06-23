@@ -1013,7 +1013,7 @@ function renderDetailRows(personName, assetKey, issue, data, list) {
     (data.land || []).forEach(function(item) {
       var loc = (item.location||'').replace(/\s+/g,' ').trim();
       var rights = item.rights || '';
-      var price = item.price ? formatMoney(parseFloat(item.price.replace(/,/g,''))) : '-';
+      var price = item.over5 ? '⏳ (超過五年)' : (item.price ? formatMoney(parseFloat(item.price.replace(/,/g,''))) : '-');
       var reason = item.acquisition_reason || '';
       var area = item.area || '';
       var d = mkrow(null, null, 'display:block');
