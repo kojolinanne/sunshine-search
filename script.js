@@ -939,7 +939,7 @@ async function showPersonAssetDetail(personName, assetKey, label) {
       });
     } else if (d.data.land) {
       totalItems += d.data.land.length;
-      d.data.land.forEach(function(i){ if(i.price) totalAmount+=parseFloat(i.price)||0; });
+      d.data.land.forEach(function(i){ if(i.price) totalAmount+=parseFloat(i.price.replace(/,/g,''))||0; });
     } else if (Array.isArray(d.data)) {
       totalItems += d.data.length;
       d.data.forEach(function(i){
@@ -1013,7 +1013,7 @@ function renderDetailRows(personName, assetKey, issue, data, list) {
     (data.land || []).forEach(function(item) {
       var loc = (item.location||'').replace(/\s+/g,' ').trim();
       var rights = item.rights || '';
-      var price = item.price ? formatMoney(parseFloat(item.price)) : '-';
+      var price = item.price ? formatMoney(parseFloat(item.price.replace(/,/g,''))) : '-';
       var reason = item.acquisition_reason || '';
       var area = item.area || '';
       var d = mkrow(null, null, 'display:block');
