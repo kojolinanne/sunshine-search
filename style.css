@@ -913,6 +913,76 @@ code {
   50% { opacity: 0.4; }
 }
 
+/* ── 通行碼驗證畫面 ── */
+#passcodeOverlay {
+  position: fixed;
+  inset: 0;
+  background: #f4f6f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 16px;
+}
+.passcode-card {
+  background: var(--paper);
+  border-radius: 14px;
+  box-shadow: 0 12px 40px rgba(15, 23, 42, 0.12);
+  padding: 36px 32px;
+  width: min(400px, 100%);
+  text-align: center;
+}
+.passcode-card h2 {
+  margin-bottom: 8px;
+  font-size: 1.35rem;
+  color: var(--ink);
+}
+.passcode-desc {
+  margin-bottom: 20px;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+.passcode-form {
+  display: grid;
+  gap: 10px;
+}
+.passcode-input {
+  padding: 10px 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  font-size: 1rem;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+.passcode-input:focus {
+  border-color: var(--accent);
+  outline: 3px solid rgba(15, 118, 110, 0.14);
+}
+.passcode-btn {
+  padding: 11px;
+  border: none;
+  border-radius: var(--radius);
+  background: var(--ink);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.passcode-btn:hover {
+  background: #394550;
+}
+.passcode-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.passcode-error {
+  margin-top: 8px;
+  color: var(--danger);
+  font-size: 0.85rem;
+}
+
 /* ── 詳情彈窗載入提示 ── */
 .modal-loading {
   display: flex;

@@ -1,3 +1,91 @@
+// ── 通行碼驗證 ──
+async function sha256(message) {
+  const msgBuffer = new TextEncoder().encode(message);
+  const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
+  const hashArray = Array.from(new Uint8Array(hashBuffer));
+  return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+}
+
+async function verifyPasscode() {
+  const scriptEl = document.querySelector('script[data-passcode-hash]');
+  if (!scriptEl) return true; // 沒設定 hash，允許直接進入
+
+  const expectedHash = scriptEl.dataset.passcodeHash;
+  if (!expectedHash) return true;
+
+  return new Promise((resolve) => {
+    // 建立遮罩畫面
+    const overlay = document.createElement('div');
+    overlay.id = 'passcodeOverlay';
+    overlay.innerHTML = `
+      <div class="passcode-card">
+        <h2>🔐 請輸入通行碼</h2>
+        <p class="passcode-desc">此頁面受通行碼保護，請輸入通行碼以繼續。</p>
+        <form id="passcodeForm" class="passcode-form">
+          <input type="password" id="passcodeInput" class="passcode-input"
+                 placeholder="請輸入通行碼" autocomplete="off" autofocus>
+          <button type="submit" id="passcodeBtn" class="passcode-btn">驗證</button>
+        </form>
+        <p id="passcodeError" class="passcode-error" hidden>通行碼錯誤，請再試一次。</p>
+      </div>
+    `;
+    document.body.appendChild(overlay);
+    // 隱藏主內容
+    document.querySelector('.site-header').style.display = 'none';
+    document.querySelector('main').style.display = 'none';
+    document.querySelector('footer').style.display = 'none';
+
+    const form = document.getElementById('passcodeForm');
+    const input = document.getElementById('passcodeInput');
+    const errorEl = document.getElementById('passcodeError');
+    const btn = document.getElementById('passcodeBtn');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const passcode = input.value.trim();
+      if (!passcode) return;
+
+      btn.disabled = true;
+      btn.textContent = '驗證中...';
+      errorEl.hidden = true;
+
+      const hash = await sha256(passcode);
+      if (hash === expectedHash) {
+        overlay.remove();
+        document.querySelector('.site-header').style.display = '';
+        document.querySelector('main').style.display = '';
+        document.querySelector('footer').style.display = '';
+        resolve(true);
+      } else {
+        btn.disabled = false;
+        btn.textContent = '驗證';
+        errorEl.hidden = false;
+        input.value = '';
+        input.focus();
+      }
+    });
+
+    // 點擊表單外部不做任何事（不關閉，因為沒有通行碼就進不去）
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        e.preventDefault(); // 不允許用 Esc 跳過
+      }
+    }, { once: false });
+  });
+}
+
+// 頁面載入時先驗證通行碼，通過後才初始化
+window.addEventListener('DOMContentLoaded', async () => {
+  try {
+    await verifyPasscode();
+    // 通過驗證後才開始載入資料
+    init();
+  } catch (err) {
+    console.error('驗證失敗', err);
+  }
+});
+
+// ── 資料與 UI 邏輯 ──
 let dataset = null;
 let fuse = null;
 let debounceTimer = null;
@@ -5,7 +93,7 @@ let securitiesData = null;
 let debtData = null;
 let filteredRecords = [];
 let activeGroup = 'party';
-const groupPages = {};   // { [groupLabel]: currentPage }
+const groupPages = {};   // { [groupId]: currentPage }
 const PAGE_SIZE = 100;
 const MAIN_ASSET_ORDER = [
   'land', 'building', 'vehicle', 'deposit', 'securities', 'insurance',
