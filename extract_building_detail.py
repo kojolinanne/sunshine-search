@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
 萃取廉政專刊 PDF 的建物明細（房屋及停車位）。
-策略：pdftotext -layout 文字解析，不依賴 pdfplumber（建物表格無邊框）。
+策略：pdftotext layout → address-name-based 關聯式解析。
+建物格式：每個建物以地址行（含 段 + 所有權人姓名）為 anchor，上下合併金額/面積資訊。
 """
 import subprocess, re, json, time
 from pathlib import Path
@@ -25,109 +26,205 @@ def extract_from_pdf(pdf_path, pages_text=None):
             return {}
         pages_text = [p for p in r.stdout.split('\x0c') if p.strip()]
 
-    # 建立人名列表
-    all_people = set()
-    for text in pages_text:
+    # Build person → page index
+    person_pages = {}
+    for pi, text in enumerate(pages_text):
         for m in re.finditer(r'申報人姓名\s+([^\n]+)', text):
             raw = m.group(1).strip()
             name = re.split(r'\s{2,}', raw)[0].strip()
             name = re.sub(r'[○●◎]', '', name).strip()
             if name and len(name) >= 2:
-                all_people.add(name)
+                person_pages.setdefault(name, set()).add(pi)
+
+    # Expand to all pages where name appears
+    name_to_all = {}
+    for name, pages in person_pages.items():
+        name_to_all[name] = set(pages)
+    for pi, text in enumerate(pages_text):
+        for name in person_pages:
+            if name in text:
+                name_to_all.setdefault(name, set()).add(pi)
 
     all_results = {}
 
-    # 每次只處理一個建物頁面
-    for pi, text in enumerate(pages_text):
-        if '建物' not in text or ('房屋' not in text and '停車位' not in text):
-            continue
-
-        # 找建物區段
-        idx = text.find('建物')
-        end = len(text)
-        for marker in ['船舶', '汽車', '航空器', '現金']:
-            mi = text.find(marker, idx)
-            if mi > 0 and mi < end:
-                end = mi
-        section = text[idx:end]
-        lines = section.split('\n')
-
-        # 建立所有地址行的索引
-        addr_lines = []  # [(line_index, owner_name)]
-        for i, line in enumerate(lines):
-            stripped = line.strip()
-            if not stripped or len(stripped) < 10:
-                continue
-            if stripped.startswith('監察院') or stripped.startswith('廉'):
-                continue
-            # 必須有段+人名
-            has_loc = bool(re.search(r'[段區市鄉鎮路街弄村]', stripped))
-            if not has_loc:
-                continue
-            for name in all_people:
-                if name in stripped:
-                    addr_lines.append((i, name, stripped))
-                    break
-
-        # 對每個地址行，往前掃描找 area 和 price
-        seen_people = set()
-        for i, name, adr_line in addr_lines:
-            # 去重：同一人同一個地址行可能出現多次（右側價格註記跨行）
-            key = (name, i)
-            if key in seen_people:
-                continue
-            seen_people.add(key)
-
-            # Clean address (remove leading ★/numbers)
-            address = re.sub(r'^[\d★\s,\*]+', '', adr_line).strip()
-            
-            # Extract rights
-            rights_match = re.search(r'(全部|[\d,]+\s*分\s*之\s*[\d,]+|\d+\s*分之\s*\d+)', adr_line)
-            rights = rights_match.group(0).replace(' ', '') if rights_match else ''
-
-            # Find price: scan lines above the address (within 10 lines)
-            # Price is always on the right-hand side, appears as large standalone number
-            price = None
-            notes = ''
-            for j in range(max(0, i - 15), min(len(lines), i + 5)):
-                l = lines[j].strip()
-                n = parse_num(l)
-                if n is not None and n >= 100:  # any price, even small amounts
-                    # Skip small numbers that might just be area
-                    if n >= 1000:
-                        # Pick the lowest price (first one found)
-                        if price is None:
-                            price = n
-                        elif n > price and n > 10000:
-                            # If this is likely the real price (near the addr line)
-                            if j >= i - 8 and j <= i + 2:
-                                price = n
-                # Notes: lines with parentheses annotations
-                if re.search(r'[\(（]', l):
-                    notes += ' '+ l if notes else l
-
-            # Find area from lines above (usually a number like 56.72)
-            area = None
-            for j in range(max(0, i - 5), i):
-                l = lines[j].strip()
-                area_match = re.search(r'([\d,]+\.?\d*)', l)
-                if area_match:
-                    an = parse_num(area_match.group(1))
-                    if an and 10 < an < 1000000:
-                        area = an
-                        break
-
-            if name not in all_results:
-                all_results[name] = []
-            all_results[name].append({
-                'address': address,
-                'area': area,
-                'rights': rights,
-                'price': price,
-                'notes': notes[:200],
-            })
+    for person_name, page_set in name_to_all.items():
+        entries = []
+        for pi in page_set:
+            page_lines = pages_text[pi].split('\n')
+            page_r = _parse_building_page(page_lines, person_name)
+            if page_r:
+                entries.extend(page_r)
+        if entries:
+            all_results[person_name] = entries
 
     return all_results
+
+
+def _is_building_page(lines):
+    """Check if this page contains a building section."""
+    text = '\n'.join(lines[:10])
+    return '建物' in text and ('房屋' in text or '停車位' in text)
+
+
+def _is_address_anchor(line, person_name):
+    """Check if a line is a building entry anchor (address + owner name)."""
+    return (person_name in line and 
+            re.search(r'[段區鎮市鄉路街弄]', line) and
+            not any(kw in line for kw in ['健全', '建議', '建築']))
+
+def _parse_building_page(page_lines, person_name):
+    """Parse building entries from one page for one person."""
+    if not _is_building_page(page_lines):
+        return []
+    if person_name not in '\n'.join(page_lines):
+        return []
+
+    # Find building section boundaries
+    bldg_start = None
+    for i, line in enumerate(page_lines):
+        if '建物' in line and ('房屋' in line or '停車位' in line):
+            bldg_start = i
+            break
+    if bldg_start is None:
+        return []
+
+    bldg_end = len(page_lines)
+    for marker in ['船舶', '航空器', '現金', '存款', '有價證券']:
+        for j in range(bldg_start + 2, len(page_lines)):
+            if marker in page_lines[j] and not re.search(r'(名|稱|股|基|債|申報)', page_lines[j]):
+                bldg_end = min(bldg_end, j)
+                break
+
+    lines = page_lines[bldg_start:bldg_end]
+    # Strip leading empty lines and footer
+    while lines and not lines[-1].strip():
+        lines.pop()
+
+    results = []
+
+    for i, line in enumerate(lines):
+        if not _is_address_anchor(line, person_name):
+            continue
+
+        entry = {}
+
+        # --- Address: extract from the anchor line ---
+        # The address is in the left portion, before the rights/owner columns
+        # Strip ★ prefix and trailing whitespace/numbers after address
+        raw = line.strip()
+        # Remove leading ★ and digits
+        raw = re.sub(r'^[\d★\s,]+', '', raw)
+        # Extract address (before owner name)
+        name_pos = raw.find(person_name)
+        if name_pos < 0:
+            continue
+        addr_part = raw[:name_pos].strip()
+        # Remove area numbers from end of address
+        addr_part = re.sub(r'\s*[\d,\.]+\s*$', '', addr_part)
+        addr_part = re.sub(r'\s+全部$', '', addr_part).strip()
+        if not addr_part:
+            continue
+        entry['address'] = addr_part
+
+        # --- Rights: find "全部" or "N分之N" in the anchor line ---
+        rights = ''
+        r_match = re.search(
+            r'(全部|[\d,]+分\s*之\s*[\d,]+|\d+\s*分\s*之\s*\d+|[\d,]+\s*分之\s*[\d,]+)',
+            raw
+        )
+        if r_match:
+            rights = r_match.group(1).replace(' ', '')
+        entry['rights'] = rights
+
+        # --- Area: look in lines above the anchor ---
+        area = None
+        for j in range(i - 1, max(i - 12, 0), -1):
+            prev = lines[j].strip()
+            # Try to find a number in the area column (~char 27-42)
+            # The area is typically a standalone number near the left side
+            # Match: and loose strings
+            nums = re.findall(r'(?<!\d)(\d{1,4}(?:[.,]\d{1,2})?)(?!\d)', prev)
+            for n_str in nums:
+                n = parse_num(n_str)
+                if n is not None and 3 < n < 100000:
+                    # Check it's not a rights denominator (too small)
+                    # Check it's not "附屬建物總面積" description (text nearby)
+                    if '積' in prev or '附屬' in prev or '總面':
+                        # Could be area info
+                        area = n
+                        break
+                    if n < 10:
+                        continue  # too small for main area
+                    # For numbers that don't appear to be rights
+                    # Verify not a price
+                    p_match = re.search(r'[\d,]+', prev)
+                    if p_match and len(p_match.group().replace(',', '')) >= 6:
+                        continue  # looks like a price
+                    area = n
+                    break
+            if area is not None:
+                break
+
+        # If still no area, try broader search for standalone numbers
+        if area is None:
+            for j in range(i - 1, max(i - 15, 0), -1):
+                prev = lines[j].strip()
+                parts = prev.split()
+                for p in parts:
+                    n = parse_num(p)
+                    if n and 10 < n < 50000:
+                        # heuristically check if standalone
+                        if re.match(r'^\s*[×\d,\s\.]+\s*$', prev):
+                            area = n
+                            break
+                if area:
+                    break
+
+        entry['area'] = area
+
+        # --- Price: scan above AND below for large numbers ---
+        price = None
+        # First scan above (price often appears as a right-aligned number before the address)
+        for j in range(i, max(i - 20, 0), -1):
+            prev = lines[j]
+            # Look for standalone large number in the rightmost column
+            right_part = prev[80:].strip() if len(prev) > 80 else prev.strip()
+            n = parse_num(right_part.replace(' ', ''))
+            if n is not None and n > 10000 and n < 1000000000:
+                price = n
+                break
+            # Also check left/middle for standalone prices
+            # Sometimes pdftotext splits the line with costs on the left
+            stripped = prev.strip()
+            # Check if the whole line is a number
+            nn = parse_num(stripped.replace(')', '').replace('(', ''))
+            if nn is not None and nn > 10000 and nn < 1000000000:
+                # Verify it's not "(超過五年)" which is 0
+                if not re.search(r'超過五年|監察院', stripped):
+                    price = nn
+                    break
+    
+        # If still no price, look below
+        if price is None:
+            for j in range(i + 1, min(i + 20, len(lines))):
+                curr = lines[j]
+                right_part = curr[80:].strip() if len(curr) > 80 else curr.strip()
+                n = parse_num(right_part)
+                if n is not None and n > 10000 and n < 1000000000:
+                    price = n
+                    break
+                # Check full line
+                stripped = curr.strip()
+                nn = parse_num(stripped)
+                if nn is not None and nn > 10000 and nn < 1000000000:
+                    if not re.search(r'超過五年|監察院', stripped):
+                        price = nn
+                        break
+
+        entry['price'] = price
+        results.append(entry)
+
+    return results
 
 
 def main():
@@ -163,9 +260,8 @@ def main():
             with open(OUT_FILE, 'w', encoding='utf-8') as f:
                 json.dump(all_data, f, ensure_ascii=False, indent=2)
             entry_count = sum(len(v) for v in result.values())
-            print(f'  ✓ {len(result)} 人，{entry_count} 筆（{elapsed:.0f}s）')
+            print(f'  ✓ {len(result)} 人，{entry_count} 筆建物（{elapsed:.0f}s）')
         else:
-            all_data[issue_key] = {}
             print(f'  - 無建物資料（{elapsed:.0f}s）')
 
     with open(OUT_FILE, 'w', encoding='utf-8') as f:
@@ -174,7 +270,6 @@ def main():
     total = sum(sum(len(v) for v in all_data.values()) for v in all_data.values())
     print(f'\n完成：{len(all_data)} 期，{total} 筆建物記錄')
     print(f'寫入：{OUT_FILE}')
-
 
 if __name__ == '__main__':
     print(f'PDF 目錄：{PDF_DIR}')
