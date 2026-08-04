@@ -900,6 +900,7 @@ const modalRecords = document.getElementById('modalRecords');
 const detailCache = {};
 const DETAIL_FILES = {
   land: 'data/land_detail.json',
+  building: 'data/building_detail.json',
   vehicle: 'data/vehicle_detail.json',
   insurance: 'data/insurance_detail.json',
   investment: 'data/investment_detail.json',
@@ -1109,6 +1110,17 @@ function renderDetailRows(personName, assetKey, issue, data, list) {
       d.appendChild(mkdiv('modal-record-meta', (area?'面積: '+area+' · ':'')+(reason?reason+' · ':'')+'第'+issue+'期'));
       d.appendChild(mkdiv('', '💰 '+price));
       list.appendChild(d);
+    });
+
+  } else if (assetKey === 'building') {
+    var buildingList = Array.isArray(data) ? data : (data.items || []);
+    buildingList.forEach(function(item) {
+      var loc = (item.address||'').replace(/\s+/g,' ').trim();
+      var rights = item.rights || '';
+      var price = item.price ? formatMoney(item.price) : '-';
+      var area = item.area ? item.area.toLocaleString()+' m²' : '';
+      var reason = item.acquisition_reason || '';
+      list.appendChild(mkrow(left('🏠 '+h(loc.slice(0,42)||'（未解析）'), (rights?rights+' · ':'')+(area?area+' · ':'')+(reason?reason+' · ':'')+'第'+issue+'期'), amtDiv(price)));
     });
 
   } else if (assetKey === 'vehicle') {
