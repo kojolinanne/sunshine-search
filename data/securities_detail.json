@@ -2831,1891 +2831,6 @@
       ]
     }
   },
-  "295": {
-    "陳炳甫": {
-      "stock": [
-        {
-          "name": "大立光",
-          "shares": 3000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 30000
-        },
-        {
-          "name": "元太",
-          "shares": 10000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 100000
-        },
-        {
-          "name": "台視",
-          "shares": 5088,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 50880
-        },
-        {
-          "name": "富邦媒",
-          "shares": 10187,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 101870
-        },
-        {
-          "name": "長億實業",
-          "shares": 900,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 9000
-        }
-      ],
-      "bond": [],
-      "fund": []
-    },
-    "游淑慧": {
-      "stock": [
-        {
-          "name": "佳格",
-          "shares": 6000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 60000
-        },
-        {
-          "name": "南亞",
-          "shares": 2000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 20000
-        },
-        {
-          "name": "中興電",
-          "shares": 2000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 20000
-        },
-        {
-          "name": "中興電",
-          "shares": 2000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 20000
-        },
-        {
-          "name": "潤隆",
-          "shares": 4400,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 44000
-        },
-        {
-          "name": "中鋼",
-          "shares": 10000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 100000
-        },
-        {
-          "name": "光寶科",
-          "shares": 2000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 20000
-        },
-        {
-          "name": "台達電",
-          "shares": 1000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 10000
-        },
-        {
-          "name": "鴻海",
-          "shares": 2000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 20000
-        },
-        {
-          "name": "大同",
-          "shares": 6650,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 66500
-        },
-        {
-          "name": "廣達",
-          "shares": 1000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 10000
-        },
-        {
-          "name": "中信金",
-          "shares": 2000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 20000
-        },
-        {
-          "name": "鈊象",
-          "shares": 2000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 20000
-        },
-        {
-          "name": "合晶",
-          "shares": 4000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 40000
-        },
-        {
-          "name": "樺漢",
-          "shares": 4000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 40000
-        },
-        {
-          "name": "藥華藥",
-          "shares": 1109,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 11090
-        },
-        {
-          "name": "雲豹能源",
-          "shares": 1000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 10000
-        },
-        {
-          "name": "雲豹能源",
-          "shares": 1000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 10000
-        },
-        {
-          "name": "NVIDIACorp",
-          "shares": 29,
-          "unit_price": 202,
-          "currency": "美元",
-          "amount": 180864
-        },
-        {
-          "name": "PfizerInc",
-          "shares": 40,
-          "unit_price": 24,
-          "currency": "美元",
-          "amount": 30369
-        }
-      ],
-      "bond": [],
-      "fund": [
-        {
-          "name": "聯博美國收益基金A2",
-          "units": 569,
-          "nav": 33,
-          "currency": "美元",
-          "amount": 586107
-        },
-        {
-          "name": "貝萊德環非投前日圓配",
-          "units": 739,
-          "nav": 934,
-          "currency": "日圓",
-          "amount": 136284
-        },
-        {
-          "name": "貝萊德環非投前日圓配",
-          "units": 344,
-          "nav": 934,
-          "currency": "日圓",
-          "amount": 63499
-        },
-        {
-          "name": "法巴全球非投等債月美",
-          "units": 103,
-          "nav": 47,
-          "currency": "美元",
-          "amount": 150371
-        },
-        {
-          "name": "HYG高收益債",
-          "units": 150,
-          "nav": 80,
-          "currency": "美元",
-          "amount": 371987
-        },
-        {
-          "name": "元大台灣50",
-          "units": 40000,
-          "nav": 64,
-          "currency": "",
-          "amount": 2562400
-        },
-        {
-          "name": "元大高股息",
-          "units": 19000,
-          "nav": 37,
-          "currency": "",
-          "amount": 712310
-        },
-        {
-          "name": "元大台灣高息低波",
-          "units": 10000,
-          "nav": 51,
-          "currency": "",
-          "amount": 515000
-        },
-        {
-          "name": "元大投資級公司債",
-          "units": 15000,
-          "nav": 33,
-          "currency": "",
-          "amount": 499303
-        },
-        {
-          "name": "復華台灣科技優息",
-          "units": 15000,
-          "nav": 18,
-          "currency": "",
-          "amount": 282750
-        },
-        {
-          "name": "復華日本龍頭",
-          "units": 10000,
-          "nav": 18,
-          "currency": "",
-          "amount": 180200
-        },
-        {
-          "name": "中信日本商社",
-          "units": 10000,
-          "nav": 11,
-          "currency": "",
-          "amount": 116500
-        },
-        {
-          "name": "元大台灣50",
-          "units": 3009,
-          "nav": 64,
-          "currency": "",
-          "amount": 192756
-        },
-        {
-          "name": "元大高股息",
-          "units": 14362,
-          "nav": 37,
-          "currency": "",
-          "amount": 538431
-        },
-        {
-          "name": "國泰永續高股息",
-          "units": 20535,
-          "nav": 21,
-          "currency": "",
-          "amount": 446841
-        },
-        {
-          "name": "群益優選非投等債",
-          "units": 10740,
-          "nav": 9,
-          "currency": "",
-          "amount": 102565
-        },
-        {
-          "name": "駿利亨德森資產管理基金-駿利亨德森環球科技創新基金A2美元",
-          "units": 91,
-          "nav": 41,
-          "currency": "美元",
-          "amount": 117918
-        },
-        {
-          "name": "【好好退休】景順環球股票收益基金C股美元",
-          "units": 6,
-          "nav": 172,
-          "currency": "美元",
-          "amount": 36954
-        },
-        {
-          "name": "安聯收益成長基金-AMg7月收總",
-          "units": 816,
-          "nav": 8,
-          "currency": "美元",
-          "amount": 222338
-        }
-      ]
-    },
-    "鍾佩玲": {
-      "stock": [
-        {
-          "name": "富利陽投資",
-          "shares": 70000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 700000
-        }
-      ],
-      "bond": [],
-      "fund": []
-    },
-    "闕枚莎": {
-      "stock": [
-        {
-          "name": "東鹼",
-          "shares": 15772,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 157720
-        },
-        {
-          "name": "燿華",
-          "shares": 5000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 50000
-        },
-        {
-          "name": "毅嘉",
-          "shares": 10000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 100000
-        },
-        {
-          "name": "立隆電",
-          "shares": 2000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 20000
-        },
-        {
-          "name": "健和興",
-          "shares": 3000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 30000
-        },
-        {
-          "name": "力致",
-          "shares": 8050,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 80500
-        },
-        {
-          "name": "泰宗",
-          "shares": 4240,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 42400
-        },
-        {
-          "name": "中租－KY",
-          "shares": 5140,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 51400
-        },
-        {
-          "name": "全福生技",
-          "shares": 270000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 2700000
-        },
-        {
-          "name": "鉅橡",
-          "shares": 3000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 30000
-        }
-      ],
-      "bond": [],
-      "fund": [
-        {
-          "name": "元大美債20年",
-          "units": 70000,
-          "nav": 27,
-          "currency": "",
-          "amount": 1918987
-        },
-        {
-          "name": "國泰20年美債",
-          "units": 60000,
-          "nav": 28,
-          "currency": "",
-          "amount": 1708452
-        },
-        {
-          "name": "中信高評級公司債",
-          "units": 30000,
-          "nav": 33,
-          "currency": "",
-          "amount": 1018434
-        }
-      ]
-    },
-    "宋明宗": {
-      "stock": [
-        {
-          "name": "中鋼",
-          "shares": 3026,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 30260
-        },
-        {
-          "name": "中鋼",
-          "shares": 901,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 9010
-        }
-      ],
-      "bond": [],
-      "fund": []
-    },
-    "Nikar": {
-      "stock": [
-        {
-          "name": "台積電",
-          "shares": 322,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 3220
-        },
-        {
-          "name": "宏達電",
-          "shares": 2000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 20000
-        },
-        {
-          "name": "台新新光金",
-          "shares": 12415,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 124150
-        },
-        {
-          "name": "建漢",
-          "shares": 1000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 10000
-        },
-        {
-          "name": "湧德",
-          "shares": 1000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 10000
-        },
-        {
-          "name": "茂迪",
-          "shares": 1072,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 10720
-        },
-        {
-          "name": "建德工業",
-          "shares": 2000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 20000
-        }
-      ],
-      "bond": [],
-      "fund": [
-        {
-          "name": "元大台灣高股息優質龍頭基金-新臺幣A類型-不配息",
-          "units": 10000,
-          "nav": 21,
-          "currency": "",
-          "amount": 219000
-        },
-        {
-          "name": "元大台灣50",
-          "units": 8701,
-          "nav": 64,
-          "currency": "",
-          "amount": 557386
-        },
-        {
-          "name": "元大高股息",
-          "units": 11880,
-          "nav": 37,
-          "currency": "",
-          "amount": 445381
-        },
-        {
-          "name": "群益ESG投等債0-5",
-          "units": 9000,
-          "nav": 10,
-          "currency": "",
-          "amount": 90873
-        }
-      ]
-    },
-    "李余典": {
-      "stock": [
-        {
-          "name": "燁興",
-          "shares": 553,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 5530
-        },
-        {
-          "name": "燁興",
-          "shares": 11,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 110
-        },
-        {
-          "name": "陽信商銀",
-          "shares": 1640129,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 16401290
-        }
-      ],
-      "bond": [],
-      "fund": []
-    },
-    "李倩萍": {
-      "stock": [
-        {
-          "name": "寶齡富錦",
-          "shares": 22000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 220000
-        },
-        {
-          "name": "凌陽",
-          "shares": 15000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 150000
-        },
-        {
-          "name": "圓剛",
-          "shares": 8000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 80000
-        },
-        {
-          "name": "中聯信託",
-          "shares": 28219,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 282190
-        },
-        {
-          "name": "麗清",
-          "shares": 36458,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 364580
-        },
-        {
-          "name": "華廣",
-          "shares": 8499,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 84990
-        },
-        {
-          "name": "康普",
-          "shares": 4000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 40000
-        },
-        {
-          "name": "日成-KY",
-          "shares": 15000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 150000
-        },
-        {
-          "name": "廣化",
-          "shares": 3000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 30000
-        },
-        {
-          "name": "海韻電",
-          "shares": 13000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 130000
-        },
-        {
-          "name": "華孚",
-          "shares": 19000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 190000
-        },
-        {
-          "name": "藥華藥",
-          "shares": 1109,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 11090
-        },
-        {
-          "name": "永虹先進",
-          "shares": 11000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 110000
-        },
-        {
-          "name": "極風雲創",
-          "shares": 7000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 70000
-        },
-        {
-          "name": "元富鋁業",
-          "shares": 38500,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 385000
-        },
-        {
-          "name": "宜錦科技",
-          "shares": 577,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 5770
-        }
-      ],
-      "bond": [],
-      "fund": [
-        {
-          "name": "安聯(盧森堡)收益成長基金AM-美元-穩定月配權/息",
-          "units": 38,
-          "nav": 8,
-          "currency": "美元",
-          "amount": 10202
-        },
-        {
-          "name": "野村(愛爾蘭)日本策略價值基金T股-日圓-累積",
-          "units": 36,
-          "nav": 24325,
-          "currency": "日圓",
-          "amount": 175433
-        }
-      ]
-    },
-    "邱烽堯": {
-      "stock": [
-        {
-          "name": "燁輝",
-          "shares": 15690,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 156900
-        },
-        {
-          "name": "旺宏",
-          "shares": 372,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 3720
-        },
-        {
-          "name": "宏碁",
-          "shares": 398,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 3980
-        },
-        {
-          "name": "富梅建設股份有限公司",
-          "shares": 310000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 3100000
-        }
-      ],
-      "bond": [],
-      "fund": []
-    },
-    "邱婷蔚": {
-      "stock": [
-        {
-          "name": "鴻海",
-          "shares": 2000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 20000
-        },
-        {
-          "name": "台積電",
-          "shares": 700,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 7000
-        },
-        {
-          "name": "玉山金",
-          "shares": 304,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 3040
-        },
-        {
-          "name": "緯創",
-          "shares": 2000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 20000
-        },
-        {
-          "name": "宏偉",
-          "shares": 2000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 20000
-        },
-        {
-          "name": "茂德科技",
-          "shares": 3,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 30
-        },
-        {
-          "name": "光聖",
-          "shares": 300,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 3000
-        },
-        {
-          "name": "富世達",
-          "shares": 300,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 3000
-        },
-        {
-          "name": "BloomEnergy",
-          "shares": 10,
-          "unit_price": 132,
-          "currency": "美元",
-          "amount": 40624
-        },
-        {
-          "name": "NVIDIA",
-          "shares": 50,
-          "unit_price": 202,
-          "currency": "美元",
-          "amount": 311217
-        }
-      ],
-      "bond": [],
-      "fund": [
-        {
-          "name": "RoundhillMagnificentSevenETF",
-          "units": 26,
-          "nav": 67,
-          "currency": "美元",
-          "amount": 54314
-        },
-        {
-          "name": "VanguardS&P500ETF",
-          "units": 2,
-          "nav": 627,
-          "currency": "美元",
-          "amount": 38904
-        },
-        {
-          "name": "元大台灣50",
-          "units": 73748,
-          "nav": 64,
-          "currency": "",
-          "amount": 4724296
-        },
-        {
-          "name": "元大台灣50正2",
-          "units": 8000,
-          "nav": 353,
-          "currency": "",
-          "amount": 2824320
-        },
-        {
-          "name": "國泰臺灣加權正2",
-          "units": 42000,
-          "nav": 46,
-          "currency": "",
-          "amount": 1932420
-        },
-        {
-          "name": "中信小資高價30",
-          "units": 7000,
-          "nav": 27,
-          "currency": "",
-          "amount": 190680
-        },
-        {
-          "name": "國泰數位支付服務",
-          "units": 8000,
-          "nav": 48,
-          "currency": "",
-          "amount": 390160
-        },
-        {
-          "name": "野村臺灣新科技50",
-          "units": 10000,
-          "nav": 29,
-          "currency": "",
-          "amount": 291800
-        },
-        {
-          "name": "安聯收益成長基金-BM9穩定月收類股(美元)",
-          "units": 2958,
-          "nav": 10,
-          "currency": "美元",
-          "amount": 944785
-        },
-        {
-          "name": "(百元基金)摩根美國科技基金-JPM-A股分派(美元)",
-          "units": 277,
-          "nav": 73,
-          "currency": "美元",
-          "amount": 625219
-        },
-        {
-          "name": "(百元基金)摩根美國科技基金-JPM-A股分派(美元)",
-          "units": 143,
-          "nav": 73,
-          "currency": "美元",
-          "amount": 324334
-        },
-        {
-          "name": "貝萊德全球智慧數據股票入息基金B6美元(穩定配息)",
-          "units": 2846,
-          "nav": 10,
-          "currency": "美元",
-          "amount": 926248
-        },
-        {
-          "name": "路博邁台灣5G股票基金-T累積(新臺幣)",
-          "units": 7524,
-          "nav": 47,
-          "currency": "",
-          "amount": 355229
-        },
-        {
-          "name": "路博邁台灣5G股票基金-T累積(新臺幣)",
-          "units": 6753,
-          "nav": 47,
-          "currency": "",
-          "amount": 318843
-        },
-        {
-          "name": "路博邁台灣5G股票基金-T累積(新臺幣)",
-          "units": 6550,
-          "nav": 47,
-          "currency": "",
-          "amount": 309236
-        },
-        {
-          "name": "路博邁台灣5G股票基金-T累積(新臺幣)",
-          "units": 6377,
-          "nav": 47,
-          "currency": "",
-          "amount": 301084
-        },
-        {
-          "name": "路博邁台灣5G股票基金-T累積(新臺幣)",
-          "units": 655,
-          "nav": 47,
-          "currency": "",
-          "amount": 30923
-        },
-        {
-          "name": "富蘭克林坦伯頓全球日本基金",
-          "units": 153,
-          "nav": 2159,
-          "currency": "日圓",
-          "amount": 65848
-        },
-        {
-          "name": "元大台灣50",
-          "units": 12380,
-          "nav": 64,
-          "currency": "",
-          "amount": 793062
-        },
-        {
-          "name": "元大高股息",
-          "units": 433,
-          "nav": 37,
-          "currency": "",
-          "amount": 16233
-        },
-        {
-          "name": "國泰臺灣加權正2",
-          "units": 12000,
-          "nav": 46,
-          "currency": "",
-          "amount": 552120
-        }
-      ]
-    },
-    "卓冠廷": {
-      "stock": [
-        {
-          "name": "ARKInnovationETF(ARKK)",
-          "shares": 2,
-          "unit_price": 88,
-          "currency": "美元",
-          "amount": 5424
-        },
-        {
-          "name": "ProSharesUltraProQQQ(TQQQ)",
-          "shares": 8,
-          "unit_price": 58,
-          "currency": "美元",
-          "amount": 14585
-        },
-        {
-          "name": "VanguardS&P500ETF(VOO)",
-          "shares": 9,
-          "unit_price": 627,
-          "currency": "美元",
-          "amount": 178770
-        }
-      ],
-      "bond": [],
-      "fund": [
-        {
-          "name": "元大台灣高股息優質龍頭不配息",
-          "units": 85042,
-          "nav": 21,
-          "currency": "",
-          "amount": 1862432
-        },
-        {
-          "name": "元大台灣50",
-          "units": 31000,
-          "nav": 64,
-          "currency": "",
-          "amount": 1985860
-        },
-        {
-          "name": "元大高股息",
-          "units": 15000,
-          "nav": 37,
-          "currency": "",
-          "amount": 562350
-        },
-        {
-          "name": "元大台灣50",
-          "units": 1427,
-          "nav": 64,
-          "currency": "",
-          "amount": 91413
-        },
-        {
-          "name": "元大高股息",
-          "units": 15000,
-          "nav": 37,
-          "currency": "",
-          "amount": 562350
-        },
-        {
-          "name": "富邦台50",
-          "units": 20000,
-          "nav": 150,
-          "currency": "",
-          "amount": 3005400
-        },
-        {
-          "name": "統一FANG+",
-          "units": 3000,
-          "nav": 123,
-          "currency": "",
-          "amount": 370440
-        },
-        {
-          "name": "元大航太防衛科技",
-          "units": 6022,
-          "nav": 23,
-          "currency": "",
-          "amount": 142600
-        },
-        {
-          "name": "野村美國研發龍頭",
-          "units": 22000,
-          "nav": 17,
-          "currency": "",
-          "amount": 374220
-        }
-      ]
-    },
-    "周雅玲": {
-      "stock": [
-        {
-          "name": "華新",
-          "shares": 100,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 1000
-        },
-        {
-          "name": "大鋼",
-          "shares": 1000000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 10000000
-        },
-        {
-          "name": "台火",
-          "shares": 2314,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 23140
-        },
-        {
-          "name": "三富",
-          "shares": 3500,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 35000
-        },
-        {
-          "name": "羽田機械",
-          "shares": 40000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 400000
-        }
-      ],
-      "bond": [],
-      "fund": []
-    },
-    "林國春": {
-      "stock": [
-        {
-          "name": "精碟",
-          "shares": 110500,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 1105000
-        },
-        {
-          "name": "博達",
-          "shares": 6533,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 65330
-        },
-        {
-          "name": "大騰電子",
-          "shares": 21,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 210
-        },
-        {
-          "name": "臺鳳",
-          "shares": 336,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 3360
-        }
-      ],
-      "bond": [],
-      "fund": []
-    },
-    "林裔綺": {
-      "stock": [
-        {
-          "name": "台船",
-          "shares": 16837,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 168370
-        },
-        {
-          "name": "華立捷舊",
-          "shares": 2000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 20000
-        },
-        {
-          "name": "虎山",
-          "shares": 35000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 350000
-        },
-        {
-          "name": "山林水",
-          "shares": 11042,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 110420
-        }
-      ],
-      "bond": [],
-      "fund": [
-        {
-          "name": "富達歐洲",
-          "units": 522,
-          "nav": 21,
-          "currency": "歐元",
-          "amount": 391763
-        },
-        {
-          "name": "霸菱東歐基金",
-          "units": 21,
-          "nav": 58,
-          "currency": "美元",
-          "amount": 38086
-        },
-        {
-          "name": "霸菱東歐側袋A美",
-          "units": 20,
-          "nav": 0,
-          "currency": "美元",
-          "amount": 0
-        },
-        {
-          "name": "安聯全球農金趨勢",
-          "units": 22956,
-          "nav": 7,
-          "currency": "",
-          "amount": 168501
-        },
-        {
-          "name": "安聯全球農金趨勢",
-          "units": 15304,
-          "nav": 7,
-          "currency": "",
-          "amount": 112334
-        },
-        {
-          "name": "柏瑞全球非投人配N",
-          "units": 29806,
-          "nav": 6,
-          "currency": "人民幣",
-          "amount": 804353
-        },
-        {
-          "name": "宏利非投N人配",
-          "units": 9500,
-          "nav": 7,
-          "currency": "人民幣",
-          "amount": 291741
-        }
-      ]
-    },
-    "林銘仁": {
-      "stock": [
-        {
-          "name": "鴻海",
-          "shares": 5000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 50000
-        }
-      ],
-      "bond": [],
-      "fund": [
-        {
-          "name": "富邦上証正2",
-          "units": 75000,
-          "nav": 49,
-          "currency": "",
-          "amount": 3681750
-        },
-        {
-          "name": "元大滬深300正2",
-          "units": 160000,
-          "nav": 19,
-          "currency": "",
-          "amount": 3190400
-        },
-        {
-          "name": "元大投資級公司債",
-          "units": 50000,
-          "nav": 33,
-          "currency": "",
-          "amount": 1664345
-        }
-      ]
-    },
-    "洪佳君": {
-      "stock": [
-        {
-          "name": "太電",
-          "shares": 102000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 1020000
-        },
-        {
-          "name": "華映",
-          "shares": 2758,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 27580
-        },
-        {
-          "name": "台開",
-          "shares": 75770,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 757700
-        }
-      ],
-      "bond": [],
-      "fund": [
-        {
-          "name": "元大台灣卓越50基金",
-          "units": 19652,
-          "nav": 64,
-          "currency": "",
-          "amount": 1272467
-        },
-        {
-          "name": "元大台灣卓越50基金",
-          "units": 6660,
-          "nav": 64,
-          "currency": "",
-          "amount": 431260
-        },
-        {
-          "name": "晉達環球優質股息增長基金(累積)(美元)",
-          "units": 1074,
-          "nav": 37,
-          "currency": "美元",
-          "amount": 1224010
-        },
-        {
-          "name": "晉達環球優質股息增長基金(累積)(美元)",
-          "units": 552,
-          "nav": 37,
-          "currency": "美元",
-          "amount": 629310
-        },
-        {
-          "name": "晉達環球優質股息增長基金(累",
-          "units": 539,
-          "nav": 37,
-          "currency": "美元",
-          "amount": 614098
-        }
-      ]
-    },
-    "陳世軒": {
-      "stock": [
-        {
-          "name": "華映",
-          "shares": 426,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 4260
-        }
-      ],
-      "bond": [],
-      "fund": []
-    },
-    "陳啟能": {
-      "stock": [
-        {
-          "name": "華新科",
-          "shares": 5000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 50000
-        },
-        {
-          "name": "星宇航空",
-          "shares": 10000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 100000
-        },
-        {
-          "name": "彰銀",
-          "shares": 111,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 1110
-        },
-        {
-          "name": "榮剛",
-          "shares": 3000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 30000
-        },
-        {
-          "name": "佰鈺科技",
-          "shares": 250,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 2500
-        }
-      ],
-      "bond": [],
-      "fund": []
-    },
-    "陳錦錠": {
-      "stock": [
-        {
-          "name": "中紡",
-          "shares": 488,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 4880
-        },
-        {
-          "name": "太電",
-          "shares": 178,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 1780
-        },
-        {
-          "name": "正隆",
-          "shares": 530290,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 5302900
-        },
-        {
-          "name": "資信建設股份有限公司",
-          "shares": 100000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 1000000
-        },
-        {
-          "name": "漢堡開發建設股份有限公司",
-          "shares": 912000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 9120000
-        }
-      ],
-      "bond": [],
-      "fund": []
-    },
-    "黃心華": {
-      "stock": [
-        {
-          "name": "台泥",
-          "shares": 1000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 10000
-        },
-        {
-          "name": "永豐餘",
-          "shares": 1166,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 11660
-        },
-        {
-          "name": "友達",
-          "shares": 1600,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 16000
-        },
-        {
-          "name": "普安",
-          "shares": 2359,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 23590
-        },
-        {
-          "name": "陽明",
-          "shares": 1000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 10000
-        },
-        {
-          "name": "華航",
-          "shares": 950,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 9500
-        },
-        {
-          "name": "六福",
-          "shares": 1129,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 11290
-        }
-      ],
-      "bond": [],
-      "fund": []
-    },
-    "黃桂蘭": {
-      "stock": [
-        {
-          "name": "鴻碩",
-          "shares": 44514,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 445140
-        },
-        {
-          "name": "瑞興銀",
-          "shares": 1000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 10000
-        },
-        {
-          "name": "瑞興銀",
-          "shares": 300,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 3000
-        }
-      ],
-      "bond": [],
-      "fund": []
-    },
-    "黃淑君": {
-      "stock": [
-        {
-          "name": "亞泥",
-          "shares": 1000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 10000
-        },
-        {
-          "name": "佳格",
-          "shares": 1000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 10000
-        },
-        {
-          "name": "宏遠",
-          "shares": 1000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 10000
-        },
-        {
-          "name": "葡萄王",
-          "shares": 100,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 1000
-        },
-        {
-          "name": "興農",
-          "shares": 1000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 10000
-        },
-        {
-          "name": "中鋼",
-          "shares": 1000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 10000
-        },
-        {
-          "name": "鴻海",
-          "shares": 1600,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 16000
-        },
-        {
-          "name": "宏碁",
-          "shares": 1000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 10000
-        },
-        {
-          "name": "友達",
-          "shares": 2400,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 24000
-        },
-        {
-          "name": "中華電",
-          "shares": 1000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 10000
-        },
-        {
-          "name": "神腦",
-          "shares": 1000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 10000
-        },
-        {
-          "name": "太子",
-          "shares": 1000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 10000
-        },
-        {
-          "name": "華航",
-          "shares": 2000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 20000
-        },
-        {
-          "name": "長榮航",
-          "shares": 3257,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 32570
-        },
-        {
-          "name": "台灣高鐵",
-          "shares": 2000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 20000
-        },
-        {
-          "name": "慧洋－KY",
-          "shares": 1120,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 11200
-        },
-        {
-          "name": "星宇航空",
-          "shares": 1000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 10000
-        },
-        {
-          "name": "彰銀",
-          "shares": 1247,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 12470
-        },
-        {
-          "name": "台中銀",
-          "shares": 1536,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 15360
-        },
-        {
-          "name": "臺企銀",
-          "shares": 1484,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 14840
-        },
-        {
-          "name": "高雄銀",
-          "shares": 1156,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 11560
-        },
-        {
-          "name": "聯邦銀",
-          "shares": 3277,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 32770
-        },
-        {
-          "name": "遠東銀",
-          "shares": 1173,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 11730
-        },
-        {
-          "name": "華南金",
-          "shares": 1080,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 10800
-        }
-      ],
-      "bond": [],
-      "fund": [
-        {
-          "name": "國泰主順位非投債臺配息",
-          "units": 12182,
-          "nav": 8,
-          "currency": "",
-          "amount": 98763
-        },
-        {
-          "name": "元大高股息",
-          "units": 100,
-          "nav": 37,
-          "currency": "",
-          "amount": 37490
-        }
-      ]
-    },
-    "游輝宂": {
-      "stock": [
-        {
-          "name": "台泥",
-          "shares": 1000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 10000
-        }
-      ],
-      "bond": [],
-      "fund": [
-        {
-          "name": "元大AAA至A公司債",
-          "units": 1000,
-          "nav": 32,
-          "currency": "",
-          "amount": 32238
-        },
-        {
-          "name": "中信中國高股息",
-          "units": 1000,
-          "nav": 14,
-          "currency": "",
-          "amount": 14700
-        },
-        {
-          "name": "國泰全球品牌50",
-          "units": 1000,
-          "nav": 26,
-          "currency": "",
-          "amount": 26970
-        },
-        {
-          "name": "元大台灣價值高息",
-          "units": 10000,
-          "nav": 9,
-          "currency": "",
-          "amount": 97800
-        },
-        {
-          "name": "復華日本龍頭",
-          "units": 5000,
-          "nav": 18,
-          "currency": "",
-          "amount": 90100
-        }
-      ]
-    },
-    "蔡健棠": {
-      "stock": [
-        {
-          "name": "嘉新食化",
-          "shares": 511,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 5110
-        },
-        {
-          "name": "東和",
-          "shares": 207,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 2070
-        },
-        {
-          "name": "裕隆",
-          "shares": 373,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 3730
-        },
-        {
-          "name": "裕隆",
-          "shares": 15,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 150
-        },
-        {
-          "name": "農林",
-          "shares": 1139,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 11390
-        },
-        {
-          "name": "寶華",
-          "shares": 5169,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 51690
-        }
-      ],
-      "bond": [],
-      "fund": []
-    },
-    "蔡淑君": {
-      "stock": [
-        {
-          "name": "光罩",
-          "shares": 10000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 100000
-        },
-        {
-          "name": "立凱-KY",
-          "shares": 16385,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 163850
-        },
-        {
-          "name": "申豐",
-          "shares": 8000,
-          "unit_price": 10,
-          "currency": "",
-          "amount": 80000
-        }
-      ],
-      "bond": [],
-      "fund": []
-    },
-    "劉美芳": {
-      "stock": [
-        {
-          "name": "台積電",
-          "shares": 71,
-          "unit_price": 1411,
-          "currency": "",
-          "amount": 100208
-        },
-        {
-          "name": "宏達電",
-          "shares": 100,
-          "unit_price": 74,
-          "currency": "",
-          "amount": 7490
-        },
-        {
-          "name": "長榮",
-          "shares": 1000,
-          "unit_price": 180,
-          "currency": "",
-          "amount": 180256
-        },
-        {
-          "name": "聯發科",
-          "shares": 650,
-          "unit_price": 1513,
-          "currency": "",
-          "amount": 983649
-        },
-        {
-          "name": "鴻海",
-          "shares": 200,
-          "unit_price": 219,
-          "currency": "",
-          "amount": 43836
-        }
-      ],
-      "bond": [],
-      "fund": [
-        {
-          "name": "安聯台灣科技基金",
-          "units": 846,
-          "nav": 327,
-          "currency": "",
-          "amount": 277503
-        },
-        {
-          "name": "摩根美國複合收益基金JPM美元",
-          "units": 3783,
-          "nav": 8,
-          "currency": "美元",
-          "amount": 1005262
-        },
-        {
-          "name": "富達全球科技基金-A股累計美元",
-          "units": 117,
-          "nav": 66,
-          "currency": "美元",
-          "amount": 244929
-        },
-        {
-          "name": "安聯收益成長基金(美元穩定月配",
-          "units": 1968,
-          "nav": 8,
-          "currency": "美元",
-          "amount": 526327
-        },
-        {
-          "name": "安聯AI人工智慧基金-AT累積",
-          "units": 135,
-          "nav": 34,
-          "currency": "美元",
-          "amount": 146241
-        },
-        {
-          "name": "法巴乾淨能源股票基金C(美元累",
-          "units": 3,
-          "nav": 93,
-          "currency": "美元",
-          "amount": 9154
-        },
-        {
-          "name": "路博邁收益成長多重資產基金N月",
-          "units": 1077,
-          "nav": 6,
-          "currency": "美元",
-          "amount": 219818
-        }
-      ]
-    }
-  },
   "296": {
     "何志偉": {
       "stock": [
@@ -33387,6 +31502,2434 @@
           "amount": 149960
         }
       ]
+    }
+  },
+  "295": {
+    "陳炳甫": {
+      "stock": [
+        {
+          "name": "大立光",
+          "shares": 3000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 30000
+        },
+        {
+          "name": "元太",
+          "shares": 10000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 100000
+        },
+        {
+          "name": "台視",
+          "shares": 5088,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 50880
+        },
+        {
+          "name": "富邦媒",
+          "shares": 10187,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 101870
+        },
+        {
+          "name": "長億實業",
+          "shares": 900,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 9000
+        }
+      ],
+      "bond": [],
+      "fund": []
+    },
+    "游淑慧": {
+      "stock": [
+        {
+          "name": "佳格",
+          "shares": 6000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 60000
+        },
+        {
+          "name": "南亞",
+          "shares": 2000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 20000
+        },
+        {
+          "name": "中興電",
+          "shares": 2000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 20000
+        },
+        {
+          "name": "中興電",
+          "shares": 2000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 20000
+        },
+        {
+          "name": "潤隆",
+          "shares": 4400,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 44000
+        },
+        {
+          "name": "中鋼",
+          "shares": 10000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 100000
+        },
+        {
+          "name": "光寶科",
+          "shares": 2000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 20000
+        },
+        {
+          "name": "台達電",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 10000
+        },
+        {
+          "name": "鴻海",
+          "shares": 2000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 20000
+        },
+        {
+          "name": "大同",
+          "shares": 6650,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 66500
+        },
+        {
+          "name": "廣達",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 10000
+        },
+        {
+          "name": "中信金",
+          "shares": 2000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 20000
+        },
+        {
+          "name": "鈊象",
+          "shares": 2000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 20000
+        },
+        {
+          "name": "合晶",
+          "shares": 4000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 40000
+        },
+        {
+          "name": "樺漢",
+          "shares": 4000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 40000
+        },
+        {
+          "name": "藥華藥",
+          "shares": 1109,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 11090
+        },
+        {
+          "name": "雲豹能源",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 10000
+        },
+        {
+          "name": "雲豹能源",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 10000
+        },
+        {
+          "name": "NVIDIACorp",
+          "shares": 29,
+          "unit_price": 202,
+          "currency": "美元",
+          "amount": 180864
+        },
+        {
+          "name": "PfizerInc",
+          "shares": 40,
+          "unit_price": 24,
+          "currency": "美元",
+          "amount": 30369
+        }
+      ],
+      "bond": [],
+      "fund": [
+        {
+          "name": "聯博美國收益基金A2",
+          "units": 569,
+          "nav": 33,
+          "currency": "美元",
+          "amount": 586107
+        },
+        {
+          "name": "貝萊德環非投前日圓配",
+          "units": 739,
+          "nav": 934,
+          "currency": "日圓",
+          "amount": 136284
+        },
+        {
+          "name": "貝萊德環非投前日圓配",
+          "units": 344,
+          "nav": 934,
+          "currency": "日圓",
+          "amount": 63499
+        },
+        {
+          "name": "法巴全球非投等債月美",
+          "units": 103,
+          "nav": 47,
+          "currency": "美元",
+          "amount": 150371
+        },
+        {
+          "name": "HYG高收益債",
+          "units": 150,
+          "nav": 80,
+          "currency": "美元",
+          "amount": 371987
+        },
+        {
+          "name": "元大台灣50",
+          "units": 40000,
+          "nav": 64,
+          "currency": "",
+          "amount": 2562400
+        },
+        {
+          "name": "元大高股息",
+          "units": 19000,
+          "nav": 37,
+          "currency": "",
+          "amount": 712310
+        },
+        {
+          "name": "元大台灣高息低波",
+          "units": 10000,
+          "nav": 51,
+          "currency": "",
+          "amount": 515000
+        },
+        {
+          "name": "元大投資級公司債",
+          "units": 15000,
+          "nav": 33,
+          "currency": "",
+          "amount": 499303
+        },
+        {
+          "name": "復華台灣科技優息",
+          "units": 15000,
+          "nav": 18,
+          "currency": "",
+          "amount": 282750
+        },
+        {
+          "name": "復華日本龍頭",
+          "units": 10000,
+          "nav": 18,
+          "currency": "",
+          "amount": 180200
+        },
+        {
+          "name": "中信日本商社",
+          "units": 10000,
+          "nav": 11,
+          "currency": "",
+          "amount": 116500
+        },
+        {
+          "name": "元大台灣50",
+          "units": 3009,
+          "nav": 64,
+          "currency": "",
+          "amount": 192756
+        },
+        {
+          "name": "元大高股息",
+          "units": 14362,
+          "nav": 37,
+          "currency": "",
+          "amount": 538431
+        },
+        {
+          "name": "國泰永續高股息",
+          "units": 20535,
+          "nav": 21,
+          "currency": "",
+          "amount": 446841
+        },
+        {
+          "name": "群益優選非投等債",
+          "units": 10740,
+          "nav": 9,
+          "currency": "",
+          "amount": 102565
+        },
+        {
+          "name": "駿利亨德森資產管理基金-駿利亨德森環球科技創新基金A2美元",
+          "units": 91,
+          "nav": 41,
+          "currency": "美元",
+          "amount": 117918
+        },
+        {
+          "name": "【好好退休】景順環球股票收益基金C股美元",
+          "units": 6,
+          "nav": 172,
+          "currency": "美元",
+          "amount": 36954
+        },
+        {
+          "name": "安聯收益成長基金-AMg7月收總",
+          "units": 816,
+          "nav": 8,
+          "currency": "美元",
+          "amount": 222338
+        }
+      ]
+    },
+    "闕枚莎": {
+      "stock": [
+        {
+          "name": "東鹼",
+          "shares": 15772,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 157720
+        },
+        {
+          "name": "燿華",
+          "shares": 5000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 50000
+        },
+        {
+          "name": "毅嘉",
+          "shares": 10000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 100000
+        },
+        {
+          "name": "立隆電",
+          "shares": 2000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 20000
+        },
+        {
+          "name": "健和興",
+          "shares": 3000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 30000
+        },
+        {
+          "name": "力致",
+          "shares": 8050,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 80500
+        },
+        {
+          "name": "泰宗",
+          "shares": 4240,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 42400
+        },
+        {
+          "name": "中租－KY",
+          "shares": 5140,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 51400
+        },
+        {
+          "name": "全福生技",
+          "shares": 270000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 2700000
+        },
+        {
+          "name": "鉅橡",
+          "shares": 3000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 30000
+        }
+      ],
+      "bond": [],
+      "fund": [
+        {
+          "name": "元大美債20年",
+          "units": 70000,
+          "nav": 27,
+          "currency": "",
+          "amount": 1918987
+        },
+        {
+          "name": "國泰20年美債",
+          "units": 60000,
+          "nav": 28,
+          "currency": "",
+          "amount": 1708452
+        },
+        {
+          "name": "中信高評級公司債",
+          "units": 30000,
+          "nav": 33,
+          "currency": "",
+          "amount": 1018434
+        }
+      ]
+    },
+    "陳鴻源": {
+      "stock": [
+        {
+          "name": "台中銀",
+          "shares": 4945,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 49450
+        },
+        {
+          "name": "國泰金",
+          "shares": 22325,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 223250
+        },
+        {
+          "name": "國泰金",
+          "shares": 1304,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 13040
+        },
+        {
+          "name": "藥祇",
+          "shares": 269928,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 2699280
+        }
+      ],
+      "bond": [],
+      "fund": []
+    },
+    "Nikar": {
+      "stock": [
+        {
+          "name": "台積電",
+          "shares": 322,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 3220
+        },
+        {
+          "name": "宏達電",
+          "shares": 2000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 20000
+        },
+        {
+          "name": "台新新光金",
+          "shares": 12415,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 124150
+        },
+        {
+          "name": "建漢",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 10000
+        },
+        {
+          "name": "湧德",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 10000
+        },
+        {
+          "name": "茂迪",
+          "shares": 1072,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 10720
+        },
+        {
+          "name": "建德工業",
+          "shares": 2000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 20000
+        }
+      ],
+      "bond": [],
+      "fund": []
+    },
+    "李余典": {
+      "stock": [
+        {
+          "name": "燁興",
+          "shares": 553,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 5530
+        },
+        {
+          "name": "燁興",
+          "shares": 11,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 110
+        },
+        {
+          "name": "陽信商銀",
+          "shares": 1640129,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 16401290
+        }
+      ],
+      "bond": [],
+      "fund": []
+    },
+    "李倩萍": {
+      "stock": [
+        {
+          "name": "寶齡富錦",
+          "shares": 22000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 220000
+        },
+        {
+          "name": "凌陽",
+          "shares": 15000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 150000
+        },
+        {
+          "name": "圓剛",
+          "shares": 8000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 80000
+        },
+        {
+          "name": "中聯信託",
+          "shares": 28219,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 282190
+        },
+        {
+          "name": "麗清",
+          "shares": 36458,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 364580
+        },
+        {
+          "name": "華廣",
+          "shares": 8499,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 84990
+        },
+        {
+          "name": "康普",
+          "shares": 4000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 40000
+        },
+        {
+          "name": "日成-KY",
+          "shares": 15000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 150000
+        },
+        {
+          "name": "廣化",
+          "shares": 3000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 30000
+        },
+        {
+          "name": "海韻電",
+          "shares": 13000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 130000
+        },
+        {
+          "name": "華孚",
+          "shares": 19000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 190000
+        },
+        {
+          "name": "藥華藥",
+          "shares": 1109,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 11090
+        },
+        {
+          "name": "永虹先進",
+          "shares": 11000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 110000
+        },
+        {
+          "name": "極風雲創",
+          "shares": 7000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 70000
+        },
+        {
+          "name": "元富鋁業",
+          "shares": 38500,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 385000
+        },
+        {
+          "name": "宜錦科技",
+          "shares": 577,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 5770
+        }
+      ],
+      "bond": [],
+      "fund": []
+    },
+    "邱烽堯": {
+      "stock": [
+        {
+          "name": "燁輝",
+          "shares": 15690,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 156900
+        },
+        {
+          "name": "旺宏",
+          "shares": 372,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 3720
+        },
+        {
+          "name": "宏碁",
+          "shares": 398,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 3980
+        }
+      ],
+      "bond": [],
+      "fund": []
+    },
+    "邱婷蔚": {
+      "stock": [
+        {
+          "name": "鴻海",
+          "shares": 2000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 20000
+        },
+        {
+          "name": "台積電",
+          "shares": 700,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 7000
+        },
+        {
+          "name": "玉山金",
+          "shares": 304,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 3040
+        },
+        {
+          "name": "緯創",
+          "shares": 2000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 20000
+        },
+        {
+          "name": "宏偉",
+          "shares": 2000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 20000
+        },
+        {
+          "name": "茂德科技",
+          "shares": 3,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 30
+        },
+        {
+          "name": "光聖",
+          "shares": 300,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 3000
+        },
+        {
+          "name": "富世達",
+          "shares": 300,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 3000
+        },
+        {
+          "name": "BloomEnergy",
+          "shares": 10,
+          "unit_price": 132,
+          "currency": "美元",
+          "amount": 40624
+        },
+        {
+          "name": "NVIDIA",
+          "shares": 50,
+          "unit_price": 202,
+          "currency": "美元",
+          "amount": 311217
+        }
+      ],
+      "bond": [],
+      "fund": [
+        {
+          "name": "RoundhillMagnificentSevenETF",
+          "units": 26,
+          "nav": 67,
+          "currency": "美元",
+          "amount": 54314
+        },
+        {
+          "name": "VanguardS&P500ETF",
+          "units": 2,
+          "nav": 627,
+          "currency": "美元",
+          "amount": 38904
+        },
+        {
+          "name": "元大台灣50",
+          "units": 73748,
+          "nav": 64,
+          "currency": "",
+          "amount": 4724296
+        },
+        {
+          "name": "元大台灣50正2",
+          "units": 8000,
+          "nav": 353,
+          "currency": "",
+          "amount": 2824320
+        },
+        {
+          "name": "國泰臺灣加權正2",
+          "units": 42000,
+          "nav": 46,
+          "currency": "",
+          "amount": 1932420
+        },
+        {
+          "name": "中信小資高價30",
+          "units": 7000,
+          "nav": 27,
+          "currency": "",
+          "amount": 190680
+        },
+        {
+          "name": "國泰數位支付服務",
+          "units": 8000,
+          "nav": 48,
+          "currency": "",
+          "amount": 390160
+        },
+        {
+          "name": "野村臺灣新科技50",
+          "units": 10000,
+          "nav": 29,
+          "currency": "",
+          "amount": 291800
+        },
+        {
+          "name": "安聯收益成長基金-BM9穩定月收類股(美元)",
+          "units": 2958,
+          "nav": 10,
+          "currency": "美元",
+          "amount": 944785
+        },
+        {
+          "name": "(百元基金)摩根美國科技基金-JPM-A股分派(美元)",
+          "units": 277,
+          "nav": 73,
+          "currency": "美元",
+          "amount": 625219
+        },
+        {
+          "name": "(百元基金)摩根美國科技基金-JPM-A股分派(美元)",
+          "units": 143,
+          "nav": 73,
+          "currency": "美元",
+          "amount": 324334
+        },
+        {
+          "name": "貝萊德全球智慧數據股票入息基金B6美元(穩定配息)",
+          "units": 2846,
+          "nav": 10,
+          "currency": "美元",
+          "amount": 926248
+        },
+        {
+          "name": "路博邁台灣5G股票基金-T累積(新臺幣)",
+          "units": 7524,
+          "nav": 47,
+          "currency": "",
+          "amount": 355229
+        },
+        {
+          "name": "路博邁台灣5G股票基金-T累積(新臺幣)",
+          "units": 6753,
+          "nav": 47,
+          "currency": "",
+          "amount": 318843
+        },
+        {
+          "name": "路博邁台灣5G股票基金-T累積(新臺幣)",
+          "units": 6550,
+          "nav": 47,
+          "currency": "",
+          "amount": 309236
+        },
+        {
+          "name": "路博邁台灣5G股票基金-T累積(新臺幣)",
+          "units": 6377,
+          "nav": 47,
+          "currency": "",
+          "amount": 301084
+        },
+        {
+          "name": "路博邁台灣5G股票基金-T累積(新臺幣)",
+          "units": 655,
+          "nav": 47,
+          "currency": "",
+          "amount": 30923
+        },
+        {
+          "name": "富蘭克林坦伯頓全球日本基金",
+          "units": 153,
+          "nav": 2159,
+          "currency": "日圓",
+          "amount": 65848
+        },
+        {
+          "name": "元大台灣50",
+          "units": 12380,
+          "nav": 64,
+          "currency": "",
+          "amount": 793062
+        },
+        {
+          "name": "元大高股息",
+          "units": 433,
+          "nav": 37,
+          "currency": "",
+          "amount": 16233
+        },
+        {
+          "name": "國泰臺灣加權正2",
+          "units": 12000,
+          "nav": 46,
+          "currency": "",
+          "amount": 552120
+        }
+      ]
+    },
+    "卓冠廷": {
+      "stock": [
+        {
+          "name": "ARKInnovationETF(ARKK)",
+          "shares": 2,
+          "unit_price": 88,
+          "currency": "美元",
+          "amount": 5424
+        },
+        {
+          "name": "ProSharesUltraProQQQ(TQQQ)",
+          "shares": 8,
+          "unit_price": 58,
+          "currency": "美元",
+          "amount": 14585
+        },
+        {
+          "name": "VanguardS&P500ETF(VOO)",
+          "shares": 9,
+          "unit_price": 627,
+          "currency": "美元",
+          "amount": 178770
+        }
+      ],
+      "bond": [],
+      "fund": [
+        {
+          "name": "元大台灣高股息優質龍頭不配息",
+          "units": 85042,
+          "nav": 21,
+          "currency": "",
+          "amount": 1862432
+        },
+        {
+          "name": "元大台灣50",
+          "units": 31000,
+          "nav": 64,
+          "currency": "",
+          "amount": 1985860
+        },
+        {
+          "name": "元大高股息",
+          "units": 15000,
+          "nav": 37,
+          "currency": "",
+          "amount": 562350
+        },
+        {
+          "name": "元大台灣50",
+          "units": 1427,
+          "nav": 64,
+          "currency": "",
+          "amount": 91413
+        },
+        {
+          "name": "元大高股息",
+          "units": 15000,
+          "nav": 37,
+          "currency": "",
+          "amount": 562350
+        },
+        {
+          "name": "富邦台50",
+          "units": 20000,
+          "nav": 150,
+          "currency": "",
+          "amount": 3005400
+        },
+        {
+          "name": "統一FANG+",
+          "units": 3000,
+          "nav": 123,
+          "currency": "",
+          "amount": 370440
+        },
+        {
+          "name": "元大航太防衛科技",
+          "units": 6022,
+          "nav": 23,
+          "currency": "",
+          "amount": 142600
+        },
+        {
+          "name": "野村美國研發龍頭",
+          "units": 22000,
+          "nav": 17,
+          "currency": "",
+          "amount": 374220
+        }
+      ]
+    },
+    "林裔綺": {
+      "stock": [
+        {
+          "name": "台船",
+          "shares": 16837,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 168370
+        },
+        {
+          "name": "華立捷舊",
+          "shares": 2000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 20000
+        },
+        {
+          "name": "虎山",
+          "shares": 35000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 350000
+        },
+        {
+          "name": "山林水",
+          "shares": 11042,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 110420
+        }
+      ],
+      "bond": [],
+      "fund": [
+        {
+          "name": "富達歐洲",
+          "units": 522,
+          "nav": 21,
+          "currency": "歐元",
+          "amount": 391763
+        },
+        {
+          "name": "霸菱東歐基金",
+          "units": 21,
+          "nav": 58,
+          "currency": "美元",
+          "amount": 38086
+        },
+        {
+          "name": "霸菱東歐側袋A美",
+          "units": 20,
+          "nav": 0,
+          "currency": "美元",
+          "amount": 0
+        },
+        {
+          "name": "安聯全球農金趨勢",
+          "units": 22956,
+          "nav": 7,
+          "currency": "",
+          "amount": 168501
+        },
+        {
+          "name": "安聯全球農金趨勢",
+          "units": 15304,
+          "nav": 7,
+          "currency": "",
+          "amount": 112334
+        },
+        {
+          "name": "柏瑞全球非投人配N",
+          "units": 29806,
+          "nav": 6,
+          "currency": "人民幣",
+          "amount": 804353
+        },
+        {
+          "name": "宏利非投N人配",
+          "units": 9500,
+          "nav": 7,
+          "currency": "人民幣",
+          "amount": 291741
+        }
+      ]
+    },
+    "洪佳君": {
+      "stock": [
+        {
+          "name": "太電",
+          "shares": 102000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 1020000
+        },
+        {
+          "name": "華映",
+          "shares": 2758,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 27580
+        },
+        {
+          "name": "台開",
+          "shares": 75770,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 757700
+        }
+      ],
+      "bond": [],
+      "fund": [
+        {
+          "name": "元大台灣卓越50基金",
+          "units": 19652,
+          "nav": 64,
+          "currency": "",
+          "amount": 1272467
+        },
+        {
+          "name": "元大台灣卓越50基金",
+          "units": 6660,
+          "nav": 64,
+          "currency": "",
+          "amount": 431260
+        },
+        {
+          "name": "晉達環球優質股息增長基金(累積)(美元)",
+          "units": 1074,
+          "nav": 37,
+          "currency": "美元",
+          "amount": 1224010
+        },
+        {
+          "name": "晉達環球優質股息增長基金(累積)(美元)",
+          "units": 552,
+          "nav": 37,
+          "currency": "美元",
+          "amount": 629310
+        },
+        {
+          "name": "晉達環球優質股息增長基金(累",
+          "units": 539,
+          "nav": 37,
+          "currency": "美元",
+          "amount": 614098
+        }
+      ]
+    },
+    "陳錦錠": {
+      "stock": [
+        {
+          "name": "中紡",
+          "shares": 488,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 4880
+        },
+        {
+          "name": "太電",
+          "shares": 178,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 1780
+        },
+        {
+          "name": "正隆",
+          "shares": 530290,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 5302900
+        },
+        {
+          "name": "資信建設股份有限公司",
+          "shares": 100000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 1000000
+        },
+        {
+          "name": "漢堡開發建設股份有限公司",
+          "shares": 912000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 9120000
+        }
+      ],
+      "bond": [],
+      "fund": []
+    },
+    "黃心華": {
+      "stock": [
+        {
+          "name": "台泥",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 10000
+        },
+        {
+          "name": "永豐餘",
+          "shares": 1166,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 11660
+        },
+        {
+          "name": "友達",
+          "shares": 1600,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 16000
+        },
+        {
+          "name": "普安",
+          "shares": 2359,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 23590
+        },
+        {
+          "name": "陽明",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 10000
+        },
+        {
+          "name": "華航",
+          "shares": 950,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 9500
+        },
+        {
+          "name": "六福",
+          "shares": 1129,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 11290
+        }
+      ],
+      "bond": [],
+      "fund": []
+    },
+    "黃桂蘭": {
+      "stock": [
+        {
+          "name": "鴻碩",
+          "shares": 44514,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 445140
+        },
+        {
+          "name": "瑞興銀",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 10000
+        },
+        {
+          "name": "瑞興銀",
+          "shares": 300,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 3000
+        }
+      ],
+      "bond": [],
+      "fund": []
+    },
+    "黃淑君": {
+      "stock": [
+        {
+          "name": "亞泥",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 10000
+        },
+        {
+          "name": "佳格",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 10000
+        },
+        {
+          "name": "宏遠",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 10000
+        },
+        {
+          "name": "葡萄王",
+          "shares": 100,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 1000
+        },
+        {
+          "name": "興農",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 10000
+        },
+        {
+          "name": "中鋼",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 10000
+        },
+        {
+          "name": "鴻海",
+          "shares": 1600,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 16000
+        },
+        {
+          "name": "宏碁",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 10000
+        },
+        {
+          "name": "友達",
+          "shares": 2400,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 24000
+        },
+        {
+          "name": "中華電",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 10000
+        },
+        {
+          "name": "神腦",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 10000
+        },
+        {
+          "name": "太子",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 10000
+        },
+        {
+          "name": "華航",
+          "shares": 2000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 20000
+        },
+        {
+          "name": "長榮航",
+          "shares": 3257,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 32570
+        },
+        {
+          "name": "台灣高鐵",
+          "shares": 2000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 20000
+        },
+        {
+          "name": "慧洋－KY",
+          "shares": 1120,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 11200
+        },
+        {
+          "name": "星宇航空",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 10000
+        },
+        {
+          "name": "彰銀",
+          "shares": 1247,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 12470
+        },
+        {
+          "name": "台中銀",
+          "shares": 1536,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 15360
+        },
+        {
+          "name": "臺企銀",
+          "shares": 1484,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 14840
+        },
+        {
+          "name": "高雄銀",
+          "shares": 1156,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 11560
+        },
+        {
+          "name": "聯邦銀",
+          "shares": 3277,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 32770
+        },
+        {
+          "name": "遠東銀",
+          "shares": 1173,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 11730
+        },
+        {
+          "name": "華南金",
+          "shares": 1080,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 10800
+        }
+      ],
+      "bond": [],
+      "fund": []
+    },
+    "游輝宂": {
+      "stock": [
+        {
+          "name": "台泥",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 10000
+        }
+      ],
+      "bond": [],
+      "fund": []
+    },
+    "蔡淑君": {
+      "stock": [
+        {
+          "name": "光罩",
+          "shares": 10000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 100000
+        },
+        {
+          "name": "立凱-KY",
+          "shares": 16385,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 163850
+        },
+        {
+          "name": "申豐",
+          "shares": 8000,
+          "unit_price": 10,
+          "currency": "",
+          "amount": 80000
+        }
+      ],
+      "bond": [],
+      "fund": []
+    },
+    "劉美芳": {
+      "stock": [],
+      "bond": [],
+      "fund": [
+        {
+          "name": "安聯台灣科技基金",
+          "units": 846,
+          "nav": 327,
+          "currency": "",
+          "amount": 277503
+        },
+        {
+          "name": "摩根美國複合收益基金JPM美元",
+          "units": 3783,
+          "nav": 8,
+          "currency": "美元",
+          "amount": 1005262
+        },
+        {
+          "name": "富達全球科技基金-A股累計美元",
+          "units": 117,
+          "nav": 66,
+          "currency": "美元",
+          "amount": 244929
+        },
+        {
+          "name": "安聯收益成長基金(美元穩定月配",
+          "units": 1968,
+          "nav": 8,
+          "currency": "美元",
+          "amount": 526327
+        },
+        {
+          "name": "安聯AI人工智慧基金-AT累積",
+          "units": 135,
+          "nav": 34,
+          "currency": "美元",
+          "amount": 146241
+        },
+        {
+          "name": "法巴乾淨能源股票基金C(美元累",
+          "units": 3,
+          "nav": 93,
+          "currency": "美元",
+          "amount": 9154
+        },
+        {
+          "name": "路博邁收益成長多重資產基金N月",
+          "units": 1077,
+          "nav": 6,
+          "currency": "美元",
+          "amount": 219818
+        }
+      ]
+    },
+    "鍾佩玲": {
+      "stock": [
+        {
+          "name": "富利陽投資",
+          "shares": 70000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 700000
+        }
+      ],
+      "bond": [],
+      "fund": []
+    },
+    "顏若芳": {
+      "stock": [],
+      "bond": [],
+      "fund": [
+        {
+          "name": "房貸",
+          "units": null,
+          "nav": null,
+          "currency": "新臺幣",
+          "amount": 4927476
+        },
+        {
+          "name": "房貸",
+          "units": null,
+          "nav": null,
+          "currency": "新臺幣",
+          "amount": 4714693
+        },
+        {
+          "name": "車貸",
+          "units": null,
+          "nav": null,
+          "currency": "新臺幣",
+          "amount": 895830
+        }
+      ]
+    },
+    "山田摩衣": {
+      "stock": [
+        {
+          "name": "1",
+          "shares": 1,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 51363
+        }
+      ],
+      "bond": [],
+      "fund": [
+        {
+          "name": "1",
+          "units": 1,
+          "nav": null,
+          "currency": "新臺幣",
+          "amount": 51363
+        }
+      ]
+    },
+    "宋明宗": {
+      "stock": [
+        {
+          "name": "中鋼",
+          "shares": 3026,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 30260
+        },
+        {
+          "name": "中鋼",
+          "shares": 901,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 9010
+        }
+      ],
+      "bond": [],
+      "fund": []
+    },
+    "李翁月娥": {
+      "stock": [
+        {
+          "name": "授信",
+          "shares": 1110092,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 1110092
+        }
+      ],
+      "bond": [],
+      "fund": [
+        {
+          "name": "授信",
+          "units": null,
+          "nav": null,
+          "currency": "新臺幣",
+          "amount": 1110092
+        }
+      ]
+    },
+    "周雅玲": {
+      "stock": [
+        {
+          "name": "華新",
+          "shares": 100,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 1000
+        },
+        {
+          "name": "大鋼",
+          "shares": 1000000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 10000000
+        },
+        {
+          "name": "台火",
+          "shares": 2314,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 23140
+        },
+        {
+          "name": "三富",
+          "shares": 3500,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 35000
+        },
+        {
+          "name": "羽田機械",
+          "shares": 40000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 400000
+        }
+      ],
+      "bond": [],
+      "fund": []
+    },
+    "林國春": {
+      "stock": [
+        {
+          "name": "精碟",
+          "shares": 110500,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 1105000
+        },
+        {
+          "name": "博達",
+          "shares": 6533,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 65330
+        },
+        {
+          "name": "大騰電子",
+          "shares": 21,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 210
+        },
+        {
+          "name": "臺鳳",
+          "shares": 336,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 3360
+        }
+      ],
+      "bond": [],
+      "fund": []
+    },
+    "林銘仁": {
+      "stock": [
+        {
+          "name": "鴻海",
+          "shares": 5000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 50000
+        },
+        {
+          "name": "富邦上証正2",
+          "shares": 49,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 3681750
+        },
+        {
+          "name": "元大滬深300正2",
+          "shares": 19,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 3190400
+        },
+        {
+          "name": "（未解析）",
+          "shares": 33,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 1664345
+        },
+        {
+          "name": "福懋凱基-土城",
+          "shares": 4000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 67800
+        },
+        {
+          "name": "福懋凱基-土城",
+          "shares": 3000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 50700
+        },
+        {
+          "name": "福懋凱基-土城",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 16950
+        },
+        {
+          "name": "福懋凱基-土城",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 16950
+        },
+        {
+          "name": "福懋凱基-土城",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 16900
+        },
+        {
+          "name": "福懋凱基-土城",
+          "shares": 2000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 31400
+        },
+        {
+          "name": "福懋凱基-土城",
+          "shares": 2000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 31400
+        },
+        {
+          "name": "福懋凱基-土城",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 15700
+        },
+        {
+          "name": "福懋凱基-土城",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 15700
+        },
+        {
+          "name": "福懋凱基-土城",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 15700
+        },
+        {
+          "name": "福懋凱基-土城",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 15700
+        },
+        {
+          "name": "福懋凱基-土城",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 15700
+        },
+        {
+          "name": "福懋凱基-土城",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 15700
+        },
+        {
+          "name": "華友聯凱基-土城",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 118500
+        },
+        {
+          "name": "華友聯凱基-土城",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 71300
+        },
+        {
+          "name": "華友聯凱基-土城",
+          "shares": 301,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 19595
+        },
+        {
+          "name": "華友聯",
+          "shares": 301,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 21371
+        }
+      ],
+      "bond": [],
+      "fund": [
+        {
+          "name": "富邦上証正2",
+          "units": 49,
+          "nav": 75000.0,
+          "currency": "新臺幣",
+          "amount": 3681750
+        },
+        {
+          "name": "元大滬深300正2",
+          "units": 19,
+          "nav": 160000.0,
+          "currency": "新臺幣",
+          "amount": 3190400
+        },
+        {
+          "name": "（未解析）",
+          "units": 33,
+          "nav": 50000.0,
+          "currency": "新臺幣",
+          "amount": 1664345
+        }
+      ]
+    },
+    "金瑞龍": {
+      "stock": [
+        {
+          "name": "保證債務",
+          "shares": null,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 60000000
+        },
+        {
+          "name": "保證債務",
+          "shares": null,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 49700000
+        },
+        {
+          "name": "保證債務",
+          "shares": null,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 54200000
+        },
+        {
+          "name": "授信",
+          "shares": 6500000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 6500000
+        },
+        {
+          "name": "華新元大-板橋",
+          "shares": 10000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 322500
+        },
+        {
+          "name": "華新元大-板橋",
+          "shares": 9000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 290250
+        },
+        {
+          "name": "華新元大-板橋",
+          "shares": 8000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 258000
+        },
+        {
+          "name": "華新元大-板橋",
+          "shares": 7000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 223650
+        },
+        {
+          "name": "華新元大-板橋",
+          "shares": 5000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 161250
+        },
+        {
+          "name": "華新元大-板橋",
+          "shares": 5000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 161250
+        },
+        {
+          "name": "華新元大-板橋",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 31950
+        },
+        {
+          "name": "華新元大-板橋",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 32250
+        },
+        {
+          "name": "華新元大-板橋",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 31950
+        },
+        {
+          "name": "華新元大-板橋",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 32250
+        },
+        {
+          "name": "華新元大-板橋",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 32250
+        },
+        {
+          "name": "華新元大-板橋",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 31950
+        },
+        {
+          "name": "華新元大-板橋",
+          "shares": 15000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 461250
+        },
+        {
+          "name": "華新元大-板橋",
+          "shares": 11000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 338250
+        },
+        {
+          "name": "華新元大-板橋",
+          "shares": 10000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 307500
+        },
+        {
+          "name": "華新元大-板橋",
+          "shares": 6000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 184500
+        },
+        {
+          "name": "華新元大-板橋",
+          "shares": 5000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 153750
+        },
+        {
+          "name": "華新元大-板橋",
+          "shares": 2000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 61500
+        }
+      ],
+      "bond": [],
+      "fund": [
+        {
+          "name": "蒸霸天下及圖(自行估價)1",
+          "units": 1,
+          "nav": null,
+          "currency": "新臺幣",
+          "amount": 1000
+        }
+      ]
+    },
+    "翁震州": {
+      "stock": [
+        {
+          "name": "台橡元大-新莊",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 21550
+        },
+        {
+          "name": "台積電元大-新莊",
+          "shares": 100,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 97500
+        },
+        {
+          "name": "台積電元大-新莊",
+          "shares": 40,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 38560
+        },
+        {
+          "name": "台積電元大-新莊",
+          "shares": 20,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 19280
+        },
+        {
+          "name": "台積電元大-新莊",
+          "shares": 75,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 63600
+        },
+        {
+          "name": "智邦元大-新莊",
+          "shares": 30,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 30000
+        },
+        {
+          "name": "長榮航元大-新莊",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 37700
+        },
+        {
+          "name": "文曄元大-新莊",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 140500
+        },
+        {
+          "name": "大聯大元大-新莊",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 71700
+        },
+        {
+          "name": "大聯大元大-新莊",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 67100
+        },
+        {
+          "name": "元翎元大-新莊",
+          "shares": 3000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 56700
+        },
+        {
+          "name": "元翎元大-新莊",
+          "shares": 2000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 37800
+        },
+        {
+          "name": "元翎元大-新莊",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 18900
+        },
+        {
+          "name": "元翎元大-新莊",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 18900
+        },
+        {
+          "name": "元翎元大-新莊",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 18900
+        },
+        {
+          "name": "元翎元大-新莊",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 18900
+        },
+        {
+          "name": "元翎元大-新莊",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 18900
+        }
+      ],
+      "bond": [],
+      "fund": []
+    },
+    "陳乃瑜": {
+      "stock": [],
+      "bond": [],
+      "fund": [
+        {
+          "name": "1",
+          "units": 1,
+          "nav": null,
+          "currency": "新臺幣",
+          "amount": 296325
+        }
+      ]
+    },
+    "陳世軒": {
+      "stock": [
+        {
+          "name": "華映",
+          "shares": 426,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 4260
+        }
+      ],
+      "bond": [],
+      "fund": []
+    },
+    "陳永福": {
+      "stock": [],
+      "bond": [],
+      "fund": [
+        {
+          "name": "授信",
+          "units": null,
+          "nav": null,
+          "currency": "新臺幣",
+          "amount": 4000000
+        },
+        {
+          "name": "授信",
+          "units": null,
+          "nav": null,
+          "currency": "新臺幣",
+          "amount": 3310000
+        },
+        {
+          "name": "授信",
+          "units": null,
+          "nav": null,
+          "currency": "新臺幣",
+          "amount": 3302000
+        },
+        {
+          "name": "授信",
+          "units": null,
+          "nav": null,
+          "currency": "新臺幣",
+          "amount": 2000000
+        },
+        {
+          "name": "授信",
+          "units": null,
+          "nav": null,
+          "currency": "新臺幣",
+          "amount": 450000
+        },
+        {
+          "name": "授信",
+          "units": null,
+          "nav": null,
+          "currency": "新臺幣",
+          "amount": 215500
+        },
+        {
+          "name": "授信",
+          "units": null,
+          "nav": null,
+          "currency": "新臺幣",
+          "amount": 100000
+        }
+      ]
+    },
+    "陳啟能": {
+      "stock": [
+        {
+          "name": "華新科",
+          "shares": 5000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 50000
+        },
+        {
+          "name": "星宇航空",
+          "shares": 10000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 100000
+        },
+        {
+          "name": "彰銀",
+          "shares": 111,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 1110
+        },
+        {
+          "name": "榮剛",
+          "shares": 3000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 30000
+        },
+        {
+          "name": "佰鈺科技",
+          "shares": 250,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 2500
+        },
+        {
+          "name": "佳能聯邦-三重",
+          "shares": 17000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 906100
+        },
+        {
+          "name": "佳能聯邦-三重",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 53300
+        },
+        {
+          "name": "佳能聯邦-三重",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 53300
+        },
+        {
+          "name": "佳能聯邦-三重",
+          "shares": 1000,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 53300
+        }
+      ],
+      "bond": [],
+      "fund": []
+    },
+    "馬見": {
+      "stock": [
+        {
+          "name": "也是這片土地的原住民11",
+          "shares": 1,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 300000
+        },
+        {
+          "name": "也是這片土地的原住民21",
+          "shares": 1,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 300000
+        },
+        {
+          "name": "鉑金結婚對戒-11",
+          "shares": 1,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 100000
+        }
+      ],
+      "bond": [],
+      "fund": [
+        {
+          "name": "也是這片土地的原住民11",
+          "units": 1,
+          "nav": null,
+          "currency": "新臺幣",
+          "amount": 300000
+        },
+        {
+          "name": "也是這片土地的原住民21",
+          "units": 1,
+          "nav": null,
+          "currency": "新臺幣",
+          "amount": 300000
+        },
+        {
+          "name": "鉑金結婚對戒-11",
+          "units": 1,
+          "nav": null,
+          "currency": "新臺幣",
+          "amount": 100000
+        }
+      ]
+    },
+    "蔡健棠": {
+      "stock": [
+        {
+          "name": "嘉新食化",
+          "shares": 511,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 5110
+        },
+        {
+          "name": "東和",
+          "shares": 207,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 2070
+        },
+        {
+          "name": "裕隆",
+          "shares": 373,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 3730
+        },
+        {
+          "name": "裕隆",
+          "shares": 15,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 150
+        },
+        {
+          "name": "農林",
+          "shares": 1139,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 11390
+        },
+        {
+          "name": "寶華",
+          "shares": 5169,
+          "unit_price": 10,
+          "currency": "新臺幣",
+          "amount": 51690
+        }
+      ],
+      "bond": [],
+      "fund": []
     }
   }
 }
